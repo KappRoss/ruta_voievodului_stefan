@@ -1,0 +1,109 @@
+.routes-selection {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background-color: #000000;
+	padding: 240px 0 190px 0;
+	margin-top: -240px;
+}
+
+.routes-selection-title {
+	margin-top: 140px;
+	width: 80%;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+	font-weight: 350;
+	font-size: 45px;
+	line-height: 66px;
+	color: #F4B938;
+}
+
+.routes-selection-pdf {
+	font-size: 16px;
+	line-height: 24px;
+	text-transform: uppercase;
+	cursor: pointer;
+}
+
+.routes-selection-desc {
+	font-size: 18px;
+	line-height: 30px;
+	color: #FFFFFF;
+	width: 80%;
+	margin-top: 50px;
+}
+
+.routes-wrap {
+	margin: 100px 0;
+}
+
+.routes-row {
+	display: flex;
+	justify-content: space-around;
+}
+
+.routes-entity {
+	width: 300px;
+	text-align: left;
+	box-sizing: border-box;
+	padding: 20px;
+}
+
+.routes-entity-top {
+	display: flex;
+	align-items: center;
+}
+
+.routes-entity-name {
+	font-size: 18px;
+	line-height: 27px;
+	color: #FFFFFF;
+}
+
+.routes-entity-desc {
+	font-size: 14px;
+	line-height: 21px;
+	color: #FFFFFF;
+	margin-top: 20px;
+}
+
+.routes-entity-top img {
+	width: 80px;
+	height: 80px;
+	margin-right: 20px;
+}
+
+.traseni {
+	font-size: 14px;
+	line-height: 21px;
+	color: #F8981D;
+}
+
+.routes-path {
+	flex-grow: 1;
+}
+
+.routes-path {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 90px;
+}
+
+.routes-path-round {
+	width: 15px;
+	height: 15px;
+	border-radius: 8px;
+	background: #E3393B;
+}
+
+.routes-path-line {
+	flex-grow: 1;
+	border-top: 1px solid rgba(255, 255, 255, 0.3);
+	text-align: center;
+	font-size: 14px;
+	line-height: 21px;
+	color: #FFFFFF;
+	margin-top: 7.5px;
+}

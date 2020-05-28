@@ -1,0 +1,52 @@
+.distance-left {
+	display: flex;
+	flex-direction: column;
+}
+
+.distance-round {
+	width: 15px;
+	height: 15px;
+	border: 2px solid #E3393B;
+	border-radius: 8px;
+}
+
+.distance-round-top {
+	background-color: #E3393B;
+}
+
+.distance-line {
+	height: 60px;
+	margin-left: 7.5px;
+	width: 1px;
+	border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.distance-wrap {
+	display: flex;
+	align-items: center;
+}
+
+.distance-top {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.distance-label {
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 24px;
+	color: #FFFFFF;
+	margin-left: 23px;
+}
+
+.distance-km {
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 24px;
+	color: #2E789E;
+}
+
+.moldova-map {
+	max-height: 400px;
+}

@@ -1,0 +1,155 @@
+.mainMenu {
+	position: relative;
+	background-image: url(./img/logo-desc.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 200px;
+	padding-top: 35px;
+}
+
+.link-to-main {
+	position: absolute;
+	width: 200px;
+	height: 200px;
+	cursor: pointer;
+	top: 0;
+	left: calc(50% - 100px);
+}
+
+.main-menu-wrap {
+	display: flex;
+	justify-content: space-between;
+	padding: 0 12%;
+}
+
+.locale {
+	position: absolute;
+	background: #FFFFFF;
+	border-radius: 20px;
+	width: 80px;
+	height: 30px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	right: 12%;
+	top: 50px;
+	cursor: pointer;
+}
+
+.menu-item-block {
+	margin-top: 70px;
+}
+
+.locale span {
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 21px;
+	display: flex;
+	align-items: center;
+	text-align: right;
+	color: #000000;
+	transition: .3s;
+}
+
+.menu-item {
+	font-style: normal;
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 21px;
+	text-decoration-line: underline;
+	color: #FFFFFF;
+	cursor: pointer;
+}
+
+.menu-item:hover {
+	color: #F4B938;
+}
+
+.menu-item-span {
+	padding-left: 30px;
+}
+
+.close-menu {
+	width: 16px;
+	height: 16px;
+	margin-bottom: 20px;
+	display: none;
+}
+
+.mobile-menu {
+	position: absolute;
+	left: 20px;
+	top: 28px;
+	display: none;
+}
+
+@media screen and (max-width: 1500px) {
+	.main-menu-wrap {
+		display: flex;
+		justify-content: space-between;
+		padding: 0 5%;
+	}
+	.locale {
+		right: 5%;
+	}
+	.menu-item-block {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		height: 60px
+	}
+}
+
+@media screen and (max-width: 950px) {
+	.main-menu-wrap {
+		display: block;
+		margin: 0;
+		padding: 25px 15px;
+		width: 300px;
+		border: 1px solid #575757;
+		background-color: #000000;
+		position: absolute;
+		left: 0;
+		top: 0;
+		z-index: 10;
+		height: 100vh;
+		transition: .4s;
+		transform: translateX(-100%);
+	}
+	.menu-item-block {
+		align-items: flex-start;
+		margin: 0;
+		height: auto;
+	}
+	.menu-item-block span {
+		padding-top: 30px;
+	}
+	.menu-item-span {
+		padding: 0;
+	}
+	.close-menu, .mobile-menu {
+		display: block;
+	}
+	.locale {
+		top: 28px;
+	}
+	.open-menu {
+		transform: translateX(0);
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.mainMenu {
+		background-image: url(./img/logo-mob.png);
+		height: 80px;
+	}
+	.link-to-main {
+		width: 50px;
+		height: 55px;
+		top: 30px;
+		left: calc(50% - 25px);
+	}
+	.menu-item {
+		margin-top: 30px;
+	}
+}

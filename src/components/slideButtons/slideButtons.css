@@ -1,0 +1,15 @@
+.slide-buttons {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+.slide-buttons img {
+	cursor: pointer;
+}
+
+.slide-status {
+	font-size: 20px;
+	line-height: 29px;
+	color: #FFFFFF;
+}

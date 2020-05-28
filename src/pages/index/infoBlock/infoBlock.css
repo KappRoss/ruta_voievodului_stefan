@@ -1,0 +1,31 @@
+.info-block {
+	width: 410px;
+	text-align: left;
+	margin-top: 200px;
+}
+
+.info-block-title {
+	font-size: 35px;
+	line-height: 52px;
+	display: flex;
+	align-items: center;
+	color: #F4B938;
+}
+
+.info-block-desc {
+	font-size: 22px;
+	line-height: 32px;
+	color: #FFFFFF;
+	margin: 10px 0 20px 0;
+}
+
+.info-block-text {
+	margin-top: 40px;
+	font-size: 16px;
+	line-height: 28px;
+	color: #FFFFFF;
+	opacity: 0.5;
+	height: 420px;
+	overflow-y: auto;
+	padding-right: 10px;
+}

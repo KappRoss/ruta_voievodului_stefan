@@ -1,0 +1,16 @@
+.create-checkbox {
+	min-width: 20px;
+	min-height: 20px;
+	background: #F8981D;
+	margin-top: 5px;
+}
+
+.checkbox-checked {
+	background-image: url(./inp.png);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.create-checkbox input {
+	display: none;
+}
