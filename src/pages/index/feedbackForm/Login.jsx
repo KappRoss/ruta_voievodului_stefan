@@ -16,7 +16,7 @@ const LoginForm = (props) => {
     const arreyName = ['firstName', 'lastName' , 'email', 'message'];
 
     return (
-            <form onSubmit = {props.handleSubmit} className={style.form_wrap}>
+            <form onSubmit = {props.handleSubmit} className={style.form_wrap} autocomplete="off">
 
                 {props.props.props.map((k) => (
                     <div >
