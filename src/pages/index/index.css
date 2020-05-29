@@ -64,17 +64,45 @@
 	opacity: 0.5;
 	margin: 30px 0 50px 0;
 }
-
+/* ////////////////////////////// map start ////////////////////////////*/
 .map-wrap {
 	display: flex;
 	position: relative;
 	margin-bottom: 70px;
 }
-
+/* .infoBlock{
+	position: absolute;
+} */
 .map {
 	margin: 200px 0 0 315px;
+	position: relative;
+	text-align: center;
+}
+ svg{
+	 position: absolute;
+	 top: 0;
+	 left: 0;
+	 height: 100%;
+	 width: 100%;
+	 
+ }
+.part5{
+	
+ }
+.part{
+	fill: #C4C4C4;
+	opacity: 0.0;
+}
+.part:hover{
+	transition: opacity .2s ease;
+	opacity: 0.7;	
 }
 
+
+ .globalMap{
+	
+ }
+/* /////////////////////map end///////////////////////// */
 .bottom-bg {
 	width: 430px;
 	position: absolute;
@@ -154,39 +182,6 @@
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-}
-
-.form-wrap {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	width: 630px;
-	background-color: #000000;
-	font-size: 16px;
-	padding-bottom: 130px;
-	opacity: 0.5;
-}
-
-.form-wrap label {
-	font-weight: 300;
-	font-size: 16px;
-	line-height: 24px;
-	display: flex;
-	justify-content: space-between;
-	color: #FFFFFF;
-	border-bottom: 1px dashed #FFFFFF;
-	width: 520px;
-}
-
-.form-wrap input {
-	flex-grow: 1;
-	background: none;
-	border: none;
-	outline: none;
-	color: #FFFFFF;
-	padding: 40px 0 10px 10px;
-	font-size: 16px;
 }
 
 .map-mobile-title {
@@ -303,11 +298,5 @@
 	}
 	.map-radial {
 		background-size: 0%
-	}
-	.form-wrap {
-		width: 100%;
-	}
-	.form-wrap label {
-		width: 90%
 	}
 }
