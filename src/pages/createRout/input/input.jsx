@@ -1,8 +1,12 @@
 import React from 'react';
 import './input.css';
 
-export default props => (
-	<label className={props.active ? 'create-checkbox checkbox-checked' : 'create-checkbox'}>
-		<input onChange={props.addAct.bind(this, props.gr, props.i)} type="checkbox" />
-	</label>
-)
+const Input = ({active, addAct, gr, i}) => {
+	console.log(active)
+return(<label className={active ? 'create-checkbox checkbox-checked' : 'create-checkbox'}>
+    <input onChange={addAct.bind(this, gr, i)} type="checkbox" />
+</label>)
+
+}
+
+export default Input

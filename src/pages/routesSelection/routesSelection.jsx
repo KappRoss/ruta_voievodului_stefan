@@ -4,7 +4,6 @@ import './routesSelection.css';
 export default props => {
 
 	const atr = arr => {
-		console.log(arr)
 		return(
 			<React.Fragment>
 				{arr.map((k, i) => (

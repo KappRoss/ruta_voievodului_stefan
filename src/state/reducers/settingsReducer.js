@@ -1,33 +1,59 @@
 import * as types from "../actions/actionTypes";
 import storage from "redux-persist/es/storage";
-import {persistReducer} from "redux-persist";
-
+import { persistReducer } from "redux-persist";
 
 
 const initialState = {
-    allData: [],
-    currentSequence:{},
-    seq_id: null,
-    customSeq_id: null,
-    loading: false,
+    loc: "ro",
+    menu: false,
+    cur: 0,
+    act: [],
+    drop: []
 };
 
-const settings =  (state = initialState, action) => {
-    // switch (action.type) {
-    //     case types.ACCOUNT_SEQUENCE_REQUEST:
-    //         return {
-    //             ...state,
-    //             loading: true
-    //         };
-    //
-    //     default:
+const settings = (state = initialState, action) => {
+    switch (action.type) {
+        case types.ADD_ACT:
+            const act = action.payload
+            return {
+                ...state,
+                act: act
+            };
+        case types.SET_DROP:
+            const drop = action.payload
+            return {
+                ...state,
+                drop: drop
+            };
+        case types.LOC:
+            const loc = action.payload
+            console.log(loc)
+            return {
+                ...state,
+                loc: loc
+            };
+        case types.SET_MOBILE:
+            const mobile = action.payload
+            return {
+                ...state,
+                menu: mobile
+            };
+        case types.SLIDER_MOVE:
+            const SLIDER = action.payload
+            return {
+                ...state,
+                cur: SLIDER
+            };
+        default:
             return state;
-    // }
+    }
 };
 
 const productBagPersistConfig = {
-    key: 'settings',
-    storage: storage,
+    key: "settings",
+    storage: storage
 };
 
-export default persistReducer(productBagPersistConfig, settings )
+export default persistReducer(productBagPersistConfig, settings);
+
+

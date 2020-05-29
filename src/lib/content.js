@@ -1,4 +1,4 @@
-export const loc = {
+export const locData = {
 	menu: {
 		ro: ['Despre proiect', 'Obiectivele Rutei din Republica Moldova', 'Obiectivele Rutei din România', 'Alte atracții turistice din Republica Moldova'],
 		en: ['About Us', 'Objectives of the route in the Republic Of Moldova', 'Objectives of the route in Romania', 'Other tourist attractions in the Republic Of Moldova']
