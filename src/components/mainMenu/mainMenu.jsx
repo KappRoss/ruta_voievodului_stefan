@@ -5,7 +5,6 @@ import connect from "react-redux/es/connect/connect";
 import { setMobMenu, setLocalisation} from "../../state/actions/settingsActions";
 
  const MainMenu =  ({setMobMenu, menu, setLoc, loc, cur, setLocalisation}) => {
- 	console.log(loc)
     return (
          <div className="mainMenu">
              <img onClick={()=>setMobMenu(true)} className="mobile-menu" src={require('./img/menu.png')} alt="mobile" />

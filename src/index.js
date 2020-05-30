@@ -11,7 +11,6 @@ import { Provider } from "react-redux";
 const { persistor, store } = createAppStore();
 ReactDOM.render(
     <Provider store={store}>
-        {console.log(store.getState())}
         <PersistGate loading={null} persistor={persistor}>
             <BrowserRouter>
                 <App />

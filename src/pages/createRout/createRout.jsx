@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react';
+import React, {useEffect, useState} from 'react';
 import './createRout.css';
 
 import DropDown from './dropDown/dropDown';
@@ -10,13 +10,18 @@ import {addAct, setDrop, setLocalisation, setMobMenu, sliderMove} from "../../st
 import connect from "react-redux/es/connect/connect";
 
 const CreateRout = ({loc, menu, cur, act, drop, setDrop, addAct}) => {
+     const [handleClick, setHandleClick] = useState({});
+
+
     const getLength = arr => {
         let l = 0;
         for(let i = 0; i < arr.length; i++) if(arr[i]) l++;
         return l;
     }
+   const handleClickRuta = (i) => {
+       setHandleClick({handleClick: i})
+   }
     return(
-
         <div className="create-rout">
             <div className="create-rout-title">{loc.title[0]}</div>
             <div className="create-rout-desc">{loc.desc[0]}</div>
@@ -35,13 +40,13 @@ const CreateRout = ({loc, menu, cur, act, drop, setDrop, addAct}) => {
                             </div>
                             <DropDown gr={i}
                                       arr={loc.arrt[i]} open={drop[i] ? true : false}
-                                      addAct={addAct} active={act[i]}
+                                      addAct={addAct} active={act[i]} handleClick={handleClick} setHandleClick={setHandleClick}
                             />
                             <div className="area-button-row">
 								<span style={{cursor: 'pointer'}} onClick={setDrop.bind(this, i)}>
 									{drop[i] ? 'vezi mai putin -' : 'vezi mai mult +'}
 								</span>
-                                <div className={act[i] ? 'routs-list is-routs' : 'routs-list'}>Creează ruta ({act[i] ? getLength(act[i]) : 0})</div>
+                                <div onClick={()=>handleClickRuta(i)} className={act[i] ? 'routs-list is-routs' : 'routs-list'}>Creează ruta ({act[i] ? getLength(act[i]) : 0})</div>
                             </div>
                         </div>
                     </div>

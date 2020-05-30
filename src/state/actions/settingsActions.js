@@ -38,12 +38,12 @@ export const addAct = (a, i) => {
 }
 
 export const setLocalisation = (loc) => {
-    console.log(loc)
+
     return { type: types.LOC, payload:loc}
 }
 
 export const setMobMenu = (mobMenu) => {
-    console.log(mobMenu)
+    
     return { type: types.SET_MOBILE, payload:mobMenu}
 }
 
