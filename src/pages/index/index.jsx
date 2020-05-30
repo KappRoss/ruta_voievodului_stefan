@@ -20,10 +20,20 @@ export default props => {
 	
 	const getBg = i => {
 		const img = require('../../img/Moldova/'+(i+1)+'-1.jpg');
+		const container  = {
+				marginTop: '100px',
+				width: '100%',
+				maxWidth: '60%',
+				maxHeight: '1000px',
+				paddingRight: '-100px',
+			}
+		
+			
 		return {
 			mixBlendMode: 'normal',
 			backgroundRepeat: 'no-repeat',
 			backgroundPosition: 'center',
+			backgroundSize: 'cover',
 			backgroundImage: 'linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 42.08%, #000000 100%), linear-gradient(270deg, #000000 1%, rgba(0, 0, 0, 0.3) 99.19%), url('+img+')',
 		}
 	}
@@ -159,7 +169,7 @@ export default props => {
 				<div className="index-block-middle-title" style={{margin: '30px'}}>
 					{props.loc.title[5]}
 				</div>
-				<div>
+				<div className="formmm">
 					<Login 
 						props = {props.loc.form}
 						text = {props.loc.buttons[2]}
