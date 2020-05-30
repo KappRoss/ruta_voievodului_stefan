@@ -17,16 +17,20 @@ svg{
 }
 /* PLACE 1 START*/
 #Vector_31{
+    
     fill: black;
-    opacity: 0.9;
+    opacity: 0.1;
 }
 #Vector_31:hover{
     fill: #C4C4C4;
     opacity: 0.9;
 }
-#Group 170{
-    fill: green;
-}
+ 
+
+/* :hover#Vector_47, :hover#Vector_48, #museum_2 {
+    display: none;
+} */
+
 /* PLACE 1 END */
 
 /* PLACE 2 START*/
@@ -53,6 +57,7 @@ svg{
 
 /* PLACE 3 START*/
 #Vector_37{
+    
     fill: black;
     opacity: 0.9;
 }
