@@ -1,0 +1,36 @@
+.GlobalMap{
+    
+}
+.MapTwo{
+     position: relative; 
+	 top: 0;
+	 left: 0;
+	 height: 100%;
+	 width: 100%;
+}
+
+/* ///////////////////////////////Place 3 START/////////////////////// */
+.place_3{
+    fill: black;
+	opacity: 1;
+}
+.place_3:hover{
+    fill: #C4C4C4;
+    transition: opacity .2s ease;
+	opacity: 0.7;
+}
+/* ///////////////////////////////Place 3 END/////////////////////// */
+
+
+/* ///////////////////////////////Place 5 START/////////////////////// */
+.place_5{
+    
+    fill: rgba(0,0,0,0.7);
+	opacity: 1;
+}
+.place_5:hover{
+    fill: #C4C4C4;
+    transition: opacity .2s ease;
+	opacity: 0.7;
+}
+/* ///////////////////////////////Place 5 END/////////////////////// */
