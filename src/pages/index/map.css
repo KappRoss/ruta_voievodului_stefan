@@ -15,6 +15,41 @@ svg{
         
     }
 }
+.scroll-hidden{
+    overflow: hidden;
+}
+
+.modalPoPuP{
+    background: #000000;
+}
+.modalPoPuP h2{
+    color: #F4B938;
+    font-family: Circe;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 29px;
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+}
+.modalPoPuP > .ShortDSCR{
+    font-family: Circe;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+    justify-content: center;
+    
+}
+.modalPoPuP a{
+    text-decoration: underline;
+    color: white;
+}
+
 /* PLACE 1 START*/
 #Vector_31{
     

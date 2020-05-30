@@ -16,6 +16,7 @@ import Map7 from './Map7';
 import Map8 from './Map8';
 import Map9 from './Map9';
 
+
 export default props => {
 	
 	const getBg = i => {
@@ -169,6 +170,7 @@ export default props => {
 				<div className="index-block-middle-title" style={{margin: '30px'}}>
 					{props.loc.title[5]}
 				</div>
+				{/* <Modal /> */}
 				<div className="formmm">
 					<Login 
 						props = {props.loc.form}
