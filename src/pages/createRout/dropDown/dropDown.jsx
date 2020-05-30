@@ -1,4 +1,5 @@
 import React, {useEffect, useState} from 'react';
+import {uniq} from 'lodash'
 import './dropDown.css';
 
 import {SlideDown} from 'react-slidedown';
@@ -6,10 +7,10 @@ import Input from '../input/input';
 
 const DropDown = ({gr, arr, open, addAct, active, handleClick})=> {
     const [activeCord, setActiveCord] = useState([]);
+    console.log(activeCord)
     useEffect(() => {
-        // Обновляем заголовок документа с помощью API браузера
         if(handleClick.handleClick === gr){
-        	console.log(activeCord)
+        	console.log(uniq(activeCord))
 		}
     }, [handleClick]);
 	return(	<SlideDown className={'my-dropdown-slidedown'}>
@@ -22,7 +23,7 @@ const DropDown = ({gr, arr, open, addAct, active, handleClick})=> {
                         <div className="down-row-desc">{k.split('||')[1]}</div>
                         {/*{console.log(k, i)}*/}
                     </div>
-                    <Input handleClick={handleClick}setActiveCord={setActiveCord} gr={gr} i={i} addAct={addAct} active={active && active[i] ? true : false} cordinates={k.split('||')[1]}/>
+                    <Input handleClick={handleClick} setActiveCord={setActiveCord} activeCord={activeCord} gr={gr} i={i} addAct={addAct} active={active && active[i] ? true : false} cordinates={k.split('||')[1]}/>
                 </div>
             ))
             : null}
