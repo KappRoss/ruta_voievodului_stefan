@@ -50,3 +50,7 @@ export const setMobMenu = (mobMenu) => {
 export const sliderMove = (slider) => {
     return { type: types.SLIDER_MOVE, payload:slider}
 }
+
+export const saveCordinates = (cordinates) =>{
+    return {  type: types.SAVE_CORD, payload:cordinates}
+}

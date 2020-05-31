@@ -1,18 +1,30 @@
 import React, {useEffect, useState} from 'react';
-import {uniq} from 'lodash'
+import {uniq, map} from 'lodash'
 import './dropDown.css';
-
 import {SlideDown} from 'react-slidedown';
 import Input from '../input/input';
+import connect from "react-redux/es/connect/connect";
+import {saveCordinates} from '../../../state/actions/settingsActions'
 
-const DropDown = ({gr, arr, open, addAct, active, handleClick})=> {
+const DropDown = ({gr, arr, open, addAct, active, handleClick, saveCordinates})=> {
     const [activeCord, setActiveCord] = useState([]);
-    console.log(activeCord)
     useEffect(() => {
         if(handleClick.handleClick === gr){
-        	console.log(uniq(activeCord))
+        	const cordinates =  uniq(activeCord);
+            formatCord()
+
 		}
     }, [handleClick]);
+    const formatCord = () =>{
+        const cordinates =  uniq(activeCord);
+        const formatCord = map(cordinates, (el)=>{
+            let splitEl = el.split(',');
+            let geoFirst = splitEl[1].split('-')[1]
+            let geoSecond = splitEl[2]
+            return [geoFirst,geoSecond ]
+        })
+        saveCordinates(formatCord)
+    }
 	return(	<SlideDown className={'my-dropdown-slidedown'}>
         {open ?
           arr.map((k, i) => (
@@ -30,4 +42,4 @@ const DropDown = ({gr, arr, open, addAct, active, handleClick})=> {
     </SlideDown>)
 }
 
-export default DropDown
+export default connect(null, {saveCordinates})(DropDown)

@@ -8,7 +8,8 @@ const initialState = {
     menu: false,
     cur: 0,
     act: [],
-    drop: []
+    drop: [],
+    cordinates: []
 };
 
 const settings = (state = initialState, action) => {
@@ -31,6 +32,12 @@ const settings = (state = initialState, action) => {
             return {
                 ...state,
                 loc: loc
+            };
+        case types.SAVE_CORD:
+            const cordinates = action.payload
+            return {
+                ...state,
+                cordinates: cordinates
             };
         case types.SET_MOBILE:
             const mobile = action.payload
