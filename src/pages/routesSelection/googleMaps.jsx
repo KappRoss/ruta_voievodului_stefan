@@ -20,9 +20,7 @@ function MapDirectionsRenderer(props) {
             stopover: true
         }));
         const origin = waypoints.shift().location;
-        console.log(places)
         const destination = places.length <= 1 ? origin: waypoints.pop()?.location
-        console.log(destination)
 
         const directionsService = new google.maps.DirectionsService();
         directionsService.route(
