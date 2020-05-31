@@ -2,7 +2,6 @@ import React from 'react';
 import './routesSelection.css';
 import Map from "../routesSelection/googleMaps"
 import connect from "react-redux/es/connect/connect";
-import {addAct, setDrop, setMobMenu, sliderMove} from "../../state/actions/settingsActions";
 
 const RoutesSelection = ({act, loc, places}) => {
 
@@ -73,7 +72,6 @@ const RoutesSelection = ({act, loc, places}) => {
                 loadingElement={ <div style={{height: `100%`, width: '100%'}}/>}
                 containerElement={ <div style={{height: "50vh", width: '100%'}}/>}
                 mapElement={<div style={{height: `100%`}}/>}
-                defaultCenter={ {lat: 25.798939, lng: -80.291409}}
                 defaultZoom={12}
             />
 			{/*<img src={require('./img/map.png')} alt="map"/>*/}

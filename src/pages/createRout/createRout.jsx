@@ -1,25 +1,32 @@
 import React, {useEffect, useState} from 'react';
+import { useHistory } from "react-router-dom";
 import './createRout.css';
-
+import styled from "styled-components/macro";
 import DropDown from './dropDown/dropDown';
 import Input from './input/input';
 
-import {NavLink, Route, Switch} from 'react-router-dom';
-import Button from '../../components/button/button';
-import {addAct, setDrop, setLocalisation, setMobMenu, sliderMove} from "../../state/actions/settingsActions";
+// import {NavLink} from 'react-router-dom';
+// import Button from '../../components/button/button';
+import {addAct, setDrop, resetState, setMobMenu, sliderMove} from "../../state/actions/settingsActions";
 import connect from "react-redux/es/connect/connect";
 
-const CreateRout = ({loc, menu, cur, act, drop, setDrop, addAct}) => {
-     const [handleClick, setHandleClick] = useState({});
-
-
+const CreateRout = ({loc, menu, cur, act, drop, setDrop, addAct, resetState, cordinates}) => {
+    const [handleClick, setHandleClick] = useState({});
+    let history = useHistory();
+    useEffect(() => {
+        resetState()
+    }, []);
     const getLength = arr => {
         let l = 0;
         for(let i = 0; i < arr.length; i++) if(arr[i]) l++;
         return l;
     }
+
    const handleClickRuta = (i) => {
        setHandleClick({handleClick: i})
+   }
+   const handleGoSelection = () =>{
+        history.push('routes-selection');
    }
     return(
         <div className="create-rout">
@@ -71,17 +78,39 @@ const CreateRout = ({loc, menu, cur, act, drop, setDrop, addAct}) => {
                     <div className="route-to-top">{loc.buttons[3]}</div>
                 </div>
             </div>
-            <NavLink to="/routes-selection">
-                <Button text={loc.buttons[2]} />
-            </NavLink>
+            {cordinates.length === 0? <BtnNotActive onClick={()=>handleGoSelection()}>{loc.buttons[2]}</BtnNotActive>: <Btn onClick={()=>handleGoSelection()} >{loc.buttons[2]}</Btn>}
+
+
         </div>
     )
 }
+
+const Btn = styled.button`
+	width: 210px;
+	height: 50px;
+	background: #F0A000;
+	border-radius: 25px;
+	outline: none;
+	cursor: pointer;
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 24px;
+	text-transform: uppercase;
+	color: #000000;
+	border: none;
+`;
+
+const BtnNotActive = styled(props => <Btn {...props} />)`
+  cursor: not-allowed;
+  pointer-events: none;
+  opacity: 0.3;
+`;
 
 const mapStateToProps = state => ({
     menu: state.settings.menu,
     cur: state.settings.cur,
     act: state.settings.act,
-    drop: state.settings.drop
+    drop: state.settings.drop,
+    cordinates: state.settings.cordinates
 })
-export default connect(mapStateToProps, {setDrop, addAct, setMobMenu, sliderMove})(CreateRout);
+export default connect(mapStateToProps, {setDrop, addAct, setMobMenu, sliderMove, resetState})(CreateRout);

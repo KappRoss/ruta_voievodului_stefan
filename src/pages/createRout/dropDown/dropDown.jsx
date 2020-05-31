@@ -23,7 +23,8 @@ const DropDown = ({gr, arr, open, addAct, active, handleClick, saveCordinates})=
             let geoSecond = splitEl[2]
             return {latitude: +geoFirst, longitude: +geoSecond}
         })
-        saveCordinates(formatCord)
+        saveCordinates(formatCord);
+        
     }
 	return(	<SlideDown className={'my-dropdown-slidedown'}>
         {open ?

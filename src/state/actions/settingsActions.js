@@ -54,3 +54,7 @@ export const sliderMove = (slider) => {
 export const saveCordinates = (cordinates) =>{
     return {  type: types.SAVE_CORD, payload:cordinates}
 }
+
+export const resetState = () =>{
+    return {  type: types.RESET_STATE}
+}

@@ -28,7 +28,6 @@ const settings = (state = initialState, action) => {
             };
         case types.LOC:
             const loc = action.payload
-            console.log(loc)
             return {
                 ...state,
                 loc: loc
@@ -50,6 +49,13 @@ const settings = (state = initialState, action) => {
             return {
                 ...state,
                 cur: SLIDER
+            };
+        case types.RESET_STATE:
+            return {
+                ...state,
+                act: [],
+                drop: [],
+                cordinates: [],
             };
         default:
             return state;
