@@ -6,15 +6,7 @@ import IndexSlider from './indexSlider/indexSlider';
 import InfoBlock from './infoBlock/infoBlock';
 import SlideButtons from '../../components/slideButtons/slideButtons';
 import Login from './feedbackForm/Login';
-import Map1 from './Map1';
-import Map2 from './Map2';
-import Map3 from './Map3';
-import Map4 from './Map4';
-import Map5 from './Map5';
-import Map6 from './Map6';
-import Map7 from './Map7';
-import Map8 from './Map8';
-import Map9 from './Map9';
+import MapWrapper from './MapWrapper';
 
 
 export default props => {
@@ -38,37 +30,6 @@ export default props => {
 			backgroundImage: 'linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 42.08%, #000000 100%), linear-gradient(270deg, #000000 1%, rgba(0, 0, 0, 0.3) 99.19%), url('+img+')',
 		}
 	}
-
-	
-		let currentComponent;
-		if(props.cur === 0){
-			currentComponent = <Map1 />
-		}
-		else if(props.cur === 1){
-			currentComponent = <Map2 />
-		}
-		else if(props.cur === 2){
-			currentComponent = <Map3 />
-		}
-		else if(props.cur === 3){
-			currentComponent = <Map4 />
-		}
-		else if(props.cur === 4){
-			currentComponent = <Map5 />
-		}
-		else if(props.cur === 5){
-			currentComponent = <Map6 />
-		}
-		else if(props.cur === 6){
-			currentComponent = <Map7 />
-		}
-		else if(props.cur === 7){
-			currentComponent = <Map8 />
-		}
-		else if(props.cur === 8){
-			currentComponent = <Map9 />
-		}
-	
 
 	return(
 		<div className="index">
@@ -106,7 +67,7 @@ export default props => {
 
 							<div className="map">
 								
-								{currentComponent}
+								<MapWrapper cur={props.cur} />
 								
 							</div>
 
