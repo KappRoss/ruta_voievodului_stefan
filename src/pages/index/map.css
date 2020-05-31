@@ -15,6 +15,15 @@ svg{
         
     }
 }
+                  
+#Group_21{
+    visibility: visible;
+    
+}
+/* #Group_5:active{
+    visibility: hidden;
+} */
+
 .scroll-hidden{
     overflow: hidden;
 }
