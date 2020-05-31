@@ -1,5 +1,14 @@
-.ro-slide img{
-    /* background-color: blue;
-    padding: 10px!important;
-    margin: 10px!important; */
+
+.ggg .rec-pagination{
+    display: none;
 }
+.rec-arrow{
+    
+    
+    border: 1px solid white!important;
+    box-sizing: border-box!important;
+    background-color: black!important;
+}
+/* .rec-slider:active{
+    border: 1px solid red!important;
+} */

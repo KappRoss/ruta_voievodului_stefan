@@ -25,6 +25,7 @@ export default props => {
 			<div className="main-title">{props.loc.title}</div>
 			<div className="main-desc">{props.loc.desc}</div>
 			<div className="moldova">
+				
 				{props.loc.name.map((k, i) => (
 					<div key={i} className="moldova-wrap">
 						{i % 2 === 0 ?

@@ -18,7 +18,7 @@ export default class Scroll20 extends React.Component {
     
       this.breakPoints = [
         { width: 1, itemsToShow: 1 },
-        { width: 550, itemsToShow: 3, itemsToScroll: 2 },
+        { width: 550, itemsToShow: 2, itemsToScroll: 2 },
         { width: 850, itemsToShow: 3 },
         { width: 1150, itemsToShow: 4, itemsToScroll: 2 },
         { width: 1450, itemsToShow: 5 },
@@ -29,6 +29,7 @@ export default class Scroll20 extends React.Component {
       return (
         
         <Carousel 
+            className = "ggg"
             breakPoints={this.breakPoints}
             itemsToShow={4}
 			itemsToScroll={1}    

@@ -104,10 +104,6 @@ export default props => {
 					{props.loc.desc[3]}
 				</div>
 				<Scroll20 />
-				<div className="ro-slider">
-					
-				</div>
-				<SlideButtons cur={props.cur} sliderMove={props.sliderMove} />
 			</div>
 			<div className="index-middle-wrap-4">
 				<img className="bottom-left-img" src={require('./img/left-bg-4.png')} alt="map" />
