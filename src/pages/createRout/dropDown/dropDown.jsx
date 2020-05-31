@@ -24,7 +24,6 @@ const DropDown = ({gr, arr, open, addAct, active, handleClick, saveCordinates})=
             return {latitude: +geoFirst, longitude: +geoSecond}
         })
         saveCordinates(formatCord);
-        
     }
 	return(	<SlideDown className={'my-dropdown-slidedown'}>
         {open ?

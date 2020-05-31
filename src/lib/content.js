@@ -214,7 +214,7 @@ export const locData = {
 				],
 				[
 					'Muzeul de Istorie și Etnografie a orașului Soroca || 153 km față de Chișinău, Google - 48.155368, 28.302586',
-					'Lumânarea Renucoștinței – 157 km față de Chișinău, Google - 48.137215, 28.305372',
+					'Lumânarea Renucoștinței || Lumânarea Renucoștinței – 157 km față de Chișinău, Google - 48.137215, 28.305372',
 					'Dealul Țiganilor || 156 km față de Chișinău, Google - 48.159501, 28.291855'
 				],
 				[
@@ -226,7 +226,7 @@ export const locData = {
 				[
 					'Monumentul lui Ștefan cel Mare și Sfânt || Grădina Publică Ștefan cel Mare, Google - 47.025563, 28.830966',
 					'Muzeul Național de Istorie a Moldovei || Strada 31 August 1989 121 A, Google - 47.022813, 28.828561',
-					'Muzeul Național de Etnografie și Istorie Naturală || Strada Mihail Kogălniceanu, Google - 82 47.022813, 28.828561',
+					'Muzeul Național de Etnografie și Istorie Naturală || Strada Mihail Kogălniceanu, Google - 8247.022813, 28.828561',
 					'Muzeul Național de Artă al Moldovei || Strada 31 August 1989 115, Google - 47.022075, 28.831160',
 					'Muzeul de Istorie a orașului Chișinău || Turnul de Apă - Strada Alexei Mateevici 60A, Google - 47.019455, 28.822907',
 					'Combinatul de vinuri “Cricova” || 16 km față de Chișinău, 4 Google - 7.138394, 28.855884',
@@ -240,11 +240,11 @@ export const locData = {
 					'Mănăstirea Saharna || 106 km față de Chișinău, Google - 47.695217, 28.965509',
 					'Hanul lui Hanganu, Lalova || 97 km față de Chișinău, Google - 47.566409, 29.020412'
 				],
-				[ 'Conacul lui Constantin Stamati – 237 km, Геолокация Google - 48.383240, 27.436885' ],
+				[ 'Conacul lui Constantin Stamati || Conacul lui Constantin Stamati – 237 km, Геолокация Google - 48.383240, 27.436885'],
 				[
 					'Complex turistic Purcari, Vinăria Purcari || 112 km față de Chișinău, Google - 46.531607, 29.871911',
 					'Complex vitivinicol “ET Cetera” || 119 km față de Chișinău, Google - 46.453647, 29.923324',
-					'Gospodăria meșterului popular Pavel Ţăranu s. Cioburciu, || 126 km față de Chișinău Геолокация Google - 46.596106, 29.726292',
+					'Gospodăria meșterului popular Pavel Ţăranu s. Cioburciu, || 126 km față de Chișinău, Геолокация Google - 46.596106, 29.726292',
 				],
 				[ 'Conacul “Manuc Bey” || 36 km față de Chișinău, Google - 46.825920, 28.582210' ],
 				[]
