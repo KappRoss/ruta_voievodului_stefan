@@ -1,5 +1,6 @@
 import React from 'react';
 import './routesSelection.css';
+import Map from "../routesSelection/googleMaps"
 
 export default props => {
 
@@ -59,7 +60,8 @@ export default props => {
 					:null
 				))}
 			</div>
-			<img src={require('./img/map.png')} alt="map"/>
+			<Map/>
+			{/*<img src={require('./img/map.png')} alt="map"/>*/}
 		</div>
 	)
 }

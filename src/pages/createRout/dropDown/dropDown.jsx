@@ -8,20 +8,20 @@ import {saveCordinates} from '../../../state/actions/settingsActions'
 
 const DropDown = ({gr, arr, open, addAct, active, handleClick, saveCordinates})=> {
     const [activeCord, setActiveCord] = useState([]);
+    
     useEffect(() => {
         if(handleClick.handleClick === gr){
-        	const cordinates =  uniq(activeCord);
             formatCord()
-
 		}
     }, [handleClick]);
+
     const formatCord = () =>{
         const cordinates =  uniq(activeCord);
         const formatCord = map(cordinates, (el)=>{
             let splitEl = el.split(',');
             let geoFirst = splitEl[1].split('-')[1]
             let geoSecond = splitEl[2]
-            return [geoFirst,geoSecond ]
+            return [{latitude: geoFirst, longitude: geoSecond}]
         })
         saveCordinates(formatCord)
     }
