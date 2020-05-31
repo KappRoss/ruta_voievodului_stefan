@@ -7,6 +7,7 @@ import InfoBlock from './infoBlock/infoBlock';
 import SlideButtons from '../../components/slideButtons/slideButtons';
 import Login from './feedbackForm/Login';
 import MapWrapper from './MapWrapper';
+import Scroll20 from './scroll20';
 
 
 export default props => {
@@ -67,7 +68,10 @@ export default props => {
 
 							<div className="map">
 								
-								<MapWrapper cur={props.cur} />
+								<MapWrapper 
+									cur={props.cur} 
+									sliderMove={props.sliderMove}
+								/>
 								
 							</div>
 
@@ -99,15 +103,9 @@ export default props => {
 				<div className="index-block-middle-desc">
 					{props.loc.desc[3]}
 				</div>
+				<Scroll20 />
 				<div className="ro-slider">
-					<div className="ro-slider-area">
-						{props.loc.roname.map((k, i) => (
-							<div key={i} className="ro-slide">
-								<img src={require('../../img/Romania/'+(i+1)+'.png')} alt={k} />
-								<div>{k}</div>
-							</div>
-						))}
-					</div>
+					
 				</div>
 				<SlideButtons cur={props.cur} sliderMove={props.sliderMove} />
 			</div>
