@@ -51,6 +51,6 @@ const mapStateToProps = state => ({
     menu: state.settings.menu,
 	cur: state.settings.cur,
 	act: state.settings.act,
-    drop: state.settings.drop
+    drop: state.settings.drop,
 })
 export default connect(mapStateToProps, {setDrop, addAct, setMobMenu, sliderMove})(App);

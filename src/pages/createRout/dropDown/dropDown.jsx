@@ -21,7 +21,7 @@ const DropDown = ({gr, arr, open, addAct, active, handleClick, saveCordinates})=
             let splitEl = el.split(',');
             let geoFirst = splitEl[1].split('-')[1]
             let geoSecond = splitEl[2]
-            return [{latitude: geoFirst, longitude: geoSecond}]
+            return {latitude: +geoFirst, longitude: +geoSecond}
         })
         saveCordinates(formatCord)
     }
