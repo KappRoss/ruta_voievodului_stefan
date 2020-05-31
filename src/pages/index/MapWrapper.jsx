@@ -23,6 +23,18 @@ export default class MapWrapper extends React.Component {
     }
   }
 
+  sliderMove = sliderCount => () => {
+    const { cur, sliderMove } = this.props;
+    if (cur === sliderCount) {
+      this.setState({ openINFO: !this.state.openINFO });
+    } else {
+      this.setState({
+        openINFO: true
+      }, () => sliderMove(sliderCount))
+    }
+
+  }
+
   openModal = (name) => () => this.setState({ openedModal: name });
 
   closeModal = () => this.setState({ openedModal: '' });
@@ -30,8 +42,9 @@ export default class MapWrapper extends React.Component {
   changeStyle = () => this.setState({ openINFO: !this.state.openINFO });
 
   renderMap = () => {
-    const { cur } = this.props;
+    const { cur, sliderMove } = this.props;
     const { openINFO } = this.state;
+
     let Tag = Map1;
 
     switch (cur) {
@@ -50,7 +63,8 @@ export default class MapWrapper extends React.Component {
       <Tag
         openINFO={openINFO}
         openModal={this.openModal}
-        changeStyle={this.changeStyle}
+        changeStyle={this.sliderMove(0)}
+        sliderMove={this.sliderMove}
       />
     );
   }
