@@ -72,8 +72,9 @@ const RoutesSelection = ({act, loc, places}) => {
                 loadingElement={ <div style={{height: `100%`, width: '100%'}}/>}
                 containerElement={ <div style={{height: "50vh", width: '100%'}}/>}
                 mapElement={<div style={{height: `100%`}}/>}
+                // defaultCenter={{lat:places[0].latitude, lng:places[0].longitude }}
                 defaultZoom={12}
-            />
+            />                   
 			{/*<img src={require('./img/map.png')} alt="map"/>*/}
 		</div>
 	)
