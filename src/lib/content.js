@@ -1,4 +1,4 @@
-export const loc = {
+export const locData = {
 	menu: {
 		ro: ['Despre proiect', 'Obiectivele Rutei din Republica Moldova', 'Obiectivele Rutei din România', 'Alte atracții turistice din Republica Moldova'],
 		en: ['About Us', 'Objectives of the route in the Republic Of Moldova', 'Objectives of the route in Romania', 'Other tourist attractions in the Republic Of Moldova']
@@ -36,9 +36,9 @@ export const loc = {
 				'Localitatea Ștefan Vodă poartă numele Marelui Voievod la dorința locuitorilor băștinași ai orașului care în 1990 au reușit să-și formalizeze inițiativa. Teritoriul acestui raion cuprinde localitățile denumite tradițional „Satele hănești”, deoarece începînd cu anul 1538 nu au mai aparținut principatului Moldovei, ci Raialei Tighinei cârmuită de hanii tătari crimeeni în numele împărăției turcești. În anul 1812 devin posesiuni ale Împărăției rusești pînă în 1917. Istoria orașului datează din anul 1909, când a fost întemeiată colonia germană Kizil. Coloniștii au depus o muncă enormă pentru desțelenirea pământului și pentru construcția caselor. La 23 decembrie 1964 se înființează raionul Suvorov cu Centrul raional Suvorov, pe baza satului Kizil. Astăzi Ștefan Vodă îî ademenește pe toți cei împătimiți de peisajele de vis așternure la gurile Nistrului și de încântătoarele podgorii vitivinicole cu indicație geografică protejată. Vizitatorii rămân impresionați de numărul mare de localităţi vechi, care prin denumirile locale amintesc de un trecut zbuciumat. Românii, turcii, tătarii, nemţii, ucrainenii,  bulgarii şi-au avut aici vetrele satelor, iar căile comerciale de-a lungul fluviului legau principalele oraşe din regiune cu târgurile din Europa și Asia pe celebrul „Drum moldovenesc”. „Pădurea Împărătească” făcea parte din domeniile ţarilor ruşi (Crocmaz), iar „Grădina Turcească” (Talmaza) este considerată una dintre primele arii naturale protejate din Europa. În proximitatea localității Ștefan Vodă, la Căușeni se află una dintre cele mai vechi și valoroase biserici din Republica Moldova și poartă hramul “Adormirea Maicii Domnului”. Biserica este pe jumătate îngropată în pământ, spre a fi cât mai discretă și mai puțin stânjenitoare în fața păgânilor necredincioși. În acea vreme, se pedepsea cu moartea ridicarea oricărui lăcaș mai mare decât un oștean pe cal. Lucrările la biserică se făceau noaptea, iar ziua locul era acoperit cu lemne și iarbă, pe dinafară arătând ca un hambar. Picturile murale din interior reprezintă ultima etapă în dezvoltarea frescei medievale în Moldova. Acustica bisericii este incredibil de autentică și vie, căci, din loc în loc, în bolțile bisericii, arhitecții au zidit oale de lut, ca niște vechi secrete ale acusticii. Acum biserica își trăiește o a doua viață, fiind în proces de restaurare. Biserica din Căușeni se află la o distanță de 87 km. față de Chișinău.'
 			],
 			roname: [
-				'Cetatea Sucevei, județul Suceava', 
-				'Mănăstirea Putna – Biserica “Adormirea Maicii Domnului”, județul Suceava', 
-				'Biserica “Sfânta Cruce din Pătrăuți”, județul Suceava', 
+				'Cetatea Sucevei, județul Suceava',
+				'Mănăstirea Putna – Biserica “Adormirea Maicii Domnului”, județul Suceava',
+				'Biserica “Sfânta Cruce din Pătrăuți”, județul Suceava',
 				'Biserica “Sfântul Gheorghe” a fostei Mănăstiri Voroneț, județul Suceava',
 
 			],
@@ -214,7 +214,7 @@ export const loc = {
 				],
 				[
 					'Muzeul de Istorie și Etnografie a orașului Soroca || 153 km față de Chișinău, Google - 48.155368, 28.302586',
-					'Lumânarea Renucoștinței – 157 km față de Chișinău, Google - 48.137215, 28.305372',
+					'Lumânarea Renucoștinței || Lumânarea Renucoștinței – 157 km față de Chișinău, Google - 48.137215, 28.305372',
 					'Dealul Țiganilor || 156 km față de Chișinău, Google - 48.159501, 28.291855'
 				],
 				[
@@ -226,7 +226,7 @@ export const loc = {
 				[
 					'Monumentul lui Ștefan cel Mare și Sfânt || Grădina Publică Ștefan cel Mare, Google - 47.025563, 28.830966',
 					'Muzeul Național de Istorie a Moldovei || Strada 31 August 1989 121 A, Google - 47.022813, 28.828561',
-					'Muzeul Național de Etnografie și Istorie Naturală || Strada Mihail Kogălniceanu, Google - 82 47.022813, 28.828561',
+					'Muzeul Național de Etnografie și Istorie Naturală || Strada Mihail Kogălniceanu, Google - 8247.022813, 28.828561',
 					'Muzeul Național de Artă al Moldovei || Strada 31 August 1989 115, Google - 47.022075, 28.831160',
 					'Muzeul de Istorie a orașului Chișinău || Turnul de Apă - Strada Alexei Mateevici 60A, Google - 47.019455, 28.822907',
 					'Combinatul de vinuri “Cricova” || 16 km față de Chișinău, 4 Google - 7.138394, 28.855884',
@@ -240,11 +240,11 @@ export const loc = {
 					'Mănăstirea Saharna || 106 km față de Chișinău, Google - 47.695217, 28.965509',
 					'Hanul lui Hanganu, Lalova || 97 km față de Chișinău, Google - 47.566409, 29.020412'
 				],
-				[ 'Conacul lui Constantin Stamati – 237 km, Геолокация Google - 48.383240, 27.436885' ],
+				[ 'Conacul lui Constantin Stamati || Conacul lui Constantin Stamati – 237 km, Геолокация Google - 48.383240, 27.436885'],
 				[
 					'Complex turistic Purcari, Vinăria Purcari || 112 km față de Chișinău, Google - 46.531607, 29.871911',
 					'Complex vitivinicol “ET Cetera” || 119 km față de Chișinău, Google - 46.453647, 29.923324',
-					'Gospodăria meșterului popular Pavel Ţăranu s. Cioburciu, || 126 km față de Chișinău Геолокация Google - 46.596106, 29.726292',
+					'Gospodăria meșterului popular Pavel Ţăranu s. Cioburciu, || 126 km față de Chișinău, Геолокация Google - 46.596106, 29.726292',
 				],
 				[ 'Conacul “Manuc Bey” || 36 km față de Chișinău, Google - 46.825920, 28.582210' ],
 				[]

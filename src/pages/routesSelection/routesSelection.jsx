@@ -1,10 +1,12 @@
 import React from 'react';
 import './routesSelection.css';
+import Map from "../routesSelection/googleMaps"
+import connect from "react-redux/es/connect/connect";
 
-export default props => {
+const RoutesSelection = ({act, loc, places}) => {
 
+  const googleMapsApiKey = "js?key=AIzaSyAzICfk_cT_rY6SjI_OHIZBABrGW7B7ars&v=3.exp&";
 	const atr = arr => {
-		console.log(arr)
 		return(
 			<React.Fragment>
 				{arr.map((k, i) => (
@@ -23,7 +25,7 @@ export default props => {
 										<img src={require('../createRout/img/'+i+'.png')} alt="route"/>
 										<div className="routes-entity-name">
 											<span className="traseni">traseni district</span><br />
-											{props.loc.name2[i]}
+											{loc.name2[i]}
 										</div>
 									</div>
 									<div className="routes-entity-desc">Commodo amet aliquip qui est sint sit enim labore occaecat dolore sint ea mollit dolore</div>
@@ -40,18 +42,18 @@ export default props => {
 		<div className="routes-selection">
 			<div className="routes-selection-title">
 				<span style={{width: '120px'}} />
-				<span>{props.loc.title[2]}</span>
-				<div className="routes-selection-pdf">{props.loc.title[3]}</div>
+				<span>{loc.title[2]}</span>
+				<div className="routes-selection-pdf">{loc.title[3]}</div>
 			</div>
-			<div className="routes-selection-desc">{props.loc.desc[1]}</div>
+			<div className="routes-selection-desc">{loc.desc[1]}</div>
 			<div className="routes-wrap">
-				{props.act.map((k, i) => (
+				{act.map((k, i) => (
 					k ?
 						<div key={i} className="routes-row">
 							<div className="routes-entity">
 								<div className="routes-entity-top">
 									<img src={require('../createRout/img/'+i+'.png')} alt="route"/>
-									<div className="routes-entity-name">{props.loc.name[i]}</div>
+									<div className="routes-entity-name">{loc.name[i]}</div>
 								</div>
 								<div className="routes-entity-desc">Commodo amet aliquip qui est sint sit enim labore occaecat dolore sint ea mollit dolore</div>
 							</div>
@@ -60,7 +62,24 @@ export default props => {
 					:null
 				))}
 			</div>
-			<img src={require('./img/map.png')} alt="map"/>
+            <Map
+                googleMapURL={
+                    'https://maps.googleapis.com/maps/api/' +
+                    googleMapsApiKey +
+                    '&libraries=geometry,drawing,places'
+                }
+                markers={places}
+                loadingElement={ <div style={{height: `100%`, width: '100%'}}/>}
+                containerElement={ <div style={{height: "50vh", width: '100%'}}/>}
+                mapElement={<div style={{height: `100%`}}/>}
+                // defaultCenter={{lat:places[0].latitude, lng:places[0].longitude }}
+                defaultZoom={12}
+            />
+			{/*<img src={require('./img/map.png')} alt="map"/>*/}
 		</div>
 	)
 }
+const mapStateToProps = state => ({
+    places: state.settings.cordinates
+})
+export default connect(mapStateToProps, null)(RoutesSelection);
