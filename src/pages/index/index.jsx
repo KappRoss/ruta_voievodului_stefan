@@ -4,14 +4,15 @@ import {NavLink} from 'react-router-dom';
 import Button from '../../components/button/button';
 import IndexSlider from './indexSlider/indexSlider';
 import InfoBlock from './infoBlock/infoBlock';
-import SlideButtons from '../../components/slideButtons/slideButtons';
+// import SlideButtons from '../../components/slideButtons/slideButtons';
 import Login from './feedbackForm/Login';
 import MapWrapper from './MapWrapper';
 import Scroll20 from './scroll20';
+import Anchor from './anchor/Anchor';
 
 
 export default props => {
-	
+
 	const getBg = i => {
 		const img = require('../../img/Moldova/'+(i+1)+'-1.jpg');
 		const container  = {
@@ -97,6 +98,7 @@ export default props => {
 				</NavLink>
 			</div>
 			<div className="index-middle-wrap-3">
+				<Anchor />
 				<div className="index-block-middle-title">
 					{props.loc.title[3]}
 				</div>
