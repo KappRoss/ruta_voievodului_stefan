@@ -8,7 +8,7 @@ import InfoBlock from './infoBlock/infoBlock';
 import Login from './feedbackForm/Login';
 import MapWrapper from './MapWrapper';
 import Scroll20 from './scroll20';
-import Anchor from './anchor/Anchor';
+import Anchor from '../../components/anchor/Anchor';
 
 
 export default props => {

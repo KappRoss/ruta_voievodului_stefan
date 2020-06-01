@@ -3,8 +3,9 @@ import './App.css';
 import {locData} from './lib/content';
 import {Route, Switch} from 'react-router-dom';
 import { connect } from "react-redux";
-import MainMenu from './components/mainMenu/mainMenu'
-import Footer from './components/footer/footer'
+import MainMenu from './components/mainMenu/mainMenu';
+import Footer from './components/footer/footer';
+import Anchor from './components/anchor/Anchor';
 
 import Index from './pages/index/index';
 import About from './pages/about/about';
@@ -21,6 +22,7 @@ const scroll = () => {
 const App = ({loc, menu, cur, act, drop, setDrop, addAct, sliderMove }) => {
     return (
         <div className="App">
+            <Anchor id="top-anchor" />
             <MainMenu menu={menu} setLoc={setLocalisation} loc={locData.menu[loc]} cur={loc} />
             <Switch>
                 <Route path="/" exact render={() => (<Index
