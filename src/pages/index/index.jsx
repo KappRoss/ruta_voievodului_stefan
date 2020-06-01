@@ -51,6 +51,7 @@ export default props => {
 			</div>
 			<div className="index-block-middle">
 				<div className="index-middle-wrap">
+					<Anchor id="?pos=map" />
 					<div className="index-block-middle-title">
 						{props.loc.title[1]}
 					</div>
@@ -98,7 +99,7 @@ export default props => {
 				</NavLink>
 			</div>
 			<div className="index-middle-wrap-3">
-				<Anchor />
+				<Anchor id="?pos=rom" />
 				<div className="index-block-middle-title">
 					{props.loc.title[3]}
 				</div>

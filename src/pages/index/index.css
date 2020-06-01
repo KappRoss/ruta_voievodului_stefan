@@ -120,7 +120,7 @@
 	}
 }
 .map {
-	
+	overflow: hidden;
 	margin: 40px 0 0 25px;
 	position: relative;
 	text-align: left;
