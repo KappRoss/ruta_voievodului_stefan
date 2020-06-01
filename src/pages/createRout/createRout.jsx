@@ -91,10 +91,13 @@ const CreateRout = ({
                       {drop[i] ? "vezi mai putin -" : "vezi mai mult +"}
                     </span>
                                          <div className='button-wrapper'>
-                                             <CreateBtn onClick={() => handleClickRuta(i)}>
+                                             {handleClick.handleClick === i && act[i]? <CreateBtn>
+                                                 RUTA SELECTATA
+                                             </CreateBtn> :  <CreateBtn onClick={() => handleClickRuta(i)}>
                                                  Creează ruta {act[i] ? "("+ getLength(act[i]) + ")" : ''}
-                                             </CreateBtn>
-                                             <VeziRutra active={handleClick.handleClick === i && act[i]}>
+                                             </CreateBtn> }
+
+                                             <VeziRutra onClick={setDrop.bind(this, i)} active={handleClick.handleClick === i && act[i]}>
                                                  VESI RUTA
                                              </VeziRutra>
                                          </div>
@@ -248,12 +251,10 @@ const CreateRoutBlockWrap = styled.div`
   .area-button-row {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: baseline;
     font-weight: bold;
     font-size: 16px;
     line-height: 24px;
-    display: flex;
-    align-items: center;
     text-transform: uppercase;
     color: #f0a000;
     margin: 1rem 0;
