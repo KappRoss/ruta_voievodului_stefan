@@ -48,7 +48,7 @@ const CreateRout = ({
             <div className="create-rout-desc">{loc.desc[0]}</div>
             <CreateRoutWrap>
                 {loc.name.map((k, i) => {
-                    const CreateRout = act[i] ? CreateRoutListRout : CreateRoutList;
+                    const CreateBtn = act[i] ? CreateRoutListRout : CreateRoutList;
                     return (
                         <CreateRoutBlock key={i}>
                             <div className="rout-block-name">{k}</div>
@@ -90,9 +90,14 @@ const CreateRout = ({
                     >
                       {drop[i] ? "vezi mai putin -" : "vezi mai mult +"}
                     </span>
-                                        <CreateRout onClick={() => handleClickRuta(i)}>
-                                            Creează ruta ({act[i] ? getLength(act[i]) : 0})
-                                        </CreateRout>
+                                         <div className='button-wrapper'>
+                                             <CreateBtn onClick={() => handleClickRuta(i)}>
+                                                 Creează ruta {act[i] ? "("+ getLength(act[i]) + ")" : ''}
+                                             </CreateBtn>
+                                             <VeziRutra active={handleClick.handleClick === i && act[i]}>
+                                                 VESI RUTA
+                                             </VeziRutra>
+                                         </div>
                                     </div>
                                 </div>
                             </CreateRoutBlockWrap>
@@ -202,8 +207,8 @@ const CreateRoutWrap = styled.div`
 `;
 
 const CreateRoutBlock = styled.div`
-  width: 32%;
-  margin-bottom: 80px;
+  width: calc(95% /3);
+  margin-bottom: 10rem;
   position: relative;
   @media screen and (max-width: 1200px) {
     width: 100%;
@@ -263,30 +268,14 @@ const CreateRoutBlockWrap = styled.div`
     width: 102%;
     z-index: ${props => (props.active ? 2 : 0)};
     transition: z-index 1s;
+    box-shadow: 0 35px 0px 10px black;
+    
+    .button-wrapper{
+      display: flex;
+      flex-direction: column;
+    }
   }
 `;
-const CreateRoutList = styled.div`
-  width: 210px;
-  height: 50px;
-  border: 1px solid #f8981d;
-  box-sizing: border-box;
-  border-radius: 100px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: 0.3s;
-  @media screen and (max-width: 1200px) {
-    margin-top: 20px;
-  }
-`;
-
-const CreateRoutListRout = styled(props => <CreateRoutList {...props} />)`
-  background: #f0a000;
-  box-shadow: 0px 0px 35px rgba(248, 152, 29, 0.5);
-  color: #000000;
-  cursor: pointer;
-`;
-
 const SelectedRoutes = styled.div`
   width: 80%;
   overflow-x: auto;
@@ -363,6 +352,31 @@ const SelectedRoutes = styled.div`
   }
 `;
 
+const CreateRoutList = styled.div`
+  width: 210px;
+  height: 50px;
+  border: 1px solid #f8981d;
+  box-sizing: border-box;
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+  cursor: not-allowed;
+  pointer-events: none;
+  @media screen and (max-width: 1200px) {
+    margin-top: 20px;
+  }
+`;
+
+const CreateRoutListRout = styled(props => <CreateRoutList {...props} />)`
+  background: #f0a000;
+  box-shadow: 0px 0px 35px rgba(248, 152, 29, 0.5);
+  color: #000000;
+  cursor: pointer;
+  pointer-events: all;
+`;
+
 const Btn = styled(props => <BtnCreateRout {...props} />)``;
 
 const BtnNotActive = styled(props => <Btn {...props} />)`
@@ -370,6 +384,20 @@ const BtnNotActive = styled(props => <Btn {...props} />)`
   pointer-events: none;
   opacity: 0.3;
 `;
+
+const VeziRutra = styled.button`
+  opacity: ${props => (props.active ? "1" : "0")};
+  color: #f0a000;
+  padding-top: 1rem;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 700;
+   transition: ${props =>
+    props.active
+        ? " opacity 0.3s ease-in-out"
+        : " opacity 0.3s ease-in-out"};
+`;
+
 
 const mapStateToProps = state => ({
     menu: state.settings.menu,
