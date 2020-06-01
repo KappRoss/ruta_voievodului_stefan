@@ -57,20 +57,23 @@ const CreateRout = ({
                                 src={require("./img/" + i + ".png")}
                                 alt={k}
                             />
-                            <CreateRoutBlockWrap>
-                                <div className="create-rout-block-desc">
-                                    <span>{loc.name2[i]}</span>
-                                    <Input
-                                        gr={i}
-                                        active={act[i] ? true : false}
-                                        addAct={addAct}
-                                    />
+                            <CreateRoutBlockWrap active={drop[i]}>
+                                <div className="create-rout-block-desc-wrap">
+                                    <div className="create-rout-block-desc">
+                                        <span>{loc.name2[i]}</span>
+                                        <Input
+                                            gr={i}
+                                            active={act[i] ? true : false}
+                                            addAct={addAct}
+                                        />
+                                    </div>
+                                    <div className="create-area-desc">
+                                        Commodo amet aliquip qui est sint sit enim labore occaecat
+                                        dolore sint ea mollit dolore.
+                                    </div>
                                 </div>
-                                <div className="create-area-desc">
-                                    Commodo amet aliquip qui est sint sit enim labore occaecat
-                                    dolore sint ea mollit dolore.
-                                </div>
-                                <div>
+
+                                <div className="drop-down-wrap">
                                     <DropDown
                                         gr={i}
                                         arr={loc.arrt[i]}
@@ -170,7 +173,7 @@ const CreateRouta = styled.div`
   }
   .route-select {
     width: 80%;
-    margin-top: -40px;
+    margin-top: 4rem;
     text-align: left;
     font-weight: 350;
     font-size: 45px;
@@ -201,6 +204,7 @@ const CreateRoutWrap = styled.div`
 const CreateRoutBlock = styled.div`
   width: 32%;
   margin-bottom: 80px;
+  position: relative;
   @media screen and (max-width: 1200px) {
     width: 100%;
   }
@@ -221,17 +225,20 @@ const CreateRoutBlockWrap = styled.div`
   text-align: left;
   color: #ffffff;
   box-sizing: border-box;
-  padding: 30px 15px;
-  .create-rout-block-desc {
-    display: flex;
-    justify-content: space-between;
-    font-weight: bold;
-    font-size: 18px;
-  }
 
-  .create-area-desc {
-    width: 90%;
-    margin-top: 5px;
+  .create-rout-block-desc-wrap {
+    padding: 30px 15px;
+    .create-rout-block-desc {
+      display: flex;
+      justify-content: space-between;
+      font-weight: bold;
+      font-size: 18px;
+    }
+
+    .create-area-desc {
+      width: 90%;
+      margin-top: 5px;
+    }
   }
   .area-button-row {
     display: flex;
@@ -244,10 +251,18 @@ const CreateRoutBlockWrap = styled.div`
     align-items: center;
     text-transform: uppercase;
     color: #f0a000;
-    margin-top: 20px;
+    margin: 1rem 0;
     @media screen and (max-width: 1200px) {
       flex-direction: column;
     }
+  }
+  .drop-down-wrap {
+    position: absolute;
+    background: black;
+    margin-left: -3px;
+    width: 102%;
+    z-index: ${props => (props.active ? 2 : 0)};
+    transition: z-index 1s;
   }
 `;
 const CreateRoutList = styled.div`

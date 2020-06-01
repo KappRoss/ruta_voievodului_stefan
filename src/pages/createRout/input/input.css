@@ -1,19 +1,19 @@
-.create-checkbox {
-	width: 20px;
-	height: 20px;
-	background: #F8981D;
-	/*margin-top: 5px;*/
-	border: 1px solid rgba(255, 255, 255, 0.5);
-	box-sizing: border-box;
-
-}
-
-.checkbox-checked {
-	background-image: url(./inp.png);
-	background-repeat: no-repeat;
-	background-position: center;
+/*.create-checkbox {*/
+	/*width: 20px;*/
+	/*height: 20px;*/
 	/*background: #F8981D;*/
-}
+	/*margin-top: 5px;*/
+	/*border: 1px solid rgba(255, 255, 255, 0.5);*/
+	/*box-sizing: border-box;*/
+
+/*}*/
+
+/*.checkbox-checked {*/
+	/*background-image: url(./inp.png);*/
+	/*background-repeat: no-repeat;*/
+	/*background-position: center;*/
+	/*background: #F8981D;*/
+/*}*/
 
 /*.create-checkbox input {*/
 	/*display: none;*/

@@ -43,6 +43,7 @@ const CreateCheckbox = styled.label`
 	background-position: center;
 	background-color: ${props => (props.active ? "#F0A000" : "none")};
 	border: 1px solid rgba(255, 255, 255, 0.5);
+	margin-left: 0.8rem;
 	input {
   	  display: none;
     }
