@@ -2,6 +2,10 @@
 .ggg .rec-pagination{
     display: none;
 }
+img{
+    
+	cursor: pointer!important;
+}
 .rec-arrow{
     
     

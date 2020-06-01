@@ -83,6 +83,11 @@
 	height: 100%;
 	
 }
+@media screen and (max-width: 1090px) {
+	.info-block{
+		display: none;
+	}
+}
 @media screen and (max-width: 560px) {
 	svg {
 		margin: 0;
@@ -189,7 +194,11 @@
 }
 
 .ro-slide {
-	width: 300px;
+	display: flex;
+  	align-items: center;
+  	justify-content: center;
+  	flex-direction: column;
+  	position: relative;
 }
 
 .ro-slide div {
@@ -202,8 +211,38 @@
 
 .ro-slide img {
 	width: 300px;
+	padding-right: 10px;
+	
 }
-
+.ro-slide button{
+	padding: 5px;
+	display: flex;
+	position: absolute;
+	top: 40%;
+  	left: 50%;
+	transform: translate(-50%, -50%);
+	outline: none;
+  	border: 0;
+	background: transparent;
+	color: #F4B938;
+	  
+}
+/*  */
+.ro-slide button:hover{
+	background-color: rgba(0,0,0,0.5);
+	
+	color: #F4B938;
+	border-radius: 10px;
+	box-shadow: 0px 0px 100px 100px rgba(0,0,0,0.5)
+}
+.ro-slide img:hover{
+	opacity:0.6;
+	-moz-opacity:0.6;
+	filter: alpha(opacity=60) black;
+	-khtml-opacity: 0.6;
+	background-color:#000;
+	
+}
 .index-middle-wrap-4 {
 	background-color: #000000;
 	display: flex;
@@ -251,13 +290,23 @@
 	margin: 350px 0 0 -120px;
 }
 
+
 .info-block{
 	position: absolute;
-	top:50px;
+	top: 0;
 	right: 50px;
 }
 .info-block .info-block-img{
 	max-height: 250px;
+}
+.info-block-desc{
+	max-height: 100px;
+}
+.info-block-title{
+	max-height: 110px;
+}
+.info-block-text{
+	/* margin-bottom: 280px!important; */
 }
 
 .formmm div, .formmm{
