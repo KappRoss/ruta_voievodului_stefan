@@ -58,3 +58,7 @@ export const saveCordinates = (cordinates) =>{
 export const resetState = () =>{
     return {  type: types.RESET_STATE}
 }
+
+export const changeActiveAttraction = (item) => {
+    return {type: types.CHANGE_ACTIVE_ATTRACTIONS, payload: item}
+}

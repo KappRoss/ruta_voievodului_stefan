@@ -7,3 +7,4 @@ export const SET_MOBILE = 'SET_MOBILE';
 export const SLIDER_MOVE = 'SLIDER_MOVE';
 export const SAVE_CORD = 'SAVE_CORD';
 export const RESET_STATE = "RESET_STATE";
+export const CHANGE_ACTIVE_ATTRACTIONS = "CHANGE_ACTIVE_ATTRACTIONS";

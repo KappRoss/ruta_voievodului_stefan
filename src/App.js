@@ -9,6 +9,7 @@ import Anchor from './components/anchor/Anchor';
 
 import Index from './pages/index/index';
 import About from './pages/about/about';
+import About_2 from './pages/about/about';
 import MainMoldova from './pages/mainMoldova/mainMoldova';
 import Romania from './pages/romania/romania';
 import OtherMoldova from './pages/otherMoldova/otherMoldova';
@@ -32,6 +33,9 @@ const App = ({loc, menu, cur, act, drop, setDrop, addAct, sliderMove }) => {
                 />)}
                 />
                 <Route path="/about" exact render={() => <About loc={locData.about[loc]} />} />
+
+                <Route path="/about" exact render={() => <About_2 loc={locData.about[loc]} />} />
+
                 <Route path="/other-moldova" exact render={() => <MainMoldova loc={locData.moldova[loc]} />} />
                 <Route path="/romania" exact render={() => <Romania loc={locData.romania[loc]} />} />
                 <Route path="/moldova" exact render={() => <OtherMoldova loc={locData.otherMoldova[loc]} />} />

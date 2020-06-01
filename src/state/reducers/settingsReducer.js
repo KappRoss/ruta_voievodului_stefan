@@ -9,7 +9,8 @@ const initialState = {
     cur: 0,
     act: [],
     drop: [],
-    cordinates: []
+    cordinates: [],
+    activeAttraction: 0
 };
 
 const settings = (state = initialState, action) => {
@@ -57,6 +58,11 @@ const settings = (state = initialState, action) => {
                 drop: [],
                 cordinates: [],
             };
+            case types.CHANGE_ACTIVE_ATTRACTIONS:
+            return {
+                    ...state,
+                    activeAttraction: action.payload
+                };
         default:
             return state;
     }

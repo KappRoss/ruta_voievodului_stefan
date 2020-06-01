@@ -3,8 +3,11 @@ import Carousel from 'react-elastic-carousel';
 import Item from 'react-elastic-carousel';
 import './scrol20Style.css';
 import { NavLink } from 'react-router-dom';
+import {changeActiveAttraction} from '../../state/actions/settingsActions';
+import {connect} from "react-redux";
+import { fromRenderProps } from 'recompose';
 
-export default class Scroll20 extends React.Component {
+class Scroll20 extends React.Component {
     constructor(props) {
       super(props)
       this.state = { 
@@ -49,6 +52,11 @@ export default class Scroll20 extends React.Component {
 
       
     }
+
+    toggleContent = (item) => () => {
+      this.props.changeActiveAttraction(item)
+    }
+
     showHideUpdateBtn =  ({target:{name}}) => {
       console.log(name)
       this.setState({
@@ -81,9 +89,9 @@ export default class Scroll20 extends React.Component {
                 {this.state.showUpdateHover  && this.state.showedBtn === `img-${i}` &&
             
                     <NavLink to="/about">
-                      <button className= "btnToInfo">VEZI MAI MULT</button>
+                      <button onClick={this.toggleContent(i)} className= "btnToInfo">VEZI MAI MULT</button>
 					          </NavLink>
-                    
+
                   }
                 
                 <div>{k}</div>
@@ -96,3 +104,4 @@ export default class Scroll20 extends React.Component {
       )
     }
   }
+export default connect(null,{changeActiveAttraction})(Scroll20)
