@@ -61,6 +61,28 @@
 	width: 410px;
 }
 
+.main-moldova g {
+	pointer-events: bounding-box;
+}
+
+.main-moldova g * {
+	pointer-events: none;
+}
+
+text {
+font-family: Circe;
+font-style: normal;
+font-weight: bold;
+font-size: 14px;
+line-height: 21px;
+display: flex;
+align-items: center;
+text-align: center;
+width: 100%;
+color: #000000;
+
+}
+
 @media screen and (max-width: 1300px) {
 	.main-title {
 		margin-top: 0;

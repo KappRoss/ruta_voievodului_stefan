@@ -77,7 +77,7 @@ export default class MapWrapper extends React.Component {
           openedModal={openedModal}
           closeModal={this.closeModal}
         />
-        <svg width="1273" height="1468" viewBox="0 0 1273 1468" fill="none">
+        <svg className="main-wrapper" width="1273" height="1468" viewBox="0 0 1273 1468" fill="none">
           {this.renderMap()}
         </svg>
       </div>

@@ -1,5 +1,6 @@
 import React from 'react';
 import './mainMoldova.css';
+import MapWrapper from './maps/MapWrapper';
 
 import Distance from './distance/distance';
 
@@ -18,7 +19,7 @@ export default props => {
 			</React.Fragment>
 	)
 
-	const map = i => <img className="moldova-map" src={require('./img/'+i+'.png')} alt={i} />
+	const map = i => <div className="moldova-map"><MapWrapper id={`map${i + 1}`} /></div>
 
 	return(
 		<div className="main-moldova">
