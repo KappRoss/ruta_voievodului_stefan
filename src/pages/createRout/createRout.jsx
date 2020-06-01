@@ -4,9 +4,7 @@ import './createRout.css';
 import styled from "styled-components/macro";
 import DropDown from './dropDown/dropDown';
 import Input from './input/input';
-
-// import {NavLink} from 'react-router-dom';
-// import Button from '../../components/button/button';
+import {BtnCreateRout} from '../style/theme'
 import {addAct, setDrop, resetState, setMobMenu, sliderMove} from "../../state/actions/settingsActions";
 import connect from "react-redux/es/connect/connect";
 
@@ -85,19 +83,8 @@ const CreateRout = ({loc, menu, cur, act, drop, setDrop, addAct, resetState, cor
     )
 }
 
-const Btn = styled.button`
-	width: 210px;
-	height: 50px;
-	background: #F0A000;
-	border-radius: 25px;
-	outline: none;
-	cursor: pointer;
-	font-weight: bold;
-	font-size: 16px;
-	line-height: 24px;
-	text-transform: uppercase;
-	color: #000000;
-	border: none;
+const Btn = styled(props => <BtnCreateRout {...props} />)`
+
 `;
 
 const BtnNotActive = styled(props => <Btn {...props} />)`
