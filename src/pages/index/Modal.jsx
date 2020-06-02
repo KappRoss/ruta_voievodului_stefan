@@ -35,7 +35,7 @@ export const Modal = ({visible,onClose,href,namePlace}) => {
              onClose={closeModal}
             >
             <div className="modal">
-            <a className="close" onClick={closeModal} >
+            <div className="close" onClick={closeModal} >
               <div 
               style={{
                 background: 'white',
@@ -49,7 +49,7 @@ export const Modal = ({visible,onClose,href,namePlace}) => {
               &times;
               </div>
               
-            </a>
+            </div>
             
             <div className='modalPoPuP'>
             <div>
@@ -59,7 +59,7 @@ export const Modal = ({visible,onClose,href,namePlace}) => {
                <p>Short description</p>
             </div>
             <div>
-               <a href={href} target="_blank">Detaliile</a>
+               <a href={href} target="_blank"  rel="noopener noreferrer">Detaliile</a>
             </div>
          </div>
             {/* content */}

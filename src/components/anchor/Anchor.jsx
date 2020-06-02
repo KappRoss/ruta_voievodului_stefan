@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import { withRouter } from "react-router";
-import { goToTop, goToAnchor, removeHash } from 'react-scrollable-anchor';
+import { goToAnchor, removeHash } from 'react-scrollable-anchor';
 
 
 class Anchor extends Component {
   componentDidMount() {
-    const { history: { push }, location: { pathname, search }, id } = this.props;
+    const { history: { push }, location: { search }, id } = this.props;
     if (search === id) {
       goToAnchor(id);
       removeHash();
@@ -15,13 +15,11 @@ class Anchor extends Component {
 
   componentDidUpdate(prevProps) {
     const { location: { search, pathname }, id } = this.props;
-    console.log(this.props);
     if (search === id && search !== prevProps.location.search) {
       goToAnchor(id);
       removeHash();
     }
     if (!search && id === "top-anchor" && pathname !== prevProps.location.pathname) {
-      console.log(pathname);
       goToAnchor("top-anchor");
       removeHash();
     }

@@ -15,13 +15,13 @@ export default props => {
 
 	const getBg = i => {
 		const img = require('../../img/Moldova/'+(i+1)+'-1.jpg');
-		const container  = {
-				marginTop: '100px',
-				width: '100%',
-				maxWidth: '60%',
-				maxHeight: '1000px',
-				paddingRight: '-100px',
-			}
+		// const container  = {
+		// 		marginTop: '100px',
+		// 		width: '100%',
+		// 		maxWidth: '60%',
+		// 		maxHeight: '1000px',
+		// 		paddingRight: '-100px',
+		// 	}
 		
 			
 		return {

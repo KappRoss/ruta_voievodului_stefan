@@ -9,17 +9,17 @@ import Anchor from './components/anchor/Anchor';
 
 import Index from './pages/index/index';
 import About from './pages/about/about';
-import About_2 from './pages/about/about';
+import About2 from './pages/about/about';
 import MainMoldova from './pages/mainMoldova/mainMoldova';
 import Romania from './pages/romania/romania';
 import OtherMoldova from './pages/otherMoldova/otherMoldova';
 import CreateRout from './pages/createRout/createRout';
 import RoutesSelection from './pages/routesSelection/routesSelection';
 import {setDrop, addAct, setLocalisation, setMobMenu, sliderMove}   from './state/actions/settingsActions'
-const scroll = () => {
+// const scroll = () => {
 	// const b = document.getElementsByClassName('b0')[0];
 	// window.scrollTo(parseInt(b.style.left)-screen.width/2, parseInt(b.style.top)-100);
-}
+// }
 const App = ({loc, menu, cur, act, drop, setDrop, addAct, sliderMove }) => {
     return (
         <div className="App">
@@ -34,7 +34,7 @@ const App = ({loc, menu, cur, act, drop, setDrop, addAct, sliderMove }) => {
                 />
                 <Route path="/about" exact render={() => <About loc={locData.about[loc]} />} />
 
-                <Route path="/about" exact render={() => <About_2 loc={locData.about[loc]} />} />
+                <Route path="/about" exact render={() => <About2 loc={locData.about[loc]} />} />
 
                 <Route path="/other-moldova" exact render={() => <MainMoldova loc={locData.moldova[loc]} />} />
                 <Route path="/romania" exact render={() => <Romania loc={locData.romania[loc]} />} />

@@ -2,10 +2,10 @@ import React from 'react';
 import {Field, reduxForm} from 'redux-form';
 import { withFormElement } from '../../../components/common/FormControls/Forms';
 import { maxLengthCreator } from '../../../utilites/validators/validator';
-import { login } from '../../../state/reducers/authReducer';
+// import { login } from '../../../state/reducers/authReducer';
 import styleFormError from '../../../components/common/FormControls/Forms.module.css';
 import style from './login.module.css';
-import { connect } from 'react-redux';
+// import { connect } from 'react-redux';
 import Button from '../../../components/button/button';
 
 const maxLength = maxLengthCreator(100)
@@ -13,13 +13,13 @@ const maxLength = maxLengthCreator(100)
 const Input = withFormElement("input");
 
 const LoginForm = (props) => {
-    const arreyName = ['firstName', 'lastName' , 'email', 'message'];
+    // const arreyName = ['firstName', 'lastName' , 'email', 'message'];
 
     return (
-            <form onSubmit = {props.handleSubmit} className={style.form_wrap} autocomplete="off">
+            <form onSubmit = {props.handleSubmit} className={style.form_wrap} autoComplete="off">
 
-                {props.props.props.map((k) => (
-                    <div >
+                {props.props.props.map((k, i) => (
+                    <div key={`form-${i}`}>
                         <label className={style.form_wrap_label}/>
 							{/* <span className = {style.span}>{k}</span> */}
 							<Field

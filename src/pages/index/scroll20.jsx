@@ -1,11 +1,11 @@
 import React from 'react';
 import Carousel from 'react-elastic-carousel';
-import Item from 'react-elastic-carousel';
+// import Item from 'react-elastic-carousel';
 import './scrol20Style.css';
 import { NavLink } from 'react-router-dom';
 import {changeActiveAttraction} from '../../state/actions/settingsActions';
 import {connect} from "react-redux";
-import { fromRenderProps } from 'recompose';
+// import { fromRenderProps } from 'recompose';
 
 class Scroll20 extends React.Component {
     constructor(props) {

@@ -42,7 +42,7 @@ export default class MapWrapper extends React.Component {
   changeStyle = () => this.setState({ openINFO: !this.state.openINFO });
 
   renderMap = () => {
-    const { cur, sliderMove } = this.props;
+    const { cur } = this.props;
     const { openINFO } = this.state;
 
     let Tag = Map1;
@@ -78,7 +78,7 @@ export default class MapWrapper extends React.Component {
           closeModal={this.closeModal}
         />
         <svg className="main-wrapper" width="850" height="1072" viewBox="0 0 850 1085" fill="none">
-          <g transform={"translate(-150px, -227px)"}>
+          <g>
             {this.renderMap()}
           </g>
         </svg>
