@@ -1,6 +1,7 @@
 .mainMenu {
 	position: relative;
 	background-image: url(./img/logo-desc.png);
+	z-index: +1;
 	background-repeat: no-repeat;
 	background-position: center;
 	height: 200px;

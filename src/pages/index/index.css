@@ -1,14 +1,22 @@
+.index {
+	z-index: -1;
+}
+
+
 .index-block {
 	background-image: url('./img/bg-0.png');
 	background-repeat: no-repeat;
 	background-size: 105% 100%;
 	background-color: #000000;
+    min-height: 1434px;
+    position: relative;
 }
 
 .index-top-wrap {
 	padding-top: 400px;
 	width: 48%;
-	margin-left: 26%;
+	margin: 0 auto;
+	position: static;
 }
 
 .index-block-title {
@@ -37,17 +45,21 @@
 	background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
 	opacity: 1;
 	width: 100%;
+	position: absolute;
+	bottom: 0;
 	/*margin-top: -280px;*/
 }
 
 .index-block-middle {
 	background-color: #000000;
 	padding: 170px 0;
+	margin-top: -2px;
 }
 
 .index-middle-wrap {
 	width: 50%;
 	margin-left: 25%;
+	min-height: 138px;
 }
 
 .index-block-middle-title {
@@ -62,7 +74,8 @@
 	line-height: 28px;
 	color: #FFFFFF;
 	opacity: 0.5;
-	margin: 30px 0 50px 0;
+	margin: 0 0 50px 0;
+	min-height: 56px;
 }
 /* ////////////////////////////// map start ////////////////////////////*/
 .map-wrap {
@@ -78,6 +91,7 @@
 }
 .map-radial{
 	width: 100%;
+	padding-right: 300px;
 }
 .map-dark{
 	height: 100%;
@@ -113,11 +127,11 @@
 
 	}
 	.bottom-bg{
-		bottom: -45px!important;
+/*		bottom: -45px!important;
 		position: absolute!important;
 		left: unset!important;
 		top: unset!important;
-		height: 150px!important;
+		height: 150px!important;*/
 	}
 	.formmm {
 		width: 90%!important;
@@ -167,19 +181,23 @@
 	object-fit: cover;
 	object-position: center center;
 	position: absolute;
-	bottom: -30px;
 	left: 75px;
+	bottom: 0;
 }
 
 .index-middle-wrap-2 {
 	background-color: #000000;
 	padding-bottom: 200px;
+	min-height: 438px;
+	box-sizing: border-box;
 }
 
 .index-middle-wrap-3 {
 	background-color: #000000;
 	box-sizing: border-box;
 	padding: 0 15%;
+	min-height: 624px;
+	padding-top: 30px;
 }
 
 .ro-slider {
@@ -259,7 +277,6 @@
 }
 
 .map-radial {
-	margin-right: 30px;
 	background-size: 100%
 }
 
@@ -294,13 +311,16 @@
 .info-block{
 	position: absolute;
 	top: 0;
-	right: 50px;
+	right: 300px;
 }
 .info-block .info-block-img{
 	max-height: 250px;
 }
 .info-block-desc{
 	max-height: 100px;
+}
+.info-block-content {
+	min-height: 1016px;
 }
 .info-block-title{
 	max-height: 110px;
@@ -314,6 +334,13 @@
 	width: 100%;
 	margin: 0 auto;
 }
+
+@media screen and (max-width: 1800px) {
+	.info-block {
+		right: 50px;
+	}
+}
+
 @media screen and (max-width: 1650px) {
 	.index-block {
 		background-size: 105% 80%;
@@ -341,6 +368,13 @@
 		background-size: cover;
 		background-position: 90% 0%;
 	}
+
+	.bottom-bg {
+		left: 50px;
+		width: 250px;
+		height: auto;
+		bottom: 50px;
+	}
 	.map-wrap {
 		flex-wrap: wrap;
 	}
@@ -364,13 +398,28 @@
 	}
 }
 
+@media screen and (max-width: 1250px) {
+	.info-block {
+		right: 0;
+	}
+	.bottom-bg {
+		left: 0;
+	}
+}
+
 @media screen and (max-width: 900px) {
+	.map-radial {
+		padding-right: 0;
+	}
 	.map {
 		width: 95%;
+		margin: 50px auto;
 	}
 
 	.bottom-bg {
 		width: 90%;
+		position: relative;
+		margin: 50px auto 0;
 	}
 	.index-middle-wrap-4 {
 		flex-direction: column;
