@@ -20,8 +20,13 @@ const RoutesSelection = ({act, loc, places}) => {
         })
             .then((canvas) => {
                 const imgData = canvas.toDataURL('image/jpeg');
-                const pdf = new jsPDF();
-                pdf.addImage(imgData, 'JPEG', 15, 40, 180, 180);
+                const pdf = new jsPDF({
+                    orientation: 'landscape',
+                });
+                const imgProps= pdf.getImageProperties(imgData);
+                const pdfWidth = pdf.internal.pageSize.getWidth();
+                const pdfHeight = (imgProps.height * pdfWidth) / imgProps.width;
+                pdf.addImage(imgData, 'PNG', 0, -20, pdfWidth, pdfHeight);
 
                 // pdf.output('dataurlnewwindow');
                 pdf.save("download.pdf");
