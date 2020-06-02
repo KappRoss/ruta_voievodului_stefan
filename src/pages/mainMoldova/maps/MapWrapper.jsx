@@ -46,15 +46,13 @@ export default class MapWrapper extends Component {
     const { id } = this.props;
     const Tag = maps[id];
     return (
-      <div>
-        <Tag
-          active={active}
-          setActive={this.setActive}
-          activeElement={activeElement}
-          setSvg={this.setSvg}
-          svg={this.svg}
-        />
-      </div>
+      <Tag
+        active={active}
+        setActive={this.setActive}
+        activeElement={activeElement}
+        setSvg={this.setSvg}
+        svg={this.svg}
+      />
     );
   }
 }
