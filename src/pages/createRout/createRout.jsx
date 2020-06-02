@@ -29,11 +29,14 @@ const CreateRout = ({
     const [handleClick, setHandleClick] = useState({});
     let history = useHistory();
     const selectedItems = useRef(null);
-
-
+    const prevCountRef = useRef();
     useEffect(() => {
         resetState();
     }, []);
+    
+    useEffect(() => {
+        prevCountRef.current = act;
+    });
     const getLength = arr => {
         let l = 0;
         for (let i = 0; i < arr.length; i++) if (arr[i]) l++;
@@ -48,14 +51,16 @@ const CreateRout = ({
         history.push("routes-selection");
     };
 
-    const handleClickVeziRuta = (i) => {
-        setDrop(i);
+    const handleClickVeziRuta = i => {
         scrollTo(selectedItems);
-    }
+        if (drop[i] === true) {
+            setDrop(i);
+        }
+    };
 
-    const scrollTo = (ref) => {
-        ref.current.scrollIntoView({ behavior: 'smooth', block: 'start' })
-    }
+    const scrollTo = ref => {
+        ref.current.scrollIntoView({ behavior: "smooth", block: "start" });
+    };
     return (
         <CreateRouta>
             <div className="create-rout-title">{loc.title[0]}</div>
@@ -63,6 +68,7 @@ const CreateRout = ({
             <CreateRoutWrap>
                 {loc.name.map((k, i) => {
                     const CreateBtn = act[i] ? CreateRoutListRout : CreateRoutList;
+                    // const checkLengthPrevAcr = prevCountRef.current[i].length === act[i].length;
                     return (
                         <CreateRoutBlock key={i}>
                             <div className="rout-block-name">{k}</div>
@@ -104,17 +110,26 @@ const CreateRout = ({
                     >
                       {drop[i] ? "vezi mai putin -" : "vezi mai mult +"}
                     </span>
-                                         <div className='button-wrapper'>
-                                             {handleClick.handleClick === i && act[i]? <CreateBtn>
-                                                 RUTA SELECTATA {act[i] ? "("+ getLength(act[i]) + ")" : ''}
-                                             </CreateBtn> :  <CreateBtn onClick={() => handleClickRuta(i)}>
-                                                 Creează ruta {act[i] ? "("+ getLength(act[i]) + ")" : ''}
-                                             </CreateBtn> }
+                                        <div className="button-wrapper">
+                                            {handleClick.handleClick === i && prevCountRef.current[i].length === act[i].length ? (
+                                                <CreateBtn>
+                                                    Ruta selectată{" "}
+                                                    {act[i] ? "(" + getLength(act[i]) + ")" : ""}
+                                                </CreateBtn>
+                                            ) : (
+                                                <CreateBtn onClick={() => handleClickRuta(i)}>
+                                                    Creează ruta{" "}
+                                                    {act[i] ? "(" + getLength(act[i]) + ")" : ""}
+                                                </CreateBtn>
+                                            )}
 
-                                             <VeziRutra onClick={()=>handleClickVeziRuta(i)} active={handleClick.handleClick === i && act[i]}>
-                                                 VESI RUTA
-                                             </VeziRutra>
-                                         </div>
+                                            <VeziRutra
+                                                onClick={() => handleClickVeziRuta(i)}
+                                                active={handleClick.handleClick === i && prevCountRef.current[i].length === act[i].length}
+                                            >
+                                                VESI RUTA
+                                            </VeziRutra>
+                                        </div>
                                     </div>
                                 </div>
                             </CreateRoutBlockWrap>
@@ -123,31 +138,37 @@ const CreateRout = ({
                 })}
                 <CreateRoutBlockEmpty />
             </CreateRoutWrap>
-            <div className="route-select" ref={selectedItems}>{loc.title[1]}</div>
-            <SelectedRoutes>
+            <div className="route-select" ref={selectedItems}>
+                {loc.title[1]}
+            </div>
+            <SelectedRoutes length={act >= 3}>
                 <div className="selected-routes-wrap">
-                    {act.map((k, i) =>
-                        k ? (
-                            <div key={i} className="selected-routes-row">
-                                <img
-                                    onClick={addAct.bind(this, i, null)}
-                                    className="selected-cross"
-                                    src={require("./img/cross.png")}
-                                    alt={k}
-                                />
-                                <img
-                                    className="selected-img"
-                                    src={require("./img/" + i + ".png")}
-                                    alt={k}
-                                />
-                                <div className="selected-routes-right">
-                                    <div>{loc.name[i]}</div>
-                                    <span>Atractii({getLength(act[i])})</span>
+                    <div className="selected-routes">
+                        {act.map((k, i) =>
+                            k ? (
+                                <div key={i} className="selected-routes-row">
+                                    <img
+                                        onClick={addAct.bind(this, i, null)}
+                                        className="selected-cross"
+                                        src={require("./img/cross.png")}
+                                        alt={k}
+                                    />
+                                    <img
+                                        className="selected-img"
+                                        src={require("./img/" + i + ".png")}
+                                        alt={k}
+                                    />
+                                    <div className="selected-routes-right">
+                                        <div>{loc.name[i]}</div>
+                                        <span>Atractii({getLength(act[i])})</span>
+                                    </div>
                                 </div>
-                            </div>
-                        ) : null
-                    )}
-                    <div className="route-to-top" onClick={()=>scrollTo(header)}>{loc.buttons[3]}</div>
+                            ) : null
+                        )}
+                    </div>
+                    <div className="route-to-top" onClick={() => scrollTo(header)}>
+                        {loc.buttons[3]}
+                    </div>
                 </div>
             </SelectedRoutes>
             {cordinates.length === 0 ? (
@@ -168,6 +189,7 @@ const CreateRouta = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding-bottom: 4rem;
   .create-rout-title {
     font-size: 35px;
     line-height: 52px;
@@ -224,7 +246,7 @@ const CreateRoutWrap = styled.div`
 `;
 
 const CreateRoutBlock = styled.div`
-  width: calc(95% /3);
+  width: calc(95% / 3);
   margin-bottom: 10rem;
   position: relative;
   @media screen and (max-width: 1200px) {
@@ -284,8 +306,8 @@ const CreateRoutBlockWrap = styled.div`
     z-index: ${props => (props.active ? 2 : 0)};
     transition: z-index 1s;
     box-shadow: 0 35px 0px 10px black;
-    
-    .button-wrapper{
+
+    .button-wrapper {
       display: flex;
       flex-direction: column;
     }
@@ -302,13 +324,40 @@ const SelectedRoutes = styled.div`
     display: flex;
     justify-content: space-around;
     margin: 30px 0;
+    .selected-routes {
+      display: flex;
+      width: 80%;
+      overflow-x: scroll;
+      .selected-routes-right {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .selected-routes-right div {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 27px;
+        color: #f8981d;
+      }
+
+      .selected-routes-row {
+        display: flex;
+        align-items: center;
+        position: relative;
+        padding: 20px;
+        min-width: 250px;
+      }
+    }
     .selected-cross {
       position: absolute;
       right: -10px;
-      top: -10px;
+      top: 0px;
       width: 15px;
       height: 15px;
       cursor: pointer;
+      z-index: 2;
       @media screen and (max-width: 1200px) {
         flex-direction: column;
         align-items: center;
@@ -323,22 +372,9 @@ const SelectedRoutes = styled.div`
       margin-right: 10px;
     }
 
-    .selected-routes-right {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-    }
-
-    .selected-routes-right div {
-      font-style: normal;
-      font-weight: normal;
-      font-size: 18px;
-      line-height: 27px;
-      color: #f8981d;
-    }
-
     .route-to-top {
       width: 300px;
+      margin-left: 4rem;
       height: 120px;
       border: 1px dashed rgba(255, 255, 255, 0.5);
       display: flex;
@@ -356,14 +392,6 @@ const SelectedRoutes = styled.div`
         padding: 0 8%;
       }
     }
-  }
-
-  .selected-routes-row {
-    display: flex;
-    align-items: center;
-    position: relative;
-    padding: 20px;
-    width: 250px;
   }
 `;
 
@@ -407,12 +435,9 @@ const VeziRutra = styled.button`
   cursor: pointer;
   font-size: 1rem;
   font-weight: 700;
-   transition: ${props =>
-    props.active
-        ? " opacity 0.3s ease-in-out"
-        : " opacity 0.3s ease-in-out"};
+  transition: ${props =>
+    props.active ? " opacity 0.3s ease-in-out" : " opacity 0.3s ease-in-out"};
 `;
-
 
 const mapStateToProps = state => ({
     menu: state.settings.menu,
