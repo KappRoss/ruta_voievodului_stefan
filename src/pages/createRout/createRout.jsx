@@ -428,7 +428,9 @@ const BtnNotActive = styled(props => <Btn {...props} />)`
   opacity: 0.3;
 `;
 
-const VeziRutra = styled.button`
+const VeziRutra = styled.div`
+  display: flex;
+  justify-content: center;
   opacity: ${props => (props.active ? "1" : "0")};
   color: #f0a000;
   padding-top: 1rem;
