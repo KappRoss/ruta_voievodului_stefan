@@ -49,4 +49,16 @@
 
 .moldova-map {
 	max-height: 400px;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 560px) {
+	.moldova-map svg {
+		width: initial;
+		max-width: none;
+		min-width: fit-content;
+	}
+
 }

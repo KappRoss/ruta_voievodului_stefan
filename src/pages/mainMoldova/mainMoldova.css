@@ -41,6 +41,11 @@
 .moldova-wrap {
 	display: flex;
 	margin-bottom: 160px;
+    justify-content: space-between;
+}
+
+.moldova-wrap--reflection {
+	flex-direction: row-reverse;
 }
 
 .moldova-about {
@@ -119,6 +124,12 @@ color: #000000;
 }
 
 @media screen and (max-width: 500px) {
+	.moldova {
+		padding: 20px;
+		box-sizing: border-box;
+    	max-width: 100%;
+    	overflow: visible;
+	}
 	.moldova-title {
 		width: 100%;
 	}
