@@ -167,7 +167,7 @@ export const locData = {
 			title: 'Alte atracții turistice din Republica Moldova',
 			desc: 'Ştefan cel Mare a fost cel mai mare domnitor pe care l-a avut Moldova, între anii 1457 – 1504. Calitățile sale de bun strateg și diplomat, inițiativele întreprinse pentru dezvoltarea culturii prin ctitorirea unui număr impresionant de biserici',
 			name: [
-				'Mănăstirea Căpriana',
+				'Mănăstirea Căpriana, ctitorul Ștefan cel Mare.',
 				'Rezervația cultural-naturală Orheiul Vechi',
 				'Cetatea Soroca', 'Satul Mereni',
 				'Târgul Chișinău/Buiucani', 'Cetatea Tighina',
@@ -187,7 +187,30 @@ export const locData = {
 			]
 		},
 		en: {
-
+			title: 'Alte atracții turistice din Republica Moldova',
+			desc: 'Ştefan cel Mare a fost cel mai mare domnitor pe care l-a avut Moldova, între anii 1457 – 1504. Calitățile sale de bun strateg și diplomat, inițiativele întreprinse pentru dezvoltarea culturii prin ctitorirea unui număr impresionant de biserici',
+			name: [
+				'Mănăstirea Căpriana',
+				'Rezervația cultural-naturală Orheiul Vechi',
+				'Cetatea Soroca',
+				'Satul Mereni',
+				'Târgul Chișinău/Buiucani',
+				'Cetatea Tighina',
+				'Mănăstirea Țipova',
+				'Stejarul lui Ștefan cel Mare de la Cobâlea',
+				'Ștefan-Vodă regiune vitivinicolă cu indicație geografică protejată'
+			],
+			text: [
+				'Ştefan cel Mare a fost cel mai mare domnitor pe care l-a avut Moldova, între anii 1457 – 1504. Calitățile sale de bun strateg și diplomat, inițiativele întreprinse pentru dezvoltarea culturii prin ctitorirea unui număr impresionant de biserici și mănăstiri și bătăliile purtate și câștigate pentru apărarea integrității țării l-au transformat într-un erou legendar. Ruta Voievodului Ștefan cel Mare și Sfânt în România și în Republica Moldova va străbate optsprezece localități din România',
+				'Ştefan cel Mare a fost cel mai mare domnitor pe care l-a avut Moldova, între anii 1457 – 1504. Calitățile sale de bun strateg și diplomat, inițiativele întreprinse pentru dezvoltarea culturii prin ctitorirea unui număr impresionant de biserici și mănăstiri și bătăliile purtate și câștigate pentru apărarea integrității țării l-au transformat într-un erou legendar. Ruta Voievodului Ștefan cel Mare și Sfânt în România și în Republica Moldova va străbate optsprezece localități din România',
+				'Ştefan cel Mare a fost cel mai mare domnitor pe care l-a avut Moldova, între anii 1457 – 1504. Calitățile sale de bun strateg și diplomat, inițiativele întreprinse pentru dezvoltarea culturii prin ctitorirea unui număr impresionant de biserici și mănăstiri și bătăliile purtate și câștigate pentru apărarea integrității țării l-au transformat într-un erou legendar. Ruta Voievodului Ștefan cel Mare și Sfânt în România și în Republica Moldova va străbate optsprezece localități din România',
+				'Ştefan cel Mare a fost cel mai mare domnitor pe care l-a avut Moldova, între anii 1457 – 1504. Calitățile sale de bun strateg și diplomat, inițiativele întreprinse pentru dezvoltarea culturii prin ctitorirea unui număr impresionant de biserici și mănăstiri și bătăliile purtate și câștigate pentru apărarea integrității țării l-au transformat într-un erou legendar. Ruta Voievodului Ștefan cel Mare și Sfânt în România și în Republica Moldova va străbate optsprezece localități din România',
+				'Ştefan cel Mare a fost cel mai mare domnitor pe care l-a avut Moldova, între anii 1457 – 1504. Calitățile sale de bun strateg și diplomat, inițiativele întreprinse pentru dezvoltarea culturii prin ctitorirea unui număr impresionant de biserici și mănăstiri și bătăliile purtate și câștigate pentru apărarea integrității țării l-au transformat într-un erou legendar. Ruta Voievodului Ștefan cel Mare și Sfânt în România și în Republica Moldova va străbate optsprezece localități din România',
+				'Ştefan cel Mare a fost cel mai mare domnitor pe care l-a avut Moldova, între anii 1457 – 1504. Calitățile sale de bun strateg și diplomat, inițiativele întreprinse pentru dezvoltarea culturii prin ctitorirea unui număr impresionant de biserici și mănăstiri și bătăliile purtate și câștigate pentru apărarea integrității țării l-au transformat într-un erou legendar. Ruta Voievodului Ștefan cel Mare și Sfânt în România și în Republica Moldova va străbate optsprezece localități din România',
+				'Ştefan cel Mare a fost cel mai mare domnitor pe care l-a avut Moldova, între anii 1457 – 1504. Calitățile sale de bun strateg și diplomat, inițiativele întreprinse pentru dezvoltarea culturii prin ctitorirea unui număr impresionant de biserici și mănăstiri și bătăliile purtate și câștigate pentru apărarea integrității țării l-au transformat într-un erou legendar. Ruta Voievodului Ștefan cel Mare și Sfânt în România și în Republica Moldova va străbate optsprezece localități din România',
+				'Ştefan cel Mare a fost cel mai mare domnitor pe care l-a avut Moldova, între anii 1457 – 1504. Calitățile sale de bun strateg și diplomat, inițiativele întreprinse pentru dezvoltarea culturii prin ctitorirea unui număr impresionant de biserici și mănăstiri și bătăliile purtate și câștigate pentru apărarea integrității țării l-au transformat într-un erou legendar. Ruta Voievodului Ștefan cel Mare și Sfânt în România și în Republica Moldova va străbate optsprezece localități din România',
+				'Ştefan cel Mare a fost cel mai mare domnitor pe care l-a avut Moldova, între anii 1457 – 1504. Calitățile sale de bun strateg și diplomat, inițiativele întreprinse pentru dezvoltarea culturii prin ctitorirea unui număr impresionant de biserici și mănăstiri și bătăliile purtate și câștigate pentru apărarea integrității țării l-au transformat într-un erou legendar. Ruta Voievodului Ștefan cel Mare și Sfânt în România și în Republica Moldova va străbate optsprezece localități din România',
+			]
 		}
 	},
 	romania: {
