@@ -6,13 +6,10 @@ import html2canvas from "html2canvas";
 import jsPDF from "jspdf";
 
 const RoutesSelection = ({act, loc, places}) => {
-    const mapImg = useRef(null)
     const googleMapsApiKey = "js?key=AIzaSyAzICfk_cT_rY6SjI_OHIZBABrGW7B7ars&v=3.exp&";
     const  printDocument = () => {
-        console.log(mapImg)
-        // const input = mapImg.current;
         const input = document.getElementById('divToPrint');
-        const div = document.querySelector('#divToPrint > div:first-of-type')
+        // const div = document.querySelector('#divToPrint > div:first-of-type')
         html2canvas(input, {
             useCORS: true,
             allowTaint: true,
@@ -33,7 +30,6 @@ const RoutesSelection = ({act, loc, places}) => {
             })
         ;
     }
-    console.log(mapImg)
 	const atr = arr => {
 		return(
 			<React.Fragment>
@@ -91,7 +87,6 @@ const RoutesSelection = ({act, loc, places}) => {
 				))}
 			</div>
             <Map
-                // ref={mapImg}
                 googleMapURL={
                     'https://maps.googleapis.com/maps/api/' +
                     googleMapsApiKey +
@@ -103,8 +98,7 @@ const RoutesSelection = ({act, loc, places}) => {
                 mapElement={<div id='divToPrint' style={{height: `100%`}}/>}
                 // defaultCenter={{lat:places[0].latitude, lng:places[0].longitude }}
                 defaultZoom={12}
-            />                   
-			{/*<img src={require('./img/map.png')} alt="map"/>*/}
+            />
 		</div>
 	)
 }
