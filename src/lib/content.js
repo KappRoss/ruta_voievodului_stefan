@@ -127,25 +127,249 @@ export const locData = {
 				'La 500 de ani distanţă în timp, vorbim despre El ca şi cum nici n-ar fi murit, ba chiar ar mai exista încă, undeva pe-aici, peste tot în Moldova, iar marile sale lecții - de strategie, diplomație, economie și creștinătate rămân de o uimitoare actualitate și astăzi.',
 				'Ruta Voievodului Ștefan cel Mare și Sfânt în România și în Republica Moldova reprezintă o oportunitate de conștientizare și de promovare a unei părți din inestimabila moștenire pe care ne-a lăsat-o simbolul renașterii vieții culturale, spirituale și monahale pe teritoriul Moldovei, Basarabiei și Bucovinei.'
 			],
-			['text2','text3'],
-			['text3','text3'],
-			['text4','text3'],
-			['text5','text3'],
-			['text6','text3'],
-			['text7','text3'],
-			['text8','text3'],
-			['text9','text3'],
-			['text10','text3'],
-			['text11','text3'],
-			['text12','text3'],
-			['text13','text3'],
-			['text14','text3'],
-			['text15','text3'],
-			['text16','text3'],
-			['text17','text3'],
-			['text18','text3'],
-			['text19','text3'],
-			['text20','text3']
+			[
+				`Cetatea de Scaun a Sucevei se află în municipiul cu acealași nume și a fost
+				construită la sfârșitul secolului al XIV-lea, fiind prima reședință a domnilor
+				Moldovei timp de aproape 200 de ani. Astăzi este declarată monument istoric de
+				interes național.`,
+				`Cetatea de Scaun a Sucevei a fost construită în timpul domniei lui Petru I Mușat,
+				însă maxima dezvoltare o cunoaște în timpul Voievodului Ștefan cel Mare.`,
+				`Ansamblul arhitectonic medieval, alcătuit din castel și ziduri de apărare, a fost
+				consolidat și completat în cadrul unui vast proiect cu finanțare europeană în
+				perioada 2010-2015, redându-i aspectul impunător, intrat în legendă, dar și sublima
+				strălucire princiară din trecut.`,
+				`Datorită expoziției permanente realizate într-o manieră accesibilă și atractivă
+				pentru publicul larg, cu sisteme multimedia interactive (ghizi virtuali, holograme,
+				carte virtuală etc.) și cu spectacole de sunet și lumină, unice la nivel național,
+				Cetatea de Scaun a Sucevei are anual aproape 200.000 de vizitatori.`,
+				`În fiecare an, la mijlocul lunii august, în Cetatea de Scaun a Sucevei se desfășoară
+				Festivalul de Artă Medievală &quot;Ștefan cel Mare&quot;, la care participă ordine și trupe
+				medievale din țară și din străinătate și care atrage zeci de mii de spectatori, fiind
+				cel mai mare festival de gen din țară. Acesta este urmat de ”Bucovina Rock
+				Castle”, un important festival internațional de rock, care se desfășoară într-o locație
+				inedită - șanțul de apărare al Cetății de Scaun - și care se bucură de prezența a peste
+				9000 de spectatori.`
+			],
+			[
+				'Mănăstirea Putna, numită de poetul Mihai Eminescu “Ierusalimul Neamului Românesc”, a fost ctitorită de Voievodul Ștefan cel Mare și Sfânt în perioada 1466 – 1469, fiind concepută ca necropolă domnească.',
+				`În biserica cu hramul “Adormirea Maicii Domnului” se află mormântul lui Ștefan
+				cel Mare și Sfânt precum și alte treisprezece morminte care aparțin familiei
+				Mușatinilor.`,
+				`Muzeul Mănăstirii Putna vernisează artefacte care au aparținut Voievodului Ștefan
+				cel Mare și Sfânt, printre acestea numărându-se icoana făcătoare de minuni a
+				Maicii Domnului adusă din Constantinopol în 1472 de către doamna Maria de
+				Mangop, soția Voievodului Ștefan cel Mare și craniul Sfântului Ierarh Ghenadie,
+				îmbrăcat în argint aurit și dăruit mănăstirii de ctitorul ei în anul 1488, despre care
+				legendele povestesc că făcea minuni.`,
+				`Mănăstirea Putna este localizată la 72 de kilometri de Cetatea de Scaun a Sucevei,
+				în comuna Putna, județul Suceava.`
+			],
+			[
+				`Biserica cu hramul „Înălțarea Sfintei Cruci” din Pătrăuți a fost ctitorită în anul
+				1487 de Sfântul Voievod Ştefan cel Mare. Biserica din Pătrăuţi este considerată a
+				fi cea mai veche biserică păstrată dintre ctitoriile domntorului, cea mai veche
+				biserică ortodoxă din România, care a fost inclusă pe lista Patrimoniului UNESCO
+				din anul 1993 (în grupul Bisericile pictate din nordul Moldovei) și cea mai veche
+				biserică construită în stil moldovenesc, ce se mai păstrează astăzi în forma ei
+				originară.`,
+				`Biserica a fost pictată la exterior, doar pe peretele de apus, în jurul portalului gotic
+				de intrare în biserică, iar scena reprezentată este &quot;Judecata de Apoi&quot;, culorile
+				folosite fiind galbenul (ocrul).`,
+				`Ansamblul Bisericii Înălțarea Sfintei Cruci se află în comuna Pătrăuți, la 13 km de
+				Suceava.`
+			],
+			[
+				`Ctitorită de Voievodul Ștefan cel Mare și Sfânt la 1488, Mănăstirea Voroneț cu
+				biserica având hramul “Sfântul Mare Mucenic Gheorghe” se numără printre
+				bijuteriile Bucovinei și este inclusă din anul 1993 pe lista Patrimoniului Mondial
+				UNESCO.`,
+				`Faima Mănăstirii Voroneț se datorează uimitoarelor fresce ce descriu scene biblice
+				pictate în culori armonioase predominând albastrul cerului bucovinean, fresce care
+				i-au adus denumirea de „Capela Sixtină a Estului”, sub care este cunoscută în toată
+				lumea.`,
+				`De remarcat este faptul că, după 530 de ani de la înălțarea ei, biserica Sfântul
+				Gheorghe a mănăstirii Voroneț în care a fost înmormântat în 1496 Daniil Sihastrul,
+				duhovnicul și sfătuitorul Voievodului Ștefan cel Mare și Sfânt, continuă să-și
+				uimească vizitatorii cu frumusețea ei rară și plină de rafinament.`,
+				`Mănăstirea Voroneț se află la 36 de kilometri de orașul Suceava și la 4 kilometri de
+				Gura Humorului.`
+			],
+			[
+				`Biserica Tăierea Capului Sfântului Ioan Botezătorul din Reuseni este considerată a
+				fi ultima ctitorie a Voievodului Ștefan cel Mare și Sfânt deoarece a fost construită
+				în perioada 1503-1504.`,
+				`Biserica este situată în satul Reuseni din comuna Udești, la o distanță de
+				aproximativ 15 km sud-est de municipiul Suceava.`
+			],
+			[
+				`Biserica cu hramul “Înălțarea Sfintei Cruci” a fost construită de Voievodul Ștefan
+				cel Mare și Sfânt între anii 1500-1502.`,
+				`Biserica este situată în comuna Volovăț din județul Suceava și se află la o distanță
+				de 35 de km de municipiul Suceava.`
+			],
+			[
+				`Biserica cu hramul “Sfântul Ilie” a fost ctitorită de către Voievodul Ștefan cel
+				Mare și Sfânt în anul 1488, astăzi fiind biserică de mir.`,
+				`Biserica se află în satul Sf. Ilie din Comuna Scheia, la o distanță de aproximativ
+				1,5 km de municipiul Suceava.`
+			],
+			[
+				`Mănăstirea Sfântul Nicolae Popăuți a fost ctitorită de Ștefan cel Mare în
+				1497. Monumentul este reprezentativ pentru “stilul moldovenesc” (o îmbinare de
+				elemente bizantice şi gotice) ce s-a ctitorit sub patronajul Voievodului. Ansamblul
+				Mănăstirii Popăuți a fost inclus pe Lista monumentelor istorice din județul
+				Botoșani din anul 2015, având codul de clasificare BT-II-a-A-01929 și fiind
+				alcătuit din următoarele 2 obiective: Biserica &quot;Sf. Nicolae&quot;-Popăuți - datând din
+				anul 1496, având codul BT-II-m-A-01929.01 și Turnul clopotniță - datând din
+				1496, având codul BT-II-m-A-01929.02`
+			],
+			[
+				`Biserică cu hramul “Sfântul Gheorghe” din Hârlău, a fost ctitorită de Ștefan cel
+				Mare și Sfânt în anul 1492 și este considerată parte a ansamblului Curții domnești
+				din Hârlău.
+				Reședința domnească din Hârlău a fost una dintre reședințele preferate ale
+				domnitorului moldovean, mai ales către sfârșitul domniei. La 12 iulie 1499, Ștefan
+				cel Mare a semnat la Hârlău Tratatul de pace cu polonii regelui Ioan Albert.
+				Se află în orașul Hârlău (județul Iași), la o distanță de 74 km de municipiul Iași.`
+			],
+			[
+				`Biserica &quot;Cuvioasa Parascheva&quot; din Cotnari este atribuită de tradiție voievodului
+				Ștefan cel Mare (1457-1504). Pisania a fost distrusă, astfel că nu se cunosc date
+				referitoare la construcția lăcașului de cult. În Lista monumentelor istorice din
+				județul Iași este trecut anul 1493 ca an al construcției.`
+			],
+			[
+				`Palatul Culturii din Iași este o clădire emblematică, construită în perioada 1906 -
+				1925, în perimetrul fostei curți domnești medievale moldovenești, pe locul fostului
+				palat domnesc.`,
+				`Astăzi, Palatul Culturii este sediul Complexului Muzeal Național Moldova, ce
+				cuprinde Muzeul de Istorie al Moldovei (1916), Muzeul Etnografic al Moldovei
+				(1943), Muzeul de Artă (1860), Muzeul Științei și Tehnicii (1955), precum și
+				Centrul de Conservare-Restaurare a Patrimoniului Cultural (1975).`
+			],
+			[
+				`Biserica Sfântul Nicolae Domnesc a fost construită în perioada 1 iunie 1491 - 10
+				august 1492 de către Ștefan cel Mare, cu arhitectură moldovenească, și se află în
+				fața Palatului Culturii din Iași.`
+			],
+			[
+				`Biserica Mănăstirii Dobrovăţ a fost construită în perioada 1503 - 1504, fiind ultima
+				ctitorie a Voievodului Ştefan cel Mare și Sfânt, iar pictura din naos este
+				considerată cea mai frumoasă din Moldova.`,
+				`Biserica se află în comuna Dobrovăț la o distanţă de 25 de km sud-est de Iaşi şi la
+				35 de km nord de Vaslui.`
+			],
+			[
+				`Cetatea Neamț sau Cetatea Neamțului este una dintre cele mai impresionante cetăți
+				din România, ce străjuieşte de peste şase secole valea râului Neamţ.`,
+				`Cetatea Neamț a fost construită în secolul al IVX-lea, pe vremea lui Petru I, și a
+				fost fortificată în secolul al VX-lea de Ștefan cel Mare, pentru a întări sistemul de
+				fortificații construit în Moldova pentru apărare împotriva Imperiului Otoman.`,
+				`Aici s-au scris importante pagini de eroism, cum a fost rezistenţa din cele 8 zile de
+				asediu otoman, condus de temutul sultan Mahomed al II-lea după bătălia de la
+				Războieni (1476), ori gloriosul episod, scris cu propriul sânge, de doar 19 plăieşi,
+				în faţa armatei polone conduse de Ioan Sobieski, în 1691.`,
+				`Cetatea Neamț este situată în apropierea orașului Târgu Neamț, la 46 de km de
+				orașul Piatra Neamț, și face parte din categoria monumentelor medievale din
+				România, de o valoare excepțională.`,
+				`În anul 1866, Cetatea Neamț a fost declarată monument istoric. Aceasta a fost
+				supusă mai multor demersuri de restaurare, iar după ultima intervenție din perioada
+				2007-2009, Cetatea Neamțului oferă vizitatorilor 21 de spații, dintre care
+				amintim: Sala de Sfat şi Judecată; Camera de taină; Sala armelor; Neagra
+				temniţă; Camera plăieșilor; Paraclisul „Sf. Nicolae”; Camera domniţelor;
+				Lapidarium; Bucătăria; Camera de provizii; Monetăria; Camera
+				pârcălabului; Închisoarea, având două spaţii, dar și altele.
+				Toate aceste spații îi poartă pe vizitatori printr-o istorie plină de gloria și farmecul
+				timpurilor medievale.
+				Ziua cetăţii: 2 iulie, ziua Sfântului Voievod Ştefan cel Mare.`
+			],
+			[
+				`Prima atestare documentară a Curţii Domneşti de la Piatra Neamţ apare într-un
+				document emis în anul 1491.`,
+				`Curtea Domnească de la Piatra Neamţ şi-a îndeplinit funcţiile de curte a
+				domnitorilor Moldovei până în secolul al XVII-lea.`,
+				`Frumoasa ctitorie a lui Ştefan cel Mare se mai păstrează şi astăzi în oraşul Piatra
+				Neamţ, fiind cunoscută drept centrul istoric al urbei. Situat pe un platou în jurul
+				căruia s-a dezvoltat actualul oraş, complexul architectural este format din Biserica
+				“Sfâtul Ioan Domnesc”, Turnul-clopotniţă şi Zidul de incintă cu Muzeul Curtii
+				Domnești.`,
+				`Biserica Domnească cu hramul “Sfântul Ioan Botezătorul” din Piatra Neamț,
+				ctitorită în perioada 15 iulie 1497 - de 11 noiembrie 1498, reprezintă cel mai
+				valoros edificiu din Complexul Curtea Domnească. Biserica se remarcă prin
+				elementele caracteristice stilului moldovenesc.`,
+			],
+			[
+				`Potrivit izvoarelor istorice cunoscute până în prezent, Mănăstirea Neamț datează
+				din secolul al XIV-lea ca organizație călugărească ortodoxă. Situată în comuna
+				Vânători din județul Neamț (lângă orașul Târgu Neamț) într-o poiană larg deschisă
+				pe valea pârâului Nemțișor și înconjurată de culmi împădurite, această mănăstire
+				este cea mai veche din Moldova, fiind denumită și “Ierusalimul Ortodoxiei
+				Române”.`,
+				`Cu un bogat tezaur, Mănăstirea Neamț pune la dispoziția vizitatorilor, în muzeul
+				mănăstirii, o bogată colecție de obiecte de cult și religioase, picturi, manuscrise și
+				diferite piese tipografice cu o mare valoare istorică și artistică. Tot la Mănăstirea
+				Neamț se află și cea mai veche bibliotecă mănăstirească cu 18.000 de volume,
+				având astfel o contribuție deosebită la dezvoltarea culturii și artei românești
+				medievale.`,
+				`În biserica mănăstirii se afla icoana Maicii Domnului făcătoare de minuni, datând
+				din anul 665. Icoana este una procesională și o icoană protectoare care de-a lungul
+				timpului a întreținut evlavia credincioșilor și a monahilor.`
+			],
+			[
+				`Aşezată în mijlocul satului cu acelaşi nume, Mănăstirea Războieni, ctitorie a
+				domnitorului Ştefan cel Mare și Sfânt din anul 1496, a fost înălţată în cinstea
+				ostaşilor moldoveni căzuţi în lupta împotriva turcilor de la Valea Albă (1476).`,
+				`Pisania aşezată pe peretele sudic al Bisericii „Sfinţii Arhangheli Mihail şi Gavril”
+				descrie momentul înfrângerii Moldovei în războiul pentru ţară şi credinţă. Însuși
+				motivul construcţiei sale - păstrarea memoriei ostaşilor iubitori de neam – face ca
+				mănăstirea să aibă un caracter unic în seria construcţiilor bisericeşti ale
+				Voievodului Ştefan cel Mare și Sfânt. Aceasta se constituie într-un mausoleu ce
+				adăposteşte sub dalele altarului şi ale pronaosului osemintele ostaşilor căzuţi în
+				luptă.`,
+				`Mănăstirea Războieni este situată la în comuna Războieni, la 26 km de Piatra
+				Neamţ şi la 35 km de Târgu Neamţ (DJ 208 Piatra Neamţ -Tupilaţi- Hanu
+				Ancuţei), județul Neamț.`
+			],
+			[
+				`Ansamblul monumental ”Podul Înalt” de la Băcăoani, judeţul Vaslui, este un
+				simbol oferit de vasluieni pentru a omagia una dintre marile bătălii la care a luat
+				parte Ştefan cel Mare, considerată cea mai mare victorie a creştinătăţii obţinută de
+				acesta împotriva otomanilor deoarece cu doar 40.000 de ostași a înfrânt 120.000 de
+				turci pe 10 ianuarie 1475. După bătălia de la Podul Înalt, Ştefan cel Mare a primit
+				titlul de ”Campion al lui Hristos” și a consfinţit, totodată, statutul Moldovei de
+				Poartă a Creştinătăţii.`,
+				`Este situat la aproximativ 12 km sud de Vaslui, în localitatea Băcăoani, pe drumul
+				ce leagă Vasluiul de Bârlad. La locul desfășurării bătăliei a fost ridicat un
+				monument reprezentându-l pe Ștefan cel Mare călare. Statuia a fost dezvelită la 25
+				octombrie 1975 cu prilejul împlinirii a 500 de ani de la victoria moldovenilor
+				conduși de Ștefan cel Mare împotriva otomanilor, și face parte din ansamblul
+				monumental Podul Înalt, situat pe DN24, în partea de sud a satului Băcăoani, la
+				circa 300 de m de localitate.`
+			],
+			[
+				`Situat la întretăierea drumurilor comerciale ce legau Marea Neagră de Marea
+				Baltică, Vasluiul și-a consolidat poziția sa de centru comercial și urban în timpul
+				domnitorului Alexandru cel Bun ce amenajează aici curtea domnească. În secolul
+				al XV-lea i s-a atribuit statutul de capitală a Țării de Jos a Moldovei, la acea vreme
+				existând un palat domnesc, ateliere meșteșugărești, locuințe ale curtenilor, ateliere
+				de olărit, ateliere de confecționat arme, grajduri și alte acareturi.`,
+				`Afectată de atacurile tătare, curtea domnească de la Vaslui este reamenajată în
+				timpul Voievodului Ștefan cel Mare, care zidește în incinta acesteia biserica
+				Tăierea Capului Sfântului Ioan Botezătorul (1490) cu rolul de paraclis, în cinstea
+				răsunătoarei victorii de la Podul Înalt. Potrivit pisaniei, biserica a fost construită în
+				câteva luni și este cea  mai veche din grupul bisericilor orăşeneşti din această 
+				perioadă.`,
+				`Pictura interioară realizată în timpul Voievodului Ștefan cel Mare și pictura
+				exterioară realizată în perioada domniei fiului său Bogdan sau chiar a lui Petru
+				Rareș s-au păstrat până în prezent, reprezentând un punct de atracție pentru turiști.`
+			],
+			[
+				`La Borzești, în județul Bacău, s-a născut și a copilărit Ștefan cel Mare. Biserica
+				din Borzești poartă hramul Adormirea Maicii Domnului și a fost construită din
+				inițiativa lui Ștefan cel Mare între 9 iulie 1493 și 12 octombrie 1494 împreună cu
+				fiul său, Alexandru-Vodă, în amintirea prietenului său din copilărie, Gheorghiță,
+				omorât aici de către tătari.`
+			]
 		
 		]
 		},
