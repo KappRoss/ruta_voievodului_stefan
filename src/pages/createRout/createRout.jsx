@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import { useHistory } from "react-router-dom";
 import "./createRout.css";
 import styled from "styled-components/macro";
@@ -23,10 +23,14 @@ const CreateRout = ({
                         setDrop,
                         addAct,
                         resetState,
-                        cordinates
+                        cordinates,
+                        header
                     }) => {
     const [handleClick, setHandleClick] = useState({});
     let history = useHistory();
+    const selectedItems = useRef(null);
+
+
     useEffect(() => {
         resetState();
     }, []);
@@ -39,9 +43,19 @@ const CreateRout = ({
     const handleClickRuta = i => {
         setHandleClick({ handleClick: i });
     };
+
     const handleGoSelection = () => {
         history.push("routes-selection");
     };
+
+    const handleClickVeziRuta = (i) => {
+        setDrop(i);
+        scrollTo(selectedItems);
+    }
+
+    const scrollTo = (ref) => {
+        ref.current.scrollIntoView({ behavior: 'smooth', block: 'start' })
+    }
     return (
         <CreateRouta>
             <div className="create-rout-title">{loc.title[0]}</div>
@@ -92,12 +106,12 @@ const CreateRout = ({
                     </span>
                                          <div className='button-wrapper'>
                                              {handleClick.handleClick === i && act[i]? <CreateBtn>
-                                                 RUTA SELECTATA
+                                                 RUTA SELECTATA {act[i] ? "("+ getLength(act[i]) + ")" : ''}
                                              </CreateBtn> :  <CreateBtn onClick={() => handleClickRuta(i)}>
                                                  Creează ruta {act[i] ? "("+ getLength(act[i]) + ")" : ''}
                                              </CreateBtn> }
 
-                                             <VeziRutra onClick={setDrop.bind(this, i)} active={handleClick.handleClick === i && act[i]}>
+                                             <VeziRutra onClick={()=>handleClickVeziRuta(i)} active={handleClick.handleClick === i && act[i]}>
                                                  VESI RUTA
                                              </VeziRutra>
                                          </div>
@@ -109,7 +123,7 @@ const CreateRout = ({
                 })}
                 <CreateRoutBlockEmpty />
             </CreateRoutWrap>
-            <div className="route-select">{loc.title[1]}</div>
+            <div className="route-select" ref={selectedItems}>{loc.title[1]}</div>
             <SelectedRoutes>
                 <div className="selected-routes-wrap">
                     {act.map((k, i) =>
@@ -133,7 +147,7 @@ const CreateRout = ({
                             </div>
                         ) : null
                     )}
-                    <div className="route-to-top">{loc.buttons[3]}</div>
+                    <div className="route-to-top" onClick={()=>scrollTo(header)}>{loc.buttons[3]}</div>
                 </div>
             </SelectedRoutes>
             {cordinates.length === 0 ? (
