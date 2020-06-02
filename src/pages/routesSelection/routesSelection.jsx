@@ -1,11 +1,34 @@
-import React from 'react';
+import React, {useRef} from 'react';
 import './routesSelection.css';
 import Map from "../routesSelection/googleMaps"
 import connect from "react-redux/es/connect/connect";
+import html2canvas from "html2canvas";
+import jsPDF from "jspdf";
 
 const RoutesSelection = ({act, loc, places}) => {
-
+    const mapImg = useRef(null)
     const googleMapsApiKey = "js?key=AIzaSyAzICfk_cT_rY6SjI_OHIZBABrGW7B7ars&v=3.exp&";
+    const  printDocument = () => {
+        console.log(mapImg)
+        // const input = mapImg.current;
+        const input = document.getElementById('divToPrint');
+        const div = document.querySelector('#divToPrint > div:first-of-type')
+        html2canvas(input, {
+            useCORS: true,
+            allowTaint: true,
+            async:false, 
+        })
+            .then((canvas) => {
+                const imgData = canvas.toDataURL('image/jpeg');
+                const pdf = new jsPDF();
+                pdf.addImage(imgData, 'JPEG', 15, 40, 180, 180);
+
+                // pdf.output('dataurlnewwindow');
+                pdf.save("download.pdf");
+            })
+        ;
+    }
+    console.log(mapImg)
 	const atr = arr => {
 		return(
 			<React.Fragment>
@@ -43,7 +66,7 @@ const RoutesSelection = ({act, loc, places}) => {
 			<div className="routes-selection-title">
 				<span style={{width: '120px'}} />
 				<span>{loc.title[2]}</span>
-				<div className="routes-selection-pdf">{loc.title[3]}</div>
+				<div className="routes-selection-pdf" onClick={()=>printDocument()}>{loc.title[3]}</div>
 			</div>
 			<div className="routes-selection-desc">{loc.desc[1]}</div>
 			<div className="routes-wrap">
@@ -63,6 +86,7 @@ const RoutesSelection = ({act, loc, places}) => {
 				))}
 			</div>
             <Map
+                // ref={mapImg}
                 googleMapURL={
                     'https://maps.googleapis.com/maps/api/' +
                     googleMapsApiKey +
@@ -70,8 +94,8 @@ const RoutesSelection = ({act, loc, places}) => {
                 }
                 markers={places}
                 loadingElement={ <div style={{height: `100%`, width: '100%'}}/>}
-                containerElement={ <div style={{height: "50vh", width: '100%'}}/>}
-                mapElement={<div style={{height: `100%`}}/>}
+                containerElement={ <div  style={{height: "50vh", width: '100%'}}/>}
+                mapElement={<div id='divToPrint' style={{height: `100%`}}/>}
                 // defaultCenter={{lat:places[0].latitude, lng:places[0].longitude }}
                 defaultZoom={12}
             />                   
