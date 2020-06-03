@@ -1,5 +1,5 @@
 import React from 'react';
-import {Field, reduxForm} from 'redux-form';
+import {Field, reduxForm, reset} from 'redux-form';
 import { withFormElement } from '../../../components/common/FormControls/Forms';
 import { maxLengthCreator } from '../../../utilites/validators/validator';
 import { login } from '../../../state/actions/settingsActions';
@@ -94,7 +94,9 @@ const Login = (props) => {
     
     const onSubmit = (formData) => {
         console.log(formData)
-        props.login(formData.firstName, formData.lastName , formData.email, formData.message)
+        props.login(formData.firstName, formData.lastName , formData.email, formData.message).then( () => {
+            reset()
+        })
     }
     
     return(   

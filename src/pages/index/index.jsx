@@ -47,7 +47,7 @@ export default props => {
 						<Button text={props.loc.buttons[0]} />
 					</NavLink>
 				</div>
-				<div className="index-block-bottom" />
+				
 			</div>
 			<div className="index-block-middle">
 				<div className="index-middle-wrap">

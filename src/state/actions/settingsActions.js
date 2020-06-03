@@ -2,6 +2,7 @@ import * as types from './actionTypes';
 import { cloneDeep } from "lodash";
 import { authAPI } from "../../api/api";
 import {stopSubmit} from "redux-form";
+import {reset} from 'redux-form';
 
 export const setDrop = i => {
     return (dispatch, getState) => {
@@ -39,13 +40,18 @@ export const addAct = (a, i) => {
     }
 }
 
-export const login = (firstName, lastName, email, message) => async (dispath) => {
+export const login = (firstName, lastName, email, message) => async (dispatch) => {
+    
     let response = await authAPI.login(firstName, lastName, email, message)
-        if (response.data.resultCode === 0){
-            dispath(setAuthUserData());
+    if (response.data.resultCode === 0){
+            dispatch(setAuthUserData());
+            reset()
             // let message = response.data.messages.length > 0 ? response.data.messages[0] : "some error";
             // dispath(stopSubmit("login", {_error: message}))
         }
+      else{
+        reset()
+      } 
 }
 
 export const setLocalisation = (loc) => {

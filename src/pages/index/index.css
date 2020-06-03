@@ -1,3 +1,7 @@
+html, body {
+    /* Убирает прокрутку по горизонтале, для мобильной версии */
+    overflow-x: hidden;
+}
 .index {
 	z-index: -1;
 }
@@ -437,6 +441,15 @@
 }
 
 @media screen and (max-width: 700px) {
+	.index-block-bottom{
+		height: 100px;
+		background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
+		opacity: 1;
+		width: 100%;
+		position: absolute;
+		bottom: 0;
+	}
+	
 	.index-block {
 		background-position: 80% 80%;
 		background-size: 220%;
@@ -452,7 +465,8 @@
 		padding: 5%;
 	}
 	.index-block-middle {
-		padding-top: 70px;
+		padding-top: 0px;
+		margin-top: -1px;
 	}
 	.map-dark {
 		background: none;
