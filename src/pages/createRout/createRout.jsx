@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import { useHistory } from "react-router-dom";
 import "./createRout.css";
 import styled from "styled-components/macro";
@@ -6,134 +6,180 @@ import DropDown from "./dropDown/dropDown";
 import Input from "./input/input";
 import { BtnCreateRout } from "../style/theme";
 import {
-    addAct,
-    setDrop,
-    resetState,
-    setMobMenu,
-    sliderMove
+  addAct,
+  setDrop,
+  resetState,
+  setMobMenu,
+  sliderMove
 } from "../../state/actions/settingsActions";
 import connect from "react-redux/es/connect/connect";
 
-const CreateRout = (props) => {
-  const { loc, menu, cur, act, drop, setDrop, addAct, resetState, cordinates } = props;
-    const [handleClick, setHandleClick] = useState({});
-    let history = useHistory();
-    useEffect(() => {
-        resetState();
-    }, []);
-    const getLength = arr => {
-        let l = 0;
-        for (let i = 0; i < arr.length; i++) if (arr[i]) l++;
-        return l;
-    };
+const CreateRout = ({
+                      loc,
+                      menu,
+                      cur,
+                      act,
+                      drop,
+                      setDrop,
+                      addAct,
+                      resetState,
+                      cordinates,
+                      header
+                    }) => {
+  const [handleClick, setHandleClick] = useState({});
+  let history = useHistory();
+  const selectedItems = useRef(null);
+  const prevCountRef = useRef();
+  useEffect(() => {
+    resetState();
+  }, []);
 
-    const handleClickRuta = i => {
-        setHandleClick({ handleClick: i });
-    };
-    const handleGoSelection = () => {
-        history.push("routes-selection");
-    };
-    return (
-        <CreateRouta>
-            <div className="create-rout-title">{loc.title[0]}</div>
-            <div className="create-rout-desc">{loc.desc[0]}</div>
-            <CreateRoutWrap>
-                {loc.name.map((k, i) => {
-                    const CreateBtn = act[i] ? CreateRoutListRout : CreateRoutList;
-                    return (
-                        <CreateRoutBlock key={i}>
-                            <div className="rout-block-name">{k}</div>
-                            <img
-                                style={{ width: "100%" }}
-                                src={require("./img/" + i + ".png")}
-                                alt={k}
-                            />
-                            <CreateRoutBlockWrap active={drop[i]}>
-                                <div className="create-rout-block-desc-wrap">
-                                    <div className="create-rout-block-desc">
-                                        <span>{loc.name2[i]}</span>
-                                        <Input
-                                            gr={i}
-                                            active={act[i] ? true : false}
-                                            addAct={addAct}
-                                        />
-                                    </div>
-                                    <div className="create-area-desc">
-                                        Commodo amet aliquip qui est sint sit enim labore occaecat
-                                        dolore sint ea mollit dolore.
-                                    </div>
-                                </div>
+  useEffect(() => {
+    prevCountRef.current = act;
+  });
+  const getLength = arr => {
+    let l = 0;
+    for (let i = 0; i < arr.length; i++) if (arr[i]) l++;
+    return l;
+  };
 
-                                <div className="drop-down-wrap">
-                                    <DropDown
-                                        gr={i}
-                                        arr={loc.arrt[i]}
-                                        open={drop[i] ? true : false}
-                                        addAct={addAct}
-                                        active={act[i]}
-                                        handleClick={handleClick}
-                                        setHandleClick={setHandleClick}
-                                    />
-                                    <div className="area-button-row">
+  const handleClickRuta = i => {
+    setHandleClick({ handleClick: i });
+  };
+
+  const handleGoSelection = () => {
+    history.push("routes-selection");
+  };
+
+  const handleClickVeziRuta = i => {
+    scrollTo(selectedItems);
+    if (drop[i] === true) {
+      setDrop(i);
+    }
+  };
+
+  const scrollTo = ref => {
+    ref.current.scrollIntoView({ behavior: "smooth", block: "start" });
+  };
+  return (
+      <CreateRouta>
+        <div className="create-rout-title">{loc.title[0]}</div>
+        <div className="create-rout-desc">{loc.desc[0]}</div>
+        <CreateRoutWrap>
+          {loc.name.map((k, i) => {
+            const CreateBtn = act[i] ? CreateRoutListRout : CreateRoutList;
+            // const checkLengthPrevAcr = prevCountRef.current[i].length === act[i].length;
+            return (
+                <CreateRoutBlock key={i}>
+                  <div className="rout-block-name">{k}</div>
+                  <img
+                      style={{ width: "100%" }}
+                      src={require("./img/" + i + ".png")}
+                      alt={k}
+                  />
+                  <CreateRoutBlockWrap active={drop[i]}>
+                    <div className="create-rout-block-desc-wrap">
+                      <div className="create-rout-block-desc">
+                        <span>{loc.name2[i]}</span>
+                        <Input
+                            gr={i}
+                            active={act[i] ? true : false}
+                            addAct={addAct}
+                        />
+                      </div>
+                      <div className="create-area-desc">
+                        Commodo amet aliquip qui est sint sit enim labore occaecat
+                        dolore sint ea mollit dolore.
+                      </div>
+                    </div>
+
+                    <div className="drop-down-wrap">
+                      <DropDown
+                          gr={i}
+                          arr={loc.arrt[i]}
+                          open={drop[i] ? true : false}
+                          addAct={addAct}
+                          active={act[i]}
+                          handleClick={handleClick}
+                          setHandleClick={setHandleClick}
+                      />
+                      <div className="area-button-row">
                     <span
                         style={{ cursor: "pointer" }}
                         onClick={setDrop.bind(this, i)}
                     >
                       {drop[i] ? "vezi mai putin -" : "vezi mai mult +"}
                     </span>
-                                         <div className='button-wrapper'>
-                                             {handleClick.handleClick === i && act[i]
-                                                 ? <CreateBtn>RUTA SELECTATA</CreateBtn>
-                                                 :  <CreateBtn onClick={() => handleClickRuta(i)}>Creează ruta {act[i] ? "("+ getLength(act[i]) + ")" : ''}</CreateBtn> }
+                        <div className="button-wrapper">
+                          {handleClick.handleClick === i && prevCountRef.current[i].length === act[i].length ? (
+                              <CreateBtn>
+                                Ruta selectată{" "}
+                                {act[i] ? "(" + getLength(act[i]) + ")" : ""}
+                              </CreateBtn>
+                          ) : (
+                              <CreateBtn onClick={() => handleClickRuta(i)}>
+                                Creează ruta{" "}
+                                {act[i] ? "(" + getLength(act[i]) + ")" : ""}
+                              </CreateBtn>
+                          )}
 
-                                             <VeziRutra onClick={setDrop.bind(this, i)} active={handleClick.handleClick === i && act[i]}>
-                                                 VESI RUTA
-                                             </VeziRutra>
-                                         </div>
-                                    </div>
-                                </div>
-                            </CreateRoutBlockWrap>
-                        </CreateRoutBlock>
-                    );
-                })}
-                <CreateRoutBlockEmpty />
-            </CreateRoutWrap>
-            <div className="route-select">{loc.title[1]}</div>
-            <SelectedRoutes>
-                <div className="selected-routes-wrap">
-                    {act.map((k, i) =>
-                        k ? (
-                            <div key={i} className="selected-routes-row">
-                                <img
-                                    onClick={addAct.bind(this, i, null)}
-                                    className="selected-cross"
-                                    src={require("./img/cross.png")}
-                                    alt={k}
-                                />
-                                <img
-                                    className="selected-img"
-                                    src={require("./img/" + i + ".png")}
-                                    alt={k}
-                                />
-                                <div className="selected-routes-right">
-                                    <div>{loc.name[i]}</div>
-                                    <span>Atractii({getLength(act[i])})</span>
-                                </div>
-                            </div>
-                        ) : null
-                    )}
-                    <div className="route-to-top">{loc.buttons[3]}</div>
-                </div>
-            </SelectedRoutes>
-            {cordinates.length === 0 ? (
-                <BtnNotActive onClick={() => handleGoSelection()}>
-                    {loc.buttons[2]}
-                </BtnNotActive>
-            ) : (
-                <Btn onClick={() => handleGoSelection()}>{loc.buttons[2]}</Btn>
-            )}
-        </CreateRouta>
-    );
+                          <VeziRutra
+                              onClick={() => handleClickVeziRuta(i)}
+                              active={handleClick.handleClick === i && prevCountRef.current[i].length === act[i].length}
+                          >
+                            VESI RUTA
+                          </VeziRutra>
+                        </div>
+                      </div>
+                    </div>
+                  </CreateRoutBlockWrap>
+                </CreateRoutBlock>
+            );
+          })}
+          <CreateRoutBlockEmpty />
+        </CreateRoutWrap>
+        <div className="route-select" ref={selectedItems}>
+          {loc.title[1]}
+        </div>
+        <SelectedRoutes length={act >= 3}>
+          <div className="selected-routes-wrap">
+            <div className="selected-routes">
+              {act.map((k, i) =>
+                  k ? (
+                      <div key={i} className="selected-routes-row">
+                        <img
+                            onClick={addAct.bind(this, i, null)}
+                            className="selected-cross"
+                            src={require("./img/cross.png")}
+                            alt={k}
+                        />
+                        <img
+                            className="selected-img"
+                            src={require("./img/" + i + ".png")}
+                            alt={k}
+                        />
+                        <div className="selected-routes-right">
+                          <div>{loc.name[i]}</div>
+                          <span>Atractii({getLength(act[i])})</span>
+                        </div>
+                      </div>
+                  ) : null
+              )}
+            </div>
+            <div className="route-to-top" onClick={() => scrollTo(header)}>
+              {loc.buttons[3]}
+            </div>
+          </div>
+        </SelectedRoutes>
+        {cordinates.length === 0 ? (
+            <BtnNotActive onClick={() => handleGoSelection()}>
+              {loc.buttons[2]}
+            </BtnNotActive>
+        ) : (
+            <Btn onClick={() => handleGoSelection()}>{loc.buttons[2]}</Btn>
+        )}
+      </CreateRouta>
+  );
 };
 const CreateRouta = styled.div`
   background-color: #000000;
@@ -143,6 +189,7 @@ const CreateRouta = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding-bottom: 4rem;
   .create-rout-title {
     font-size: 35px;
     line-height: 52px;
@@ -199,7 +246,7 @@ const CreateRoutWrap = styled.div`
 `;
 
 const CreateRoutBlock = styled.div`
-  width: calc(95% /3);
+  width: calc(95% / 3);
   margin-bottom: 10rem;
   position: relative;
   @media screen and (max-width: 1200px) {
@@ -259,8 +306,8 @@ const CreateRoutBlockWrap = styled.div`
     z-index: ${props => (props.active ? 2 : 0)};
     transition: z-index 1s;
     box-shadow: 0 35px 0px 10px black;
-    
-    .button-wrapper{
+
+    .button-wrapper {
       display: flex;
       flex-direction: column;
     }
@@ -277,13 +324,40 @@ const SelectedRoutes = styled.div`
     display: flex;
     justify-content: space-around;
     margin: 30px 0;
+    .selected-routes {
+      display: flex;
+      width: 80%;
+      overflow-x: scroll;
+      .selected-routes-right {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .selected-routes-right div {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 27px;
+        color: #f8981d;
+      }
+
+      .selected-routes-row {
+        display: flex;
+        align-items: center;
+        position: relative;
+        padding: 20px;
+        min-width: 250px;
+      }
+    }
     .selected-cross {
       position: absolute;
       right: -10px;
-      top: -10px;
+      top: 0px;
       width: 15px;
       height: 15px;
       cursor: pointer;
+      z-index: 2;
       @media screen and (max-width: 1200px) {
         flex-direction: column;
         align-items: center;
@@ -298,22 +372,9 @@ const SelectedRoutes = styled.div`
       margin-right: 10px;
     }
 
-    .selected-routes-right {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-    }
-
-    .selected-routes-right div {
-      font-style: normal;
-      font-weight: normal;
-      font-size: 18px;
-      line-height: 27px;
-      color: #f8981d;
-    }
-
     .route-to-top {
       width: 300px;
+      margin-left: 4rem;
       height: 120px;
       border: 1px dashed rgba(255, 255, 255, 0.5);
       display: flex;
@@ -331,14 +392,6 @@ const SelectedRoutes = styled.div`
         padding: 0 8%;
       }
     }
-  }
-
-  .selected-routes-row {
-    display: flex;
-    align-items: center;
-    position: relative;
-    padding: 20px;
-    width: 250px;
   }
 `;
 
@@ -378,35 +431,27 @@ const BtnNotActive = styled(props => <Btn {...props} />)`
 const VeziRutra = styled.div`
   display: flex;
   justify-content: center;
-  background: #000;
-  border: none;
-  margin: 10px 0 0 0;
   opacity: ${props => (props.active ? "1" : "0")};
   color: #f0a000;
   padding-top: 1rem;
   cursor: pointer;
   font-size: 1rem;
   font-weight: 700;
-   transition: ${props =>
-    props.active
-        ? " opacity 0.3s ease-in-out"
-        : " opacity 0.3s ease-in-out"};
+  transition: ${props =>
+    props.active ? " opacity 0.3s ease-in-out" : " opacity 0.3s ease-in-out"};
 `;
 
-
 const mapStateToProps = state => ({
-    menu: state.settings.menu,
-    cur: state.settings.cur,
-    act: state.settings.act,
-    drop: state.settings.drop,
-    cordinates: state.settings.cordinates
+  menu: state.settings.menu,
+  cur: state.settings.cur,
+  act: state.settings.act,
+  drop: state.settings.drop,
+  cordinates: state.settings.cordinates
 });
 export default connect(mapStateToProps, {
-    setDrop,
-    addAct,
-    setMobMenu,
-    sliderMove,
-    resetState
+  setDrop,
+  addAct,
+  setMobMenu,
+  sliderMove,
+  resetState
 })(CreateRout);
-
-

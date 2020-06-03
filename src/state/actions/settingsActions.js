@@ -1,4 +1,4 @@
-import * as types from "./actionTypes";
+import * as types from './actionTypes';
 import { cloneDeep } from "lodash";
 
 export const setDrop = i => {
