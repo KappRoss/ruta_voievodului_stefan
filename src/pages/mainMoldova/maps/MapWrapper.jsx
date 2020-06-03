@@ -25,19 +25,45 @@ export default class MapWrapper extends Component {
   state = {
     active: "",
     activeElement: null,
-    svg: null
+    svg: null,
+    eventType: "",
+    ignoreNextEvent: false
   }
 
   setSvg = (svg) => {
     this.svg = svg;
   };
 
-  setActive = (active) =>
-    ({ target: activeElement }) => {
-      const isNewActive = active !== this.state.active;
+  setActive = (id) =>
+    ({ target, nativeEvent: { type } }) => {
+      let { eventType, activeElement, active, ignoreNextEvent } = this.state;
+      const isNewActive = active !== id;
+      const isMouseEvent = type.indexOf("mouse") === 0;
+      const isNewEvent = type !== eventType;
+
+
+      if (isNewActive && ignoreNextEvent) {
+        ignoreNextEvent = false;
+      } else if (isNewActive) {
+        eventType = type;
+        activeElement = target;
+        active = id;
+      } else if (isMouseEvent && isNewEvent) {
+        //
+      } else if (!isMouseEvent && isNewEvent) {
+        eventType = type;
+      } else if (!isNewEvent) {
+        eventType = "";
+        activeElement = null;
+        active = "";
+        ignoreNextEvent = !isMouseEvent;
+      }
+
       this.setState({
-        active: isNewActive ? active : "",
-        activeElement: isNewActive ? activeElement : null
+        active,
+        activeElement,
+        eventType,
+        ignoreNextEvent
       });
     }
 

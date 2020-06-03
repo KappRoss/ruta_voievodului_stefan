@@ -96,7 +96,7 @@ export const locData = {
 			],
 			roname: [],
 			title: [
-				'',
+				'The Cultural Route of the Ruler Stephen The Great and Saint (Ștefan Cel Mare Și Sfânt) in Romania and in The Republic of Moldova',
 				'Route Objectives in the Republic of Moldova',
 				'',
 				'',
@@ -104,8 +104,8 @@ export const locData = {
 				''
 			],
 			desc: [
-				'',
-				'',
+				' “The Stephen the Great” route  in Romania and in the Republic of Moldova will cross through 20 places in Romania, 9 places in the Republic of Moldova and thirteen wine fields, thus offering tourists a lesson in history and spirituality through the tourist sights represented by the monasteries, the fortified cities, wine cellars, elder than 500 years, whose continuity has been preserved to our days, as well as the museums in which exhibitions with artifacts from the period of reign of Stephen the Great were organized.',
+				'Ștefan cel Mare și Sfânt (Stephen the Great and Saint) was the best and the greatest ruler of Moldova ever. He ruled with the country for 47 years (1457-1504). His qualities as: a good strategist and astute diplomat, the initiatives taken to develop the culture by founding a new architecture style, building an impressive number of churches and monasteries, and the battles waged and won to defend the integrity of the country - have made him a legendary hero.',
 				'',
 				'',
 				'See 40 more tourist attractions in Romania'
@@ -117,50 +117,186 @@ export const locData = {
 	about: {
 		ro: {
 			title: 'Ruta Voievodului Ștefan cel Mare și Sfânt în România și în Republica Moldova',
-			text: [[
-				'Ştefan cel Mare a fost cel mai mare domnitor pe care l-a avut Moldova, între anii 1457 – 1504. Calitățile sale de bun strateg și diplomat, inițiativele întreprinse pentru dezvoltarea culturii prin ctitorirea unui număr impresionant de biserici și mănăstiri și bătăliile purtate și câștigate pentru apărarea integrității țării l-au transformat într-un erou legendar.',
-				'Ruta Voievodului Ștefan cel Mare și Sfânt în România și în Republica Moldova va străbate optsprezece localități din România, unsprezece localități din Republica Moldova și treispezece domenii viticole, oferind, astfel, turiștilor o lecție de istorie și de spiritualitate prin intermediul obiectivelor turistice reprezentate de mănăstirile ctitorite, cetățile fortificate, hrubele (beciurile domnești) vechi de peste 500 de ani, a căror continuitate s-a păstrat până în zilele noastre și, nu în ultimul rând, a muzeelor în cadrul cărora sunt organizate expoziții cu artefacte din timpul domniei Voievodului Ștefan cel Mare și Sfânt.',
-				'Voievodul Ștefan cel Mare a venit la putere într-o Moldovă dezbinată, pe cale de a- și pierde identitatea, într-o Moldovă pe care a așezat-o din temelii. Fiindcă pericolul otoman creștea vertiginos după căderea Constantinopolului, a crescut armata - “oastea cea mare” din răzeși și țărani, a consolidat militar cetățile aflate la graniță, creând un sistem de fortificații ce cuprindea cetăți dintre care patru se aflau pe râul Nistru: Cetatea Soroca, Cetatea Tighina, Cetatea Albă, Hotinul și Orhei - pe râul Răut. Dintre cele peste 40 de războaie și bătălii purtate, doar una a avut loc pe teritoriul actualei Republici Moldova și a rămas în istorie ca victorioasa luptă de la Lipnic împotriva tătarilor din anul 1469.',
-				'A avut o mare grijă pentru consolidarea economică a țării, stimulând relațiile comerciale externe, ceea ce i-a adus bani şi faimă. Unul dintre cele mai importante drumuri comerciale ale Europei, „drumul mirodeniilor“, trecea prin Moldova, iar Ştefan cel Mare a fost primul care a înţeles pe deplin importanţa acestui mare avantaj şi l-a exploatat în folosul său.',
-				'Pe vremea Domniei lui Ștefan cel Mare, Moldova devenise una dintre cele mai importante regiuni de cultivare a viței de vie și producere a vinului în cadrul mănăstirilor. Viticultura și-a atins apogeul, iar postul de paharnic la curtea domnească a fost instituit anume de Voievodul Ștefan.',
-				'Numit de Papa Sixt al IV-lea drept „atlet al lui Cristos”, Ștefan cel Mare a acordat o atenție deosebită bisericii. Conducătorul Moldovei construiește un număr impresionant de lăcașuri de cult. Tradiția populară îi atribuie ctitorirea a 44 de biserici, dar în mod cert sunt cunoscute 32 de zidiri. A fost ctitorul multor mănăstiri și biserici din Moldova, cum e Căpriana, biserica veche de la Lăpușna, bisericuța de la Lipnic, iar la Țâpova, circulă legenda că s-ar fi cununat cu cea de-a treia soție a sa, Maria Voichița.',
-				'La 500 de ani distanţă în timp, vorbim despre El ca şi cum nici n-ar fi murit, ba chiar ar mai exista încă, undeva pe-aici, peste tot în Moldova, iar marile sale lecții - de strategie, diplomație, economie și creștinătate rămân de o uimitoare actualitate și astăzi.',
-				'Ruta Voievodului Ștefan cel Mare și Sfânt în România și în Republica Moldova reprezintă o oportunitate de conștientizare și de promovare a unei părți din inestimabila moștenire pe care ne-a lăsat-o simbolul renașterii vieții culturale, spirituale și monahale pe teritoriul Moldovei, Basarabiei și Bucovinei.'
-			],
-			['text2','text3'],
-			['text3','text3'],
-			['text4','text3'],
-			['text5','text3'],
-			['text6','text3'],
-			['text7','text3'],
-			['text8','text3'],
-			['text9','text3'],
-			['text10','text3'],
-			['text11','text3'],
-			['text12','text3'],
-			['text13','text3'],
-			['text14','text3'],
-			['text15','text3'],
-			['text16','text3'],
-			['text17','text3'],
-			['text18','text3'],
-			['text19','text3'],
-			['text20','text3']
-		
-		]
+			text: [
+				[
+					'Ştefan cel Mare a fost cel mai mare domnitor pe care l-a avut Moldova, între anii 1457 – 1504. Calitățile sale de bun strateg și diplomat, inițiativele întreprinse pentru dezvoltarea culturii prin ctitorirea unui număr impresionant de biserici și mănăstiri și bătăliile purtate și câștigate pentru apărarea integrității țării l-au transformat într-un erou legendar.',
+					'Ruta Voievodului Ștefan cel Mare și Sfânt în România și în Republica Moldova va străbate optsprezece localități din România, unsprezece localități din Republica Moldova și treispezece domenii viticole, oferind, astfel, turiștilor o lecție de istorie și de spiritualitate prin intermediul obiectivelor turistice reprezentate de mănăstirile ctitorite, cetățile fortificate, hrubele (beciurile domnești) vechi de peste 500 de ani, a căror continuitate s-a păstrat până în zilele noastre și, nu în ultimul rând, a muzeelor în cadrul cărora sunt organizate expoziții cu artefacte din timpul domniei Voievodului Ștefan cel Mare și Sfânt.',
+					'Voievodul Ștefan cel Mare a venit la putere într-o Moldovă dezbinată, pe cale de a- și pierde identitatea, într-o Moldovă pe care a așezat-o din temelii. Fiindcă pericolul otoman creștea vertiginos după căderea Constantinopolului, a crescut armata - “oastea cea mare” din răzeși și țărani, a consolidat militar cetățile aflate la graniță, creând un sistem de fortificații ce cuprindea cetăți dintre care patru se aflau pe râul Nistru: Cetatea Soroca, Cetatea Tighina, Cetatea Albă, Hotinul și Orhei - pe râul Răut. Dintre cele peste 40 de războaie și bătălii purtate, doar una a avut loc pe teritoriul actualei Republici Moldova și a rămas în istorie ca victorioasa luptă de la Lipnic împotriva tătarilor din anul 1469.',
+					'A avut o mare grijă pentru consolidarea economică a țării, stimulând relațiile comerciale externe, ceea ce i-a adus bani şi faimă. Unul dintre cele mai importante drumuri comerciale ale Europei, „drumul mirodeniilor“, trecea prin Moldova, iar Ştefan cel Mare a fost primul care a înţeles pe deplin importanţa acestui mare avantaj şi l-a exploatat în folosul său.',
+					'Pe vremea Domniei lui Ștefan cel Mare, Moldova devenise una dintre cele mai importante regiuni de cultivare a viței de vie și producere a vinului în cadrul mănăstirilor. Viticultura și-a atins apogeul, iar postul de paharnic la curtea domnească a fost instituit anume de Voievodul Ștefan.',
+					'Numit de Papa Sixt al IV-lea drept „atlet al lui Cristos”, Ștefan cel Mare a acordat o atenție deosebită bisericii. Conducătorul Moldovei construiește un număr impresionant de lăcașuri de cult. Tradiția populară îi atribuie ctitorirea a 44 de biserici, dar în mod cert sunt cunoscute 32 de zidiri. A fost ctitorul multor mănăstiri și biserici din Moldova, cum e Căpriana, biserica veche de la Lăpușna, bisericuța de la Lipnic, iar la Țâpova, circulă legenda că s-ar fi cununat cu cea de-a treia soție a sa, Maria Voichița.',
+					'La 500 de ani distanţă în timp, vorbim despre El ca şi cum nici n-ar fi murit, ba chiar ar mai exista încă, undeva pe-aici, peste tot în Moldova, iar marile sale lecții - de strategie, diplomație, economie și creștinătate rămân de o uimitoare actualitate și astăzi.',
+					'Ruta Voievodului Ștefan cel Mare și Sfânt în România și în Republica Moldova reprezintă o oportunitate de conștientizare și de promovare a unei părți din inestimabila moștenire pe care ne-a lăsat-o simbolul renașterii vieții culturale, spirituale și monahale pe teritoriul Moldovei, Basarabiei și Bucovinei.'
+				],
+				[
+					'text2',
+					'text3'
+				],
+				[
+					'text3',
+					'text3'
+				],
+				[
+					'text4',
+					'text3'
+				],
+				[
+					'text5',
+					'text3'
+				],
+				[
+					'text6',
+					'text3'
+				],
+				[
+					'text7',
+					'text3'
+				],
+				[
+					'text8',
+					'text3'
+				],
+				[
+					'text9',
+					'text3'
+				],
+				[
+					'text10',
+					'text3'
+				],
+				[
+					'text11',
+					'text3'
+				],
+				[
+					'text12',
+					'text3'
+				],
+				[
+					'text13',
+					'text3'
+				],
+				[
+					'text14',
+					'text3'
+				],
+				[
+					'text15',
+					'text3'
+				],
+				[
+					'text16',
+					'text3'
+				],
+				[
+					'text17',
+					'text3'
+				],
+				[
+					'text18',
+					'text3'
+				],
+				[
+					'text19',
+					'text3'
+				],
+				[
+					'text20',
+					'text3'
+				]
+			]
 		},
 		en: {
 			title: 'The Cultural Route of the Ruler Stephen The Great and Saint (Ștefan Cel Mare Și Sfânt) in Romania and in The Republic of Moldova',
 			text: [
-				'Ștefan cel Mare și Sfânt (Stephen the Great and Saint) was the best and the greatest ruler of Moldova ever. He ruled with the country for 47 years (1457-1504). His qualities as: a good strategist and astute diplomat, the initiatives taken to develop the culture by founding a new architecture style, building an impressive number of churches and monasteries, and the battles waged and won to defend the integrity of the country - have made him a legendary hero.',
-				'“The Stephen the Great” route in Romania and in the Republic of Moldova will cross through 20 places in Romania, 9 places in the Republic of Moldova and thirteen wine fields, thus offering tourists a lesson in history and spirituality through the tourist sights represented by the monasteries, the fortified cities, wine cellars, elder than 500 years, whose continuity has been preserved to our days, as well as the museums in which exhibitions with artifacts from the period of reign of Stephen the Great were organized.',
-				'During Stephen the Great reign Moldova knew the most flourishing period in its history. As the Ottoman danger increased rapidly after the fall of Constantinople, he increased the army - the &quot;great army&quot; of raiders and peasants. He militarily consolidated the border cities, creating a system of fortifications comprising Fortresses, four of which were situated on the Dniester River: Soroca Fortress, Tighina Fortress, White Fortress and Hotin Fortress, also Orhei - on the Răut River. He led more than 40 wars and battles. Only one of them took place on the territory of the present Republic of Moldova and has remained in history as the victorious Lipnic battle from 1469 against the Tatars.',
-				'He took great care for the economic consolidation of the country, stimulating foreign trade relations, which brought him money and fame. One of Europe&#39;s most important commercial roads, the &quot;spice road&quot;, was passing through Moldova, and The Stephen the Great was the first to fully understand the importance of this great advantage and exploited it for country’s favour.',
-				'During Stephen the Great reign, Moldova had become one of the most important regions for the cultivation of vineyards and wine production in the monasteries. Viticulture reached its peak, and the position of cupbearer at the royal court was set up sby Stephen the Great specifically.',
-				'Named by Pope Sixtus IV as &quot;Christ&#39;s athlete” Stephen the Great paid special attention to spiritual life and cristianity promotion. He was the founder of many monasteries and churches in Moldova, and built an impressive number of places of worship. Popular tradition attributes him the founding of 44 churches. 500 years away in time, we talk about him as if he never died, or even more as he is still alive, somewhere around here, everywhere in Moldova, and his great lessons - of strategy, diplomacy, economy and Christianity remains amazing news even today.',
-				'The route of Stephen the Great through Romania and the Republic of Moldova represents an opportunity to raise awareness and to promote a part of the invaluable heritage that has left us the Symbol of the revival of cultural, spiritual and monastic life on the territory of Moldova, Bessarabia and Bucovina.'
+				[
+					'Ştefan cel Mare a fost cel mai mare domnitor pe care l-a avut Moldova, între anii 1457 – 1504. Calitățile sale de bun strateg și diplomat, inițiativele întreprinse pentru dezvoltarea culturii prin ctitorirea unui număr impresionant de biserici și mănăstiri și bătăliile purtate și câștigate pentru apărarea integrității țării l-au transformat într-un erou legendar.',
+					'Ruta Voievodului Ștefan cel Mare și Sfânt în România și în Republica Moldova va străbate optsprezece localități din România, unsprezece localități din Republica Moldova și treispezece domenii viticole, oferind, astfel, turiștilor o lecție de istorie și de spiritualitate prin intermediul obiectivelor turistice reprezentate de mănăstirile ctitorite, cetățile fortificate, hrubele (beciurile domnești) vechi de peste 500 de ani, a căror continuitate s-a păstrat până în zilele noastre și, nu în ultimul rând, a muzeelor în cadrul cărora sunt organizate expoziții cu artefacte din timpul domniei Voievodului Ștefan cel Mare și Sfânt.',
+					'Voievodul Ștefan cel Mare a venit la putere într-o Moldovă dezbinată, pe cale de a- și pierde identitatea, într-o Moldovă pe care a așezat-o din temelii. Fiindcă pericolul otoman creștea vertiginos după căderea Constantinopolului, a crescut armata - “oastea cea mare” din răzeși și țărani, a consolidat militar cetățile aflate la graniță, creând un sistem de fortificații ce cuprindea cetăți dintre care patru se aflau pe râul Nistru: Cetatea Soroca, Cetatea Tighina, Cetatea Albă, Hotinul și Orhei - pe râul Răut. Dintre cele peste 40 de războaie și bătălii purtate, doar una a avut loc pe teritoriul actualei Republici Moldova și a rămas în istorie ca victorioasa luptă de la Lipnic împotriva tătarilor din anul 1469.',
+					'A avut o mare grijă pentru consolidarea economică a țării, stimulând relațiile comerciale externe, ceea ce i-a adus bani şi faimă. Unul dintre cele mai importante drumuri comerciale ale Europei, „drumul mirodeniilor“, trecea prin Moldova, iar Ştefan cel Mare a fost primul care a înţeles pe deplin importanţa acestui mare avantaj şi l-a exploatat în folosul său.',
+					'Pe vremea Domniei lui Ștefan cel Mare, Moldova devenise una dintre cele mai importante regiuni de cultivare a viței de vie și producere a vinului în cadrul mănăstirilor. Viticultura și-a atins apogeul, iar postul de paharnic la curtea domnească a fost instituit anume de Voievodul Ștefan.',
+					'Numit de Papa Sixt al IV-lea drept „atlet al lui Cristos”, Ștefan cel Mare a acordat o atenție deosebită bisericii. Conducătorul Moldovei construiește un număr impresionant de lăcașuri de cult. Tradiția populară îi atribuie ctitorirea a 44 de biserici, dar în mod cert sunt cunoscute 32 de zidiri. A fost ctitorul multor mănăstiri și biserici din Moldova, cum e Căpriana, biserica veche de la Lăpușna, bisericuța de la Lipnic, iar la Țâpova, circulă legenda că s-ar fi cununat cu cea de-a treia soție a sa, Maria Voichița.',
+					'La 500 de ani distanţă în timp, vorbim despre El ca şi cum nici n-ar fi murit, ba chiar ar mai exista încă, undeva pe-aici, peste tot în Moldova, iar marile sale lecții - de strategie, diplomație, economie și creștinătate rămân de o uimitoare actualitate și astăzi.',
+					'Ruta Voievodului Ștefan cel Mare și Sfânt în România și în Republica Moldova reprezintă o oportunitate de conștientizare și de promovare a unei părți din inestimabila moștenire pe care ne-a lăsat-o simbolul renașterii vieții culturale, spirituale și monahale pe teritoriul Moldovei, Basarabiei și Bucovinei.'
+				],
+				[
+					'text2',
+					'text3'
+				],
+				[
+					'text3',
+					'text3'
+				],
+				[
+					'text4',
+					'text3'
+				],
+				[
+					'text5',
+					'text3'
+				],
+				[
+					'text6',
+					'text3'
+				],
+				[
+					'text7',
+					'text3'
+				],
+				[
+					'text8',
+					'text3'
+				],
+				[
+					'text9',
+					'text3'
+				],
+				[
+					'text10',
+					'text3'
+				],
+				[
+					'text11',
+					'text3'
+				],
+				[
+					'text12',
+					'text3'
+				],
+				[
+					'text13',
+					'text3'
+				],
+				[
+					'text14',
+					'text3'
+				],
+				[
+					'text15',
+					'text3'
+				],
+				[
+					'text16',
+					'text3'
+				],
+				[
+					'text17',
+					'text3'
+				],
+				[
+					'text18',
+					'text3'
+				],
+				[
+					'text19',
+					'text3'
+				],
+				[
+					'text20',
+					'text3'
+				]
 			]
-		},
+		}
 	},
 	moldova: {
 		ro: {
@@ -227,7 +363,16 @@ export const locData = {
 			]
 		},
 		en: {
-
+			title: 'Alte atracții turistice din România',
+			name: ['Județul Suceava', 'Județul Iasi', 'Județul Vaslui', 'Județul Neamț', 'Județul Botosani', 'Județul Vrancea'],
+			text: [
+				'1. Biserica “Tăierea Capului Sfântului Ioan Botezătorul” din comuna Arbore, a fost inclusă în Lista Patrimoniului Mondial UNESCO în anul 1993. <br /> 2. Biserica “Adormirea Maicii Domnului” şi ,”Sf. Gheorghe” a Mănăstirii Humor, din comuna Mănăstirea Humorului, a fost inclusă în Lista Patrimoniului Mondial UNESCO în anul 1993.<br /> 3. Mănăstirea Probota, satul Probota a fost inclusă în Lista Patrimoniului Mondial UNESCO în anul 1993. <br />4. Biserica “Sf. Gheorghe” a Mănăstirii “Sf. Ioan cel Nou” din Suceava a fost inclusă în Lista Patrimoniului Mondial UNESCO în anul 1993. <br />5. Biserica Mănăstirii Sucevița a fost inclusă în Lista Patrimoniului Mondial UNESCO în anul 2010.<br /> 6. Biserica Mănăstirii Moldovița din comuna Vatra Moldoviței este inclusă în Lista Patrimoniului Mondial UNESCO.<br /> 7. Hanul Domnesc din Suceava <br />8. Comuna muzeu - Ciocăneşti <br />9. Centrul de Ceramică Neagră din Marginea',
+				'10. Catedrala Mitropolitană <br /> 11. Mănăstirea Sfinţii Trei Ierarhi <br /> 12. Colina Copou <br /> 13. Mănăstirea Golia <br /> 14. Muzeul Unirii <br /> 15. Mănăstirea Cetăţuia <br /> 16. Palatul Ruginoasa',
+				'25. Muzeul Viticol Huși <br /> 26. Muzeul Eparhial de Artă Religioasă <br /> 27. Casa Ghica și casa Mavrocordat <br /> 28. Rezervația botanică "Movila lui Burcel" <br /> 29. Locul fosilifer "Nisipăria Hulubăț" <br /> 30. Muzeul Tradițiilor <br /> 31. Parcul Copou',
+				'32. Parcul Natural Vânători Neamț <br /> 33. Parcul Național Ceahlău <br /> 34. Muzeul de Artă Eneolitică Cucuteni <br /> 35. Muzeul Memorial Ion Creangă Humulești <br /> 36. Mănăstirea Agapia <br /> 37. Mănăstirea Văratec <br /> 38. Mănăstirea Secu <br /> 39. Mănăstirea Sihăstria',
+				'17. Situl arheologic de la Ripiceni - Misteriosul „oraş” de pe malurile Prutului face parte dintr-o aşezare uriaşă, considerată printre cele mai mari descoperite vreodată pe teritoriul României, în cadrul culturii Cucuteni. <br /> 18. Mănăstirea Vorona, <br /> 19. Mănăstirea Coșula, <br /> 20. Biserica de lemn Sfântul Dumitru Vorniceni, <br /> 21. Biserica de lemn Sfântul Dumitru Ionățeni, Biserica de lemn Adormirea Maicii Domnului, Biserica de lemn Sfinții Voievozi, Biserica lipovenească “Nașterea Maicii Domnului”, <br /> 22. Biserica de lemn din Dorohoi, <br /> 23. Mănăstirea Agafton, <br /> 24. Ipotesti – observator – Lacul codrilor albastru',
+				'40. Mausoleul Eroilor de la Mărăşeşti - este un monument dedicat eroilor din Primul Război Mondial <br /> 41. Mausoleul Eroilor de la Soveja - monumentul este amplasat în satul Dragosloveni, comuna Soveja şi este dedicat eroilor căzuţi în luptele de pe cuprinsul văii Şuşiţei. <br /> 42. Mausoleul Eroilor de la Mărăşti - este situat în satul Mărăşti, comuna Răcoasa. Mausoleul a fost ridicat pe locul unde s-a dat bătălia din 9-17 iulie 1917 şi face parte, alături de alte obiective istorice, din Câmpul istoric de la Mărăşti <br /> 43. Mausoleul Eroilor de la Focşani <br /> 44. Rezervaţia Naturală Tişiţa – Cheile Tişiţei <br /> 45. Rezervaţia Naturală Focul Viu <br /> 46. Muzeul Satului Vrâncean'
+			]
 		}
 	},
 	CreateRout: {
@@ -295,7 +440,67 @@ export const locData = {
 			]
 		},
 		en: {
-			name: []
+			title: ['Creează-ți ruta', 'Rutele selectate', 'Ruta creată', 'descarcĂ pdf'],
+			desc: [
+				'Voievodul Ștefan cel Mare a venit la putere într-o Moldovă dezbinată, pe cale de a-și pierde identitatea, într-o Moldovă pe care a așezat-o din temelii. Fiindcă pericolul otoman creștea vertiginos după căderea Constantinopolului, a crescut armata',
+				'Voievodul Ștefan cel Mare a venit la putere într-o Moldovă dezbinată, pe cale de a-și pierde identitatea, într-o Moldovă pe care a așezat-o din temelii. Fiindcă pericolul otoman creștea vertiginos după căderea Constantinopolului, a crescut armata'
+			],
+			name: ['Raionul Strășeni', 'Orheiul Vechi', 'Raionul Soroca', 'Raionul Anenii Noi', 'Orașul Chișinău', 'Orașul Tighina', 'Raionul Rezina', 'Raionul Șoldănești', 'Raionul Ștefan-Vodă', 'Raionul Hânceșt', 'Raionul Ocnița'],
+			name2: ['Mănăstirea Căpriana', 'Orheiul Vechi', 'Cetatea Soroca', 'Satul Mereni', 'Tărgul Chișinău/Buiucani', 'Cetatea Tighina', 'Mănăstirea Țipova', 'Stejarul lui Ștefan cel Mare', 'Ștefan-Vodă regiune', 'Conacul “Manuc Bey"', 'Conacul lui Constantin Stamati'],
+			buttons: ['', '', 'Vezi mai mult', 'Selectează următoarea destinație'],
+			arrt: [
+				[
+					'Biserica Adormirea Măicii Domnului a Mănăstirii Căpriana raionul Strășeni || 35 km față de Chișinău, Google - 47.116476, 28.510815',
+					'Complexul Etno Cultural Vatra || 36 km față de Chișinău, Google - 47.175037, 28.497757',
+					'Conacul Zamfirache Ralli || Dolna – 56 km față de Chișinău, Google - 47.125571, 28.272506',
+					'Vinăria, Chateau Cojușna || 18 km față de Chișinău, Google - 47.092290, 28.687662',
+					'Vinăria, Poiana || 36 km față de Chișinău, Google - 47.055678, 28.512598'
+				],
+				[
+					'Mănăstirea rupestră || 54 km față de Chișinău, Google - 47.301438, 28.979260',
+					'Pensiunile turistice de la Orheiul Vechi || 50-60 km față de Chișinău, Google - 47.317277, 28.966495',
+					'Complexul de Meșteșuguri “Arta Rustică” || Clișova Nouă – 67 km față de Chișinău, Google - 47.495435, 28.634978',
+					'Casa – Muzeu “Alexandru Donici” || 43 km față de Chișinău, Google - 47.289457, 28.671657',
+					'Vinăria Brănești || 49 km față de Chișinău, Google - 47.313352, 28.935032',
+					'Vinăria Chateau Vartely || 49 km față de Chișinău, Google - 47.380785, 28.834460'
+				],
+				[
+					'Muzeul de Istorie și Etnografie a orașului Soroca || 153 km față de Chișinău, Google - 48.155368, 28.302586',
+					'Lumânarea Renucoștinței || Lumânarea Renucoștinței – 157 km față de Chișinău, Google - 48.137215, 28.305372',
+					'Dealul Țiganilor || 156 km față de Chișinău, Google - 48.159501, 28.291855'
+				],
+				[
+					'Muzeul de Istorie și Etnografie al satului Mereni || 26 km față de Chișinău, Google - 46.963515, 29.055452',
+					'Complexul Memorial “Capul de Pod Șerpeni” || 61 km față de Chișinău, Google - 47.033017, 29.353023',
+					'Vinăria Asconi || 29 km față de Chișinău, Google - 46.839569, 29.027792',
+					'Castel Mimi || 40 km față de Chișinău, Google - 46.891031, 29.292984'
+				],
+				[
+					'Monumentul lui Ștefan cel Mare și Sfânt || Grădina Publică Ștefan cel Mare, Google - 47.025563, 28.830966',
+					'Muzeul Național de Istorie a Moldovei || Strada 31 August 1989 121 A, Google - 47.022813, 28.828561',
+					'Muzeul Național de Etnografie și Istorie Naturală || Strada Mihail Kogălniceanu, Google - 8247.022813, 28.828561',
+					'Muzeul Național de Artă al Moldovei || Strada 31 August 1989 115, Google - 47.022075, 28.831160',
+					'Muzeul de Istorie a orașului Chișinău || Turnul de Apă - Strada Alexei Mateevici 60A, Google - 47.019455, 28.822907',
+					'Combinatul de vinuri “Cricova” || 16 km față de Chișinău, 4 Google - 7.138394, 28.855884',
+					'Combinatul de vinuri de calitate “Mileștii Mici” || 14 km față de Chișinău, Google - 46.921757, 28.820170'
+				],
+				[
+					'Cetatea Tighina || 61 km față de Chișinău, Google - 46.837984, 29.487439',
+					'Complexul Memorial “Piața Eroilor” || 78 km față de Chișinău, Google - 46.835681, 29.608109'
+				],
+				[
+					'Mănăstirea Saharna || 106 km față de Chișinău, Google - 47.695217, 28.965509',
+					'Hanul lui Hanganu, Lalova || 97 km față de Chișinău, Google - 47.566409, 29.020412'
+				],
+				[ 'Conacul lui Constantin Stamati || Conacul lui Constantin Stamati – 237 km, Геолокация Google - 48.383240, 27.436885'],
+				[
+					'Complex turistic Purcari, Vinăria Purcari || 112 km față de Chișinău, Google - 46.531607, 29.871911',
+					'Complex vitivinicol “ET Cetera” || 119 km față de Chișinău, Google - 46.453647, 29.923324',
+					'Gospodăria meșterului popular Pavel Ţăranu s. Cioburciu, || 126 km față de Chișinău, Геолокация Google - 46.596106, 29.726292',
+				],
+				[ 'Conacul “Manuc Bey” || 36 km față de Chișinău, Google - 46.825920, 28.582210' ],
+				[]
+			]
 		}
 	}
 }
