@@ -15,7 +15,7 @@ class Scroll20 extends React.Component {
         showedBtn: '',  
         roname: [
             'Cetatea Sucevei, județul Suceava', 
-            'Mănăstirea Putna – Biserica “Adormirea Maicii Domnului”, județul Suceava', 
+            'Mănăstirea Putna – Biserica “Adormirea Maicii Domnului”', 
             'Biserica “Sfânta Cruce din Pătrăuți”, județul Suceava', 
             'Biserica “Sfântul Gheorghe” a fostei Mănăstiri Voroneț, județul Suceava',
             'Biserica “Tăierea capului Sfântului Ioan Botezătorul” din Reuseni, județul Suceava',
@@ -89,7 +89,7 @@ class Scroll20 extends React.Component {
                 {this.state.showUpdateHover  && this.state.showedBtn === `img-${i}` &&
             
                     <NavLink to="/about">
-                      <button onClick={this.toggleContent(i)} className= "btnToInfo">VEZI MAI MULT</button>
+                      <button onClick={this.toggleContent(i+1)} className= "btnToInfo">VEZI MAI MULT</button>
 					          </NavLink>
 
                   }
