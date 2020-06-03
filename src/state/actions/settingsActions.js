@@ -1,5 +1,7 @@
 import * as types from './actionTypes';
 import { cloneDeep } from "lodash";
+import { authAPI } from "../../api/api";
+import {stopSubmit} from "redux-form";
 
 export const setDrop = i => {
     return (dispatch, getState) => {
@@ -37,6 +39,15 @@ export const addAct = (a, i) => {
     }
 }
 
+export const login = (firstName, lastName, email, message) => async (dispath) => {
+    let response = await authAPI.login(firstName, lastName, email, message)
+        if (response.data.resultCode === 0){
+            dispath(setAuthUserData());
+            // let message = response.data.messages.length > 0 ? response.data.messages[0] : "some error";
+            // dispath(stopSubmit("login", {_error: message}))
+        }
+}
+
 export const setLocalisation = (loc) => {
 
     return { type: types.LOC, payload:loc}
@@ -61,4 +72,7 @@ export const resetState = () =>{
 
 export const changeActiveAttraction = (item) => {
     return {type: types.CHANGE_ACTIVE_ATTRACTIONS, payload: item}
+}
+export const setAuthUserData = (firstName, lastName, email, message) => {
+    return {type: types.SET_USER_DATA, payload: {firstName, lastName, email, message}}
 }

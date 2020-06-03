@@ -2,21 +2,23 @@ import React from 'react';
 import {Field, reduxForm} from 'redux-form';
 import { withFormElement } from '../../../components/common/FormControls/Forms';
 import { maxLengthCreator } from '../../../utilites/validators/validator';
-// import { login } from '../../../state/reducers/authReducer';
+import { login } from '../../../state/actions/settingsActions';
 import styleFormError from '../../../components/common/FormControls/Forms.module.css';
 import style from './login.module.css';
-// import { connect } from 'react-redux';
+import { connect } from 'react-redux';
 import Button from '../../../components/button/button';
 
 const maxLength = maxLengthCreator(100)
 
 const Input = withFormElement("input");
 
-const LoginForm = (props) => {
+const ContactForm = (props) => {
+    
     // const arreyName = ['firstName', 'lastName' , 'email', 'message'];
-
+    const { handleSubmit } = props
+    
     return (
-            <form onSubmit = {props.handleSubmit} className={style.form_wrap} autoComplete="off">
+            <form onSubmit = {handleSubmit} className={style.form_wrap} autoComplete="off">
 
                 {props.props.props.map((k, i) => (
                     <div key={`form-${i}`}>
@@ -92,29 +94,24 @@ const LoginForm = (props) => {
     )
 }
 
-const LoginReduxForm = reduxForm({form: 'login'})(LoginForm)
+const LoginReduxForm = reduxForm({form: 'login'})(ContactForm)
 
 
 const Login = (props) => {
-
+    
     const onSubmit = (formData) => {
         props.login(formData.firstName, formData.lastName , formData.email, formData.message)
     }
-
-    return(
-        <div className = {style.loginContainer}>
-            <div></div>
-            <div className = {style.loginForm}>
-                <LoginReduxForm
-                    onSubmit = {onSubmit}
-                    props = {props}
-                    text = {props.text}
-                />
-            </div>
-            <div></div>
+    
+    return(   
+        <div className = {style.loginForm}>
+            <LoginReduxForm
+                onSubmit = {onSubmit}
+                props = {props}
+                text = {props.text}
+            />
         </div>
     )
 }
 
-
-export default Login
+export default connect(null, {login})(Login);

@@ -10,7 +10,11 @@ const initialState = {
     act: [],
     drop: [],
     cordinates: [],
-    activeAttraction: 0
+    activeAttraction: 0,
+    firstName: null,
+    lastName: null,
+    email: null,
+    message: null
 };
 
 const settings = (state = initialState, action) => {
@@ -58,11 +62,16 @@ const settings = (state = initialState, action) => {
                 drop: [],
                 cordinates: [],
             };
-            case types.CHANGE_ACTIVE_ATTRACTIONS:
+        case types.CHANGE_ACTIVE_ATTRACTIONS:
             return {
-                    ...state,
-                    activeAttraction: action.payload
-                };
+                ...state,
+                activeAttraction: action.payload
+            };
+        case types.SET_USER_DATA:
+            return{
+                ...state,
+                ...action.payload
+            };
         default:
             return state;
     }
