@@ -20,10 +20,10 @@ const ContactForm = (props) => {
     return (
             <form onSubmit = {handleSubmit} className={style.form_wrap} autoComplete="off">
 
-                {props.props.props.map((k, i) => (
-                    <div key={`form-${i}`}>
+                {/* {props.props.props.map((k, i) => (
+                    <div key={`form-${i}`}> */}
                         <label className={style.form_wrap_label}/>
-							{/* <span className = {style.span}>{k}</span> */}
+{/* 							
 							<Field
 
                                 type = "text"
@@ -31,19 +31,9 @@ const ContactForm = (props) => {
                                 name = {k} //отредактировать.Затестить
                                 component = {Input}
                                 validate = {[maxLength]}
-                            />
+                            /> */}
 
-
-                    </div>
-
-                    )
-
-                    )}
-                    <div className = {style.buttonForm}>
-                        <Button text={props.props.text}/>
-                    </div>
-
-                {/* <div >
+                <div>
                     <Field
                         className = {style.input}
                         type = "text"
@@ -82,14 +72,17 @@ const ContactForm = (props) => {
                         component = {Input}
                         validate = {[maxLength]}
                     />
-                </div> */}
+                </div>
+
+                <div className = {style.buttonForm}>
+                    <Button text={props.props.text}/>
+                </div>
+
                     {props.error
 
                         && <div className = {styleFormError.summuryError} >
                             {props.error}
                         </div> }
-
-
             </form>
     )
 }
@@ -100,6 +93,7 @@ const LoginReduxForm = reduxForm({form: 'login'})(ContactForm)
 const Login = (props) => {
     
     const onSubmit = (formData) => {
+        console.log(formData)
         props.login(formData.firstName, formData.lastName , formData.email, formData.message)
     }
     
