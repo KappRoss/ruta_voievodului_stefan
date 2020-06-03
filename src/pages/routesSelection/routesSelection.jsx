@@ -66,7 +66,7 @@ const RoutesSelection = ({act, loc, places}) => {
 			<div className="routes-selection">
 				<div className="routes-selection-title">
 					<span style={{width: '120px'}} />
-					<span>{loc.title[2]}</span>
+					<span className = "title-ruta-create">{loc.title[2]}</span>
 					<div className="routes-selection-pdf" onClick={()=>printDocument()}>{loc.title[3]}</div>
 				</div>
 				<div className="routes-selection-desc">{loc.desc[1]}</div>
