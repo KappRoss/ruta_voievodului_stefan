@@ -1,0 +1,16 @@
+.mark {
+	fill: #fff;
+}
+
+.number {
+	fill: #000;
+}
+
+.actiiveNumber {
+	fill: #fff;
+}
+
+.active,
+.mark:hover {
+	fill: #E3393B;
+}
