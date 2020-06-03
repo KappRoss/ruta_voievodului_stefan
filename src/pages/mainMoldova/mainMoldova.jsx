@@ -4,6 +4,12 @@ import MapWrapper from './maps/MapWrapper';
 
 import Distance from './distance/distance';
 
+const getDescription = text => {
+  const desc = text.substring(0, 650);
+  console.log(desc.lastIndexOf("."));
+  return desc.substring(0, desc.lastIndexOf(". ") + 1);
+}
+
 const getClassName = i =>
   `moldova-wrap moldova-wrap${i % 2 !== 0 ? "--reflection" : ""}`;
 
@@ -27,7 +33,7 @@ export default ({ loc }) => (
           </div>
           <div className="moldova-about">
             <div className="moldova-title">{k}</div>
-            <div className="moldova-text">{loc.text[i]}</div>
+            <div className="moldova-text">{getDescription(loc.text[i])}</div>
           </div>
           <div className="moldova-map">
             <MapWrapper id={`map${i + 1}`} />
