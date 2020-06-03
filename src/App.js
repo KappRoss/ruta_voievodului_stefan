@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useRef} from 'react';
 import './App.css';
 import {locData} from './lib/content';
 import {Route, Switch} from 'react-router-dom';
@@ -20,11 +20,13 @@ import {setDrop, addAct, setLocalisation, setMobMenu, sliderMove}   from './stat
 	// const b = document.getElementsByClassName('b0')[0];
 	// window.scrollTo(parseInt(b.style.left)-screen.width/2, parseInt(b.style.top)-100);
 // }
-const App = ({loc, menu, cur, act, drop, setDrop, addAct, sliderMove }) => {
+const App = (props) => {
+  const { loc, menu, cur, act, drop, setDrop, addAct, sliderMove } = props;
+  const header = useRef(null);
     return (
         <div className="App">
             <Anchor id="top-anchor" />
-            <MainMenu menu={menu} setLoc={setLocalisation} loc={locData.menu[loc]} cur={loc} />
+            <MainMenu ref={header} menu={menu} setLoc={setLocalisation} loc={locData.menu[loc]} cur={loc} />
             <Switch>
                 <Route path="/" exact render={() => (<Index
                     sliderMove={sliderMove}
@@ -42,6 +44,7 @@ const App = ({loc, menu, cur, act, drop, setDrop, addAct, sliderMove }) => {
                 <Route path="/create-rout" exact render={() =>
                     <CreateRout
                                 loc={locData.CreateRout[loc]}
+                                header={header}
 
                     />} />
                 <Route path="/routes-selection" exact render={() => <RoutesSelection act={act} loc={locData.CreateRout[loc]} />} />
