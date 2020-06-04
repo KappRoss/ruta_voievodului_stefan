@@ -2,6 +2,9 @@
 	width: 410px;
 	text-align: left;
 	margin-top: 100px;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
 }
 
 .info-block-title {
@@ -25,7 +28,25 @@
 	line-height: 28px;
 	color: #FFFFFF;
 	opacity: 0.5;
-	height: 420px;
+	height: 474px;
 	overflow-y: auto;
 	padding-right: 10px;
 }
+
+
+@media screen and (max-width: 1250px) {
+	.info-block{
+		position: relative;
+		width: 100%;
+		padding: 0 30px;
+	}
+	.info-block .info-block-img {
+		max-height: none;
+	}
+}
+@media screen and (max-width: 700px) {
+	.info-block{
+		display: none;
+	}
+}
+

@@ -6,7 +6,6 @@ import Distance from './distance/distance';
 
 const getDescription = text => {
   const desc = text.substring(0, 650);
-  console.log(desc.lastIndexOf("."));
   return desc.substring(0, desc.lastIndexOf(". ") + 1);
 }
 

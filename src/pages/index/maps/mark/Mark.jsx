@@ -6,8 +6,8 @@ import {
   activeNumber
 } from './mark.module.css';
 
-export default ({ isActive, data, num, sliderMove }) => (
-  <g onClick={sliderMove(num)}>
+export default ({ isActive, data, sliderMove }) => (
+  <g onClick={sliderMove}>
     <path
       fill="#E3393B"
       d={data[0]}

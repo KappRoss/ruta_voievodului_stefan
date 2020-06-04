@@ -1,0 +1,18 @@
+.mapWrapper {
+	max-height: 1074px;
+	max-width: 100%;
+}
+
+.map {
+    margin: -160px 100px 0 0;
+    max-width: 100%;
+	display: block;
+	margin-top: -160px;
+}
+
+@media screen and (max-width: 700px) {
+	.map {
+		max-width: 150%;
+   		margin-left: -25%;
+   	}
+}

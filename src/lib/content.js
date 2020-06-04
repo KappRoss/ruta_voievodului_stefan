@@ -5,6 +5,7 @@ export const locData = {
 	},
 	index: {
 		ro: {
+			id: "ro",
 			name: [
 				'Mănăstirea Căpriana',
 				'Rezervația cultural-naturală Orheiul Vechi',
@@ -61,6 +62,7 @@ export const locData = {
 			form: ['Nume', 'Prenume', 'E-mail', 'Message']
 		},
 		en: {
+			id: "en",
 			name: [
 				'Căpriana Monastery',
 				'Natural Cultural Reservation “Orheiul Vechi”',

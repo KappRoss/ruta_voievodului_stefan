@@ -27,6 +27,20 @@ export default () => (
       <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
     </filter>
 
+{/* 1 */}
+    <clipPath id="clip100">
+      <rect width="10.438" height="10.438" fill="white" transform="translate(636.742 716.741)"/>
+    </clipPath>
+    <clipPath id="clip101">
+      <rect width="10.438" height="10.438" fill="white" transform="translate(584.742 702.741)"/>
+    </clipPath>
+    <clipPath id="clip102">
+      <rect width="10.438" height="10.438" fill="white" transform="translate(682.742 686.741)"/>
+    </clipPath>
+    <clipPath id="clip103">
+      <rect width="10.438" height="10.438" fill="white" transform="translate(656.742 683.741)"/>
+    </clipPath>
+
     {/*3-0*/}
       <clipPath id="clip300">
         <rect x="562.74" y="365.741" width="10.438" height="10.438" fill="white"/>
@@ -42,5 +56,24 @@ export default () => (
         <rect x="582.74" y="364.741" width="10.438" height="10.438" fill="white"/>
       </clipPath>
     </defs>
+
+    <clipPath id="clip500">
+    <rect width="10.438" height="10.438" fill="white" transform="translate(674.742 726.741)"/>
+    </clipPath>
+    <clipPath id="clip501">
+    <rect width="10.438" height="10.438" fill="white" transform="translate(688.742 743.741)"/>
+    </clipPath>
+    <clipPath id="clip502">
+    <rect width="10.438" height="10.438" fill="white" transform="translate(702.742 758.741)"/>
+    </clipPath>
+    <clipPath id="clip503">
+    <rect width="10.438" height="10.438" fill="white" transform="translate(720.742 741.741)"/>
+    </clipPath>
+    <clipPath id="clip504">
+    <rect width="10.438" height="10.438" fill="white" transform="translate(720.742 777.741)"/>
+    </clipPath>
+    <clipPath id="clip505">
+    <rect width="10.438" height="10.438" fill="white" transform="translate(735.742 793.741)"/>
+    </clipPath>
   </Fragment>
 );

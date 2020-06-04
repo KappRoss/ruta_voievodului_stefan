@@ -3,10 +3,7 @@ import './index.css';
 import {NavLink} from 'react-router-dom';
 import Button from '../../components/button/button';
 import IndexSlider from './indexSlider/indexSlider';
-import InfoBlock from './infoBlock/infoBlock';
-// import SlideButtons from '../../components/slideButtons/slideButtons';
-import Login from './feedbackForm/Login';
-import MapWrapper from './MapWrapper';
+import InfoBlock from './infoBlock/infoBlock';import Login from './feedbackForm/Login';
 import Maps from './maps/Maps';
 import Scroll20 from './scroll20';
 import Anchor from '../../components/anchor/Anchor';
@@ -64,14 +61,15 @@ export default props => {
 				<div className="map-mobile-title">
 					<div className="index-block-middle-title">{props.loc.name[props.cur]}</div>
 				</div>
-				<div id="mainMap" className="map-wrap">
+				<div id="newMainMap" className="map-wrap">
 					<div className="map-radial" style={{...getBg(props.cur)}}>
 						<div className="map-dark">
 							
 
 							<div className="map">
 								
-								<MapWrapper 
+								<Maps
+									loc={props.loc}
 									cur={props.cur} 
 									sliderMove={props.sliderMove}
 								/>
@@ -84,26 +82,6 @@ export default props => {
 					</div>
 					<InfoBlock loc={props.loc} cur={props.cur} sliderMove={props.sliderMove} className = 'infoBlock'/>
 				</div>
-				{/*<div id="newMainMap" className="map-wrap">
-					<div className="map-radial" style={{...getBg(props.cur)}}>
-						<div className="map-dark">
-							
-
-							<div className="map">
-								
-								<Maps 
-									cur={props.cur} 
-									sliderMove={props.sliderMove}
-								/>
-								
-							</div>
-
-
-							<img className="bottom-bg" src={require('../../img/Moldova/'+(props.cur+1)+'-1.jpg')} alt="map" />
-						</div>
-					</div>
-					{/* <InfoBlock loc={props.loc} cur={props.cur} sliderMove={props.sliderMove} className = 'infoBlock'/>*/}
-				{/*</div>*/}
 				<NavLink to="/create-rout">
 					<Button text={props.loc.buttons[1]} />
 				</NavLink>

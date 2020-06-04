@@ -1,18 +1,33 @@
 import React from 'react';
 import ModalInfo from './modal/ModalInfo';
 import GrayZone from './gray-zone/GrayZone';
+import Road from "./road/Road";
+import Label from './label/Label';
+import { mapWrapper, map } from './map.module.css';
 
 import First from './regions/First';
 import Second from './regions/Second';
 import Third from './regions/Third';
-import Fours from './regions/Fours';
+import Fourth from './regions/Fourth';
 import Fifth from './regions/Fifth';
 import Sixth from './regions/Sixth';
 import Seventh from './regions/Seventh';
 import Eighth from './regions/Eighth';
 import Ninth from './regions/Ninth';
 
-export default class MapWrapper extends React.Component {
+const mapsElements = [
+  First,
+  Second,
+  Third,
+  Fourth,
+  Fifth,
+  Sixth,
+  Seventh,
+  Eighth,
+  Ninth
+];
+
+export default class Maps extends React.Component {
 
   constructor(props){
     super(props);
@@ -42,12 +57,13 @@ export default class MapWrapper extends React.Component {
 
   render(){
     const { openedModal, openINFO } = this.state;
-    const { cur } = this.props;
+    const { cur, loc: { id: locId } } = this.props;
     return (
-      <div>
+      <div className={mapWrapper}>
         <ModalInfo
           openedModal={openedModal}
           closeModal={this.closeModal}
+          locId={locId}
         />
         <svg
           width="1273"
@@ -55,24 +71,30 @@ export default class MapWrapper extends React.Component {
           viewBox="0 0 1273 1468"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
+          className={map}
         >
-          <rect width="1273" height="1468" fill="black"/>
-            {/*<GrayZone />*/}
+          <GrayZone
+            sliderMove={this.sliderMove}
+            cur={cur}
+           />
 
-            {/*First*/}
-            {/*Second */}
-            <Third
-              isActive={cur === 2}
-              openINFO={cur === 2 && openINFO}
+          {openINFO && <Road cur={cur} />}
+
+          {mapsElements.map((Tag, i) => (
+            <Tag
+              isActive={cur === i}
+              openINFO={cur === i && openINFO}
+              showFifthMark={openINFO}
               openModal={this.openModal}
               sliderMove={this.sliderMove}
+              loc={locId}
+              cur={cur}
+              key={`map-${i + 1}`}
+              id={`map-${i + 1}`}
+              index={i}
             />
-            {/*Fours*/}
-            {/*Fifth*/}
-            {/*Sixth*/}
-            {/*Seventh*/}
-            <Eighth />
-            {/*Ninth*/}
+          ))}
+          {openINFO && <Label cur={cur} locId={locId} />}
         </svg>
       </div>
     )
