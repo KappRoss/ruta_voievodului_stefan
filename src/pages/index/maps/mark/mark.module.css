@@ -1,16 +1,18 @@
 .mark {
 	fill: #fff;
+	transition: 1s ease-in-out;
 }
 
 .number {
 	fill: #000;
+	transition: 1s ease-in-out;
 }
 
-.actiiveNumber {
+.number.actiiveNumber {
 	fill: #fff;
 }
 
-.active,
+.mark.active,
 .mark:hover {
 	fill: #E3393B;
 }

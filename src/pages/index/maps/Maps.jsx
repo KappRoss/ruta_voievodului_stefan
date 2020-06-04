@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import ModalInfo from './modal/ModalInfo';
 import GrayZone from './gray-zone/GrayZone';
 import Road from "./road/Road";
@@ -66,8 +66,6 @@ export default class Maps extends React.Component {
           locId={locId}
         />
         <svg
-          width="1273"
-          height="1468"
           viewBox="0 0 1273 1468"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
@@ -77,22 +75,30 @@ export default class Maps extends React.Component {
             sliderMove={this.sliderMove}
             cur={cur}
            />
-
-          {openINFO && <Road cur={cur} />}
+           {mapsElements.map((Tag, i) => (
+              <Road
+                cur={cur}
+                isActive={cur === i}
+                key={`road-${i + 1}`}
+              />
+            ))}
 
           {mapsElements.map((Tag, i) => (
-            <Tag
-              isActive={cur === i}
-              openINFO={cur === i && openINFO}
-              showFifthMark={openINFO}
-              openModal={this.openModal}
-              sliderMove={this.sliderMove}
-              loc={locId}
-              cur={cur}
-              key={`map-${i + 1}`}
-              id={`map-${i + 1}`}
-              index={i}
-            />
+            <Fragment key={`map-${i + 1}`}>
+
+              <Tag
+                key={`map-${i + 1}`}
+                isActive={cur === i}
+                openINFO={cur === i && openINFO}
+                showFifthMark={openINFO}
+                openModal={this.openModal}
+                sliderMove={this.sliderMove}
+                loc={locId}
+                cur={cur}
+                id={`map-${i + 1}`}
+                index={i}
+              />
+            </Fragment>
           ))}
           {openINFO && <Label cur={cur} locId={locId} />}
         </svg>

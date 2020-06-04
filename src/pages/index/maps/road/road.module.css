@@ -1,0 +1,8 @@
+.road {
+	stroke: transparent;
+	transition: 2s ease;
+}
+
+.road.active {
+	stroke: #fff;
+}

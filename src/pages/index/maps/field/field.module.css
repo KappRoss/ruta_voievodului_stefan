@@ -1,4 +1,9 @@
-.active,
+.field {
+	fill: transparent;
+	transition: 2s;
+}
+
+.field.active,
 .field:hover {
 	fill: #C4C4C4;
 }
