@@ -86,6 +86,10 @@ class Scroll20 extends React.Component {
                   
                    
                 </img>
+                
+                
+                <div>{k}</div>
+
                 {this.state.showUpdateHover  && this.state.showedBtn === `img-${i}` &&
             
                     <NavLink to="/about">
@@ -93,8 +97,6 @@ class Scroll20 extends React.Component {
 					          </NavLink>
 
                   }
-                
-                <div>{k}</div>
             </div>
         ))}
         
