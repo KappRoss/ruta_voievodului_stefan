@@ -69,7 +69,7 @@ export default class MapWrapper extends Component {
 
   render() {
     const { active, activeElement } = this.state;
-    const { id } = this.props;
+    const { id, locId } = this.props;
     const Tag = maps[id];
     return (
       <Tag
@@ -78,6 +78,7 @@ export default class MapWrapper extends Component {
         activeElement={activeElement}
         setSvg={this.setSvg}
         svg={this.svg}
+        locId={locId}
       />
     );
   }

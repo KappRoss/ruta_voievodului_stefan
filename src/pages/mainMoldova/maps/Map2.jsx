@@ -3,7 +3,7 @@ import Tooltip from "./Tooltip";
 import ActiveCircle from "./ActiveCircle";
 import Mark from "./Mark";
 
-export default ({ setActive, active, activeElement, setSvg, svg }) => (
+export default ({ setActive, active, activeElement, setSvg, svg, locId }) => (
 <svg ref={setSvg} width="400" height="450" viewBox="0 0 400 450" fill="none" xmlns="http://www.w3.org/2000/svg">
 
 {activeElement && <ActiveCircle svg={svg} activeElement={activeElement} />}
@@ -127,6 +127,7 @@ export default ({ setActive, active, activeElement, setSvg, svg }) => (
       svg={svg}
       activeElement={activeElement}
       active={active}
+      locId={locId}
     />
   }
 </svg>

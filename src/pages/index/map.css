@@ -46,6 +46,13 @@
     background: #000;
     border-radius: 0 15px;
 }
+
+.mapsModal .modalPoPuP h2 {
+    text-align: center;
+    display: block;
+}
+
+
 .modalPoPuP h2{
     color: #F4B938;
     font-family: Circe;

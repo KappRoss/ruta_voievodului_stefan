@@ -3,6 +3,7 @@ import { cloneDeep } from "lodash";
 import { authAPI } from "../../api/api";
 import {stopSubmit} from "redux-form";
 import {reset} from 'redux-form';
+import attractions from "../../lib/attractions";
 
 export const setDrop = i => {
     return (dispatch, getState) => {
@@ -81,4 +82,8 @@ export const changeActiveAttraction = (item) => {
 }
 export const setAuthUserData = (firstName, lastName, email, message) => {
     return {type: types.SET_USER_DATA, payload: {firstName, lastName, email, message}}
+}
+
+export const loadAttractionsData = () => {
+    return {type: types.LOAD_ATTRACTIONS_DATA, payload: attractions}
 }

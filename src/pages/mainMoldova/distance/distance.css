@@ -54,6 +54,10 @@
     align-items: center;
 }
 
+.moldova-map svg {
+	overflow: visible;
+}
+
 @media screen and (max-width: 560px) {
 	.moldova-map svg {
 		width: initial;
