@@ -9,14 +9,27 @@ import Maps from './maps/Maps';
 import BG from './maps/bg/BG';
 import Scroll20 from './scroll20';
 import Anchor from '../../components/anchor/Anchor';
+import Popup from 'reactjs-popup';
+import styled from 'styled-components';
 
 const acc = [];
 
 for (let i = 0; i < 9; ++i) {
 	acc.push(i);
 }
+const StyledPopup = styled(Popup)`
+  &-overlay {
 
-export default props => (
+  }
+  &-content {
+	border: none!important;
+	background: #000000!important;
+	width: 85%!important;
+  }
+`
+export default props => 
+
+	(
 		<div className="index">
 			<div className="index-block">
 				<div className="index-block-bottom" />
@@ -45,6 +58,23 @@ export default props => (
 				<IndexSlider cur={props.cur} sliderMove={props.sliderMove} />
 				<div className="map-mobile-title">
 					<div className="index-block-middle-title">{props.loc.name[props.cur]}</div>
+				</div>
+				<div className={'mobile-button-info'}>
+				<StyledPopup
+					trigger={<button className = 'btn-popup'>{props.loc.buttons[3]}</button> }
+					position={'center center'}
+					modal
+					closeOnDocumentClick
+					>
+					<div className="modal-info-mobile">
+						<div>
+							<div className="info-block-title">{props.loc.name[props.cur]}</div>
+							<div className="info-block-desc">{props.loc.info[props.cur]}</div>
+							<img className="info-block-img" style={{width: '100%'}} src={require('../../img/Moldova/'+(props.cur+1)+'-0.jpg')} alt="map" />
+							<div style={{marginBottom: '140px'}} className="info-block-text">{props.loc.text[props.cur]}</div>
+						</div>
+					</div>
+					</StyledPopup>
 				</div>
 				<div id="newMainMap" className="map-wrap">
 					{acc.map(i => <BG i={i} isActive={i === props.cur} key={`bg-${i}`} />)} 

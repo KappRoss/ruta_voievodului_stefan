@@ -58,7 +58,7 @@ export const locData = {
 				'Ştefan cel Mare a fost cel mai mare domnitor pe care l-a avut Moldova, între anii 1457 – 1504. Calitățile sale de bun strateg și diplomat, inițiativele întreprinse pentru dezvoltarea culturii prin ctitorirea unui număr impresionant de biserici',
 				'Vezi inca 40 atracții turistice din România'
 			],
-			buttons: ['Vezi mai mult', 'creaza ruta', 'trimite'],
+			buttons: ['Vezi mai mult', 'creaza ruta', 'trimite','Vezi mai mult+'],
 			form: ['Nume', 'Prenume', 'E-mail', 'Message']
 		},
 		en: {

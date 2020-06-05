@@ -7,6 +7,39 @@ html, body {
 	z-index: -1;
 }
 
+/* @media screen and (max-width: 700px) {
+	..btn-popup{
+		margin: 30px;
+	}
+} */
+.btn-popup{
+	width: 210px;
+	height: 50px;
+	background: #F0A000;
+	border-radius: 25px;
+	outline: none;
+	cursor: pointer;
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 24px;
+	text-transform: uppercase;
+	color: #000000;
+	border: none;
+}
+.modal-info-mobile{
+	width: 100%;
+	text-align: left;
+	margin-top: 100px;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+}
+
+
+	
+
+
+/* ssssssssssssss */
 
 .index-block {
 	background-image: url('./img/bg-0.png');
@@ -114,13 +147,22 @@ html, body {
 	.index-block {
 		position: relative;
 	}
+	.mobile-button-info{
+		display: none;
+	}
 }
 @media screen and (max-width: 1200px) {
 	.info-block{
 		position: relative;
 	}
+	.mobile-button-info{
+		display: none;
+	}
 }
 @media screen and (max-width: 560px) {
+	.mobile-button-info{
+		display: none;
+	}
 	svg {
 		margin: 0;
 		max-width: 150%;
@@ -466,6 +508,10 @@ html, body {
 }
 
 @media screen and (max-width: 700px) {
+	/* .mobile-button-info{
+		display: flex;
+		justify-content: center;
+	} */
 	.index-block-bottom{
 		height: 500px;
 		/*background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);*/
