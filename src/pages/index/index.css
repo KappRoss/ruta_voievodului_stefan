@@ -526,6 +526,9 @@ html, body {
 }
 
 @media screen and (max-width: 900px) {
+	.index-middle-wrap-3{
+		margin-bottom: 100px;
+	}
 	.map {
 		width: 95%;
 		margin: 50px auto;
@@ -560,7 +563,7 @@ html, body {
 
 @media screen and (max-width: 700px) {
 	.index-middle-wrap-3{
-		margin-bottom: 70px;
+		margin-bottom: 100px;
 	}
 	.rec.rec-arrow.rec.rec-arrow-right{
 		position: relative!important;
@@ -666,7 +669,7 @@ html, body {
 	}
 
 	.bottom-bg {
-		margin-top: -216px;
+		margin-top: -55px;
 	}
 
 	.create-route {
