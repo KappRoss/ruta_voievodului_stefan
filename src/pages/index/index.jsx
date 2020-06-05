@@ -20,12 +20,14 @@ for (let i = 0; i < 9; ++i) {
 }
 const StyledPopup = styled(Popup)`
   &-overlay {
-
+	background-color: rgba(255,255,255,0.1)!important;
   }
   &-content {
 	border: none!important;
 	background: #000000!important;
 	width: 85%!important;
+	max-height: 100%;
+    overflow: auto;
   }
 `
 export default props => 
@@ -67,14 +69,20 @@ export default props =>
 					modal
 					closeOnDocumentClick
 					>
+						{close => (
 					<div className="modal-info-mobile">
+					<a className="close" onClick={close}>
+          				&times;
+        			</a>
 						<div>
 							<div className="info-block-title">{props.loc.name[props.cur]}</div>
 							<div className="info-block-desc">{props.loc.info[props.cur]}</div>
-							<img className="info-block-img" style={{width: '100%'}} src={require('../../img/Moldova/'+(props.cur+1)+'-0.jpg')} alt="map" />
+							<img className="info-block-img" style={{width: '90%'}} src={require('../../img/Moldova/'+(props.cur+1)+'-0.jpg')} alt="map" />
 							<div style={{marginBottom: '140px'}} className="info-block-text">{props.loc.text[props.cur]}</div>
+							{/* <div>{props.loc.}</div>  ДОПОЛНИТЕЛЬНЫЕ ДОСТОПРИМЕЧАТЕЛЬСТВА*/}  
 						</div>
 					</div>
+						)}
 					</StyledPopup>
 				</div>
 				<div id="newMainMap" className="map-wrap">

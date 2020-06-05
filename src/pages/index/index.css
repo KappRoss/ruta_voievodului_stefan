@@ -1,7 +1,8 @@
 html, body {
     /* Убирает прокрутку по горизонтале, для мобильной версии */
     overflow-x: hidden;
-    background-color: #000;
+	background-color: #000;
+	
 }
 .index {
 	z-index: -1;
@@ -246,8 +247,8 @@ html, body {
 
 .index-middle-wrap-2 {
 	background-color: #000000;
-	padding-bottom: 200px;
-	min-height: 438px;
+	padding-bottom: 0px;
+	min-height: 300px;
 	box-sizing: border-box;
 }
 
@@ -458,7 +459,7 @@ html, body {
 	.index-middle-wrap-2 {
 		min-width: auto;
 		width: 100%;
-		position: absolute;
+		/* position: absolute; */
 		margin-left: 0;
 	}
 }
@@ -519,10 +520,45 @@ html, body {
 }
 
 @media screen and (max-width: 700px) {
-	/* .mobile-button-info{
+
+
+	.modal-info-mobile .close{
+		
+		cursor: pointer;
+  position: fixed;
+  display: block;
+  padding: 2px 5px;
+  line-height: 20px;
+  right: 50px;
+  top: 20px;
+  font-size: 55px;
+  z-index: 1000000;
+ 
+  color: grey;
+	}
+	.modal-info-mobile .info-block-title{
+		height: auto;
+		padding: 0 20px;
+	}
+	.modal-info-mobile .info-block-desc{
+		height: auto;
+		padding: 0 20px;
+	}
+	.modal-info-mobile .info-block-img{
+		height: auto;
+		padding: 0 20px;
+	}
+	.modal-info-mobile .info-block-text{
+		height: auto;
+		padding: 0 20px;
+	}
+	.modal-info-mobile{
+		margin-top: 20px;
+	}
+	.mobile-button-info{
 		display: flex;
 		justify-content: center;
-	} */
+	}
 	.index-block-bottom{
 		height: 500px;
 		/*background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);*/
@@ -590,7 +626,7 @@ html, body {
 		margin-bottom: 30px;
 	}
 	.index-middle-wrap-2 {
-		padding-bottom: 0;
+		padding-bottom: 80px;
 		min-height: auto;
 		width: auto;
 		position: relative;
