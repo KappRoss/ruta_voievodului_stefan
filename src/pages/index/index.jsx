@@ -1,5 +1,6 @@
 import React from 'react';
 import './index.css';
+import './map.css';
 import {NavLink} from 'react-router-dom';
 import Button from '../../components/button/button';
 import IndexSlider from './indexSlider/indexSlider';

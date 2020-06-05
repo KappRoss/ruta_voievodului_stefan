@@ -53,9 +53,9 @@ export const locData = {
 			],
 			desc: [
 				'Ruta Voievodului Ștefan cel Mare și Sfânt în România și în Republica Moldova va străbate optsprezece localități din România, unsprezece localități din Republica Moldova și treispezece domenii viticole, oferind, astfel, turiștilor o lecție de istorie și de spiritualitate prin intermediul obiectivelor turistice reprezentate de mănăstirile ctitorite, cetățile fortificate, hrubele (beciurile domnești) vechi de peste 500 de ani, a căror continuitate s-a păstrat până în zilele noastre și, nu în ultimul rând, a muzeelor în cadrul cărora sunt organizate expoziții cu artefacte din timpul domniei Voievodului Ștefan cel Mare și Sfânt.',
-				'Ştefan cel Mare a fost cel mai mare domnitor pe care l-a avut Moldova, între anii 1457 – 1504. Calitățile sale de bun strateg și diplomat, inițiativele întreprinse pentru dezvoltarea culturii prin ctitorirea unui număr impresionant de biserici',
+				'Ştefan cel Mare a fost cel mai mare domnitor pe care l-a avut Moldova, între anii 1457 – 1504. Calitățile sale de bun strateg și diplomat, inițiativele întreprinse pentru dezvoltarea culturii prin ctitorirea unui număr impresionant de biserici și mănăstiri și bătăliile purtate și câștigate pentru apărarea integrității țării l-au transformat într-un erou legendar.',
 				'Vezi inca 34 atracții turistice din Moldova',
-				'Ştefan cel Mare a fost cel mai mare domnitor pe care l-a avut Moldova, între anii 1457 – 1504. Calitățile sale de bun strateg și diplomat, inițiativele întreprinse pentru dezvoltarea culturii prin ctitorirea unui număr impresionant de biserici',
+				'Ștefan cel Mare și Sfânt calitățile de bun strateg și diplomat, inițiativele întreprinse pentru dezvoltarea culturii prin ctitorirea unui număr impresionant de biserici și mănăstiri și bătăliile purtate și câștigate pentru apărarea integrității țării l-au transformat într-un erou legendar.',
 				'Vezi inca 40 atracții turistice din România'
 			],
 			buttons: ['Vezi mai mult', 'creaza ruta', 'trimite','Vezi mai mult+'],
@@ -65,12 +65,12 @@ export const locData = {
 			id: "en",
 			name: [
 				'Căpriana Monastery',
-				'Natural Cultural Reservation “Orheiul Vechi”',
+				'Natural Cultural Res. “Orheiul Vechi”, Orhei District”',
 				'“Soroca Fortress”',
-				'Mereni Village',
+				'Mereni Village, Anenii Noi District',
 				'Chișinău',
 				'“Tighina Fortress”',
-				'“Țipova Monastery',
+				'“Țipova Monastery”',
 				'Ștefan cel Mare oak from Cobâlea',
 				'Ștefan-Vodă wine region with protected geographical indication'
 			],
@@ -79,7 +79,7 @@ export const locData = {
 				'Orhei District',
 				'Soroca District',
 				'Anenii Noi District',
-				'',
+				'Chișinău District',
 				'Tighina',
 				'Rezina District',
 				'Șoldănești District',
@@ -98,18 +98,18 @@ export const locData = {
 			],
 			roname: [],
 			title: [
-				'',
+				'The Cultural Route of the Ruler Stephen The Great and Saint (Ștefan Cel Mare Și Sfânt) in Romania and in The Republic of Moldova',
 				'Route Objectives in the Republic of Moldova',
-				'',
-				'',
+				'Other tourist attractions in the Republic of Moldova',
+				'Route Objectives in Romania',
 				'Other tourist attractions in Romania',
 				''
 			],
 			desc: [
-				'',
-				'',
-				'',
-				'',
+				'“The Stephen the Great” route  in Romania and in the Republic of Moldova will cross through 20 places in Romania, 9 places in the Republic of Moldova and thirteen wine fields, thus offering tourists a lesson in history and spirituality through the tourist sights represented by the monasteries, the fortified cities, wine cellars, elder than 500 years, whose continuity has been preserved to our days, as well as the museums in which exhibitions with artifacts from the period of reign of Stephen the Great were organized.',
+				'Ștefan cel Mare și Sfânt (Stephen the Great and Saint) was the best and the greatest ruler of Moldova ever. He ruled with the country for 47 years (1457-1504). His qualities as: a good strategist and astute diplomat, the initiatives taken to develop the culture by founding a new architecture style, building an impressive number of churches and monasteries, and the battles waged and won to defend the integrity of the country - have made him a legendary hero. ',
+				'See 34 more tourist attractions in Moldova',
+				'Stephen the Great and Saint ruled with the country for 47 years (1457-1504). His qualities as: a good strategist and astute diplomat, the initiatives taken to develop the culture by founding a new architecture style, building an impressive number of churches and monasteries, and the battles waged and won to defend the integrity of the country - have made him a legendary hero.',
 				'See 40 more tourist attractions in Romania'
 			],
 			buttons: ['See more', 'Create route', 'Send'],

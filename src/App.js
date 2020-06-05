@@ -21,10 +21,10 @@ import {setDrop, addAct, setLocalisation, setMobMenu, sliderMove}   from './stat
 	// window.scrollTo(parseInt(b.style.left)-screen.width/2, parseInt(b.style.top)-100);
 // }
 const App = (props) => {
-  const { loc, menu, cur, act, drop, setDrop, addAct, sliderMove } = props;
+  const { loc, menu, cur, act, sliderMove } = props;
   const header = useRef(null);
     return (
-        <div className="App">
+        <div className={`App ${loc} region-${cur + 1}`}>
             <Anchor id="top-anchor" />
             <MainMenu ref={header} menu={menu} setLoc={setLocalisation} loc={locData.menu[loc]} cur={loc} />
             <Switch>

@@ -384,7 +384,7 @@ html, body {
 	min-height: 1016px;
 }
 .info-block-title{
-	max-height: 110px;
+	/*max-height: 110px;*/
 }
 .info-block-text{
 	/* margin-bottom: 280px!important; */
@@ -412,6 +412,7 @@ html, body {
 	}
 	.index-top-wrap {
 		padding-top: 300px;
+		min-width: auto;
 	}
 	.index-block-title {
 		font-size: 25px;
@@ -456,6 +457,9 @@ html, body {
 	}
 	.index-middle-wrap-2 {
 		min-width: auto;
+		width: 100%;
+		position: absolute;
+		margin-left: 0;
 	}
 }
 
@@ -492,18 +496,25 @@ html, body {
 		position: relative;
 		margin: 50px auto 0;
 	}
+	.wrap-2-row {
+		margin: 50px 0;
+	}
+	.index-middle-wrap-2 {
+		position: relative;
+		margin-bottom: 0;
+		padding-bottom: 0;
+		min-height: auto;
+	}
 	.index-middle-wrap-4 {
 		flex-direction: column-reverse;
 		align-items: center;
-	}
-	.wrap-2-row {
-		margin: 50px 0;
 	}
 	.index-middle-wrap-5 {
 		height: auto;
 	}
 	.grad-wrap-4 {
-		height: 350px;
+		height: 340px;
+		margin-top: -340px;
 	}
 }
 
@@ -579,8 +590,10 @@ html, body {
 		margin-bottom: 30px;
 	}
 	.index-middle-wrap-2 {
-		padding-bottom: 80px;
+		padding-bottom: 0;
 		min-height: auto;
+		width: auto;
+		position: relative;
 	}
 	.index-middle-wrap-3 {
 		padding: 0 20px;
@@ -590,10 +603,12 @@ html, body {
 	}
 	.bottom-left-img {
 		z-index: +1;
-		width: 100%;
+		width: 375px;
+		height: auto;
 	}
 	.grad-wrap-4 {
-		display: none;
+		height: 150px;
+    	margin-top: -150px;
 	}
 	.index-middle-wrap-5 {
 		margin-top: 80px;
