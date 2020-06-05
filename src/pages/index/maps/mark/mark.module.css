@@ -1,11 +1,13 @@
 .mark {
 	fill: #fff;
 	transition: 1s ease-in-out;
+	cursor: pointer;
 }
 
 .number {
 	fill: #000;
 	transition: 1s ease-in-out;
+	cursor: pointer;
 }
 
 .number.actiiveNumber {

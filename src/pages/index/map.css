@@ -42,8 +42,9 @@
     overflow: hidden;
 }
 
-.modalPoPuP{
-    background: #000000;
+.modal{
+    background: #000;
+    border-radius: 0 15px;
 }
 .modalPoPuP h2{
     color: #F4B938;
@@ -55,6 +56,9 @@
     display: flex;
     align-items: center;
     margin-top: 30px;
+}
+.modalPoPuP > div {
+    padding: 0 15px 15px;
 }
 .modalPoPuP > .ShortDSCR{
     font-family: Circe;
@@ -71,6 +75,11 @@
 .modalPoPuP a{
     text-decoration: underline;
     color: white;
+}
+
+.field-1 {
+    transition: 2s ease;
+    cursor: pointer;
 }
 
 /* PLACE 1 START*/

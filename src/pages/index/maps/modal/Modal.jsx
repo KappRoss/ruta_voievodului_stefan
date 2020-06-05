@@ -9,7 +9,7 @@ const StyledPopup = styled(Popup)`
   
   &-content {
     border: none!important;
-    background: #000000!important;
+    background: transparent!important;
     padding: 25px!important;
     text-align: center;
     justify-content: center;
@@ -43,7 +43,8 @@ export const Modal = ({visible,onClose,href,namePlace}) => {
                 justifyContent: 'center',
                 float: 'right',
                 borderRadius: '0% 40%',
-                height: '20px'
+                height: '20px',
+                cursor: 'pointer'
               }}>
               &times;
               </div>
