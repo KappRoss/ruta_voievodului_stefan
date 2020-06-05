@@ -22,7 +22,7 @@ export default ({ loc }) => (
           key={`moldova-wrap-${i}`}
           className={getClassName(i)}
         >
-          <div className="moldova-distance">
+          <div className="moldova-distance" cnl={console.log(loc)}>
             <img
               className="moldova-distance-img"
               src={require('../../img/Moldova/'+(i+1)+'-0.jpg')}
@@ -35,7 +35,7 @@ export default ({ loc }) => (
             <div className="moldova-text">{getDescription(loc.text[i])}</div>
           </div>
           <div className="moldova-map">
-            <MapWrapper id={`map${i + 1}`} />
+            <MapWrapper id={`map${i + 1}`} locId={loc.id} />
           </div>
         </div>
       ))}

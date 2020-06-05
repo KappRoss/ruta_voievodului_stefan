@@ -1,6 +1,7 @@
 import * as types from "../actions/actionTypes";
 import storage from "redux-persist/es/storage";
 import { persistReducer } from "redux-persist";
+import attractions from "../../lib/attractions";
 
 
 const initialState = {
@@ -14,10 +15,11 @@ const initialState = {
     firstName: null,
     lastName: null,
     email: null,
-    message: null
+    message: null,
+    attractions
 };
 
-const settings = (state = initialState, action) => {
+const settings = (state = {...initialState}, action) => {
     switch (action.type) {
         case types.ADD_ACT:
             const act = action.payload
@@ -68,6 +70,11 @@ const settings = (state = initialState, action) => {
                 activeAttraction: action.payload
             };
         case types.SET_USER_DATA:
+            return{
+                ...state,
+                ...action.payload
+            };
+        case types.LOAD_ATTRACTIONS_DATA:
             return{
                 ...state,
                 ...action.payload

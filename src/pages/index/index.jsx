@@ -1,6 +1,8 @@
 import React from 'react';
 import './index.css';
 import './map.css';
+import Popup from 'reactjs-popup';
+import styled from 'styled-components';
 import {NavLink} from 'react-router-dom';
 import Button from '../../components/button/button';
 import IndexSlider from './indexSlider/indexSlider';
@@ -10,14 +12,13 @@ import Maps from './maps/Maps';
 import BG from './maps/bg/BG';
 import Scroll20 from './scroll20';
 import Anchor from '../../components/anchor/Anchor';
-import Popup from 'reactjs-popup';
-import styled from 'styled-components';
 
 const acc = [];
 
 for (let i = 0; i < 9; ++i) {
 	acc.push(i);
 }
+
 const StyledPopup = styled(Popup)`
   &-overlay {
 	background-color: rgba(255,255,255,0.1)!important;
@@ -29,10 +30,9 @@ const StyledPopup = styled(Popup)`
 	max-height: 100%;
     overflow: auto;
   }
-`
-export default props => 
+`;
 
-	(
+export default props => (
 		<div className="index">
 			<div className="index-block">
 				<div className="index-block-bottom" />
@@ -49,7 +49,7 @@ export default props =>
 				</div>
 			</div>
 			<div className="index-block-middle">
-				<div className="index-middle-wrap" cnl={console.log(props.loc.title)}>
+				<div className="index-middle-wrap">
 					<Anchor id="?pos=map" />
 					<div className="index-block-middle-title">
 						{props.loc.title[1]}
