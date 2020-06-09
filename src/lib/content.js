@@ -113,58 +113,64 @@ export const locData = {
 				"https://www.castelmimi.md/",
 			], 
 			title_4: [
-				'Monumentul lui Ștefan cel Mare și Sfânt',
-				'Muzeul Național de Istorie a Moldovei',
-				'Muzeul de Etnografie și Istorie Naturală',
-				'Muzeul Național de Artă al Moldovei',
-				'Muzeul de Istorie a orașului Chișinău',
-				'Combinatul de vinuri “Cricova”',
-				'Combinatul de vinuri de calitate “Mileștii Mici”',
+				'',
+				'',
+				'',
+				'',
 			],
 			url_4: [ 
-				"https://ro.wikipedia.org/wiki/Statuia_lui_%C8%98tefan_cel_Mare_din_Chi%C8%99in%C4%83u",
-				"https://www.nationalmuseum.md/",
-				'http://www.muzeu.md/',
-				"https://www.mnam.md/",
-				"https://ro.wikipedia.org/wiki/Turnul_de_ap%C4%83_din_Chi%C8%99in%C4%83u",
-				"https://cricova.md/",
-				"https://www.milestii-mici.md/ro/"
+				'',
+				'',
+				'',
+				'',
 			], 
 			title_5: [
-				'Cetatea Tighina',
-				'Complexul Memorial “Piața Eroilor”'
+				'',
+				'',
+				'',
+				'',
 			],
 			url_5: [ 
-				"https://ro.wikipedia.org/wiki/Cetatea_Tighina",
-				"https://www.prospect.md/ro/history/morminte-fratesti-funerare-in-masa/complexul-memorial-piata-eroilor.html",
-				
+				'',
+				'',
+				'',
+				'',
 			], 
 			title_6: [
-				'Mănăstirea Saharna',
-				'Hanul lui Hanganu, Lalova',
+				'',
+				'',
+				'',
+				'',
 			],
 			url_6: [ 
-				"https://ro.wikipedia.org/wiki/M%C4%83n%C4%83stirea_Saharna",
-				"https://hanulhanganu.md/",
+				'',
+				'',
+				'',
+				'',
 			], 
 			title_7: [
-				''
+				'',
+				'',
+				'',
+				'',
 			],
 			url_7: [ 
-				''
-				
+				'',
+				'',
+				'',
+				'',
 			],
 			title_8: [
-				'Complex turistic Purcari, Vinăria Purcari',
-				'“Purcari Winery”, Purcari tourist complex',
-				'Gospodăria meșterului popular Pavel Ţăranu s. Cioburciu',
-			
+				'',
+				'',
+				'',
+				'',
 			],
 			url_8: [ 
-				"https://purcari.wine/ro/",
-				"https://purcari.wine/en/",
-				"http://www.hailatara.md/rooms/63#.XtoewzozaUk",
-				
+				'',
+				'',
+				'',
+				'',
 			],
 			title_9: [
 				'',
@@ -216,12 +222,10 @@ export const locData = {
 			],
 			roname: [],
 			title: [
-				'',
+				'The Cultural Route of the Ruler Stephen The Great and Saint (Ștefan Cel Mare Și Sfânt) in Romania and in The Republic of Moldova',
 				'Route Objectives in the Republic of Moldova',
 				'Other tourist sights in the Republic of Moldova',
 				'The objectives of the Romanian Route',
-				'',
-				'',
 				'Other tourist attractions in Romania',
 				'Contact Us'
 			],
@@ -230,11 +234,6 @@ export const locData = {
 				'Ștefan cel Mare și Sfânt (Stephen the Great and Saint) was the best and the greatest ruler of Moldova ever. He ruled with the country for 47 years (1457-1504). His qualities as: a good strategist and astute diplomat, the initiatives taken to develop the culture by founding a new architecture style, building an impressive number of churches and monasteries, and the battles waged and won to defend the integrity of the country - have made him a legendary hero. ',
 				'See 34 more tourist attractions in Moldova',
 				'Ștefan cel Mare și Sfânt (Stephen the Great and Saint) was the best and the greatest ruler of Moldova ever. He ruled with the country for 47 years (1457-1504). His qualities as: a good strategist and astute diplomat, the initiatives taken to develop the culture by founding a new architecture style, building an impressive number of churches',
-				'',
-				'',
-				'',
-				'',
->>>>>>> 4f8e7ac75a2f49938e5a04d1b99e2d3dbe9d5395
 				'See 40 more tourist attractions in Romania'
 			],
 			buttons: ['See more', 'Create route', 'Send', 'See more +'],
