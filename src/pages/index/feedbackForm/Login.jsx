@@ -15,7 +15,8 @@ const Input = withFormElement("input");
 const ContactForm = (props) => {
     
     // const arreyName = ['firstName', 'lastName' , 'email', 'message'];
-    const { handleSubmit } = props
+    const { handleSubmit } = props;
+    const { texts } = props.props;
     
     return (
             <form onSubmit = {handleSubmit} className={style.form_wrap} autoComplete="off">
@@ -37,7 +38,7 @@ const ContactForm = (props) => {
                     <Field
                         className = {style.input}
                         type = "text"
-                        placeholder = "Nume"
+                        placeholder = {texts[0]}
                         name = "firstName"
                         component = {Input}
                         validate = {[maxLength]}
@@ -47,7 +48,7 @@ const ContactForm = (props) => {
                     <Field
                         className = {style.input}
                         type = "text"
-                        placeholder = "Prenume"
+                        placeholder = {texts[1]}
                         name = "lastName"
                         component = {Input}
                         validate = {[maxLength]}
@@ -57,7 +58,7 @@ const ContactForm = (props) => {
                     <Field
                         className = {style.input}
                         type = "text"
-                        placeholder = "E-mail"
+                        placeholder = {texts[2]}
                         name = "email"
                         component = {Input}
                         validate = {[maxLength]}
@@ -67,7 +68,7 @@ const ContactForm = (props) => {
                     <Field
                         className = {style.input}
                         type = "text"
-                        placeholder = "Message"
+                        placeholder = {texts[3]}
                         name = "message"
                         component = {Input}
                         validate = {[maxLength]}
@@ -75,7 +76,7 @@ const ContactForm = (props) => {
                 </div>
 
                 <div className = {style.buttonForm}>
-                    <Button text={props.props.text}/>
+                    <Button text={texts[4]}/>
                 </div>
 
                     {props.error
@@ -93,7 +94,6 @@ const LoginReduxForm = reduxForm({form: 'login'})(ContactForm)
 const Login = (props) => {
     
     const onSubmit = (formData) => {
-        console.log(formData)
         props.login(formData.firstName, formData.lastName , formData.email, formData.message).then( () => {
             reset()
         })

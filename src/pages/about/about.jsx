@@ -3,7 +3,6 @@ import './about.css';
 import {connect} from "react-redux";
 
  const About = (props) => {
-	console.log(props.activeAttraction)
 	return(
 	<div className="about">
 		<div className="about-title">{props.loc.title}</div>
