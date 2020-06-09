@@ -14,6 +14,14 @@ import {
 } from "../../state/actions/settingsActions";
 import connect from "react-redux/es/connect/connect";
 
+const getImg = (i, k) => (props) => (
+  <img
+    {...props}
+    src={require("./img/" + i + ".png")}
+    alt={k}
+  />
+);
+
 const CreateRout = ({
                       loc,
                       menu,
@@ -61,6 +69,7 @@ const CreateRout = ({
   const scrollTo = ref => {
     ref.current.scrollIntoView({ behavior: "smooth", block: "start" });
   };
+
   return (
       <CreateRouta>
         <div className="create-rout-title">{loc.title[0]}</div>
@@ -68,15 +77,12 @@ const CreateRout = ({
         <CreateRoutWrap>
           {loc.name.map((k, i) => {
             const CreateBtn = act[i] ? CreateRoutListRout : CreateRoutList;
+            const Img = getImg(i, k);
             // const checkLengthPrevAcr = prevCountRef.current[i].length === act[i].length;
             return (
                 <CreateRoutBlock key={i}>
                   <div className="rout-block-name">{k}</div>
-                  <img
-                      style={{ width: "100%" }}
-                      src={require("./img/" + i + ".png")}
-                      alt={k}
-                  />
+                  <Img style={{ width: "100%" }} />
                   <CreateRoutBlockWrap active={drop[i]}>
                     <div className="create-rout-block-desc-wrap">
                       <div className="create-rout-block-desc">
@@ -102,23 +108,24 @@ const CreateRout = ({
                           active={act[i]}
                           handleClick={handleClick}
                           setHandleClick={setHandleClick}
+                          Img={Img}
                       />
                       <div className="area-button-row">
                     <span
                         style={{ cursor: "pointer" }}
                         onClick={setDrop.bind(this, i)}
                     >
-                      {drop[i] ? "vezi mai putin -" : "vezi mai mult +"}
+                      {drop[i] ? `${loc.buttons[0]} -` : `${loc.buttons[2]} +`}
                     </span>
                         <div className="button-wrapper">
                           {handleClick.handleClick === i && prevCountRef.current[i].length === act[i].length ? (
                               <CreateBtn>
-                                Ruta selectată{" "}
+                                {loc.buttons[4]}
                                 {act[i] ? "(" + getLength(act[i]) + ")" : ""}
                               </CreateBtn>
                           ) : (
                               <CreateBtn onClick={() => handleClickRuta(i)}>
-                                Creează ruta{" "}
+                                {loc.buttons[1]}
                                 {act[i] ? "(" + getLength(act[i]) + ")" : ""}
                               </CreateBtn>
                           )}
@@ -127,7 +134,7 @@ const CreateRout = ({
                               onClick={() => handleClickVeziRuta(i)}
                               active={handleClick.handleClick === i && prevCountRef.current[i].length === act[i].length}
                           >
-                            VESI RUTA
+                            {loc.buttons[5]}
                           </VeziRutra>
                         </div>
                       </div>
@@ -160,7 +167,7 @@ const CreateRout = ({
                         />
                         <div className="selected-routes-right">
                           <div>{loc.name[i]}</div>
-                          <span>Atractii({getLength(act[i])})</span>
+                          <span>{loc.desc[2]}({getLength(act[i])})</span>
                         </div>
                       </div>
                   ) : null
@@ -176,7 +183,7 @@ const CreateRout = ({
               {loc.buttons[2]}
             </BtnNotActive>
         ) : (
-            <Btn onClick={() => handleGoSelection()}>{loc.buttons[2]}</Btn>
+            <Btn onClick={() => handleGoSelection()}>{loc.buttons[6]}</Btn>
         )}
       </CreateRouta>
   );

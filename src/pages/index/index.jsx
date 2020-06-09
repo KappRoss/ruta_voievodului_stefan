@@ -154,8 +154,7 @@ export default props => (
 				</div>
 				<div className="formmm">
 					<Login 
-						props = {props.loc.form}
-						text = {props.loc.buttons[2]}
+						texts = {[...props.loc.form, props.loc.buttons[2]]}
 					/>
 				</div>
 				

@@ -58,7 +58,6 @@ class Scroll20 extends React.Component {
     }
 
     showHideUpdateBtn =  ({target:{name}}) => {
-      console.log(name)
       this.setState({
         showUpdateHover : !this.state.showUpdateHover,
         showedBtn: name
