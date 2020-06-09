@@ -240,6 +240,7 @@ export const locData = {
 				'',
 				'',
 				'',
+>>>>>>> 4f8e7ac75a2f49938e5a04d1b99e2d3dbe9d5395
 				'See 40 more tourist attractions in Romania'
 			],
 			buttons: ['See more', 'Create route', 'Send', 'See more +'],
