@@ -331,10 +331,19 @@ const SelectedRoutes = styled.div`
     display: flex;
     justify-content: space-around;
     margin: 30px 0;
+    @media (min-width: 320px) and (max-width: 768px) {
+       display: flex;
+       flex-direction: column;
+    }
     .selected-routes {
       display: flex;
       width: 80%;
       overflow-x: scroll;
+       @media (min-width: 320px) and (max-width: 768px) {
+        display: flex;
+        flex-direction: column;
+        overflow-x: unset;
+      }                    
       .selected-routes-right {
         display: flex;
         flex-direction: column;
@@ -347,6 +356,10 @@ const SelectedRoutes = styled.div`
         font-size: 18px;
         line-height: 27px;
         color: #f8981d;
+        @media (min-width: 320px) and (max-width: 480px) {
+        //white-space: pre;
+        font-size: 14px;
+        }
       }
 
       .selected-routes-row {
@@ -355,6 +368,10 @@ const SelectedRoutes = styled.div`
         position: relative;
         padding: 20px;
         min-width: 250px;
+        @media (min-width: 320px) and (max-width: 480px) {
+         min-width: 220px;
+         padding: 20px 10px;
+        }
       }
     }
     .selected-cross {
@@ -397,6 +414,9 @@ const SelectedRoutes = styled.div`
         width: 99%;
         box-sizing: border-box;
         padding: 0 8%;
+      }
+      @media (min-width: 320px) and (max-width: 768px) {
+        margin: 0;
       }
     }
   }
