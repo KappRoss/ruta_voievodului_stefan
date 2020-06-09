@@ -1,3 +1,5 @@
+
+
 .routes-selection {
 	display: flex;
 	flex-direction: column;
@@ -106,4 +108,55 @@
 	line-height: 21px;
 	color: #FFFFFF;
 	margin-top: 7.5px;
+}
+
+@media screen and (max-width: 700px) {
+	.routes-selection-title{
+		margin-top: 40px;
+		width: 80%;
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-end;
+		font-weight: 350;
+		font-size: 45px;
+		line-height: 66px;
+		color: #F4B938;
+		flex-direction: column;
+		justify-content: center;
+		
+		align-items: flex-start;
+		text-align: center;
+	}
+	.title-ruta-create{
+		align-self: center;
+	}
+	.routes-selection-pdf{
+		margin-top: 30px;
+		position: relative;
+		display: flex;
+		font-size: 16px;
+		line-height: 24px;
+		text-transform: uppercase;
+		cursor: pointer;
+		align-self: center;
+	}
+	.routes-wrap {
+		display:flex;
+		justify-content: center;
+		
+	}
+	.routes-row{
+		flex-direction: column;
+	}
+	.routes-path{
+		-moz-transform: rotate(90deg); /* Для Firefox */
+    	-ms-transform: rotate(90deg); /* Для IE */
+    	-webkit-transform: rotate(90deg); /* Для Safari, Chrome, iOS */
+    	-o-transform: rotate(90deg); /* Для Opera */
+		transform: rotate(90deg);
+		width: 100px;
+		margin-top: 60px;
+		padding-right: 70px;
+		margin-left: -50px;
+	}
 }

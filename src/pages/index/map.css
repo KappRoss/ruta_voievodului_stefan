@@ -1,0 +1,245 @@
+.main-wrapper{
+    height: 100%;
+    width: 100%;
+    max-height: 1074px;
+	margin-top: 50px;
+}
+
+.main-wrapper > g {
+    transform: translate(-300px, -227px);
+}
+
+
+@media screen and (max-width: 900px) {
+    .main-wrapper > g {
+        transform: translate(-150px, -227px);
+    }
+    .map-dark {
+        height: auto;
+    }
+}
+
+
+
+@media screen and (max-width: 560px) {
+    .main-wrapper > g {
+        transform: translate(-180px, -227px);
+    }
+	.map {
+        height: auto;
+    }
+}
+                  
+#Group_21{
+    visibility: visible;
+    
+}
+/* #Group_5:active{
+    visibility: hidden;
+} */
+
+.scroll-hidden{
+    overflow: hidden;
+}
+
+.modal{
+    background: #000;
+    border-radius: 0 15px;
+}
+
+.mapsModal .modalPoPuP h2 {
+    text-align: center;
+    display: block;
+}
+
+
+.modalPoPuP h2{
+    color: #F4B938;
+    font-family: Circe;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 29px;
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+}
+.modalPoPuP > div {
+    padding: 0 15px 15px;
+}
+.modalPoPuP > .ShortDSCR{
+    font-family: Circe;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+    justify-content: center;
+    
+}
+.modalPoPuP a{
+    text-decoration: underline;
+    color: white;
+}
+
+.field-1 {
+    transition: 2s ease;
+    cursor: pointer;
+}
+
+/* PLACE 1 START*/
+#Vector_31{
+    
+    fill: black;
+    opacity: 0.1;
+}
+#Vector_31:hover{
+    fill: #C4C4C4;
+    opacity: 0.9;
+}
+ 
+
+/* :hover#Vector_47, :hover#Vector_48, #museum_2 {
+    display: none;
+} */
+
+/* PLACE 1 END */
+
+/* PLACE 2 START*/
+#Vector_36{
+    fill: black;
+    opacity: 0.9;
+}
+#Vector_36:hover{
+    fill: #C4C4C4;
+    opacity: 0.9;
+}
+/* PLACE 2 END */
+
+/* PLACE 2 START*/
+#Vector_36{
+    fill: black;
+    opacity: 0.9;
+}
+#Vector_36:hover{
+    fill: #C4C4C4;
+    opacity: 0.9;
+}
+/* PLACE 2 END */
+
+/* PLACE 3 START*/
+#Vector_37{
+    
+    fill: black;
+    opacity: 0.9;
+}
+#Vector_37:hover{
+    fill: #C4C4C4;
+    opacity: 0.9;
+}
+/* PLACE 3 END */
+
+/* PLACE 4 START*/
+#Vector_32{
+    fill: black;
+    opacity: 0.9;
+}
+#Vector_32:hover{
+    fill: #C4C4C4;
+    opacity: 0.9;
+}
+/* PLACE 4 END */
+
+/* PLACE 5 START*/
+#Vector_45{
+    fill: black;
+    opacity: 0.9;
+}
+#Vector_45:hover{
+    fill: #C4C4C4;
+    opacity: 0.9;
+}
+/* PLACE 5 END */
+
+/* PLACE 6 START*/
+#Vector_44{
+    fill: black;
+    opacity: 0.9;
+}
+#Vector_44:hover{
+    fill: #C4C4C4;
+    opacity: 0.9;
+}
+/* PLACE 6 END */
+
+/* PLACE 6 START*/
+#Vector_44{
+    fill: black;
+    opacity: 0.9;
+}
+#Vector_44:hover{
+    fill: #C4C4C4;
+    opacity: 0.9;
+}
+/* PLACE 6 END */
+
+/* PLACE 7 START*/
+#Vector_40{
+    fill: black;
+    opacity: 0.9;
+}
+#Vector_40:hover{
+    fill: #C4C4C4;
+    opacity: 0.9;
+}
+/* PLACE 7 END */
+
+/* PLACE 8 START*/
+#Vector_39{
+    fill: black;
+    opacity: 0.9;
+}
+#Vector_39:hover{
+    fill: #C4C4C4;
+    opacity: 0.9;
+}
+/* PLACE 8 END */
+
+/* PLACE 9 START*/
+#Vector_29{
+    fill: black;
+    opacity: 0.9;
+}
+#Vector_29:hover{
+    fill: #C4C4C4;
+    opacity: 0.9;
+}
+/* PLACE 9 END */
+
+
+
+
+
+/* 
+.place_3{
+    fill: black;
+	opacity: 1;
+}
+.place_3:hover{
+    fill: #C4C4C4;
+    transition: opacity .2s ease;
+	opacity: 0.7;
+}
+
+.place_5{
+    
+    fill: rgba(0,0,0,0.7);
+	opacity: 1;
+}
+.place_5:hover{
+    fill: #C4C4C4;
+    transition: opacity .2s ease;
+	opacity: 0.7;
+} */

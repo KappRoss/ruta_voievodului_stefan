@@ -1,10 +1,17 @@
 .mainMenu {
 	position: relative;
 	background-image: url(./img/logo-desc.png);
+	z-index: +1;
 	background-repeat: no-repeat;
 	background-position: center;
 	height: 200px;
 	padding-top: 35px;
+	width: 1296px;
+	max-width: 100%;
+	margin: 0 auto;
+
+/*	    position: fixed;
+	    top: 0;*/
 }
 
 .link-to-main {
@@ -19,7 +26,6 @@
 .main-menu-wrap {
 	display: flex;
 	justify-content: space-between;
-	padding: 0 12%;
 }
 
 .locale {
@@ -31,7 +37,7 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	right: 12%;
+	right: 0;
 	top: 50px;
 	cursor: pointer;
 }

@@ -16,14 +16,14 @@ export default props => {
 					{slides.map((key,index) => (
 						<img key={index} src={require('./img/s-'+(index+1)+'.png')} alt={key}
 							style={{border: props.cur === index ? '1px solid #FFFFFF' : 'none', borderRadius: '4px', cursor: 'pointer'}}
-							onClick={props.sliderMove.bind(this, index)}
+							onClick={() => props.sliderMove(index)}
 						/>
 					))}
 				</div>
 				<div className="slider-navi">
 					{slides.map((key,index) => (
 						<div key={index} className="slider-round" 
-							onClick={props.sliderMove.bind(this, index)}
+							onClick={() => props.sliderMove(index)}
 						/>
 					))}
 					<div style={{left: getCursor(props.cur)}} className="slider-cursor">{'0'+(props.cur+1)}</div>

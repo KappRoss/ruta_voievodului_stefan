@@ -1,85 +1,65 @@
-import React from 'react';
+import React, {useRef} from 'react';
 import './App.css';
-import {loc} from './lib/content';
+import {locData} from './lib/content';
 import {Route, Switch} from 'react-router-dom';
-
-import MainMenu from './components/mainMenu/mainMenu'
-import Footer from './components/footer/footer'
+import { connect } from "react-redux";
+import MainMenu from './components/mainMenu/mainMenu';
+import Footer from './components/footer/footer';
+import Anchor from './components/anchor/Anchor';
 
 import Index from './pages/index/index';
 import About from './pages/about/about';
+import About2 from './pages/about/about';
 import MainMoldova from './pages/mainMoldova/mainMoldova';
 import Romania from './pages/romania/romania';
 import OtherMoldova from './pages/otherMoldova/otherMoldova';
 import CreateRout from './pages/createRout/createRout';
 import RoutesSelection from './pages/routesSelection/routesSelection';
-
-const scroll = () => {
+import {setDrop, addAct, setLocalisation, setMobMenu, sliderMove}   from './state/actions/settingsActions'
+// const scroll = () => {
 	// const b = document.getElementsByClassName('b0')[0];
 	// window.scrollTo(parseInt(b.style.left)-screen.width/2, parseInt(b.style.top)-100);
+// }
+const App = (props) => {
+  const { loc, menu, cur, act, sliderMove } = props;
+  const header = useRef(null);
+    return (
+        <div className={`App ${loc} region-${cur + 1}`}>
+            <Anchor id="top-anchor" />
+            <MainMenu ref={header} menu={menu} setLoc={setLocalisation} loc={locData.menu[loc]} cur={loc} />
+            <Switch>
+                <Route path="/" exact render={() => (<Index
+                    sliderMove={sliderMove}
+                    cur={cur}
+                    loc={locData.index[loc]}
+                />)}
+                />
+                <Route path="/about" exact render={() => <About loc={locData.about[loc]} />} />
+
+                <Route path="/about" exact render={() => <About2 loc={locData.about[loc]} />} />
+
+                <Route path="/other-moldova" exact render={() => <MainMoldova loc={locData.moldova[loc]} />} />
+                <Route path="/romania" exact render={() => <Romania loc={locData.romania[loc]} />} />
+                <Route path="/moldova" exact render={() => <OtherMoldova loc={locData.otherMoldova[loc]} />} />
+                <Route path="/create-rout" exact render={() =>
+                    <CreateRout
+                                loc={locData.CreateRout[loc]}
+                                header={header}
+
+                    />} />
+                <Route path="/routes-selection" exact render={() => <RoutesSelection act={act} loc={locData.CreateRout[loc]} />} />
+            </Switch>
+            <Footer />
+        </div>
+    );
 }
 
-class App extends React.Component {
 
-	state = {
-		loc: 'ro',
-		menu: false,
-		cur: 0,
-		act: [],
-		drop: []
-	}
-
-	setLoc = loc => this.setState({loc});
-	mobMenu = menu => this.setState({menu});
-	sliderMove = cur => this.setState({cur});
-	addAct = (a, i) => {
-		const act = [...this.state.act];
-		if(!i && i !== 0) {
-			if(act[a]) delete(act[a]);
-			else act[a] = [];
-		}
-		else {
-			if(!act[a]) act[a] = [];
-			if(!act[a][i]) act[a][i] = true;
-			else delete(act[a][i]);
-		}
-		this.setState({act});
-	}
-	setDrop = i => {
-		const drop = [...this.state.drop];
-		if(drop[i]) delete(drop[i]);
-		else drop[i] = true;
-		this.setState({drop});
-	}
-	
-	render() {
-		return (
-			<div className="App">
-				<MainMenu mobMenu={this.mobMenu} menu={this.state.menu} setLoc={this.setLoc} loc={loc.menu[this.state.loc]} cur={this.state.loc} />
-				<Switch>
-					<Route path="/" exact render={() => (<Index 
-							sliderMove={this.sliderMove} 
-							cur={this.state.cur} 
-							loc={loc.index[this.state.loc]}
-						/>)} 
-					/>
-					<Route path="/about" exact render={() => <About loc={loc.about[this.state.loc]} />} />
-					<Route path="/other-moldova" exact render={() => <MainMoldova loc={loc.moldova[this.state.loc]} />} />
-					<Route path="/romania" exact render={() => <Romania loc={loc.romania[this.state.loc]} />} />
-					<Route path="/moldova" exact render={() => <OtherMoldova loc={loc.otherMoldova[this.state.loc]} />} />
-					<Route path="/create-rout" exact render={() => 
-						<CreateRout drop={this.state.drop}
-							loc={loc.CreateRout[this.state.loc]}
-							addAct={this.addAct}
-							act={this.state.act}
-							setDrop={this.setDrop}
-					/>} />
-					<Route path="/routes-selection" exact render={() => <RoutesSelection act={this.state.act} loc={loc.CreateRout[this.state.loc]} />} />
-				</Switch>
-				<Footer />
-			</div>
-		);
-	}
-}
-
-export default App;
+const mapStateToProps = state => ({
+    loc:state.settings.loc,
+    menu: state.settings.menu,
+    cur: state.settings.cur,
+    act: state.settings.act,
+    drop: state.settings.drop,
+})
+export default connect(mapStateToProps, {setDrop, addAct, setMobMenu, sliderMove})(App);

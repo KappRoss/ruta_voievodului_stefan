@@ -1,0 +1,18 @@
+
+.ggg .rec-pagination{
+    display: none;
+}
+.ggg img{
+    
+	cursor: pointer!important;
+}
+.rec-arrow{
+    
+    
+    border: 1px solid white!important;
+    box-sizing: border-box!important;
+    background-color: black!important;
+}
+/* .rec-slider:active{
+    border: 1px solid red!important;
+} */

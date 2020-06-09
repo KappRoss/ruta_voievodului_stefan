@@ -1,0 +1,10 @@
+.field {
+	fill: transparent;
+	transition: 2s;
+	cursor: pointer;
+}
+
+.field.active,
+.field:hover {
+	fill: #C4C4C4;
+}

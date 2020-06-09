@@ -1,27 +1,41 @@
 import React from 'react';
 import './index.css';
+import './map.css';
+import Popup from 'reactjs-popup';
+import styled from 'styled-components';
 import {NavLink} from 'react-router-dom';
 import Button from '../../components/button/button';
 import IndexSlider from './indexSlider/indexSlider';
 import InfoBlock from './infoBlock/infoBlock';
+import Login from './feedbackForm/Login';
+import Maps from './maps/Maps';
+import BG from './maps/bg/BG';
+import Scroll20 from './scroll20';
+import Anchor from '../../components/anchor/Anchor';
 
-import SlideButtons from '../../components/slideButtons/slideButtons';
+const acc = [];
 
-export default props => {
+for (let i = 0; i < 9; ++i) {
+	acc.push(i);
+}
 
-	const getBg = i => {
-		const img = require('../../img/Moldova/'+(i+1)+'-1.jpg');
-		return {
-			mixBlendMode: 'normal',
-			backgroundRepeat: 'no-repeat',
-			backgroundPosition: 'center',
-			backgroundImage: 'linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 42.08%, #000000 100%), linear-gradient(270deg, #000000 1%, rgba(0, 0, 0, 0.3) 99.19%), url('+img+')',
-		}
-	}
+const StyledPopup = styled(Popup)`
+  &-overlay {
+	background-color: rgba(255,255,255,0.1)!important;
+  }
+  &-content {
+	border: none!important;
+	background: #000000!important;
+	width: 85%!important;
+	max-height: 100%;
+    overflow: auto;
+  }
+`;
 
-	return(
+export default props => (
 		<div className="index">
-			<div style={{marginTop: '-235px'}} className="index-block">
+			<div className="index-block">
+				<div className="index-block-bottom" />
 				<div className="index-top-wrap">
 					<div className="index-block-title">
 						{props.loc.title[0]}
@@ -33,10 +47,10 @@ export default props => {
 						<Button text={props.loc.buttons[0]} />
 					</NavLink>
 				</div>
-				<div className="index-block-bottom" />
 			</div>
 			<div className="index-block-middle">
 				<div className="index-middle-wrap">
+					<Anchor id="?pos=map" />
 					<div className="index-block-middle-title">
 						{props.loc.title[1]}
 					</div>
@@ -48,16 +62,52 @@ export default props => {
 				<div className="map-mobile-title">
 					<div className="index-block-middle-title">{props.loc.name[props.cur]}</div>
 				</div>
-				<div id="mainMap" className="map-wrap">
-					<div className="map-radial" style={{...getBg(props.cur)}}>
+				<div className={'mobile-button-info'}>
+				<StyledPopup
+					trigger={<button className = 'btn-popup'>{props.loc.buttons[3]}</button> }
+					position={'center center'}
+					modal
+					closeOnDocumentClick
+					>
+						{close => (
+					<div className="modal-info-mobile">
+					<a className="close" onClick={close}>
+          				&times;
+        			</a>
+						<div>
+							<div className="info-block-title">{props.loc.name[props.cur]}</div>
+							<div className="info-block-desc">{props.loc.info[props.cur]}</div>
+							<img className="info-block-img" style={{width: '90%'}} src={require('../../img/Moldova/'+(props.cur+1)+'-0.jpg')} alt="map" />
+							<div style={{marginBottom: '140px'}} className="info-block-text">{props.loc.text[props.cur]}</div>
+							{/* <div>{props.loc.}</div>  ДОПОЛНИТЕЛЬНЫЕ ДОСТОПРИМЕЧАТЕЛЬСТВА*/}  
+						</div>
+					</div>
+						)}
+					</StyledPopup>
+				</div>
+				<div id="newMainMap" className="map-wrap">
+					{acc.map(i => <BG i={i} isActive={i === props.cur} key={`bg-${i}`} />)} 
+					<div className="map-radial">
 						<div className="map-dark">
-							<img className="map" src={require('./img/map-'+(props.cur+1)+'.png')} alt="map" />
+							
+
+							<div className="map">
+								
+								<Maps
+									loc={props.loc}
+									cur={props.cur} 
+									sliderMove={props.sliderMove}
+								/>
+								
+							</div>
+
+
 							<img className="bottom-bg" src={require('../../img/Moldova/'+(props.cur+1)+'-1.jpg')} alt="map" />
 						</div>
 					</div>
-					<InfoBlock loc={props.loc} cur={props.cur} sliderMove={props.sliderMove} />
+					<InfoBlock loc={props.loc} cur={props.cur} sliderMove={props.sliderMove} className = 'infoBlock'/>
 				</div>
-				<NavLink to="/create-rout">
+				<NavLink to="/create-rout" className="create-route">
 					<Button text={props.loc.buttons[1]} />
 				</NavLink>
 			</div>
@@ -73,23 +123,14 @@ export default props => {
 				</NavLink>
 			</div>
 			<div className="index-middle-wrap-3">
+				<Anchor id="?pos=rom" />
 				<div className="index-block-middle-title">
 					{props.loc.title[3]}
 				</div>
 				<div className="index-block-middle-desc">
 					{props.loc.desc[3]}
 				</div>
-				<div className="ro-slider">
-					<div className="ro-slider-area">
-						{props.loc.roname.map((k, i) => (
-							<div key={i} className="ro-slide">
-								<img src={require('../../img/Romania/'+(i+1)+'.png')} alt={k} />
-								<div>{k}</div>
-							</div>
-						))}
-					</div>
-				</div>
-				<SlideButtons cur={props.cur} sliderMove={props.sliderMove} />
+				<Scroll20 />
 			</div>
 			<div className="index-middle-wrap-4">
 				<img className="bottom-left-img" src={require('./img/left-bg-4.png')} alt="map" />
@@ -108,19 +149,16 @@ export default props => {
 			</div>
 			<div className="grad-wrap-4" />
 			<div className="index-middle-wrap-5">
-				<div className="index-block-middle-title">
+				<div className="index-block-middle-title" style={{margin: '30px'}}>
 					{props.loc.title[5]}
 				</div>
-				<div className="form-wrap">
-					{props.loc.form.map((k, i) => (
-						<label key={i}>
-							<span style={{padding: '40px 0 10px 0'}} className="s">{k}</span>
-							<input type="text" />
-						</label>
-					))}
+				<div className="formmm">
+					<Login 
+						props = {props.loc.form}
+						text = {props.loc.buttons[2]}
+					/>
 				</div>
-				<Button text={props.loc.buttons[2]} />
+				
 			</div>
 		</div>
-	)
-}
+	);
