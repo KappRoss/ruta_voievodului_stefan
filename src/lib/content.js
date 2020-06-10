@@ -113,64 +113,58 @@ export const locData = {
 				"https://www.castelmimi.md/",
 			], 
 			title_4: [
-				'',
-				'',
-				'',
-				'',
+				'Monumentul lui Ștefan cel Mare și Sfânt',
+				'Muzeul Național de Istorie a Moldovei',
+				'Muzeul de Etnografie și Istorie Naturală',
+				'Muzeul Național de Artă al Moldovei',
+				'Muzeul de Istorie a orașului Chișinău',
+				'Combinatul de vinuri “Cricova”',
+				'Combinatul de vinuri de calitate “Mileștii Mici”',
 			],
 			url_4: [ 
-				'',
-				'',
-				'',
-				'',
+				"https://ro.wikipedia.org/wiki/Statuia_lui_%C8%98tefan_cel_Mare_din_Chi%C8%99in%C4%83u",
+				"https://www.nationalmuseum.md/",
+				"http://www.muzeu.md/",
+				'https://www.mnam.md/',
+				"https://ro.wikipedia.org/wiki/Turnul_de_ap%C4%83_din_Chi%C8%99in%C4%83u",
+				"https://cricova.md/",
+				"https://www.milestii-mici.md/ro/"
 			], 
 			title_5: [
-				'',
-				'',
-				'',
-				'',
+				'Cetatea Tighina',
+				'Complexul Memorial “Piața Eroilor”',
 			],
 			url_5: [ 
-				'',
-				'',
-				'',
-				'',
+				"https://ro.wikipedia.org/wiki/Cetatea_Tighina",
+				"https://www.prospect.md/ro/history/morminte-fratesti-funerare-in-masa/complexul-memorial-piata-eroilor.html",
 			], 
 			title_6: [
-				'',
-				'',
-				'',
-				'',
+				'Mănăstirea Saharna',
+				'Hanul lui Hanganu, Lalova',
+				
 			],
 			url_6: [ 
-				'',
-				'',
-				'',
-				'',
+				"https://ro.wikipedia.org/wiki/M%C4%83n%C4%83stirea_Saharna",
+				"https://hanulhanganu.md/",
+				
 			], 
 			title_7: [
-				'',
-				'',
-				'',
-				'',
+				''
 			],
 			url_7: [ 
-				'',
-				'',
-				'',
-				'',
+				''
 			],
 			title_8: [
-				'',
-				'',
-				'',
-				'',
+				'Complex turistic Purcari, Vinăria Purcari',
+				'Complex vitivinicol “ET Cetera”',
+				'Gospodăria meșterului popular Pavel Ţăranu s. Cioburciu',
+				
 			],
 			url_8: [ 
-				'',
-				'',
-				'',
-				'',
+				"https://purcari.wine/ro/",
+				"https://purcari.wine/ro/",
+				"http://www.hailatara.md/rooms/63#.XtoewzozaUk",
+				
 			],
 			title_9: [
 				'',
