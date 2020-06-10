@@ -18,7 +18,7 @@ export default [
       googleLoc: '47.092290, 28.687662',
       seeMore: {
         en: "See More",
-        ro: "Detaliile"
+        ro: "Detalii"
       },
       locLink: {
         en: "location",

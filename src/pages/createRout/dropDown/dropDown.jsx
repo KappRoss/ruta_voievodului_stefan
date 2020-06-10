@@ -23,7 +23,6 @@ const fotoNames = [
 ];
 
 const getImg = (name, Img) => {
-    console.log(name);
     const found = fotoNames.find(item =>name.includes(item));
     if (found) {
         return <img width="80" className="down-row-img" src={require(`./img/${found}.jpg`)} alt="attr"/>

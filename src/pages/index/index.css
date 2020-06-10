@@ -4,6 +4,11 @@ html, body {
 	background-color: #000;
 	
 }
+
+*:focus {
+	outline: none;
+}
+
 .index {
 	z-index: -1;
 }
@@ -49,7 +54,7 @@ html, body {
 	background-color: #000000;
     min-height: 1434px;
     position: relative;
-    max-width: 1920px;
+    /*max-width: 1920px;*/
     margin: -235px auto 0;
 }
 
@@ -144,6 +149,45 @@ html, body {
 	height: 100%;
 	
 }
+	.mobile-button-info{
+		display: none;
+	}
+
+
+
+	.create-route {
+		display: block;
+    	margin-top: 100px;
+	}
+
+.rec-carousel-wrapper {
+	position: relative;
+}
+
+.pagination-wrap {
+	font-size: 20px;
+    line-height: 29px;
+    color: #FFFFFF;
+    width: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    bottom: -73px;
+    right: 187px;
+}
+
+.pagination-dash {
+	width: 31px;
+    opacity: 0.5;
+    border-bottom: 2px solid #FFFFFF;
+    /*height: 1px;*/
+}
+
+.pagination-end {
+
+}
+
 @media screen and (max-width: 2500px) {
 	
 	.mobile-button-info{
@@ -283,11 +327,29 @@ html, body {
   	justify-content: center;
   	flex-direction: column;
 	  position: relative;
-	  padding-right: 5px;
-	padding-left: 5px;
+	  padding: 0 20px;
 }
 
-.ro-slide div {
+.ro-slide-image {
+	height: 200px;
+	width: 300px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	transition: height 0.2s ease;
+}
+
+.ro-slide:hover .ro-slide-image,
+.ro-slide.active .ro-slide-image {
+	height: 320px;
+	opacity:0.6;
+	-moz-opacity:0.6;
+	filter: alpha(opacity=60) black;
+	-khtml-opacity: 0.6;
+	background-color:#000;
+}
+
+.ro-slide-text {
 	display: flex!important;
 	font-size: 22px;
 	line-height: 32px;
@@ -296,6 +358,8 @@ html, body {
 	margin-top: 20px;
 	padding-left: 15px;
 	padding-right: 15px;
+	box-sizing: border-box;
+	max-width: 300px;
 }
 
 .ro-slide img {
@@ -305,8 +369,7 @@ html, body {
 	
 }
 .ro-slide button{
-	padding: 5px;
-	display: flex;
+	display: none;
 	position: absolute;
 	top: 40%;
   	left: 50%;
@@ -315,7 +378,15 @@ html, body {
   	border: 0;
 	background: transparent;
 	color: #F4B938;
-	  
+	font-family: Circe;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 0;
+    width: 117px;
+	height: 24px;
+	cursor: pointer;
 }
 .rec.rec-carousel{
 	display: flex;
@@ -326,6 +397,7 @@ html, body {
 }
 .rec.rec-slider{
 	position: relative!important;
+	min-height: 460px;
 }
 .rec.rec-arrow.rec.rec-arrow-right{
 	position: relative!important;
@@ -339,19 +411,25 @@ html, body {
 	position: relative!important;
 	align-self: flex-end!important;
 	order: 2;
-	margin-left: 75%;
+	margin-left: calc(100% - 135px);
 	margin-top: 30px;
 }
 
 
 /*  */
-.ro-slide button:hover{
+.ro-slide:hover button {
+	display: flex;
 	background-color: rgba(0,0,0,0.5);
 	
 	color: #F4B938;
 	border-radius: 10px;
 	box-shadow: 0px 0px 100px 100px rgba(0,0,0,0.5)
 }
+
+.ro-slide.active button {
+	display: flex;
+}
+
 .ro-slide img:hover{
 	opacity:0.6;
 	-moz-opacity:0.6;
@@ -421,7 +499,7 @@ html, body {
 	max-height: 100px;
 }
 .info-block-content {
-	min-height: 1016px;
+	height: 1057px;
 }
 .info-block-title{
 	/*max-height: 110px;*/
@@ -695,13 +773,6 @@ html, body {
 		display: none;
 	}
 
-	.bottom-bg {
-		margin-top: -55px;
-	}
-
-	.create-route {
-		margin-top: -10px;
-	}
 	.index-block-middle {
 		padding-bottom: 80px;
 	}
@@ -734,6 +805,17 @@ html, body {
 	}
 	.index-middle-wrap-5 {
 		margin-top: 80px;
+	}
+}
+
+@media screen and (max-width: 500px) {
+
+	.bottom-bg {
+		margin-top: -55px;
+	}
+
+	.create-route {
+		margin-top: -10px;
 	}
 }
 

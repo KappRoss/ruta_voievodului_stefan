@@ -7,10 +7,33 @@ import {changeActiveAttraction} from '../../state/actions/settingsActions';
 import {connect} from "react-redux";
 // import { fromRenderProps } from 'recompose';
 
+const breakPoints = [
+        { width: 1, itemsToShow: 1 },
+        { width: 550, itemsToShow: 2, itemsToScroll: 2 },
+        { width: 850, itemsToShow: 3 },
+        { width: 1150, itemsToShow: 4, itemsToScroll: 2 },
+        { width: 1450, itemsToShow: 5 },
+        { width: 1750, itemsToShow: 6 },
+      ];
+
+const renderPagination = (items, startItem) => ({activePage, pages}) => {
+  const attrInPage = Math.ceil(items.length / pages.length);
+  const start = startItem + 1;
+  const end = startItem + attrInPage;
+  return (
+    <div className='pagination-wrap'>
+      <span className='pagination pagination-start'>{start} </span>
+      <span className='pagination pagination-dash' />
+      <span className='pagination pagination-end'> {end}</span>
+    </div>
+  );
+}
+
 class Scroll20 extends React.Component {
     constructor(props) {
       super(props)
-      this.state = { 
+      this.state = {
+        startItem: 0,
         showUpdateHover: false,
         showedBtn: '',  
         roname: [
@@ -40,62 +63,60 @@ class Scroll20 extends React.Component {
 
       }
       
-
-      this.breakPoints = [
-        { width: 1, itemsToShow: 1 },
-        { width: 550, itemsToShow: 2, itemsToScroll: 2 },
-        { width: 850, itemsToShow: 3 },
-        { width: 1150, itemsToShow: 4, itemsToScroll: 2 },
-        { width: 1450, itemsToShow: 5 },
-        { width: 1750, itemsToShow: 6 },
-      ]
-
-      
+     
     }
+
+    slide = (currentItem, nextItem) =>
+      this.setState({ startItem: nextItem.index });
 
     toggleContent = (item) => () => {
       this.props.changeActiveAttraction(item)
     }
 
-    showHideUpdateBtn =  ({target:{name}}) => {
+    showHideUpdateBtn = (name) => () => {
       this.setState({
         showUpdateHover : !this.state.showUpdateHover,
         showedBtn: name
       });
     }
     render(){
+      const isActive = (i) => this.state.showUpdateHover && this.state.showedBtn === `img-${i}`;
       return (
         
         <Carousel 
             className = "ggg"
-            breakPoints={this.breakPoints}
+            breakPoints={breakPoints}
             itemsToShow={4}
-			itemsToScroll={1}    
+			      itemsToScroll={1}
+            onNextStart={this.slide}
+            onPrevStart={this.slide}
+            renderPagination={renderPagination(this.state.roname, this.state.startItem)}
         >
 
         
         {this.state.roname.map((k, i) => (
-            <div key={i} className="ro-slide">
-                <img
-                  
-                  name = {`img-${i}`} 
-                  onClick={this.showHideUpdateBtn} 
-                  src={require('../../img/Romania/'+(i+1)+'.jpg')} alt={k} 
-                >
-                  
-                   
-                </img>
+            <div
+              key={i}
+              className={`ro-slide ${isActive(i) && 'active'}`}
+              onClick={this.showHideUpdateBtn(`img-${i}`)}
+            >
+                <div
+                  className="ro-slide-image"
+                  style={{
+                    backgroundImage: `url(${require('../../img/Romania/'+(i+1)+'.jpg')})`,
+                  }}
+                />
                 
                 
-                <div>{k}</div>
+                <div  className="ro-slide-text">{k}</div>
 
-                {this.state.showUpdateHover  && this.state.showedBtn === `img-${i}` &&
+                
             
                     <NavLink to="/about">
                       <button onClick={this.toggleContent(i+1)} className= "btnToInfo">VEZI MAI MULT</button>
 					          </NavLink>
 
-                  }
+
             </div>
         ))}
         

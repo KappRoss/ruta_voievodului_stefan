@@ -19,6 +19,12 @@ for (let i = 0; i < 9; ++i) {
 	acc.push(i);
 }
 
+const getShortDesc = ({ text }, cur) => {
+	let string = text[cur];
+	const dotIndex = string.indexOf('.');
+	return dotIndex > 0 ? string.substring(0, dotIndex + 1) : string;
+}
+
 const StyledPopup = styled(Popup)`
   &-overlay {
 	background-color: rgba(255,255,255,0.4)!important;
@@ -55,7 +61,7 @@ export default props => (
 						{props.loc.title[1]}
 					</div>
 					<div className="index-block-middle-desc">
-						{props.loc.desc[1]}
+						{getShortDesc(props.loc, props.cur)}
 					</div>
 				</div>
 				<IndexSlider cur={props.cur} sliderMove={props.sliderMove} />

@@ -76,7 +76,7 @@ export const Modal = ({
           </div>
           <div className="ShortDSCR">
             <p>{desc}</p>
-            <p>{district}</p>
+            {/*<p>{district}</p>*/}
           </div>
           <div>
             <p><a href={url} target="_blank"  rel="noopener noreferrer">{seeMore}</a></p>
