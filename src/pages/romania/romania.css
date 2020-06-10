@@ -45,10 +45,18 @@
 	font-size: 16px;
 	line-height: 24px;
 	color: #FFFFFF;
-	opacity: 0.5;
+	
 	text-align: left;
 }
-
+.romania-row-text a{
+	color: white;
+	opacity: 1;
+	text-decoration: none;
+}
+.romania-row-text a:hover{
+	color: #F4B938;
+	
+}
 .romania-row-middle {
 	width: 32%
 }

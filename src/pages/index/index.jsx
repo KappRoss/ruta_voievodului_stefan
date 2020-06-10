@@ -19,14 +19,20 @@ for (let i = 0; i < 9; ++i) {
 	acc.push(i);
 }
 
+const getShortDesc = ({ text }, cur) => {
+	let string = text[cur];
+	const dotIndex = string.indexOf('.');
+	return dotIndex > 0 ? string.substring(0, dotIndex + 1) : string;
+}
+
 const StyledPopup = styled(Popup)`
   &-overlay {
-	background-color: rgba(255,255,255,0.1)!important;
+	background-color: rgba(255,255,255,0.4)!important;
   }
   &-content {
 	border: none!important;
 	background: #000000!important;
-	width: 85%!important;
+	width: 90%!important;
 	max-height: 100%;
     overflow: auto;
   }
@@ -55,7 +61,7 @@ export default props => (
 						{props.loc.title[1]}
 					</div>
 					<div className="index-block-middle-desc">
-						{props.loc.desc[1]}
+						{getShortDesc(props.loc, props.cur)}
 					</div>
 				</div>
 				<IndexSlider cur={props.cur} sliderMove={props.sliderMove} />
@@ -78,8 +84,24 @@ export default props => (
 							<div className="info-block-title">{props.loc.name[props.cur]}</div>
 							<div className="info-block-desc">{props.loc.info[props.cur]}</div>
 							<img className="info-block-img" style={{width: '90%'}} src={require('../../img/Moldova/'+(props.cur+1)+'-0.jpg')} alt="map" />
-							<div style={{marginBottom: '140px'}} className="info-block-text">{props.loc.text[props.cur]}</div>
-							{/* <div>{props.loc.}</div>  ДОПОЛНИТЕЛЬНЫЕ ДОСТОПРИМЕЧАТЕЛЬСТВА*/}  
+							<div style={{marginBottom: '50px'}} className="info-block-text">{props.loc.text[props.cur]}</div>
+							<div className='add-title'>Alte atractii turistie</div>
+							<div className = "add-district">
+								{	
+								props.loc['title_' + props.cur].map((key, i) =>
+										<div className = "add-item">
+											<div className = "img-default">
+												{<img src={require('../../img/Moldova/Group_172.png')}/>}
+											</div>
+											<div className = "link-to-url">
+												{<a href={props.loc['url_' + props.cur][i]} target = '_blank'>{key}<br/></a>}
+											</div>
+										</div>
+										
+									)
+								}	
+							</div>  
+							
 						</div>
 					</div>
 						)}
@@ -154,8 +176,7 @@ export default props => (
 				</div>
 				<div className="formmm">
 					<Login 
-						props = {props.loc.form}
-						text = {props.loc.buttons[2]}
+						texts = {[...props.loc.form, props.loc.buttons[2]]}
 					/>
 				</div>
 				

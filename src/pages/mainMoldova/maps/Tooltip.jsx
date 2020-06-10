@@ -55,7 +55,6 @@ export default ({ active, activeElement, svg, locId }) => {
     const found = attractions.find(item => item.id === active);
     const { title, shortTitle } = found[locId];
     const text = (shortTitle || title).split('^');
-    console.log(text);
     return (
       <g transform={`translate(${x}, ${y})`} pointerEvents="none" >
         <path
