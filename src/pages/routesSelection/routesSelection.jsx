@@ -1,4 +1,4 @@
-import React, {useRef} from 'react';
+import React from 'react';
 import './routesSelection.css';
 import Map from "../routesSelection/googleMaps"
 import connect from "react-redux/es/connect/connect";

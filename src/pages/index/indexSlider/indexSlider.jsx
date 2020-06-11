@@ -17,6 +17,7 @@ export default props => {
 						<img key={index} src={require('./img/s-'+(index+1)+'.png')} alt={key}
 							style={{border: props.cur === index ? '1px solid #FFFFFF' : 'none', borderRadius: '4px', cursor: 'pointer'}}
 							onClick={() => props.sliderMove(index)}
+							width={80}
 						/>
 					))}
 				</div>

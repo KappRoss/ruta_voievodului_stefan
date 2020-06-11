@@ -21,18 +21,18 @@ const StyledPopup = styled(Popup)`
   }
 `
 
-const getGoogleLink = (googleLoc, locLink, locId) => {
-  const coordinates = googleLoc.replace(" ", "");
-  return (
-    <a
-      href={`https://maps.google.com?saddr=Current+Location&daddr=${coordinates}`}
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      {locLink}
-    </a>
-  );
-}
+// const getGoogleLink = (googleLoc, locLink, locId) => {
+//   const coordinates = googleLoc.replace(" ", "");
+//   return (
+//     <a
+//       href={`https://maps.google.com?saddr=Current+Location&daddr=${coordinates}`}
+//       target="_blank"
+//       rel="noopener noreferrer"
+//     >
+//       {locLink}
+//     </a>
+//   );
+// }
 
 export const Modal = ({
   visible,

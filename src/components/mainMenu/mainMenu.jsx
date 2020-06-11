@@ -8,7 +8,7 @@ import {
 } from '../../state/actions/settingsActions';
 
 const MainMenu = React.forwardRef((props, ref) => {
-  const { setMobMenu, menu, setLoc, loc, cur, setLocalisation } = props;
+  const { setMobMenu, menu, loc, cur, setLocalisation } = props;
   return (
       <div ref={ref} className="mainMenu">
         <img
