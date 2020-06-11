@@ -58,9 +58,31 @@
 	margin-top: 20px;
 }
 
+.slider-position-mobile {
+	display: none;
+	display: flex;
+    padding: 0 30px 20px;
+    box-sizing: border-box;
+}
+
 @media screen and (max-width: 1000px) {
 	.slider {
 		margin: 0;
 		overflow-x: auto;
+    	position: relative;
+    	min-height: 150px;
 	}
+
+	.slider-wrapper {
+		padding: 0 15px;
+	}
+
+	.slider-position-mobile {
+		display: flex;
+	}
+
+	.slider-position-big-screen {
+		display: none;
+	}
+
 }
