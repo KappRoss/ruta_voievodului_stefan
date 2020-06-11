@@ -27,7 +27,7 @@ function queryString(object) {
 
 const instance = async function({
 	data = {},
-	url = 'http://rutaapi.kurama.xyz/api/v1/sendContactForm',
+	url = 'https://rutaapi.kurama.xyz/api/v1/sendContactForm',
 	method = 'POST'
 }) {
   const headers = new Headers();
