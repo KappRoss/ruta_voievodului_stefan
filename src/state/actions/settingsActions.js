@@ -43,8 +43,10 @@ export const addAct = (a, i) => {
 
 export const login = (firstName, lastName, email, message) => async (dispatch) => {
     
-    let response = await authAPI.login({ firstName, lastName, email, message })
-    console.warn(response);
+    const response = await authAPI.login({ first_name: firstName, last_name: lastName, email, message })
+    if (response.message === "success") {
+        reset();
+    }
 }
 
 export const setLocalisation = (loc) => {

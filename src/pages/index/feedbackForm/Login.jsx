@@ -1,7 +1,7 @@
 import React from 'react';
 import {Field, reduxForm, reset} from 'redux-form';
 import { withFormElement } from '../../../components/common/FormControls/Forms';
-import { maxLengthCreator, required } from '../../../utilites/validators/validator';
+import { maxLengthCreator, required, email } from '../../../utilites/validators/validator';
 import { login } from '../../../state/actions/settingsActions';
 import styleFormError from '../../../components/common/FormControls/Forms.module.css';
 import style from './login.module.css';
@@ -63,7 +63,7 @@ const ContactForm = (props) => {
                         placeholder = {texts[2]}
                         name = "email"
                         component = {Input}
-                        validate = {[required, inputMaxLength]}
+                        validate = {[email, inputMaxLength]}
                     />
                 </div>
                 <div >

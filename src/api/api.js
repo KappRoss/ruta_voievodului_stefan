@@ -31,8 +31,7 @@ const instance = async function({
 	method = 'POST'
 }) {
   const headers = new Headers();
-  headers.append('Accept', 'application/json');
-  headers.append('Access-Control-Allow-Origin', '*');
+  // headers.append('Accept', 'application/json');
   let body = null;
 
   if ((method.toUpperCase() === 'GET') || (method.toUpperCase() === 'HEAD')) {
@@ -46,7 +45,6 @@ const instance = async function({
   if (body) requestParams.body = body;
 
   try {
-    console.log(url, requestParams);
     const response = await fetch(url, requestParams);
     if (response.status === 404) {
       return new Error('Page not found');
