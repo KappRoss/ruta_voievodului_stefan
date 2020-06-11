@@ -43,16 +43,8 @@ export const addAct = (a, i) => {
 
 export const login = (firstName, lastName, email, message) => async (dispatch) => {
     
-    let response = await authAPI.login(firstName, lastName, email, message)
-    if (response.data.resultCode === 0){
-            dispatch(setAuthUserData());
-            reset()
-            // let message = response.data.messages.length > 0 ? response.data.messages[0] : "some error";
-            // dispath(stopSubmit("login", {_error: message}))
-        }
-      else{
-        reset()
-      } 
+    let response = await authAPI.login({ firstName, lastName, email, message })
+    console.warn(response);
 }
 
 export const setLocalisation = (loc) => {

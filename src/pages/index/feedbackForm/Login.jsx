@@ -1,16 +1,18 @@
 import React from 'react';
 import {Field, reduxForm, reset} from 'redux-form';
 import { withFormElement } from '../../../components/common/FormControls/Forms';
-import { maxLengthCreator } from '../../../utilites/validators/validator';
+import { maxLengthCreator, required } from '../../../utilites/validators/validator';
 import { login } from '../../../state/actions/settingsActions';
 import styleFormError from '../../../components/common/FormControls/Forms.module.css';
 import style from './login.module.css';
 import { connect } from 'react-redux';
 import Button from '../../../components/button/button';
 
-const maxLength = maxLengthCreator(100)
+const inputMaxLength = maxLengthCreator(30)
+const textAreaMaxLength = maxLengthCreator(1000)
 
 const Input = withFormElement("input");
+const TextArea = withFormElement("textarea");
 
 const ContactForm = (props) => {
     
@@ -41,7 +43,7 @@ const ContactForm = (props) => {
                         placeholder = {texts[0]}
                         name = "firstName"
                         component = {Input}
-                        validate = {[maxLength]}
+                        validate = {[required, inputMaxLength]}
                     />
                 </div>
                 <div>
@@ -51,7 +53,7 @@ const ContactForm = (props) => {
                         placeholder = {texts[1]}
                         name = "lastName"
                         component = {Input}
-                        validate = {[maxLength]}
+                        validate = {[required, inputMaxLength]}
                     />
                 </div>
                 <div >
@@ -61,7 +63,7 @@ const ContactForm = (props) => {
                         placeholder = {texts[2]}
                         name = "email"
                         component = {Input}
-                        validate = {[maxLength]}
+                        validate = {[required, inputMaxLength]}
                     />
                 </div>
                 <div >
@@ -70,8 +72,8 @@ const ContactForm = (props) => {
                         type = "text"
                         placeholder = {texts[3]}
                         name = "message"
-                        component = {Input}
-                        validate = {[maxLength]}
+                        component = {TextArea}
+                        validate = {[required, textAreaMaxLength]}
                     />
                 </div>
 
