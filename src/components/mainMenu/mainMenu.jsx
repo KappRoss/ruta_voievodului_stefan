@@ -41,18 +41,18 @@ const MainMenu = React.forwardRef((props, ref) => {
               alt="close"
           />
           <div className="menu-item-block">
-            <NavLink to="/about" className="menu-item">
+            <NavLink to="/about" className="menu-item" onClick={() => setMobMenu(false)}>
               {loc[0]}
             </NavLink>
-            <NavLink exact to="/?pos=map" className="menu-item menu-item-span">
+            <NavLink exact to="/?pos=map" className="menu-item menu-item-span" onClick={() => setMobMenu(false)}>
               {loc[1]}
             </NavLink>
           </div>
           <div className="menu-item-block">
-            <NavLink exact to="/?pos=rom" className="menu-item">
+            <NavLink exact to="/?pos=rom" className="menu-item" onClick={() => setMobMenu(false)}>
               {loc[2]}
             </NavLink>
-            <NavLink to="/other-moldova" className="menu-item menu-item-span">
+            <NavLink to="/other-moldova" className="menu-item menu-item-span" onClick={() => setMobMenu(false)}>
               {loc[3]}
             </NavLink>
           </div>

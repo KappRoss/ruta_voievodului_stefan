@@ -1,58 +1,15 @@
 import React from 'react';
 import attractions from "../../../lib/attractions";
 
-const tooltipData = [
-  { id: '1-0', texts: ['Restaurant National:', "“Villa Etnica”"] },
-  { id: '1-1', texts: [] },
-  { id: '1-2', texts: [] },
-
-  { id: '2-0', texts: [] },
-  { id: '2-1', texts: [] },
-  { id: '2-2', texts: [] },
-  { id: '2-3', texts: [] },
-  { id: '2-4', texts: [] },
-  { id: '2-5', texts: [] },
-
-  { id: '3-0', texts: [] },
-  { id: '3-1', texts: [] },
-  { id: '3-2', texts: [] },
-
-  { id: '4-0', texts: [] },
-  { id: '4-1', texts: [] },
-  { id: '4-2', texts: [] },
-  { id: '4-3', texts: [] },
-
-  { id: '5-0', texts: [] },
-  { id: '5-1', texts: [] },
-  { id: '5-2', texts: [] },
-  { id: '5-3', texts: [] },
-  { id: '5-4', texts: [] },
-  { id: '5-5', texts: [] },
-
-  { id: '6-0', texts: [] },
-  { id: '6-1', texts: [] },
-
-  { id: '7-0', texts: [] },
-  { id: '7-1', texts: [] },
-
-  { id: '9-0', texts: [] },
-  { id: '9-1', texts: [] },
-  { id: '9-2', texts: [] }
-]
-
-
 export default ({ active, activeElement, svg, locId }) => {
     if (!activeElement || !svg) {
       return null;
     }
-    // const foundItem = tooltipData.find(item => item.id === active);
-    // const { texts } = foundItem || { texts: [] };
-
     const elPositions = activeElement.getBoundingClientRect();
     const svgPositions = svg.getBoundingClientRect();
     const x = elPositions.x - svgPositions.x - 60;
     const y = elPositions.y - svgPositions.y - 70;
-    const found = attractions.find(item => item.id === active);
+    const found = attractions.find(item => item.id === active) || {};
     const { title, shortTitle } = found[locId];
     const text = (shortTitle || title).split('^');
     return (

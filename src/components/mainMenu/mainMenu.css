@@ -144,10 +144,11 @@
 	}
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 950px) {
 	.mainMenu {
 		background-image: url(./img/logo-mob.png);
 		height: 80px;
+		z-index: 100;
 	}
 	.link-to-main {
 		width: 50px;
@@ -157,5 +158,12 @@
 	}
 	.menu-item {
 		margin-top: 30px;
+	}
+	.main-menu-wrap.open-menu {
+		position: fixed;
+	}
+
+	.menu-item-span {
+		text-align: left;
 	}
 }

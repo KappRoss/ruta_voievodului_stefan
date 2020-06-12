@@ -12,7 +12,7 @@ import About from './pages/about/about';
 import About2 from './pages/about/about';
 import MainMoldova from './pages/mainMoldova/mainMoldova';
 import Romania from './pages/romania/romania';
-import OtherMoldova from './pages/otherMoldova/otherMoldova';
+// import OtherMoldova from './pages/otherMoldova/otherMoldova';
 import CreateRout from './pages/createRout/createRout';
 import RoutesSelection from './pages/routesSelection/routesSelection';
 import {setDrop, addAct, setLocalisation, setMobMenu, sliderMove}   from './state/actions/settingsActions'
@@ -34,14 +34,14 @@ const App = (props) => {
                     loc={locData.index[loc]}
                 />)}
                 />
-                <Route path="/about" exact render={() => <About loc={locData.about[loc]} />} />
+                <Route path="/about" render={() => <About loc={locData.about[loc]} />} />
 
-                <Route path="/about" exact render={() => <About2 loc={locData.about[loc]} />} />
+                <Route path="/about" render={() => <About2 loc={locData.about[loc]} />} />
 
-                <Route path="/other-moldova" exact render={() => <MainMoldova loc={locData.moldova[loc]} />} />
-                <Route path="/romania" exact render={() => <Romania loc={locData.romania[loc]} />} />
-                <Route path="/moldova" exact render={() => <OtherMoldova loc={locData.otherMoldova[loc]} />} />
-                <Route path="/create-rout" exact render={() =>
+                <Route path="/other-moldova" render={() => <MainMoldova loc={locData.moldova[loc]} />} />
+                <Route path="/romania" render={() => <Romania loc={locData.romania[loc]} />} />
+                <Route path="/moldova" render={() => <MainMoldova loc={locData.moldova[loc]} />} />
+                <Route path="/create-rout" render={() =>
                     <CreateRout
                                 loc={locData.CreateRout[loc]}
                                 header={header}

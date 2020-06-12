@@ -754,6 +754,7 @@ export const locData = {
 	},
 	moldova: {
 		ro: {
+			id: 'ro',
 			title: 'Alte atracții turistice din Republica Moldova',
 			desc: 'Ştefan cel Mare a fost cel mai mare domnitor pe care l-a avut Moldova, între anii 1457 – 1504. Calitățile sale de bun strateg și diplomat, inițiativele întreprinse pentru dezvoltarea culturii prin ctitorirea unui număr impresionant de biserici',
 			name: [
@@ -777,6 +778,7 @@ export const locData = {
 			]
 		},
 		en: {
+			id: 'en',
 			title: 'Alte atracții turistice din Republica Moldova',
 			desc: 'Ştefan cel Mare a fost cel mai mare domnitor pe care l-a avut Moldova, între anii 1457 – 1504. Calitățile sale de bun strateg și diplomat, inițiativele întreprinse pentru dezvoltarea culturii prin ctitorirea unui număr impresionant de biserici',
 			name: [
@@ -805,6 +807,131 @@ export const locData = {
 	},
 	romania: {
 		ro: {
+			id: 'ro',
+			title: 'Alte atracții turistice din România',
+			name: ['Județul Suceava', 'Județul Iasi', 'Județul Vaslui', 'Județul Neamț', 'Județul Botosani', 'Județul Vrancea'],
+			text_1: [
+				'1. Biserica “Tăierea Capului Sfântului Ioan Botezătorul” din comuna Arbore, a fost inclusă în Lista Patrimoniului Mondial UNESCO în anul 1993.',
+				'2. Biserica “Adormirea Maicii Domnului” şi ,”Sf. Gheorghe” a Mănăstirii Humor, din comuna Mănăstirea Humorului, a fost inclusă în Lista Patrimoniului Mondial UNESCO în anul 1993.',
+				'3. Mănăstirea Probota, satul Probota a fost inclusă în Lista Patrimoniului Mondial UNESCO în anul 1993.',
+				'4. Biserica “Sf. Gheorghe” a Mănăstirii “Sf. Ioan cel Nou” din Suceava a fost inclusă în Lista Patrimoniului Mondial UNESCO în anul 1993.',
+				'5. Biserica Mănăstirii Sucevița a fost inclusă în Lista Patrimoniului Mondial UNESCO în anul 2010.',
+				'6. Biserica Mănăstirii Moldovița din comuna Vatra Moldoviței este inclusă în Lista Patrimoniului Mondial UNESCO.',
+				'7. Hanul Domnesc din Suceava',
+				'8. Comuna muzeu - Ciocăneşti',
+				'9. Centrul de Ceramică Neagră din Marginea',
+				],
+			text_2:[
+				'10. Catedrala Mitropolitană',
+				'11. Mănăstirea Sfinţii Trei Ierarhi',
+				'12. Colina Copou ',
+				'13. Mănăstirea Golia ', 
+				'14. Muzeul Unirii ',
+				'15. Mănăstirea Cetăţuia',
+				'16. Palatul Ruginoasa',
+				
+			],
+			text_3:[
+				'25. Muzeul Viticol Huși',
+				'26. Muzeul Eparhial de Artă Religioasă' ,
+				'27. Casa Ghica și casa Mavrocordat',
+				'28. Rezervația botanică "Movila lui Burcel' ,
+				'29. Locul fosilifer "Nisipăria Hulubăț',
+				'30. Muzeul Tradițiilor' ,
+				'31. Parcul Copou'
+			],
+			text_4:[
+				'32. Parcul Natural Vânători Neamț ',
+				'33. Parcul Național Ceahlău ',
+				'34. Muzeul de Artă Eneolitică Cucuteni ',
+				'35. Muzeul Memorial Ion Creangă Humulești ',
+				'36. Mănăstirea Agapia ',
+				'37. Mănăstirea Văratec ',
+				'38. Mănăstirea Secu ',
+				'39. Mănăstirea Sihăstria'
+			],
+			text_5:[
+				'17. Situl arheologic de la Ripiceni - Misteriosul „oraş” de pe malurile Prutului face parte dintr-o aşezare uriaşă, considerată printre cele mai mari descoperite vreodată pe teritoriul României, în cadrul culturii Cucuteni. ',
+				'18. Mănăstirea Vorona',
+				'19. Mănăstirea Coșula',
+				'20. Biserica de lemn Sfântul Dumitru Vorniceni', 
+				'21. Biserica de lemn Sfântul Dumitru Ionățeni',
+				'22. Biserica de lemn din Dorohoi',
+				'23. Mănăstirea Agafton',
+				'24. Ipotesti – observator – Lacul codrilor albastru',
+			],
+			text_6:[
+				'40. Mausoleul Eroilor de la Mărăşeşti - este un monument dedicat eroilor din Primul Război Mondial ',
+				'41. Mausoleul Eroilor de la Soveja - monumentul este amplasat în satul Dragosloveni, comuna Soveja şi este dedicat eroilor căzuţi în luptele de pe cuprinsul văii Şuşiţei. ',
+				'42. Mausoleul Eroilor de la Mărăşti - este situat în satul Mărăşti, comuna Răcoasa. Mausoleul a fost ridicat pe locul unde s-a dat bătălia din 9-17 iulie 1917 şi face parte, alături de alte obiective istorice, din Câmpul istoric de la Mărăşti', 
+				'43. Mausoleul Eroilor de la Focşani', 
+				'44. Rezervaţia Naturală Tişiţa – Cheile Tişiţei', 
+				'45. Rezervaţia Naturală Focul Viu', 
+				'46. Muzeul Satului Vrâncean'
+
+			],
+			links_1: ['https://ro.wikipedia.org/wiki/Biserica_Arbore',
+			`https://ro.wikipedia.org/wiki/M%C4%83n%C4%83stirea_Humor`,
+			`https://www.crestinortodox.ro/biserici-manastiri/mitropolia-moldovei-bucovinei/manastirea-probota-68109.html`,
+			`http://visitingbucovina.ro/biserica-sf-gheorghe-a-manastirii-sf-ioan-cel-nou-de-la-suceava/`,
+			`https://ro.wikipedia.org/wiki/M%C4%83n%C4%83stirea_Sucevi%C8%9Ba`,
+			`https://ro.wikipedia.org/wiki/M%C4%83n%C4%83stirea_Moldovi%C8%9Ba`,
+			`https://muzeulbucovinei.ro/hanul-domnesc/`,
+			`https://hailadorna.ro/sa-vizitezi/ciocanesti/`,
+			`https://ceramicamarginea.ro/`
+			],
+			links_2: [
+			`https://catedralamitropolitanaiasi.mmb.ro/`,
+			`http://www.manastireasftreiierarhi.ro/`,
+			`http://iasi.travel/ro/stories/dealul-copou-muzeul-mihail-sadoveanu/`,
+			`https://golia.mmb.ro/`,
+			`https://palatulculturii.ro/muzeul-unirii`,
+			`https://ro.wikipedia.org/wiki/M%C4%83n%C4%83stirea_Cet%C4%83%C8%9Buia_din_Ia%C8%99i`,
+			`https://ro.wikipedia.org/wiki/Palatul_Cuza_de_la_Ruginoasa`,
+			],
+			links_3: [
+			`https://ro.wikipedia.org/wiki/Muzeul_Viticol_din_Hu%C8%99i`,
+			`http://www.romanianresorts.ro/muzeul-eparhial`,
+			`https://ro.wikipedia.org/wiki/Casa_Mavrocordat`,
+			`https://ro.wikipedia.org/wiki/Movila_lui_Burcel`,
+			`https://ro.wikipedia.org/wiki/Locul_fosilifer_Nisip%C4%83ria_Hulub%C4%83%C8%9B`,
+			`https://limbaromana.org/revista/comuna-muntenii-de-sus-judetul-vaslui-aspecte-istorice-si-folclorice/`,
+			`https://ro.wikipedia.org/wiki/Copou,_Vaslui`
+			],
+			links_4: [
+				`https://vanatoripark.ro/`,
+				`http://www.ceahlaupark.ro/`,
+				`http://maecpn.muzeu-neamt.ro/`,
+				`http://mmich.muzeu-neamt.ro/`,
+				`https://ro.wikipedia.org/wiki/M%C4%83n%C4%83stirea_Agapia`,
+				`https://ro.wikipedia.org/wiki/M%C4%83n%C4%83stirea_V%C4%83ratec`,
+				`https://secu.mmb.ro/`,
+				`https://sihastria.mmb.ro/`
+				],
+			links_5: [
+				`https://descoperanordest.ro/locatii/satul-ripicenii-noi-judetul-botosani-sii-arheologic-ripiceni/`,
+				`https://ro.wikipedia.org/wiki/M%C4%83n%C4%83stirea_Vorona`,
+				`https://cosula.mmb.ro/`,
+				`https://visitbotosani.ro/ro/2014/06/biserica-de-lemn-sf%C3%A2ntul-dumitru-vorniceni/`,
+				`https://ro.wikipedia.org/wiki/Biserica_de_lemn_din_Ion%C4%83%C8%99eni`,
+				`https://ro.wikipedia.org/wiki/Biserica_de_lemn_din_Dorohoi`,
+				`https://agafton.mmb.ro/`,
+				`https://ro.wikipedia.org/wiki/Ipote%C8%99ti,_Boto%C8%99ani`,
+			],
+			links_6: [
+				`https://once.mapn.ro/pages/view/123`,
+				`https://once.mapn.ro/pages/view/127`,
+				`https://once.mapn.ro/pages/view/125`,
+				`https://once.mapn.ro/pages/view/130`,
+				`http://apmvn.anpm.ro/arii-naturale-protejate-de-interes-national/-/asset_publisher/3N0LCSrYrj6u/content/rezervatia-naturala-tisita`,
+				`https://ro.wikipedia.org/wiki/Focul_Viu_de_la_Andreia%C8%99u_de_Jos`,
+				`https://invrancea.ro/muzeul-satului-vrancean-2/`
+				
+			]
+		
+		},
+		en: {
+			id: 'en',
 			title: 'Alte atracții turistice din România',
 			name: ['Județul Suceava', 'Județul Iasi', 'Județul Vaslui', 'Județul Neamț', 'Județul Botosani', 'Județul Vrancea'],
 			text_1: [
@@ -925,10 +1052,6 @@ export const locData = {
 				`https://invrancea.ro/muzeul-satului-vrancean-2/`
 				
 			]
-		
-		},
-		en: {
-
 		}
 	},
 	CreateRout: {

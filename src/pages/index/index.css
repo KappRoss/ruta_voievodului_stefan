@@ -184,8 +184,8 @@ html, body {
     /*height: 1px;*/
 }
 
-.pagination-end {
-
+.pagination-all {
+	display: none;
 }
 
 @media screen and (max-width: 2500px) {
@@ -806,6 +806,21 @@ html, body {
 	.index-middle-wrap-5 {
 		margin-top: 80px;
 	}
+
+	.pagination-dash,
+	.pagination-end {
+		display: none;
+	}
+
+	.pagination-all {
+		display: inline;
+	}
+
+	.pagination-wrap {
+		right: auto;
+    	bottom: -40px;
+    	left: 20%;
+	}
 }
 
 @media screen and (max-width: 500px) {
@@ -813,6 +828,10 @@ html, body {
 	.bottom-bg {
 		margin-top: -55px;
 	}
+
+		.pagination-wrap {
+	    	left: 15%;
+		}
 
 	.create-route {
 		margin-top: -10px;

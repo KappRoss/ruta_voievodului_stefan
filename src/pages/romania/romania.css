@@ -16,28 +16,37 @@
 }
 
 .romania-content {
-	margin-top: 100px;
-	padding: 0 15%;
+	margin: 100px auto 0;
+	width: 1296px;
+	max-width: calc(100% - 30px);
 }
 
 .romania-row {
 	display: flex;
 	justify-content: space-between;
 	padding-bottom: 110px;
+	align-items: flex-start;
+	width: 100%;
+	flex-wrap: wrap;
+}
+
+.img-1 {
+	width: calc(50% - 15px);
 }
 
 .romania-row-right {
 	display: flex;
 	flex-direction: column;
+	width: calc(50% - 15px);
 }
 
 .romania-row-title {
 	font-style: normal;
 	font-weight: normal;
 	font-size: 35px;
-	line-height: 52px;
+	line-height: 45px;
 	color: #F4B938;
-	margin: 20px 0;
+	margin: 0 0 15px;
 	text-align: left;
 }
 
@@ -58,14 +67,29 @@
 	
 }
 .romania-row-middle {
-	width: 32%
+	width: calc(100% / 3 - 15px);
 }
 
 .romania-row-bottom {
-	width: 49%
+	width: calc(50% - 15px);
 }
 
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 1500px) {
+	.romania-row-middle {
+		min-width: 100%;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		padding-bottom: 110px;
+	}
+
+	.romania-row-middle > img,
+	.romania-row-middle > div {
+		width: calc(50% - 15px);
+	}
+}
+
+@media screen and (max-width: 900px) {
 	.romania {
 		background-size: 100%;
 		background-position: 5% 7%;
@@ -78,8 +102,10 @@
 		padding: 0 10%;
 	}
 	.romania-content {
-	    margin-top: 300px;
-	    padding: 5% 5%;
+	    margin-top: 450px;
+	    padding: 250px 20px;
+		width: 100%;
+		max-width: none;
 	}
 	.romania-row {
 		flex-direction: column;
@@ -90,11 +116,12 @@
 	}
 	.romania-row img {
 		margin: 0;
-		width: 100%;
+		width: calc(100% - 40px);
 	}
 	.romania-row-middle, .romania-row-bottom {
-		width: 100%;
+		width: calc(100% - 40px);
 		margin-top: 80px;
+		padding-bottom: 0;
 	}
 	.romania-row-title {
 		font-size: 25px;

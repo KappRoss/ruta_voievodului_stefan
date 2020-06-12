@@ -12,6 +12,7 @@ import Maps from './maps/Maps';
 import BG from './maps/bg/BG';
 import Scroll20 from './scroll20';
 import Anchor from '../../components/anchor/Anchor';
+import { mainAttractions } from "../../lib/attractions";
 
 const acc = [];
 
@@ -83,15 +84,15 @@ export default props => (
 						<div>
 							<div className="info-block-title">{props.loc.name[props.cur]}</div>
 							<div className="info-block-desc">{props.loc.info[props.cur]}</div>
-							<img className="info-block-img" style={{width: '90%'}} src={require('../../img/Moldova/'+(props.cur+1)+'-0.jpg')} alt="map" />
+							<img className="info-block-img" style={{width: '90%'}} src={mainAttractions[props.cur].img.img1} alt="map" />
 							<div style={{marginBottom: '50px'}} className="info-block-text">{props.loc.text[props.cur]}</div>
 							<div className='add-title'>Alte atractii turistie</div>
 							<div className = "add-district">
 								{	
-								props.loc['title_' + props.cur].map((key, i) =>
+								props.loc.title[props.cur].map((key, i) =>
 										<div className = "add-item">
 											<div className = "img-default">
-												{<img src={require('../../img/Moldova/Group_172.png')}/>}
+												{<img src={require('../../img/Moldova/Group_172.png')} alt="bg"/>}
 											</div>
 											<div className = "link-to-url">
 												{<a href={props.loc['url_' + props.cur][i]} target = '_blank'>{key}<br/></a>}
@@ -124,7 +125,7 @@ export default props => (
 							</div>
 
 
-							<img className="bottom-bg" src={require('../../img/Moldova/'+(props.cur+1)+'-1.jpg')} alt="map" />
+							<img className="bottom-bg" src={mainAttractions[props.cur].img.img2} alt="map" />
 						</div>
 					</div>
 					<InfoBlock loc={props.loc} cur={props.cur} sliderMove={props.sliderMove} className = 'infoBlock'/>

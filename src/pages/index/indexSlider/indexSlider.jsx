@@ -10,6 +10,7 @@ export default props => {
 	}
 
 	return(
+		<React.Fragment>
 		<div className="slider">
 			<div className="slider-wrapper">
 				<div className="slider-photo">
@@ -29,8 +30,10 @@ export default props => {
 					))}
 					<div style={{left: getCursor(props.cur)}} className="slider-cursor">{'0'+(props.cur+1)}</div>
 				</div>
-				<div className="slider-position">{'0'+(props.cur+1)} <span style={{opacity: '0.5'}}>/ 09</span></div>
+				<div className="slider-position slider-position-big-screen">{'0'+(props.cur+1)} <span style={{opacity: '0.5'}}>/ 09</span></div>
 			</div>
 		</div>
+		<div className="slider-position slider-position-mobile">{'0'+(props.cur+1)} <span style={{opacity: '0.5'}}>/ 09</span></div>
+		</React.Fragment>
 	)
 }
