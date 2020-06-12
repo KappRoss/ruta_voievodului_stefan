@@ -52,7 +52,7 @@ export default ({ active, activeElement, svg, locId }) => {
     const svgPositions = svg.getBoundingClientRect();
     const x = elPositions.x - svgPositions.x - 60;
     const y = elPositions.y - svgPositions.y - 70;
-    const found = attractions.find(item => item.id === active);
+    const found = attractions.find(item => item.id === active) || {};
     const { title, shortTitle } = found[locId];
     const text = (shortTitle || title).split('^');
     return (

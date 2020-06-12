@@ -86,7 +86,7 @@ export default props => (
 							<img className="info-block-img" style={{width: '90%'}} src={require('../../img/Moldova/'+(props.cur+1)+'-0.jpg')} alt="map" />
 							<div style={{marginBottom: '50px'}} className="info-block-text">{props.loc.text[props.cur]}</div>
 							<div className='add-title'>Alte atractii turistie</div>
-							<div className = "add-district">
+							<div className = "add-district" cnl={console.log(props.loc)}>
 								{	
 								props.loc['title_' + props.cur].map((key, i) =>
 										<div className = "add-item">

@@ -22,9 +22,13 @@ const renderPagination = (items, startItem) => ({activePage, pages}) => {
   const end = startItem + attrInPage;
   return (
     <div className='pagination-wrap'>
-      <span className='pagination pagination-start'>{start} </span>
+      <span className='pagination pagination-start'>
+        {start}
+        <span className='pagination pagination-all'> / {items.length}</span>
+      </span>
       <span className='pagination pagination-dash' />
       <span className='pagination pagination-end'> {end}</span>
+     
     </div>
   );
 }
