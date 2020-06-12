@@ -1,8 +1,6 @@
 import React from 'react';
 import './index.css';
 import './map.css';
-// import Popup from 'reactjs-popup';
-import styled from 'styled-components';
 import {NavLink} from 'react-router-dom';
 import Button from '../../components/button/button';
 import IndexSlider from './indexSlider/indexSlider';
@@ -27,21 +25,8 @@ const getShortDesc = ({ text }, cur) => {
 	return dotIndex > 0 ? string.substring(0, dotIndex + 1) : string;
 }
 
-// const StyledPopup = styled(Popup)`
-//   &-overlay {
-// 	background-color: rgba(255,255,255,0.4)!important;
-//   }
-//   &-content {
-// 	border: none!important;
-// 	background: #000000!important;
-// 	width: 90%!important;
-// 	max-height: 100%;
-//     overflow: auto;
-//   }
-// `;
-
 export default props => (
-		<div className="index" cnl={console.log(props.loc)}>
+		<div className="index">
 			<div className="index-block">
 				<div className="index-block-bottom" />
 				<div className="index-top-wrap">
@@ -51,7 +36,7 @@ export default props => (
 					<div className="index-block-desc">
 						{props.loc.desc[0]}
 					</div>
-					<NavLink to="/about">
+					<NavLink to="/about-us">
 						<Button text={props.loc.buttons[0]} />
 					</NavLink>
 				</div>
@@ -118,7 +103,7 @@ export default props => (
 				<div className="index-block-middle-desc">
 					{props.loc.desc[3]}
 				</div>
-				<Scroll20 />
+				<Scroll20 locId={props.loc.id} />
 			</div>
 			<div className="index-middle-wrap-4">
 				<img className="bottom-left-img" src={require('./img/left-bg-4.png')} alt="map" />
