@@ -874,7 +874,7 @@ export const locData = {
 			`https://ro.wikipedia.org/wiki/M%C4%83n%C4%83stirea_Humor`,
 			`https://www.crestinortodox.ro/biserici-manastiri/mitropolia-moldovei-bucovinei/manastirea-probota-68109.html`,
 			`http://visitingbucovina.ro/biserica-sf-gheorghe-a-manastirii-sf-ioan-cel-nou-de-la-suceava/`,
-			``,
+			`https://ro.wikipedia.org/wiki/M%C4%83n%C4%83stirea_Sucevi%C8%9Ba`,
 			`https://ro.wikipedia.org/wiki/M%C4%83n%C4%83stirea_Moldovi%C8%9Ba`,
 			`https://muzeulbucovinei.ro/hanul-domnesc/`,
 			`https://hailadorna.ro/sa-vizitezi/ciocanesti/`,
@@ -890,10 +890,10 @@ export const locData = {
 			`https://ro.wikipedia.org/wiki/Palatul_Cuza_de_la_Ruginoasa`,
 			],
 			links_3: [
-			`https://descoperanordest.ro/locatii/satul-ripicenii-noi-judetul-botosani-sii-arheologic-ripiceni/`,
-			`https://ro.wikipedia.org/wiki/M%C4%83n%C4%83stirea_Vorona`,
-			`https://cosula.mmb.ro/`,
-			`https://visitbotosani.ro/ro/2014/06/biserica-de-lemn-sf%C3%A2ntul-dumitru-vorniceni/`,
+			`https://ro.wikipedia.org/wiki/Muzeul_Viticol_din_Hu%C8%99i`,
+			`http://www.romanianresorts.ro/muzeul-eparhial`,
+			`https://ro.wikipedia.org/wiki/Casa_Mavrocordat`,
+			`https://ro.wikipedia.org/wiki/Movila_lui_Burcel`,
 			`https://ro.wikipedia.org/wiki/Locul_fosilifer_Nisip%C4%83ria_Hulub%C4%83%C8%9B`,
 			`https://limbaromana.org/revista/comuna-muntenii-de-sus-judetul-vaslui-aspecte-istorice-si-folclorice/`,
 			`https://ro.wikipedia.org/wiki/Copou,_Vaslui`

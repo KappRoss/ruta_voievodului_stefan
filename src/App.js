@@ -23,6 +23,7 @@ import {setDrop, addAct, setLocalisation, setMobMenu, sliderMove}   from './stat
 const App = (props) => {
   const { loc, menu, cur, act, sliderMove } = props;
   const header = useRef(null);
+  console.log(locData.romania[loc]);
     return (
         <div className={`App ${loc} region-${cur + 1}`}>
             <Anchor id="top-anchor" />
