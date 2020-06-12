@@ -1,10 +1,11 @@
 import React from 'react';
 import './mainMoldova.css';
 import MapWrapper from './maps/MapWrapper';
+import { mainAttractions } from "../../lib/attractions";
 
 import Distance from './distance/distance';
 
-const getDescription = text => {
+const getDescription = (text, i) => {
   const desc = text.substring(0, 650);
   return desc.substring(0, desc.lastIndexOf(". ") + 1);
 }
@@ -25,14 +26,14 @@ export default ({ loc }) => (
           <div className="moldova-distance">
             <img
               className="moldova-distance-img"
-              src={require("../../img/Moldova/" + (i + 1) + "-0.jpg")}
+              src={mainAttractions[i].img.img1}
               alt=""
             />
             <Distance i={i} to={k} />
           </div>
           <div className="moldova-about">
             <div className="moldova-title">{k}</div>
-            <div className="moldova-text">{getDescription(loc.text[i])}</div>
+            <div className="moldova-text">{getDescription(mainAttractions[i][loc.id].texts.join(''), i)}</div>
           </div>
           <div className="moldova-map">
             <MapWrapper id={`map${i + 1}`} locId={loc.id} />

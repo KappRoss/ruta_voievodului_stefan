@@ -1,10 +1,11 @@
 import React from 'react';
 import { bg, active } from './bg.module.css';
+import { mainAttractions } from "../../../../lib/attractions";
 
 
 
 export default ({ isActive, i }) => {
-  const img = require('../../../../img/Moldova/'+(i+1)+'-1.jpg');
+  const img = mainAttractions[i].img.img2;
   return (
     <div
       stroke="white"
