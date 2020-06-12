@@ -387,6 +387,7 @@ html, body {
     width: 117px;
 	height: 24px;
 	cursor: pointer;
+	justify-content: center;
 }
 .rec.rec-carousel{
 	display: flex;

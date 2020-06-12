@@ -9,7 +9,7 @@ import Anchor from './components/anchor/Anchor';
 
 import Index from './pages/index/index';
 import About from './pages/about/about';
-import About2 from './pages/about/about';
+import AboutUs from './pages/about/AboutUs';
 import MainMoldova from './pages/mainMoldova/mainMoldova';
 import Romania from './pages/romania/romania';
 // import OtherMoldova from './pages/otherMoldova/otherMoldova';
@@ -34,9 +34,9 @@ const App = (props) => {
                     loc={locData.index[loc]}
                 />)}
                 />
-                <Route path="/about" render={() => <About loc={locData.about[loc]} />} />
+                <Route path="/about-us" render={() => <AboutUs loc={loc} />} />
 
-                <Route path="/about" render={() => <About2 loc={locData.about[loc]} />} />
+                <Route path="/detail" render={() => <About locId={loc} />} />
 
                 <Route path="/other-moldova" render={() => <MainMoldova loc={locData.moldova[loc]} />} />
                 <Route path="/romania" render={() => <Romania loc={locData.romania[loc]} />} />

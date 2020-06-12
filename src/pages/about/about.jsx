@@ -1,27 +1,36 @@
 import React from 'react';
 import './about.css';
 import {connect} from "react-redux";
+import romania from "../../lib/romania";
 
- const About = (props) => {
-	return(
-	<div className="about">
-		<div className="about-title">{props.loc.title}</div>
-		<img src={require('./img/about.png')} alt="about"/>
-		<div className="about-text">
-			
-			{props.loc.text[props.activeAttraction].map((k, i) => 
-			<div style={{marginBottom: '30px'}} key={i}>{k}</div>
-			)}
-		</div>
-		<div className="about-bottom" />
-	</div>
+ const About = ({ locId, cur }) => {
+  return(
+  <div className="about">
+    <div className="about-title">
+      {romania[locId].titles[cur]}
+    </div>
+    <img src={romania.img[cur]} alt={romania[locId].titles[cur]}/>
+    <div className="about-text">
+      
+      {romania[locId].texts[cur].map((k, i) => 
+        <div
+          className="about-par"
+          key={k}
+        >
+          {k}
+        </div>
+      )}
+      <div className="about-stub" />
+    </div>
+    <div className="about-bottom" />
+  </div>
 )
 }
 
-const mapStateToProps = (state) => {
+const mapStateToProps = ({
+  settings: {
+    activeAttraction
+  }
+}) => ({ cur: activeAttraction});
 
-	return	{
-		activeAttraction: state.settings.activeAttraction
-	}
-}
 export default connect(mapStateToProps, {})(About)
