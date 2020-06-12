@@ -12,7 +12,7 @@ import About from './pages/about/about';
 import About2 from './pages/about/about';
 import MainMoldova from './pages/mainMoldova/mainMoldova';
 import Romania from './pages/romania/romania';
-import OtherMoldova from './pages/otherMoldova/otherMoldova';
+// import OtherMoldova from './pages/otherMoldova/otherMoldova';
 import CreateRout from './pages/createRout/createRout';
 import RoutesSelection from './pages/routesSelection/routesSelection';
 import {setDrop, addAct, setLocalisation, setMobMenu, sliderMove}   from './state/actions/settingsActions'
@@ -23,7 +23,6 @@ import {setDrop, addAct, setLocalisation, setMobMenu, sliderMove}   from './stat
 const App = (props) => {
   const { loc, menu, cur, act, sliderMove } = props;
   const header = useRef(null);
-  console.log(locData);
     return (
         <div className={`App ${loc} region-${cur + 1}`}>
             <Anchor id="top-anchor" />
