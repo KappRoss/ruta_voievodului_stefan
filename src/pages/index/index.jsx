@@ -1,7 +1,7 @@
 import React from 'react';
 import './index.css';
 import './map.css';
-import Popup from 'reactjs-popup';
+// import Popup from 'reactjs-popup';
 import styled from 'styled-components';
 import {NavLink} from 'react-router-dom';
 import Button from '../../components/button/button';
@@ -13,6 +13,7 @@ import BG from './maps/bg/BG';
 import Scroll20 from './scroll20';
 import Anchor from '../../components/anchor/Anchor';
 import { mainAttractions } from "../../lib/attractions";
+import Popup from './mobilePopup/MobilePopup';
 
 const acc = [];
 
@@ -26,21 +27,21 @@ const getShortDesc = ({ text }, cur) => {
 	return dotIndex > 0 ? string.substring(0, dotIndex + 1) : string;
 }
 
-const StyledPopup = styled(Popup)`
-  &-overlay {
-	background-color: rgba(255,255,255,0.4)!important;
-  }
-  &-content {
-	border: none!important;
-	background: #000000!important;
-	width: 90%!important;
-	max-height: 100%;
-    overflow: auto;
-  }
-`;
+// const StyledPopup = styled(Popup)`
+//   &-overlay {
+// 	background-color: rgba(255,255,255,0.4)!important;
+//   }
+//   &-content {
+// 	border: none!important;
+// 	background: #000000!important;
+// 	width: 90%!important;
+// 	max-height: 100%;
+//     overflow: auto;
+//   }
+// `;
 
 export default props => (
-		<div className="index">
+		<div className="index" cnl={console.log(props.loc)}>
 			<div className="index-block">
 				<div className="index-block-bottom" />
 				<div className="index-top-wrap">
@@ -70,43 +71,7 @@ export default props => (
 					<div className="index-block-middle-title">{props.loc.name[props.cur]}</div>
 				</div>
 				<div className={'mobile-button-info'}>
-				<StyledPopup
-					trigger={<button className = 'btn-popup'>{props.loc.buttons[3]}</button> }
-					position={'center center'}
-					modal
-					closeOnDocumentClick
-					>
-						{close => (
-					<div className="modal-info-mobile">
-					<a className="close" onClick={close}>
-          				&times;
-        			</a>
-						<div>
-							<div className="info-block-title">{props.loc.name[props.cur]}</div>
-							<div className="info-block-desc">{props.loc.info[props.cur]}</div>
-							<img className="info-block-img" style={{width: '90%'}} src={mainAttractions[props.cur].img.img1} alt="map" />
-							<div style={{marginBottom: '50px'}} className="info-block-text">{props.loc.text[props.cur]}</div>
-							<div className='add-title'>Alte atractii turistie</div>
-							<div className = "add-district">
-								{	
-								props.loc.title[props.cur].map((key, i) =>
-										<div className = "add-item">
-											<div className = "img-default">
-												{<img src={require('../../img/Moldova/Group_172.png')} alt="bg"/>}
-											</div>
-											<div className = "link-to-url">
-												{<a href={props.loc['url_' + props.cur][i]} target = '_blank'>{key}<br/></a>}
-											</div>
-										</div>
-										
-									)
-								}	
-							</div>  
-							
-						</div>
-					</div>
-						)}
-					</StyledPopup>
+					<Popup loc={props.loc} cur={props.cur} />
 				</div>
 				<div id="newMainMap" className="map-wrap">
 					{acc.map(i => <BG i={i} isActive={i === props.cur} key={`bg-${i}`} />)} 
