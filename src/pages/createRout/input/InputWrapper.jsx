@@ -68,6 +68,7 @@ const InputWrapper = ({
                         addAct={addAct}
                         cordinates={[{latitude: loc.name2[i].latitude, longitude: loc.name2[i].longitude}]}
                         headMemo={true}
+                        setActiveCord={setActiveCord}
                     />
                 </div>
                 <div className="create-area-desc">
