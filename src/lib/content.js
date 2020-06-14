@@ -193,58 +193,63 @@ export const locData = {
 				'Voievodul Ștefan cel Mare a venit la putere într-o Moldovă dezbinată, pe cale de a-și pierde identitatea, într-o Moldovă pe care a așezat-o din temelii. Fiindcă pericolul otoman creștea vertiginos după căderea Constantinopolului, a crescut armata',
 				'Voievodul Ștefan cel Mare a venit la putere într-o Moldovă dezbinată, pe cale de a-și pierde identitatea, într-o Moldovă pe care a așezat-o din temelii. Fiindcă pericolul otoman creștea vertiginos după căderea Constantinopolului, a crescut armata'
 			],
-			name: [{
-				name: "Raionul Strășeni",
-				img: 'Raionul Strășeni',
+			name: ['Raionul Strășeni', 'Orheiul Vechi', 'Raionul Soroca', 'Raionul Anenii Noi', 'Orașul Chișinău', 'Orașul Tighina', 'Raionul Rezina', 'Raionul Șoldănești', 'Raionul Ștefan-Vodă', 'Raionul Hânceșt', 'Raionul Ocnița'],
+			name2:[{
+                name: "Mănăstirea Căpriana",
+                img: 'Mănăstirea Căpriana',
                 latitude: '47.175037',
                 longitude: '28.497757'
-			}, {
+            }, {
                 name: "Orheiul Vechi",
                 img: 'Orheiul Vechi',
                 latitude: '47.175037',
                 longitude: '28.497757'
             }, {
-                name: "Raionul Soroca",
-                img: 'Raionul Soroca',
+                name: "Cetatea Soroca",
+                img: 'Cetatea Soroca',
                 latitude: '47.175037',
                 longitude: '28.497757'
             },{
-                name: "Raionul Anenii Noi",
+                name: "Satul Mereni",
                 img: 'Raionul Anenii Noi',
                 latitude: '47.175037',
                 longitude: '28.497757'
             },{
-                name: "Orașul Chișinău",
-                img: 'Orașul Chișinău',
+                name: "Tărgul Chișinău/Buiucani",
+                img: 'Tărgul Chișinău/Buiucani',
                 latitude: '47.175037',
                 longitude: '28.497757'
             },{
-                name: "Raionul Rezina",
+                name: "Cetatea Tighina",
                 img: 'Raionul Rezina',
                 latitude: '47.175037',
                 longitude: '28.497757'
             },{
-                name: "Raionul Șoldănești",
+                name: "Mănăstirea Țipova",
                 img: 'Raionul Șoldănești',
                 latitude: '47.175037',
                 longitude: '28.497757'
             },{
-                name: "Raionul Ștefan-Vodă",
+                name: "Stejarul lui Ștefan cel Mare'",
+                img: 'Raionul Șoldănești',
+                latitude: '47.175037',
+                longitude: '28.497757'
+            },{
+                name: "Ștefan-Vodă regiune",
                 img: 'Raionul Ștefan-Vodă',
                 latitude: '47.175037',
                 longitude: '28.497757'
             }, {
-                name: "Raionul Hânceșt",
+                name: "Conacul “Manuc Bey",
                 img: 'Raionul Hânceșt',
                 latitude: '47.175037',
                 longitude: '28.497757'
             }, {
-                name: "Raionul Ocnița",
+                name: "Conacul lui Constantin Stamati",
                 img: 'Raionul Șoldănești',
                 latitude: '47.175037',
                 longitude: '28.497757'
             }],
-			name2: ['Mănăstirea Căpriana', 'Orheiul Vechi', 'Cetatea Soroca', 'Satul Mereni', 'Tărgul Chișinău/Buiucani', 'Cetatea Tighina', 'Mănăstirea Țipova', 'Stejarul lui Ștefan cel Mare', 'Ștefan-Vodă regiune', 'Conacul “Manuc Bey"', 'Conacul lui Constantin Stamati'],
 			buttons: ['', '', 'Vezi mai mult', 'Selectează următoarea destinație'],
 			arrt: [
 				[
@@ -252,7 +257,7 @@ export const locData = {
 					'Complexul Etno Cultural Vatra || 36 km față de Chișinău, Google - 47.175037, 28.497757',
 					'Conacul Zamfirache Ralli || Dolna – 56 km față de Chișinău, Google - 47.125571, 28.272506',
 					'Vinăria, Chateau Cojușna || 18 km față de Chișinău, Google - 47.092290, 28.687662',
-					'Vinăria, Poiana || 36 km față de Chișinău, Google - 47.055678, 28.512598'
+					'Vinăria, Poiana || 36 km față de Chișinău, Google - 47.055678, 28.512598',
 				],
 				[
 					'Mănăstirea rupestră || 54 km față de Chișinău, Google - 47.301438, 28.979260',

@@ -67,21 +67,21 @@ const CreateRout = ({
             <div className="create-rout-desc">{loc.desc[0]}</div>
             <CreateRoutWrap>
                 {loc.name.map((k, i) => {
-                    console.log(k)
                     const CreateBtn = act[i] ? CreateRoutListRout : CreateRoutList;
+                    console.log(loc.name2[i])
                     // const checkLengthPrevAcr = prevCountRef.current[i].length === act[i].length;
                     return (
                         <CreateRoutBlock key={i}>
-                            <div className="rout-block-name">{k.name}</div>
+                            <div className="rout-block-name">{k}</div>
                             <img
                                 style={{ width: "100%" }}
                                 src={require("./img/" + i + ".png")}
-                                alt={k.name}
+                                alt={k}
                             />
                             <CreateRoutBlockWrap active={drop[i]}>
                                 <div className="create-rout-block-desc-wrap">
                                     <div className="create-rout-block-desc">
-                                        <span>{loc.name2[i]}</span>
+                                        <span>{loc.name2[i].name}</span>
                                         <Input
                                             gr={i}
                                             active={act[i] ? true : false}
@@ -160,7 +160,7 @@ const CreateRout = ({
                                         alt={k}
                                     />
                                     <div className="selected-routes-right">
-                                        <div>{loc[i].name}</div>
+                                        <div>{loc.name[i]}</div>
                                         <span>Atractii({getLength(act[i])})</span>
                                     </div>
                                 </div>
