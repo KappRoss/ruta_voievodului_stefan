@@ -243,56 +243,56 @@ export const locData = {
                 {
                     name: "Cetatea Soroca",
                     img: "Cetatea Soroca",
-                    latitude: "47.175037",
-                    longitude: "28.497757"
+                    latitude: 47.175037,
+                    longitude: 28.497757
                 },
                 {
                     name: "Satul Mereni",
                     img: "Raionul Anenii Noi",
-                    latitude: "47.175037",
-                    longitude: "28.497757"
+                    latitude: 47.175037,
+                    longitude: 28.497757
                 },
                 {
                     name: "Tărgul Chișinău/Buiucani",
                     img: "Tărgul Chișinău/Buiucani",
-                    latitude: "47.175037",
-                    longitude: "28.497757"
+                    latitude: 47.175037,
+                    longitude: 28.497757
                 },
                 {
                     name: "Cetatea Tighina",
                     img: "Raionul Rezina",
-                    latitude: "47.175037",
-                    longitude: "28.497757"
+                    latitude: 47.175037,
+                    longitude: 28.497757
                 },
                 {
                     name: "Mănăstirea Țipova",
                     img: "Raionul Șoldănești",
-                    latitude: "47.175037",
-                    longitude: "28.497757"
+                    latitude: 47.175037,
+                    longitude: 28.497757
                 },
                 {
                     name: "Stejarul lui Ștefan cel Mare'",
                     img: "Raionul Șoldănești",
-                    latitude: "47.175037",
-                    longitude: "28.497757"
+                    latitude: 47.175037,
+                    longitude: 28.497757
                 },
                 {
                     name: "Ștefan-Vodă regiune",
                     img: "Raionul Ștefan-Vodă",
-                    latitude: "47.175037",
-                    longitude: "28.497757"
+                    latitude: 47.175037,
+                    longitude: 28.497757
                 },
                 {
                     name: "Conacul “Manuc Bey",
                     img: "Raionul Hânceșt",
-                    latitude: "47.175037",
-                    longitude: "28.497757"
+                    latitude: 47.175037,
+                    longitude: 28.497757
                 },
                 {
                     name: "Conacul lui Constantin Stamati",
                     img: "Raionul Șoldănești",
-                    latitude: "47.175037",
-                    longitude: "28.497757"
+                    latitude: 47.175037,
+                    longitude: 28.497757
                 }
             ],
             buttons: ["", "", "Vezi mai mult", "Selectează următoarea destinație"],
@@ -340,46 +340,46 @@ export const locData = {
                     {
                         name: "Vinăria, Poiana || 36 km față de Chișinău",
                         img: "Raionul Șoldănești",
-                        latitude: "47.055678",
-                        longitude: "28.512598"
+                        latitude: 47.055678,
+                        longitude: 28.512598
                     },
                     {
                         name: "Mănăstirea rupestră || 54 km față de Chișinău",
                         img: "Raionul Șoldănești",
-                        latitude: "47.055678",
-                        longitude: "28.979260"
+                        latitude: 47.055678,
+                        longitude: 28.979260
                     },
                     {
                         name:
                             "Pensiunile turistice de la Orheiul Vechi || 50-60 km față de Chișinău",
                         img: "Raionul Șoldănești",
-                        latitude: "47.317277",
-                        longitude: "28.966495"
+                        latitude: 47.317277,
+                        longitude: 28.966495
                     },
                     {
                         name:
                             "Complexul de Meșteșuguri “Arta Rustică” || Clișova Nouă – 67 km față de Chișinău",
                         img: "Raionul Șoldănești",
-                        latitude: "47.495435",
-                        longitude: "28.966495"
+                        latitude: 47.495435,
+                        longitude: 28.966495
                     },
                     {
                         name: "Casa – Muzeu “Alexandru Donici” || 43 km față de Chișinău",
                         img: "Raionul Șoldănești",
-                        latitude: "47.495435",
-                        longitude: "28.671657"
+                        latitude: 47.495435,
+                        longitude: 28.671657
                     },
                     {
                         name: "Vinăria Brănești || 49 km față de Chișinău, ",
                         img: "Raionul Șoldănești",
-                        latitude: "47.313352",
-                        longitude: "28.935032"
+                        latitude: 47.313352,
+                        longitude: 28.935032
                     },
                     {
                         name: "Vinăria Chateau Vartely || 49 km față de Chișinău ",
                         img: "Raionul Șoldănești",
-                        latitude: "47.380785",
-                        longitude: "28.834460"
+                        latitude: 47.380785,
+                        longitude: 28.834460
                     }
                 ],
                 [
@@ -387,21 +387,21 @@ export const locData = {
                         name:
                             "Muzeul de Istorie și Etnografie a orașului Soroca || 153 km față de Chișinău ",
                         img: "Raionul Șoldănești",
-                        latitude: "48.155368",
-                        longitude: "28.302586"
+                        latitude: 48.155368,
+                        longitude: 28.302586
                     },
                     {
                         name:
                             "Lumânarea Renucoștinței || Lumânarea Renucoștinței – 157 km față de Chișinău",
                         img: "Raionul Șoldănești",
-                        latitude: " 48.137215,",
-                        longitude: "28.305372"
+                        latitude: 48.137215,
+                        longitude: 28.305372
                     },
                     {
                         name: "Dealul Țiganilor || 156 km față de Chișinău",
                         img: "Raionul Șoldănești",
-                        latitude: "48.159501",
-                        longitude: "28.291855"
+                        latitude: 48.159501,
+                        longitude: 28.291855
                     }
                 ],
                 [
@@ -409,27 +409,27 @@ export const locData = {
                         name:
                             "Muzeul de Istorie și Etnografie al satului Mereni || 26 km față de Chișinău",
                         img: "Raionul Șoldănești",
-                        latitude: "46.963515",
-                        longitude: "29.055452"
+                        latitude: 46.963515,
+                        longitude: 29.055452
                     },
                     {
                         name:
                             "Complexul Memorial “Capul de Pod Șerpeni” || 61 km față de Chișinău",
                         img: "Raionul Șoldănești",
-                        latitude: "47.033017",
-                        longitude: " 29.353023"
+                        latitude: 47.033017,
+                        longitude: 29.353023
                     },
                     {
                         name: "Vinăria Asconi || 29 km față de Chișinău",
                         img: "Raionul Șoldănești",
-                        latitude: "46.839569",
-                        longitude: "29.027792"
+                        latitude: 46.839569,
+                        longitude: 29.027792
                     },
                     {
                         name: "Castel Mimi || 40 km față de Chișinău",
                         img: "Raionul Șoldănești",
-                        latitude: "46.891031",
-                        longitude: "29.292984"
+                        latitude: 46.891031,
+                        longitude: 29.292984
                     }
                 ],
                 [
@@ -437,78 +437,78 @@ export const locData = {
                         name:
                             "Monumentul lui Ștefan cel Mare și Sfânt || Grădina Publică Ștefan cel Mare",
                         img: "Raionul Șoldănești",
-                        latitude: "47.025563",
-                        longitude: "28.830966"
+                        latitude: 47.025563,
+                        longitude: 28.830966
                     },
                     {
                         name:
                             "Muzeul Național de Istorie a Moldovei || Strada 31 August 1989 121 A",
                         img: "Raionul Șoldănești",
-                        latitude: "47.025563",
-                        longitude: "28.830966"
+                        latitude: 47.025563,
+                        longitude: 28.830966
                     },
                     {
                         name:
                             "Muzeul Național de Etnografie și Istorie Naturală || Strada Mihail Kogălniceanu",
                         img: "Raionul Șoldănești",
-                        latitude: "8247.022813",
-                        longitude: "28.828561"
+                        latitude: 8247.022813,
+                        longitude: 28.828561
                     },
                     {
                         name:
                             "Muzeul Național de Artă al Moldovei || Strada 31 August 1989 115",
                         img: "Raionul Șoldănești",
-                        latitude: "47.022075",
-                        longitude: "28.831160"
+                        latitude: 47.022075,
+                        longitude: 28.831160
                     },
                     {
                         name:
                             "Muzeul de Istorie a orașului Chișinău || Turnul de Apă - Strada Alexei Mateevici 60A",
                         img: "Raionul Șoldănești",
-                        latitude: "47.019455",
-                        longitude: "28.822907"
+                        latitude: 47.019455,
+                        longitude: 28.822907
                     },
                     {
                         name: "Combinatul de vinuri “Cricova” || 16 km față de Chișinău",
                         img: "Raionul Șoldănești",
-                        latitude: "7.138394",
-                        longitude: "28.855884"
+                        latitude: 7.138394,
+                        longitude: 28.855884
                     },
                     {
                         name:
                             "Combinatul de vinuri de calitate “Mileștii Mici” || 14 km față de Chișinău",
                         img: "Raionul Șoldănești",
-                        latitude: "46.921757",
-                        longitude: "28.820170"
+                        latitude: 46.921757,
+                        longitude: 28.820170
                     }
                 ],
                 [
                     {
                         name: "Cetatea Tighina || 61 km față de Chișinău",
                         img: "Raionul Șoldănești",
-                        latitude: "46.837984",
-                        longitude: "29.487439"
+                        latitude: 46.837984,
+                        longitude: 29.487439
                     },
                     {
                         name:
                             "Complexul Memorial “Piața Eroilor” || 78 km față de Chișinău",
                         img: "Raionul Șoldănești",
-                        latitude: "46.835681",
-                        longitude: "29.608109"
+                        latitude: 46.835681,
+                        longitude: 29.608109
                     }
                 ],
                 [
                     {
                         name: "Mănăstirea Saharna || 106 km față de Chișinău",
                         img: "Raionul Șoldănești",
-                        latitude: "47.695217",
-                        longitude: "28.965509"
+                        latitude: 47.695217,
+                        longitude: 28.965509
                     },
                     {
                         name: "Hanul lui Hanganu, Lalova || 97 km față de Chișinău",
                         img: "Raionul Șoldănești",
-                        latitude: "47.566409",
-                        longitude: "29.020412"
+                        latitude: 47.566409,
+                        longitude: 29.020412
                     }
                 ],
                 [
@@ -516,8 +516,8 @@ export const locData = {
                         name:
                             "Conacul lui Constantin Stamati || Conacul lui Constantin Stamati – 237 km",
                         img: "Raionul Șoldănești",
-                        latitude: "48.383240",
-                        longitude: "27.436885"
+                        latitude: 48.383240,
+                        longitude: 27.436885
                     }
                 ],
                 [
@@ -525,21 +525,21 @@ export const locData = {
                         name:
                             "Complex turistic Purcari, Vinăria Purcari || 112 km față de Chișinău",
                         img: "Raionul Șoldănești",
-                        latitude: "46.531607",
-                        longitude: "29.871911"
+                        latitude: 46.531607,
+                        longitude: 29.871911
                     },
                     {
                         name: "Complex vitivinicol “ET Cetera” || 119 km față de Chișinău",
                         img: "Raionul Șoldănești",
-                        latitude: "46.453647",
-                        longitude: "29.923324"
+                        latitude: 46.453647,
+                        longitude: 29.923324
                     },
                     {
                         name:
                             "Gospodăria meșterului popular Pavel Ţăranu s. Cioburciu, || 126 km față de Chișinău",
                         img: "Raionul Șoldănești",
-                        latitude: "46.596106",
-                        longitude: "29.726292"
+                        latitude: 46.596106,
+                        longitude: 29.726292
                     }
                 ],
                 [
