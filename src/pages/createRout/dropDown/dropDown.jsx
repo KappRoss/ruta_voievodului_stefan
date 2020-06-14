@@ -27,17 +27,20 @@ const DropDown = ({gr, arr, open, addAct, active, handleClick, saveCordinates})=
     }
 	return(	<SlideDown className={'my-dropdown-slidedown'}>
         {open ?
-          arr.map((k, i) => (
-                <div key={i} className="down-row">
-                    <img className="down-row-img" src={require('./img/1.png')} alt="attr"/>
-                    <div>
-                        <div className="down-row-title">{k.name.split('||')[0]}</div>
-                        <div className="down-row-desc">{k.name.split('||')[1]}</div>
-                        {/*{console.log(k, i)}*/}
-                    </div>
-                    <Input handleClick={handleClick} setActiveCord={setActiveCord} activeCord={activeCord} gr={gr} i={i} addAct={addAct} active={active && active[i] ? true : false} cordinates={k.name.split('||')[1]}/>
-                </div>
-            ))
+          arr.map((k, i) =>{
+              // const cordinates = [{latitude: k.latitude, longitude: k.longitude}]
+                    return(
+                        <div key={i} className="down-row">
+                            <img className="down-row-img" src={require('./img/1.png')} alt="attr"/>
+                            <div>
+                                <div className="down-row-title">{k.name.split('||')[0]}</div>
+                                <div className="down-row-desc">{k.name.split('||')[1]}</div>
+                            </div>
+                            <Input handleClick={handleClick} setActiveCord={setActiveCord} activeCord={activeCord} gr={gr} i={i} addAct={addAct} active={active && active[i] ? true : false} cordinates={[{latitude: k.latitude, longitude: k.longitude}]}/>
+                        </div>
+                    )
+
+        })
             : null}
     </SlideDown>)
 }

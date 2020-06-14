@@ -1,6 +1,6 @@
 import React  from "react";
 import "./input.css";
-import { filter } from "lodash";
+import { filter,isEqual } from "lodash";
 import styled from "styled-components/macro";
 import img from "./inp.png"
 const Input = ({
@@ -18,7 +18,7 @@ const Input = ({
             setActiveCord(oldArray => [...oldArray, cordinates]);
         } else if (active === true && cordinates !== undefined) {
             const filterCheckbox = filter(activeCord, el => {
-                return el !== cordinates;
+                return  !isEqual(el[0], cordinates[0])
             });
             setActiveCord(filterCheckbox);
         }
