@@ -193,7 +193,57 @@ export const locData = {
 				'Voievodul Ștefan cel Mare a venit la putere într-o Moldovă dezbinată, pe cale de a-și pierde identitatea, într-o Moldovă pe care a așezat-o din temelii. Fiindcă pericolul otoman creștea vertiginos după căderea Constantinopolului, a crescut armata',
 				'Voievodul Ștefan cel Mare a venit la putere într-o Moldovă dezbinată, pe cale de a-și pierde identitatea, într-o Moldovă pe care a așezat-o din temelii. Fiindcă pericolul otoman creștea vertiginos după căderea Constantinopolului, a crescut armata'
 			],
-			name: ['Raionul Strășeni', 'Orheiul Vechi', 'Raionul Soroca', 'Raionul Anenii Noi', 'Orașul Chișinău', 'Orașul Tighina', 'Raionul Rezina', 'Raionul Șoldănești', 'Raionul Ștefan-Vodă', 'Raionul Hânceșt', 'Raionul Ocnița'],
+			name: [{
+				name: "Raionul Strășeni",
+				img: 'Raionul Strășeni',
+                latitude: '47.175037',
+                longitude: '28.497757'
+			}, {
+                name: "Orheiul Vechi",
+                img: 'Orheiul Vechi',
+                latitude: '47.175037',
+                longitude: '28.497757'
+            }, {
+                name: "Raionul Soroca",
+                img: 'Raionul Soroca',
+                latitude: '47.175037',
+                longitude: '28.497757'
+            },{
+                name: "Raionul Anenii Noi",
+                img: 'Raionul Anenii Noi',
+                latitude: '47.175037',
+                longitude: '28.497757'
+            },{
+                name: "Orașul Chișinău",
+                img: 'Orașul Chișinău',
+                latitude: '47.175037',
+                longitude: '28.497757'
+            },{
+                name: "Raionul Rezina",
+                img: 'Raionul Rezina',
+                latitude: '47.175037',
+                longitude: '28.497757'
+            },{
+                name: "Raionul Șoldănești",
+                img: 'Raionul Șoldănești',
+                latitude: '47.175037',
+                longitude: '28.497757'
+            },{
+                name: "Raionul Ștefan-Vodă",
+                img: 'Raionul Ștefan-Vodă',
+                latitude: '47.175037',
+                longitude: '28.497757'
+            }, {
+                name: "Raionul Hânceșt",
+                img: 'Raionul Hânceșt',
+                latitude: '47.175037',
+                longitude: '28.497757'
+            }, {
+                name: "Raionul Ocnița",
+                img: 'Raionul Șoldănești',
+                latitude: '47.175037',
+                longitude: '28.497757'
+            }],
 			name2: ['Mănăstirea Căpriana', 'Orheiul Vechi', 'Cetatea Soroca', 'Satul Mereni', 'Tărgul Chișinău/Buiucani', 'Cetatea Tighina', 'Mănăstirea Țipova', 'Stejarul lui Ștefan cel Mare', 'Ștefan-Vodă regiune', 'Conacul “Manuc Bey"', 'Conacul lui Constantin Stamati'],
 			buttons: ['', '', 'Vezi mai mult', 'Selectează următoarea destinație'],
 			arrt: [
