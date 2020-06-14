@@ -8,7 +8,7 @@ import {saveCordinates} from '../../../state/actions/settingsActions'
 
 const DropDown = ({gr, arr, open, addAct, active, handleClick, saveCordinates})=> {
     const [activeCord, setActiveCord] = useState([]);
-    
+       console.log(activeCord)
     useEffect(() => {
         if(handleClick.handleClick === gr){
             formatCord()
@@ -31,11 +31,11 @@ const DropDown = ({gr, arr, open, addAct, active, handleClick, saveCordinates})=
                 <div key={i} className="down-row">
                     <img className="down-row-img" src={require('./img/1.png')} alt="attr"/>
                     <div>
-                        <div className="down-row-title">{k.split('||')[0]}</div>
-                        <div className="down-row-desc">{k.split('||')[1]}</div>
+                        <div className="down-row-title">{k.name.split('||')[0]}</div>
+                        <div className="down-row-desc">{k.name.split('||')[1]}</div>
                         {/*{console.log(k, i)}*/}
                     </div>
-                    <Input handleClick={handleClick} setActiveCord={setActiveCord} activeCord={activeCord} gr={gr} i={i} addAct={addAct} active={active && active[i] ? true : false} cordinates={k.split('||')[1]}/>
+                    <Input handleClick={handleClick} setActiveCord={setActiveCord} activeCord={activeCord} gr={gr} i={i} addAct={addAct} active={active && active[i] ? true : false} cordinates={k.name.split('||')[1]}/>
                 </div>
             ))
             : null}

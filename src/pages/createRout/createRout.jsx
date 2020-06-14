@@ -68,7 +68,6 @@ const CreateRout = ({
             <CreateRoutWrap>
                 {loc.name.map((k, i) => {
                     const CreateBtn = act[i] ? CreateRoutListRout : CreateRoutList;
-                    console.log(loc.name2[i])
                     // const checkLengthPrevAcr = prevCountRef.current[i].length === act[i].length;
                     return (
                         <CreateRoutBlock key={i}>
