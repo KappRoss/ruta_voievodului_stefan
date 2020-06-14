@@ -13,6 +13,7 @@ const InputWrapper = ({
                           loc,
                           selectedItems,
                }) => {
+    //fixed:  prevCountRef.current[i]
     const [handleClick, setHandleClick] = useState({});
     const [activeCord, setActiveCord] = useState([]);
     const [prevCount, setPrevCount] = useState(null);
