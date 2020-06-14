@@ -29,15 +29,11 @@ const CreateRout = ({
     // const [handleClick, setHandleClick] = useState({});
     let history = useHistory();
     const selectedItems = useRef(null);
-    const prevCountRef = useRef();
 
     useEffect(() => {
         resetState();
     }, []);
-    
-    useEffect(() => {
-        prevCountRef.current = act;
-    });
+
     const getLength = arr => {
         let l = 1;
         for (let i = 0; i < arr.length; i++) if (arr[i]) l++;
@@ -59,7 +55,7 @@ const CreateRout = ({
             <CreateRoutWrap>
                 {loc.name.map((k, i) => {
                     // const CreateBtn = act[i] ? CreateRoutListRout : CreateRoutList;
-                    // const checkLengthPrevAcr = prevCountRef.current[i].length === act[i].length;
+                    //  const checkLengthPrevAcr = prevCountRef.current[i].length === act[i].length;
                     return (
                         <CreateRoutBlock key={i}>
                             <div className="rout-block-name">{k}</div>
@@ -77,7 +73,6 @@ const CreateRout = ({
                             setDrop={setDrop}
                             loc={loc}
                             selectedItems={selectedItems}
-                            prevCountRef={prevCountRef}
                           />
                         </CreateRoutBlock>
                     );
@@ -211,54 +206,7 @@ const CreateRoutBlockEmpty = styled(props => <CreateRoutBlock {...props} />)`
     display: none;
   }
 `;
-// const CreateRoutBlockWrap = styled.div`
-//   text-align: left;
-//   color: #ffffff;
-//   box-sizing: border-box;
-//
-//   .create-rout-block-desc-wrap {
-//     padding: 30px 15px;
-//     .create-rout-block-desc {
-//       display: flex;
-//       justify-content: space-between;
-//       font-weight: bold;
-//       font-size: 18px;
-//     }
-//
-//     .create-area-desc {
-//       width: 90%;
-//       margin-top: 5px;
-//     }
-//   }
-//   .area-button-row {
-//     display: flex;
-//     justify-content: space-between;
-//     align-items: baseline;
-//     font-weight: bold;
-//     font-size: 16px;
-//     line-height: 24px;
-//     text-transform: uppercase;
-//     color: #f0a000;
-//     margin: 1rem 0;
-//     @media screen and (max-width: 1200px) {
-//       flex-direction: column;
-//     }
-//   }
-//   .drop-down-wrap {
-//     position: absolute;
-//     background: black;
-//     margin-left: -3px;
-//     width: 102%;
-//     z-index: ${props => (props.active ? 2 : 0)};
-//     transition: z-index 1s;
-//     box-shadow: 0 35px 0px 10px black;
-//
-//     .button-wrapper {
-//       display: flex;
-//       flex-direction: column;
-//     }
-//   }
-// `;
+
 const SelectedRoutes = styled.div`
   width: 80%;
   overflow-x: auto;

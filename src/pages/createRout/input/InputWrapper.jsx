@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, {useEffect, useRef, useState} from "react";
 import DropDown from "../dropDown/dropDown";
 import Input from "./input";
 import styled from "styled-components/macro";
@@ -12,10 +12,11 @@ const InputWrapper = ({
                           setDrop,
                           loc,
                           selectedItems,
-                          prevCountRef
                }) => {
     const [handleClick, setHandleClick] = useState({});
     const [activeCord, setActiveCord] = useState([]);
+    const [prevCount, setPrevCount] = useState(null);
+    const prevCountRef = useRef();
     const CreateBtn = act[i] ? CreateRoutListRout : CreateRoutList;
     const getLength = arr => {
         let l = 1;
@@ -34,6 +35,10 @@ const InputWrapper = ({
     const scrollTo = ref => {
         ref.current.scrollIntoView({ behavior: "smooth", block: "start" });
     };
+
+    useEffect(() => {
+        setPrevCount(prevCountRef.current = act)
+    });
 
     return (
         <CreateRoutBlockWrap active={drop[i]}>
@@ -90,9 +95,9 @@ const InputWrapper = ({
 
                         <VeziRutra
                             onClick={() => handleClickVeziRuta(i)}
-                            active={handleClick.handleClick === i && prevCountRef.current[i].length === act[i].length}
+                            active={handleClick.handleClick === i && prevCountRef.current[i]?.length === act[i].length}
                         >
-                            VESI RUTA
+                            VEZI RUTA
                         </VeziRutra>
                     </div>
                 </div>
@@ -132,6 +137,10 @@ const CreateRoutBlockWrap = styled.div`
     @media screen and (max-width: 1200px) {
       flex-direction: column;
     }
+    @media (min-width: 320px) and (max-width: 767px) {
+    align-items: center;
+  
+  }
   }
   .drop-down-wrap {
     position: absolute;
