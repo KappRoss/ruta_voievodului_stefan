@@ -18,32 +18,10 @@ const InputWrapper = ({
     const [activeCord, setActiveCord] = useState([]);
     const CreateBtn = act[i] ? CreateRoutListRout : CreateRoutList;
     const getLength = arr => {
-        let l = 0;
+        let l = 1;
         for (let i = 0; i < arr.length; i++) if (arr[i]) l++;
         return l;
     };
-    console.log(activeCord)
-    // const onChange = (i, active) => {
-    //     addAct(gr, i);
-    //     if (active === false) {
-    //         if(headMemo){
-    //             setActiveCord(oldArray => [...oldArray, cordinates[0]]);
-    //         }
-    //         else {setActiveCord(oldArray => [...uniqWith(oldArray, isEqual), cordinatesHeadMemo[0], cordinates[0]]);}
-    //
-    //     } else if (active === true ) {
-    //         if(headMemo){
-    //             setActiveCord([]);
-    //         }
-    //         else {
-    //             const filterCheckbox = filter(activeCord, el => {
-    //                 console.log(el, cordinates)
-    //                 return  !isEqual(el, cordinates[0])
-    //             });
-    //             setActiveCord(filterCheckbox);
-    //         }
-    //     }
-    // };
     const handleClickVeziRuta = i => {
         scrollTo(selectedItems);
         if (drop[i] === true) {

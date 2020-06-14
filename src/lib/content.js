@@ -224,7 +224,7 @@ export const locData = {
                 "Raionul Rezina",
                 "Raionul Șoldănești",
                 "Raionul Ștefan-Vodă",
-                "Raionul Hânceșt",
+                "Raionul Hâncești",
                 "Raionul Ocnița"
             ],
             name2: [

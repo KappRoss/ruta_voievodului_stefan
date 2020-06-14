@@ -39,25 +39,15 @@ const CreateRout = ({
         prevCountRef.current = act;
     });
     const getLength = arr => {
-        let l = 0;
+        let l = 1;
         for (let i = 0; i < arr.length; i++) if (arr[i]) l++;
         return l;
     };
 
-    // const handleClickRuta = i => {
-    //     setHandleClick({ handleClick: i });
-    // };
 
     const handleGoSelection = () => {
         history.push("routes-selection");
     };
-
-    // const handleClickVeziRuta = i => {
-    //     scrollTo(selectedItems);
-    //     if (drop[i] === true) {
-    //         setDrop(i);
-    //     }
-    // };
 
     const scrollTo = ref => {
         ref.current.scrollIntoView({ behavior: "smooth", block: "start" });
