@@ -1,6 +1,6 @@
 import React  from "react";
 import "./input.css";
-import { filter,isEqual } from "lodash";
+import { filter,isEqual,uniqWith } from "lodash";
 import styled from "styled-components/macro";
 import img from "./inp.png"
 const Input = ({
@@ -11,16 +11,28 @@ const Input = ({
                    cordinates,
                    setActiveCord,
                    activeCord,
+                   headMemo,
+                   cordinatesHeadMemo
                }) => {
     const onChange = (i, active) => {
         addAct(gr, i);
-        if (active === false && cordinates !== undefined) {
-            setActiveCord(oldArray => [...oldArray, cordinates]);
-        } else if (active === true && cordinates !== undefined) {
-            const filterCheckbox = filter(activeCord, el => {
-                return  !isEqual(el[0], cordinates[0])
-            });
-            setActiveCord(filterCheckbox);
+        if (active === false) {
+            if(headMemo){
+                setActiveCord(oldArray => [...oldArray, cordinates[0]]);
+            }
+            else {setActiveCord(oldArray => [...uniqWith(oldArray, isEqual), cordinatesHeadMemo[0], cordinates[0]]);}
+
+        } else if (active === true ) {
+            if(headMemo){
+                setActiveCord([]);
+            }
+            else {
+                const filterCheckbox = filter(activeCord, el => {
+                    console.log(el, cordinates)
+                    return  !isEqual(el, cordinates[0])
+                });
+                setActiveCord(filterCheckbox);
+            }
         }
     };
     return (

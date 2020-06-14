@@ -231,14 +231,14 @@ export const locData = {
                 {
                     name: "Mănăstirea Căpriana",
                     img: "Mănăstirea Căpriana",
-                    latitude: "47.175037",
-                    longitude: "28.497757"
+                    latitude: 47.175037,
+                    longitude: 28.497757
                 },
                 {
                     name: "Orheiul Vechi",
                     img: "Orheiul Vechi",
-                    latitude: "47.175037",
-                    longitude: "28.497757"
+                    latitude: 47.175037,
+                    longitude: 28.497757
                 },
                 {
                     name: "Cetatea Soroca",
@@ -302,38 +302,38 @@ export const locData = {
                         name:
                             "Biserica Adormirea Măicii Domnului a Mănăstirii Căpriana raionul Strășeni || 35 km față de Chișinău",
                         img: "Raionul Șoldănești",
-                        latitude: "47.116476",
-                        longitude: "28.510815"
+                        latitude: 47.116476,
+                        longitude: 28.510815
                     },
                     {
                         name: "Complexul Etno Cultural Vatra || 36 km față de Chișinău",
                         img: "Raionul Șoldănești",
-                        latitude: "47.175037",
-                        longitude: "28.497757"
+                        latitude: 47.175037,
+                        longitude: 28.497757
                     },
                     {
                         name: "Conacul lui Constantin Stamati",
                         img: "Raionul Șoldănești",
-                        latitude: "47.125571",
-                        longitude: "28.272506"
+                        latitude: 47.125571,
+                        longitude: 28.272506
                     },
                     {
                         name: "Conacul Zamfirache Ralli || Dolna – 56 km față de Chișinău",
                         img: "Raionul Șoldănești",
-                        latitude: "47.175037",
-                        longitude: "28.497757"
+                        latitude: 47.175037,
+                        longitude: 28.497757
                     },
                     {
                         name: "Vinăria, Chateau Cojușna || 18 km față de Chișinău",
                         img: "Raionul Șoldănești",
-                        latitude: "47.092290",
-                        longitude: "28.687662"
+                        latitude: 47.092290,
+                        longitude: 28.687662
                     },
                     {
                         name: "Vinăria, Poiana || 36 km față de Chișinău",
                         img: "Raionul Șoldănești",
-                        latitude: "47.055678",
-                        longitude: "28.512598"
+                        latitude: 47.055678,
+                        longitude: 28.512598
                     }
                 ],
                 [
@@ -546,8 +546,8 @@ export const locData = {
                     {
                         name: "Conacul “Manuc Bey” || 36 km față de Chișinău",
                         img: "Raionul Șoldănești",
-                        latitude: "46.825920",
-                        longitude: "28.582210"
+                        latitude: 46.825920,
+                        longitude: 28.582210
                     }
                 ],
                 []

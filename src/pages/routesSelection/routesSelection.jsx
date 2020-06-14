@@ -8,6 +8,7 @@ import styled from "styled-components/macro";
 
 const RoutesSelection = ({act, loc, places}) => {
     const googleMapsApiKey = "js?key=AIzaSyAzICfk_cT_rY6SjI_OHIZBABrGW7B7ars&v=3.exp&";
+    console.log(places)
     
     const  printDocument = () => {
        let imgY = -20;
@@ -63,7 +64,7 @@ const RoutesSelection = ({act, loc, places}) => {
 										<img src={require('../createRout/img/'+i+'.png')} alt="route"/>
 										<div className="routes-entity-name">
 											<span className="traseni">traseni district</span><br />
-											{loc.name2[i]}
+											{loc.name2[i].name}
 										</div>
 									</div>
 									<div className="routes-entity-desc">Commodo amet aliquip qui est sint sit enim labore occaecat dolore sint ea mollit dolore</div>
