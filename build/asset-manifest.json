@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "./static/css/main.0c0a69f1.chunk.css",
-    "main.js": "./static/js/main.abd90da1.chunk.js",
-    "main.js.map": "./static/js/main.abd90da1.chunk.js.map",
+    "main.css": "./static/css/main.751b047a.chunk.css",
+    "main.js": "./static/js/main.2641ec3d.chunk.js",
+    "main.js.map": "./static/js/main.2641ec3d.chunk.js.map",
     "runtime-main.js": "./static/js/runtime-main.2547097d.js",
     "runtime-main.js.map": "./static/js/runtime-main.2547097d.js.map",
-    "static/js/2.032f6417.chunk.js": "./static/js/2.032f6417.chunk.js",
-    "static/js/2.032f6417.chunk.js.map": "./static/js/2.032f6417.chunk.js.map",
+    "static/js/2.12dbcc8d.chunk.js": "./static/js/2.12dbcc8d.chunk.js",
+    "static/js/2.12dbcc8d.chunk.js.map": "./static/js/2.12dbcc8d.chunk.js.map",
     "index.html": "./index.html",
-    "precache-manifest.ee958b54ab43aa8349aba5764dc29289.js": "./precache-manifest.ee958b54ab43aa8349aba5764dc29289.js",
+    "precache-manifest.85a6b887afae68591cba3653dfb4466f.js": "./precache-manifest.85a6b887afae68591cba3653dfb4466f.js",
     "service-worker.js": "./service-worker.js",
-    "static/css/main.0c0a69f1.chunk.css.map": "./static/css/main.0c0a69f1.chunk.css.map",
-    "static/js/2.032f6417.chunk.js.LICENSE.txt": "./static/js/2.032f6417.chunk.js.LICENSE.txt",
+    "static/css/main.751b047a.chunk.css.map": "./static/css/main.751b047a.chunk.css.map",
+    "static/js/2.12dbcc8d.chunk.js.LICENSE.txt": "./static/js/2.12dbcc8d.chunk.js.LICENSE.txt",
     "static/media/0.png": "./static/media/0.91cdcbed.png",
     "static/media/1.png": "./static/media/1.5f2dd457.png",
     "static/media/10.png": "./static/media/10.f05c9f95.png",
@@ -23,18 +23,7 @@
     "static/media/7.png": "./static/media/7.bdfc5948.png",
     "static/media/8.png": "./static/media/8.8802f329.png",
     "static/media/9.png": "./static/media/9.2aef104e.png",
-    "static/media/Asconi.jpg": "./static/media/Asconi.2d9c6191.jpg",
-    "static/media/Casa.jpg": "./static/media/Casa.72e52a79.jpg",
     "static/media/index.css": "./static/media/bg-5.1ce558f4.png",
-    "static/media/Etografie.jpg": "./static/media/Etografie.0d827d84.jpg",
-    "static/media/Manuc Bey.jpg": "./static/media/Manuc Bey.42c1188f.jpg",
-    "static/media/Mici.jpg": "./static/media/Mici.f1ffcb36.jpg",
-    "static/media/Mimi.jpg": "./static/media/Mimi.515056d9.jpg",
-    "static/media/Pensiunea.jpg": "./static/media/Pensiunea.fc7fc684.jpg",
-    "static/media/Purcari.jpg": "./static/media/Purcari.fae3b313.jpg",
-    "static/media/Recunoștinței.jpg": "./static/media/Recunoștinței.8ea2f082.jpg",
-    "static/media/Saharna.jpg": "./static/media/Saharna.135b2c46.jpg",
-    "static/media/Stamati.jpg": "./static/media/Stamati.418b22b1.jpg",
     "static/media/footer.css": "./static/media/footer-mob.b0d267b7.png",
     "static/media/left-bg-4.png": "./static/media/left-bg-4.03815b5c.png",
     "static/media/right-bg-4.png": "./static/media/right-bg-4.19e2b921.png",
@@ -47,13 +36,12 @@
     "static/media/s-6.png": "./static/media/s-6.41cd8d00.png",
     "static/media/s-7.png": "./static/media/s-7.00d2f23c.png",
     "static/media/s-8.png": "./static/media/s-8.1325279d.png",
-    "static/media/s-9.png": "./static/media/s-9.ab0e503d.png",
-    "static/media/Șerpeni.jpg": "./static/media/Șerpeni.9c395d35.jpg"
+    "static/media/s-9.png": "./static/media/s-9.ab0e503d.png"
   },
   "entrypoints": [
     "static/js/runtime-main.2547097d.js",
-    "static/js/2.032f6417.chunk.js",
-    "static/css/main.0c0a69f1.chunk.css",
-    "static/js/main.abd90da1.chunk.js"
+    "static/js/2.12dbcc8d.chunk.js",
+    "static/css/main.751b047a.chunk.css",
+    "static/js/main.2641ec3d.chunk.js"
   ]
 }
