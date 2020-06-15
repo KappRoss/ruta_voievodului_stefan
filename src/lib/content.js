@@ -295,7 +295,7 @@ export const locData = {
                     longitude: 28.497757
                 }
             ],
-            buttons: ["", "", "Vezi mai mult", "Selectează următoarea destinație"],
+            buttons: ["", "", "Finalizeaza rută", "Selectează următoarea destinație"],
             arrt: [
                 [
                     {
