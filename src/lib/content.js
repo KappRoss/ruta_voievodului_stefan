@@ -60,15 +60,15 @@ export const locData = {
 			],
 			buttons: ['Vezi mai mult', 'creaza ruta', 'trimite','Vezi mai mult+'],
 			form: ['Nume', 'Prenume', 'E-mail', 'Message'],
-			
-			
+
+
 			title_0: [
 				'Vinăria “Chateau Cojușna”',
 				'Conacul Zamfirache Ralli',
 				'Biserica Adormirea Măicii Domnului a Mănăstirii Căpriana',
 				'Complexul Etno Cultural Vatra',
 			],
-			url_0: [ 
+			url_0: [
 				"http://vinariapoiana.md/",
 				"https://ro.wikipedia.org/wiki/Conacul_lui_Zamfirache_Ralli",
 				"https://ro.wikipedia.org/wiki/M%C4%83n%C4%83stirea_C%C4%83priana",
@@ -82,7 +82,7 @@ export const locData = {
 				'Vinăria Brănești',
 				'Vinăria Chateau Vartely',
 			],
-			url_1: [ 
+			url_1: [
 				"https://www.libertatea.ro/stiri/manastirea-rupestra-de-la-sinca-veche-locul-in-care-se-implinesc-dorintele-misterul-templului-ursitelor-din-tara-fagarasului-2217528",
 				"https://winetours.md/rom/agropensiuni",
 				"https://rusticart.md/",
@@ -95,23 +95,23 @@ export const locData = {
 				'Lumânarea Renucoștinței',
 				'Dealul Țiganilor',
 			],
-			url_2: [ 
+			url_2: [
 				"http://www.primsoroca.md/uploads/article/PTA_2_Reabilitarea_Muzeului_de_Istorie_si_Etnografie_din_Soroca_eSOu.pdf",
 				'',
 				"https://www.travel.md/ro/locuri-de-vizitat/atractii-turistice/monumentul-lumanarea-recunostintei/",
-			],  
+			],
 			title_3: [
 				'Muzeul de Istorie și Etnografie al satului Mereni',
 				'Complexul Memorial “Capul de Pod Șerpeni”',
 				'Vinăria Asconi',
 				'Castel Mimi',
 			],
-			url_3: [ 
+			url_3: [
 				"https://mereni.md/muzeul-de-istorie-si-etnografie/",
 				"https://ro.wikipedia.org/wiki/Complexul_memorial_%E2%80%9ECapul_de_pod_%C8%98erpeni%E2%80%9D",
 				"https://asconi.md/",
 				"https://www.castelmimi.md/",
-			], 
+			],
 			title_4: [
 				'Monumentul lui Ștefan cel Mare și Sfânt',
 				'Muzeul Național de Istorie a Moldovei',
@@ -121,7 +121,7 @@ export const locData = {
 				'Combinatul de vinuri “Cricova”',
 				'Combinatul de vinuri de calitate “Mileștii Mici”',
 			],
-			url_4: [ 
+			url_4: [
 				"https://ro.wikipedia.org/wiki/Statuia_lui_%C8%98tefan_cel_Mare_din_Chi%C8%99in%C4%83u",
 				"https://www.nationalmuseum.md/",
 				"http://www.muzeu.md/",
@@ -129,42 +129,42 @@ export const locData = {
 				"https://ro.wikipedia.org/wiki/Turnul_de_ap%C4%83_din_Chi%C8%99in%C4%83u",
 				"https://cricova.md/",
 				"https://www.milestii-mici.md/ro/"
-			], 
+			],
 			title_5: [
 				'Cetatea Tighina',
 				'Complexul Memorial “Piața Eroilor”',
 			],
-			url_5: [ 
+			url_5: [
 				"https://ro.wikipedia.org/wiki/Cetatea_Tighina",
 				"https://www.prospect.md/ro/history/morminte-fratesti-funerare-in-masa/complexul-memorial-piata-eroilor.html",
-			], 
+			],
 			title_6: [
 				'Mănăstirea Saharna',
 				'Hanul lui Hanganu, Lalova',
-				
+
 			],
-			url_6: [ 
+			url_6: [
 				"https://ro.wikipedia.org/wiki/M%C4%83n%C4%83stirea_Saharna",
 				"https://hanulhanganu.md/",
-				
-			], 
+
+			],
 			title_7: [
 				''
 			],
-			url_7: [ 
+			url_7: [
 				''
 			],
 			title_8: [
 				'Complex turistic Purcari, Vinăria Purcari',
 				'Complex vitivinicol “ET Cetera”',
 				'Gospodăria meșterului popular Pavel Ţăranu s. Cioburciu',
-				
+
 			],
-			url_8: [ 
+			url_8: [
 				"https://purcari.wine/ro/",
 				"https://purcari.wine/ro/",
 				"http://www.hailatara.md/rooms/63#.XtoewzozaUk",
-				
+
 			],
 			title_9: [
 				'',
@@ -172,7 +172,7 @@ export const locData = {
 				'',
 				'',
 			],
-			url_9: [ 
+			url_9: [
 				'',
 				'',
 				'',
@@ -490,7 +490,7 @@ export const locData = {
 				fiul său, Alexandru-Vodă, în amintirea prietenului său din copilărie, Gheorghiță,
 				omorât aici de către tătari.`
 			]
-		
+
 		]
 		},
 		en: {
@@ -748,7 +748,7 @@ export const locData = {
 				fiul său, Alexandru-Vodă, în amintirea prietenului său din copilărie, Gheorghiță,
 				omorât aici de către tătari.`
 			]
-		
+
 		]
 		},
 	},
@@ -825,11 +825,11 @@ export const locData = {
 				'10. Catedrala Mitropolitană',
 				'11. Mănăstirea Sfinţii Trei Ierarhi',
 				'12. Colina Copou ',
-				'13. Mănăstirea Golia ', 
+				'13. Mănăstirea Golia ',
 				'14. Muzeul Unirii ',
 				'15. Mănăstirea Cetăţuia',
 				'16. Palatul Ruginoasa',
-				
+
 			],
 			text_3:[
 				'25. Muzeul Viticol Huși',
@@ -854,7 +854,7 @@ export const locData = {
 				'17. Situl arheologic de la Ripiceni - Misteriosul „oraş” de pe malurile Prutului face parte dintr-o aşezare uriaşă, considerată printre cele mai mari descoperite vreodată pe teritoriul României, în cadrul culturii Cucuteni. ',
 				'18. Mănăstirea Vorona',
 				'19. Mănăstirea Coșula',
-				'20. Biserica de lemn Sfântul Dumitru Vorniceni', 
+				'20. Biserica de lemn Sfântul Dumitru Vorniceni',
 				'21. Biserica de lemn Sfântul Dumitru Ionățeni',
 				'22. Biserica de lemn din Dorohoi',
 				'23. Mănăstirea Agafton',
@@ -863,10 +863,10 @@ export const locData = {
 			text_6:[
 				'40. Mausoleul Eroilor de la Mărăşeşti - este un monument dedicat eroilor din Primul Război Mondial ',
 				'41. Mausoleul Eroilor de la Soveja - monumentul este amplasat în satul Dragosloveni, comuna Soveja şi este dedicat eroilor căzuţi în luptele de pe cuprinsul văii Şuşiţei. ',
-				'42. Mausoleul Eroilor de la Mărăşti - este situat în satul Mărăşti, comuna Răcoasa. Mausoleul a fost ridicat pe locul unde s-a dat bătălia din 9-17 iulie 1917 şi face parte, alături de alte obiective istorice, din Câmpul istoric de la Mărăşti', 
-				'43. Mausoleul Eroilor de la Focşani', 
-				'44. Rezervaţia Naturală Tişiţa – Cheile Tişiţei', 
-				'45. Rezervaţia Naturală Focul Viu', 
+				'42. Mausoleul Eroilor de la Mărăşti - este situat în satul Mărăşti, comuna Răcoasa. Mausoleul a fost ridicat pe locul unde s-a dat bătălia din 9-17 iulie 1917 şi face parte, alături de alte obiective istorice, din Câmpul istoric de la Mărăşti',
+				'43. Mausoleul Eroilor de la Focşani',
+				'44. Rezervaţia Naturală Tişiţa – Cheile Tişiţei',
+				'45. Rezervaţia Naturală Focul Viu',
 				'46. Muzeul Satului Vrâncean'
 
 			],
@@ -926,9 +926,9 @@ export const locData = {
 				`http://apmvn.anpm.ro/arii-naturale-protejate-de-interes-national/-/asset_publisher/3N0LCSrYrj6u/content/rezervatia-naturala-tisita`,
 				`https://ro.wikipedia.org/wiki/Focul_Viu_de_la_Andreia%C8%99u_de_Jos`,
 				`https://invrancea.ro/muzeul-satului-vrancean-2/`
-				
+
 			]
-		
+
 		},
 		en: {
 			id: 'en',
@@ -949,11 +949,11 @@ export const locData = {
 				'10. Catedrala Mitropolitană',
 				'11. Mănăstirea Sfinţii Trei Ierarhi',
 				'12. Colina Copou ',
-				'13. Mănăstirea Golia ', 
+				'13. Mănăstirea Golia ',
 				'14. Muzeul Unirii ',
 				'15. Mănăstirea Cetăţuia',
 				'16. Palatul Ruginoasa',
-				
+
 			],
 			text_3:[
 				'25. Muzeul Viticol Huși',
@@ -978,7 +978,7 @@ export const locData = {
 				'17. Situl arheologic de la Ripiceni - Misteriosul „oraş” de pe malurile Prutului face parte dintr-o aşezare uriaşă, considerată printre cele mai mari descoperite vreodată pe teritoriul României, în cadrul culturii Cucuteni. ',
 				'18. Mănăstirea Vorona',
 				'19. Mănăstirea Coșula',
-				'20. Biserica de lemn Sfântul Dumitru Vorniceni', 
+				'20. Biserica de lemn Sfântul Dumitru Vorniceni',
 				'21. Biserica de lemn Sfântul Dumitru Ionățeni',
 				'22. Biserica de lemn din Dorohoi',
 				'23. Mănăstirea Agafton',
@@ -987,10 +987,10 @@ export const locData = {
 			text_6:[
 				'40. Mausoleul Eroilor de la Mărăşeşti - este un monument dedicat eroilor din Primul Război Mondial ',
 				'41. Mausoleul Eroilor de la Soveja - monumentul este amplasat în satul Dragosloveni, comuna Soveja şi este dedicat eroilor căzuţi în luptele de pe cuprinsul văii Şuşiţei. ',
-				'42. Mausoleul Eroilor de la Mărăşti - este situat în satul Mărăşti, comuna Răcoasa. Mausoleul a fost ridicat pe locul unde s-a dat bătălia din 9-17 iulie 1917 şi face parte, alături de alte obiective istorice, din Câmpul istoric de la Mărăşti', 
-				'43. Mausoleul Eroilor de la Focşani', 
-				'44. Rezervaţia Naturală Tişiţa – Cheile Tişiţei', 
-				'45. Rezervaţia Naturală Focul Viu', 
+				'42. Mausoleul Eroilor de la Mărăşti - este situat în satul Mărăşti, comuna Răcoasa. Mausoleul a fost ridicat pe locul unde s-a dat bătălia din 9-17 iulie 1917 şi face parte, alături de alte obiective istorice, din Câmpul istoric de la Mărăşti',
+				'43. Mausoleul Eroilor de la Focşani',
+				'44. Rezervaţia Naturală Tişiţa – Cheile Tişiţei',
+				'45. Rezervaţia Naturală Focul Viu',
 				'46. Muzeul Satului Vrâncean'
 
 			],
@@ -1050,72 +1050,358 @@ export const locData = {
 				`http://apmvn.anpm.ro/arii-naturale-protejate-de-interes-national/-/asset_publisher/3N0LCSrYrj6u/content/rezervatia-naturala-tisita`,
 				`https://ro.wikipedia.org/wiki/Focul_Viu_de_la_Andreia%C8%99u_de_Jos`,
 				`https://invrancea.ro/muzeul-satului-vrancean-2/`
-				
+
 			]
 		}
 	},
 	CreateRout: {
 		ro: {
-			title: ['Creează-ți ruta', 'Rutele selectate', 'Ruta creată', 'descarcĂ pdf'],
-			desc: [
-				'Voievodul Ștefan cel Mare a venit la putere într-o Moldovă dezbinată, pe cale de a-și pierde identitatea, într-o Moldovă pe care a așezat-o din temelii. Fiindcă pericolul otoman creștea vertiginos după căderea Constantinopolului, a crescut armata',
-				'Voievodul Ștefan cel Mare a venit la putere într-o Moldovă dezbinată, pe cale de a-și pierde identitatea, într-o Moldovă pe care a așezat-o din temelii. Fiindcă pericolul otoman creștea vertiginos după căderea Constantinopolului, a crescut armata',
-				'Atractii'
+			title: [
+				"Creează-ți ruta",
+				"Rutele selectate",
+				"Ruta creată",
+				"descarcĂ pdf"
 			],
-			name: ['Raionul Strășeni', 'Orheiul Vechi', 'Raionul Soroca', 'Raionul Anenii Noi', 'Orașul Chișinău', 'Orașul Tighina', 'Raionul Rezina', 'Raionul Șoldănești', 'Raionul Ștefan-Vodă', 'Raionul Hânceșt', 'Raionul Ocnița'],
-			name2: ['Mănăstirea Căpriana', 'Orheiul Vechi', 'Cetatea Soroca', 'Satul Mereni', 'Tărgul Chișinău/Buiucani', 'Cetatea Tighina', 'Mănăstirea Țipova', 'Stejarul lui Ștefan cel Mare', 'Ștefan-Vodă regiune', 'Conacul “Manuc Bey"', 'Conacul lui Constantin Stamati'],
-			buttons: ['vezi mai putin', 'Creează ruta', 'Vezi mai mult', 'Selectează următoarea destinație', "Ruta selectată", "VESI RUTA", 'Finalizează ruta'],
+			desc: [
+				"Voievodul Ștefan cel Mare a venit la putere într-o Moldovă dezbinată, pe cale de a-și pierde identitatea, într-o Moldovă pe care a așezat-o din temelii. Fiindcă pericolul otoman creștea vertiginos după căderea Constantinopolului, a crescut armata",
+				"Voievodul Ștefan cel Mare a venit la putere într-o Moldovă dezbinată, pe cale de a-și pierde identitatea, într-o Moldovă pe care a așezat-o din temelii. Fiindcă pericolul otoman creștea vertiginos după căderea Constantinopolului, a crescut armata"
+			],
+			name: [
+				"Raionul Strășeni",
+				"Orheiul Vechi",
+				"Raionul Soroca",
+				"Raionul Anenii Noi",
+				"Orașul Chișinău",
+				"Orașul Tighina",
+				"Raionul Rezina",
+				"Raionul Șoldănești",
+				"Raionul Ștefan-Vodă",
+				"Raionul Hâncești",
+				"Raionul Ocnița"
+			],
+			name2: [
+				{
+					name: "Mănăstirea Căpriana",
+					img: "Mănăstirea Căpriana",
+					latitude: 47.175037,
+					longitude: 28.497757
+				},
+				{
+					name: "Orheiul Vechi",
+					img: "Orheiul Vechi",
+					latitude: 47.175037,
+					longitude: 28.497757
+				},
+				{
+					name: "Cetatea Soroca",
+					img: "Cetatea Soroca",
+					latitude: 47.175037,
+					longitude: 28.497757
+				},
+				{
+					name: "Satul Mereni",
+					img: "Raionul Anenii Noi",
+					latitude: 47.175037,
+					longitude: 28.497757
+				},
+				{
+					name: "Tărgul Chișinău/Buiucani",
+					img: "Tărgul Chișinău/Buiucani",
+					latitude: 47.175037,
+					longitude: 28.497757
+				},
+				{
+					name: "Cetatea Tighina",
+					img: "Raionul Rezina",
+					latitude: 47.175037,
+					longitude: 28.497757
+				},
+				{
+					name: "Mănăstirea Țipova",
+					img: "Raionul Șoldănești",
+					latitude: 47.175037,
+					longitude: 28.497757
+				},
+				{
+					name: "Stejarul lui Ștefan cel Mare'",
+					img: "Raionul Șoldănești",
+					latitude: 47.175037,
+					longitude: 28.497757
+				},
+				{
+					name: "Ștefan-Vodă regiune",
+					img: "Raionul Ștefan-Vodă",
+					latitude: 47.175037,
+					longitude: 28.497757
+				},
+				{
+					name: "Conacul “Manuc Bey",
+					img: "Raionul Hânceșt",
+					latitude: 47.175037,
+					longitude: 28.497757
+				},
+				{
+					name: "Conacul lui Constantin Stamati",
+					img: "Raionul Șoldănești",
+					latitude: 47.175037,
+					longitude: 28.497757
+				}
+			],
+			buttons: ["", "", "Finalizeaza rută", "Selectează următoarea destinație"],
 			arrt: [
 				[
-					'Biserica Adormirea Măicii Domnului a Mănăstirii Căpriana raionul Strășeni || 35 km față de Chișinău, Google - 47.116476, 28.510815',
-					'Complexul Etno Cultural Vatra || 36 km față de Chișinău, Google - 47.175037, 28.497757',
-					'Conacul Zamfirache Ralli || Dolna – 56 km față de Chișinău, Google - 47.125571, 28.272506',
-					'Vinăria, Chateau Cojușna || 18 km față de Chișinău, Google - 47.092290, 28.687662',
-					'Vinăria, Poiana || 36 km față de Chișinău, Google - 47.055678, 28.512598'
+					{
+						name:
+								"Biserica Adormirea Măicii Domnului a Mănăstirii Căpriana raionul Strășeni || 35 km față de Chișinău",
+						img: "Raionul Șoldănești",
+						latitude: 47.116476,
+						longitude: 28.510815
+					},
+					{
+						name: "Complexul Etno Cultural Vatra || 36 km față de Chișinău",
+						img: "Raionul Șoldănești",
+						latitude: 47.175037,
+						longitude: 28.497757
+					},
+					{
+						name: "Conacul lui Constantin Stamati",
+						img: "Raionul Șoldănești",
+						latitude: 47.125571,
+						longitude: 28.272506
+					},
+					{
+						name: "Conacul Zamfirache Ralli || Dolna – 56 km față de Chișinău",
+						img: "Raionul Șoldănești",
+						latitude: 47.175037,
+						longitude: 28.497757
+					},
+					{
+						name: "Vinăria, Chateau Cojușna || 18 km față de Chișinău",
+						img: "Raionul Șoldănești",
+						latitude: 47.092290,
+						longitude: 28.687662
+					},
+					{
+						name: "Vinăria, Poiana || 36 km față de Chișinău",
+						img: "Raionul Șoldănești",
+						latitude: 47.055678,
+						longitude: 28.512598
+					}
 				],
 				[
-					'Mănăstirea rupestră || 54 km față de Chișinău, Google - 47.301438, 28.979260',
-					'Pensiunile turistice de la Orheiul Vechi || 50-60 km față de Chișinău, Google - 47.317277, 28.966495',
-					'Complexul de Meșteșuguri “Arta Rustică” || Clișova Nouă – 67 km față de Chișinău, Google - 47.495435, 28.634978',
-					'Casa – Muzeu “Alexandru Donici” || 43 km față de Chișinău, Google - 47.289457, 28.671657',
-					'Vinăria Brănești || 49 km față de Chișinău, Google - 47.313352, 28.935032',
-					'Vinăria Chateau Vartely || 49 km față de Chișinău, Google - 47.380785, 28.834460'
+					{
+						name: "Vinăria, Poiana || 36 km față de Chișinău",
+						img: "Raionul Șoldănești",
+						latitude: 47.055678,
+						longitude: 28.512598
+					},
+					{
+						name: "Mănăstirea rupestră || 54 km față de Chișinău",
+						img: "Raionul Șoldănești",
+						latitude: 47.055678,
+						longitude: 28.979260
+					},
+					{
+						name:
+								"Pensiunile turistice de la Orheiul Vechi || 50-60 km față de Chișinău",
+						img: "Raionul Șoldănești",
+						latitude: 47.317277,
+						longitude: 28.966495
+					},
+					{
+						name:
+								"Complexul de Meșteșuguri “Arta Rustică” || Clișova Nouă – 67 km față de Chișinău",
+						img: "Raionul Șoldănești",
+						latitude: 47.495435,
+						longitude: 28.966495
+					},
+					{
+						name: "Casa – Muzeu “Alexandru Donici” || 43 km față de Chișinău",
+						img: "Raionul Șoldănești",
+						latitude: 47.495435,
+						longitude: 28.671657
+					},
+					{
+						name: "Vinăria Brănești || 49 km față de Chișinău, ",
+						img: "Raionul Șoldănești",
+						latitude: 47.313352,
+						longitude: 28.935032
+					},
+					{
+						name: "Vinăria Chateau Vartely || 49 km față de Chișinău ",
+						img: "Raionul Șoldănești",
+						latitude: 47.380785,
+						longitude: 28.834460
+					}
 				],
 				[
-					'Muzeul de Istorie și Etnografie a orașului Soroca || 153 km față de Chișinău, Google - 48.155368, 28.302586',
-					'Lumânarea Renucoștinței || Lumânarea Renucoștinței – 157 km față de Chișinău, Google - 48.137215, 28.305372',
-					'Dealul Țiganilor || 156 km față de Chișinău, Google - 48.159501, 28.291855'
+					{
+						name:
+								"Muzeul de Istorie și Etnografie a orașului Soroca || 153 km față de Chișinău ",
+						img: "Raionul Șoldănești",
+						latitude: 48.155368,
+						longitude: 28.302586
+					},
+					{
+						name:
+								"Lumânarea Renucoștinței || Lumânarea Renucoștinței – 157 km față de Chișinău",
+						img: "Raionul Șoldănești",
+						latitude: 48.137215,
+						longitude: 28.305372
+					},
+					{
+						name: "Dealul Țiganilor || 156 km față de Chișinău",
+						img: "Raionul Șoldănești",
+						latitude: 48.159501,
+						longitude: 28.291855
+					}
 				],
 				[
-					'Muzeul de Istorie și Etnografie al satului Mereni || 26 km față de Chișinău, Google - 46.963515, 29.055452',
-					'Complexul Memorial “Capul de Pod Șerpeni” || 61 km față de Chișinău, Google - 47.033017, 29.353023',
-					'Vinăria Asconi || 29 km față de Chișinău, Google - 46.839569, 29.027792',
-					'Castel Mimi || 40 km față de Chișinău, Google - 46.891031, 29.292984'
+					{
+						name:
+								"Muzeul de Istorie și Etnografie al satului Mereni || 26 km față de Chișinău",
+						img: "Raionul Șoldănești",
+						latitude: 46.963515,
+						longitude: 29.055452
+					},
+					{
+						name:
+								"Complexul Memorial “Capul de Pod Șerpeni” || 61 km față de Chișinău",
+						img: "Raionul Șoldănești",
+						latitude: 47.033017,
+						longitude: 29.353023
+					},
+					{
+						name: "Vinăria Asconi || 29 km față de Chișinău",
+						img: "Raionul Șoldănești",
+						latitude: 46.839569,
+						longitude: 29.027792
+					},
+					{
+						name: "Castel Mimi || 40 km față de Chișinău",
+						img: "Raionul Șoldănești",
+						latitude: 46.891031,
+						longitude: 29.292984
+					}
 				],
 				[
-					'Monumentul lui Ștefan cel Mare și Sfânt || Grădina Publică Ștefan cel Mare, Google - 47.025563, 28.830966',
-					'Muzeul Național de Istorie a Moldovei || Strada 31 August 1989 121 A, Google - 47.022813, 28.828561',
-					'Muzeul Național de Etnografie și Istorie Naturală || Strada Mihail Kogălniceanu, Google - 8247.022813, 28.828561',
-					'Muzeul Național de Artă al Moldovei || Strada 31 August 1989 115, Google - 47.022075, 28.831160',
-					'Muzeul de Istorie a orașului Chișinău || Turnul de Apă - Strada Alexei Mateevici 60A, Google - 47.019455, 28.822907',
-					'Combinatul de vinuri “Cricova” || 16 km față de Chișinău, 4 Google - 7.138394, 28.855884',
-					'Combinatul de vinuri de calitate “Mileștii Mici” || 14 km față de Chișinău, Google - 46.921757, 28.820170'
+					{
+						name:
+								"Monumentul lui Ștefan cel Mare și Sfânt || Grădina Publică Ștefan cel Mare",
+						img: "Raionul Șoldănești",
+						latitude: 47.025563,
+						longitude: 28.830966
+					},
+					{
+						name:
+								"Muzeul Național de Istorie a Moldovei || Strada 31 August 1989 121 A",
+						img: "Raionul Șoldănești",
+						latitude: 47.025563,
+						longitude: 28.830966
+					},
+					{
+						name:
+								"Muzeul Național de Etnografie și Istorie Naturală || Strada Mihail Kogălniceanu",
+						img: "Raionul Șoldănești",
+						latitude: 8247.022813,
+						longitude: 28.828561
+					},
+					{
+						name:
+								"Muzeul Național de Artă al Moldovei || Strada 31 August 1989 115",
+						img: "Raionul Șoldănești",
+						latitude: 47.022075,
+						longitude: 28.831160
+					},
+					{
+						name:
+								"Muzeul de Istorie a orașului Chișinău || Turnul de Apă - Strada Alexei Mateevici 60A",
+						img: "Raionul Șoldănești",
+						latitude: 47.019455,
+						longitude: 28.822907
+					},
+					{
+						name: "Combinatul de vinuri “Cricova” || 16 km față de Chișinău",
+						img: "Raionul Șoldănești",
+						latitude: 7.138394,
+						longitude: 28.855884
+					},
+					{
+						name:
+								"Combinatul de vinuri de calitate “Mileștii Mici” || 14 km față de Chișinău",
+						img: "Raionul Șoldănești",
+						latitude: 46.921757,
+						longitude: 28.820170
+					}
 				],
 				[
-					'Cetatea Tighina || 61 km față de Chișinău, Google - 46.837984, 29.487439',
-					'Complexul Memorial “Piața Eroilor” || 78 km față de Chișinău, Google - 46.835681, 29.608109'
+					{
+						name: "Cetatea Tighina || 61 km față de Chișinău",
+						img: "Raionul Șoldănești",
+						latitude: 46.837984,
+						longitude: 29.487439
+					},
+					{
+						name:
+								"Complexul Memorial “Piața Eroilor” || 78 km față de Chișinău",
+						img: "Raionul Șoldănești",
+						latitude: 46.835681,
+						longitude: 29.608109
+					}
 				],
 				[
-					'Mănăstirea Saharna || 106 km față de Chișinău, Google - 47.695217, 28.965509',
-					'Hanul lui Hanganu, Lalova || 97 km față de Chișinău, Google - 47.566409, 29.020412'
+					{
+						name: "Mănăstirea Saharna || 106 km față de Chișinău",
+						img: "Raionul Șoldănești",
+						latitude: 47.695217,
+						longitude: 28.965509
+					},
+					{
+						name: "Hanul lui Hanganu, Lalova || 97 km față de Chișinău",
+						img: "Raionul Șoldănești",
+						latitude: 47.566409,
+						longitude: 29.020412
+					}
 				],
-				[ 'Conacul lui Constantin Stamati || Conacul lui Constantin Stamati – 237 km, Геолокация Google - 48.383240, 27.436885'],
 				[
-					'Complex turistic Purcari, Vinăria Purcari || 112 km față de Chișinău, Google - 46.531607, 29.871911',
-					'Complex vitivinicol “ET Cetera” || 119 km față de Chișinău, Google - 46.453647, 29.923324',
-					'Gospodăria meșterului popular Pavel Ţăranu s. Cioburciu, || 126 km față de Chișinău, Геолокация Google - 46.596106, 29.726292',
+					{
+						name:
+								"Conacul lui Constantin Stamati || Conacul lui Constantin Stamati – 237 km",
+						img: "Raionul Șoldănești",
+						latitude: 48.383240,
+						longitude: 27.436885
+					}
 				],
-				[ 'Conacul “Manuc Bey” || 36 km față de Chișinău, Google - 46.825920, 28.582210' ],
+				[
+					{
+						name:
+								"Complex turistic Purcari, Vinăria Purcari || 112 km față de Chișinău",
+						img: "Raionul Șoldănești",
+						latitude: 46.531607,
+						longitude: 29.871911
+					},
+					{
+						name: "Complex vitivinicol “ET Cetera” || 119 km față de Chișinău",
+						img: "Raionul Șoldănești",
+						latitude: 46.453647,
+						longitude: 29.923324
+					},
+					{
+						name:
+								"Gospodăria meșterului popular Pavel Ţăranu s. Cioburciu, || 126 km față de Chișinău",
+						img: "Raionul Șoldănești",
+						latitude: 46.596106,
+						longitude: 29.726292
+					}
+				],
+				[
+					{
+						name: "Conacul “Manuc Bey” || 36 km față de Chișinău",
+						img: "Raionul Șoldănești",
+						latitude: 46.825920,
+						longitude: 28.582210
+					}
+				],
 				[]
 			]
 		},

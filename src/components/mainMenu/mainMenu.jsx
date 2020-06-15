@@ -32,7 +32,7 @@ const MainMenu = React.forwardRef((props, ref) => {
           EN
         </span>
         </div>
-        <NavLink to="/" className="link-to-main"></NavLink>
+        <NavLink to="/" className="link-to-main" />
         <div className={menu ? "main-menu-wrap open-menu" : "main-menu-wrap"}>
           <img
               onClick={() => setMobMenu(false)}
