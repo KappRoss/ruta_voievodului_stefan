@@ -8,7 +8,6 @@ import styled from "styled-components/macro";
 
 const RoutesSelection = ({act, loc, places}) => {
 	const googleMapsApiKey = "js?key=AIzaSyAzICfk_cT_rY6SjI_OHIZBABrGW7B7ars&v=3.exp&";
-	console.log(places)
 
 	const  printDocument = () => {
 		let imgY = -20;

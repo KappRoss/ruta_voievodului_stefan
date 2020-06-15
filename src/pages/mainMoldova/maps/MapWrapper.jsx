@@ -1,4 +1,5 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
+import ModalInfo from '../../../components/modal/ModalInfo';
 import Map1 from "./Map1";
 import Map2 from "./Map2";
 import Map3 from "./Map3";
@@ -27,12 +28,16 @@ export default class MapWrapper extends Component {
     activeElement: null,
     svg: null,
     eventType: "",
-    ignoreNextEvent: false
+    ignoreNextEvent: false,
+    openedModal: ""
   }
 
   setSvg = (svg) => {
     this.svg = svg;
   };
+
+  openModal = (id) => () => this.setState({ openedModal: id});
+  closeModal = () => this.setState({ openedModal: "" });
 
   setActive = (id) =>
     ({ target, nativeEvent: { type } }) => {
@@ -68,18 +73,26 @@ export default class MapWrapper extends Component {
     }
 
   render() {
-    const { active, activeElement } = this.state;
+    const { active, activeElement, openedModal } = this.state;
     const { id, locId } = this.props;
     const Tag = maps[id];
     return (
-      <Tag
-        active={active}
-        setActive={this.setActive}
-        activeElement={activeElement}
-        setSvg={this.setSvg}
-        svg={this.svg}
-        locId={locId}
-      />
+      <Fragment>
+        <ModalInfo
+          openedModal={openedModal}
+          closeModal={this.closeModal}
+          locId={locId}
+        />
+        <Tag
+          active={active}
+          setActive={this.setActive}
+          activeElement={activeElement}
+          openModal={this.openModal}
+          setSvg={this.setSvg}
+          svg={this.svg}
+          locId={locId}
+        />
+      </Fragment>
     );
   }
 }

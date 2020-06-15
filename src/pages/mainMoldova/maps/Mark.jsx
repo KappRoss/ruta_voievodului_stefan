@@ -1,8 +1,8 @@
 import React from 'react';
 
-export default ({ setActive, id, children }) => (
+export default ({ openModal, setActive, id, children }) => (
   <g
-    onClick={setActive(id)}
+    onClick={openModal(id)}
     onMouseEnter={setActive(id)}
     onMouseLeave={setActive(id)}
     id={id}

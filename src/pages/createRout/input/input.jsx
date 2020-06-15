@@ -37,7 +37,6 @@ const Input = ({
         setActiveCord([]);
       } else {
         const filterCheckbox = filter(activeCord, el => {
-          console.log(el, cordinates);
           return !isEqual(el, cordinates[0]);
         });
         setActiveCord(filterCheckbox);
