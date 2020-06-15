@@ -20,7 +20,6 @@ const breakPoints = [
 const renderPagination = (startItem) => ({activePage, pages}) => {
   const attrInPage = Math.ceil(romania.ro.titles.length / pages.length);
   const start = startItem + 1;
-  console.log(romania.ro.titles, pages);
   const end = startItem + attrInPage;
   return (
     <div className='pagination-wrap'>

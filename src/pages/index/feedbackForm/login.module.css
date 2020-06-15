@@ -55,6 +55,7 @@
     font: inherit;
     box-sizing: border-box;
     height: 74px;
+    resize: none;
 }
 
 input[type="text"]:focus::-webkit-input-placeholder  {

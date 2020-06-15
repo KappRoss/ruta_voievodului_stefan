@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react';
-import ModalInfo from './modal/ModalInfo';
+import ModalInfo from '../../../components/modal/ModalInfo';
 import GrayZone from './gray-zone/GrayZone';
 import Road from "./road/Road";
 import Label from './label/Label';
