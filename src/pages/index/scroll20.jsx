@@ -18,17 +18,18 @@ const breakPoints = [
       ];
 
 const renderPagination = (startItem) => ({activePage, pages}) => {
-  const attrInPage = Math.ceil(romania.ro.length / pages.length);
+  const attrInPage = Math.ceil(romania.ro.titles.length / pages.length);
   const start = startItem + 1;
+  console.log(romania.ro.titles, pages);
   const end = startItem + attrInPage;
   return (
     <div className='pagination-wrap'>
       <span className='pagination pagination-start'>
         {start}
-        <span className='pagination pagination-all'> / {romania.ro.length}</span>
       </span>
       <span className='pagination pagination-dash' />
       <span className='pagination pagination-end'> {end}</span>
+      <span className='pagination pagination-all'> / {romania.ro.titles.length}</span>
      
     </div>
   );
