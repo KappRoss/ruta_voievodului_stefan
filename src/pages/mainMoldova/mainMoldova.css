@@ -71,12 +71,16 @@
 	width: 410px;
 }
 
-.main-moldova g {
+.main-moldova g.mark {
 	pointer-events: bounding-box;
 }
 
 .main-moldova g * {
 	pointer-events: none;
+}
+
+.main-moldova g.mark * {
+	pointer-events: all;
 }
 
 text {

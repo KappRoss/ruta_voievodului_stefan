@@ -6,6 +6,7 @@ export default ({ openModal, setActive, id, children }) => (
     onMouseEnter={setActive(id)}
     onMouseLeave={setActive(id)}
     id={id}
+    className="mark"
   >
     {children}
   </g>
