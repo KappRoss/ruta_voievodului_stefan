@@ -30,7 +30,7 @@ export default ({ active, activeElement, svg, locId }) => {
         setWidth(el.getBoundingClientRect().width + paddings);
         setIsCurWidth(active);
       }
-    }, [width, isCurWidth]);
+    }, [width, isCurWidth]); // eslint-disable-line
     const textX = width / 2;
     return (
       <g transform={`translate(${x}, ${y})`} pointerEvents="none" >
