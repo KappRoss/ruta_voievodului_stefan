@@ -43,11 +43,12 @@ const App = (props) => {
                 <Route path="/moldova" render={() => <MainMoldova loc={locData.moldova[loc]} />} />
                 <Route path="/create-rout" render={() =>
                     <CreateRout
-                                loc={locData.CreateRout[loc]}
+                                loc={locData.CreateRout.ro}
+                                locId={loc}
                                 header={header}
 
                     />} />
-                <Route path="/routes-selection" exact render={() => <RoutesSelection act={act} loc={locData.CreateRout[loc]} />} />
+                <Route path="/routes-selection" exact render={() => <RoutesSelection act={act} loc={locData.CreateRout[loc]} locId={loc} />} />
             </Switch>
             <Footer />
         </div>

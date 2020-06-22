@@ -12,6 +12,7 @@ import {
   sliderMove
 } from "../../state/actions/settingsActions";
 import connect from "react-redux/es/connect/connect";
+import { supportImgs, allAttractions } from "../../lib/attractions";
 
 const CreateRout = ({
                       loc,
@@ -23,7 +24,8 @@ const CreateRout = ({
                       addAct,
                       resetState,
                       cordinates,
-                      header
+                      header,
+                      locId
                     }) => {
   // const [handleClick, setHandleClick] = useState({});
   let history = useHistory();
@@ -31,7 +33,7 @@ const CreateRout = ({
 
   useEffect(() => {
     resetState();
-  }, []);
+  }, []); // eslint-disable-line
 
   const getLength = arr => {
     let l = 1;
@@ -53,15 +55,17 @@ const CreateRout = ({
         <div className="create-rout-desc">{loc.desc[0]}</div>
         <CreateRoutWrap>
           {loc.name.map((k, i) => {
+            const item = allAttractions.find(b => b.id === i);
+            const { [locId]: { label, name }, img: { img3 } } = item;
             // const CreateBtn = act[i] ? CreateRoutListRout : CreateRoutList;
             //  const checkLengthPrevAcr = prevCountRef.current[i].length === act[i].length;
             return (
-                <CreateRoutBlock key={i}>
-                  <div className="rout-block-name">{k}</div>
+                <CreateRoutBlock key={label}>
+                  <div className="rout-block-name">{label || name}</div>
                   <img
                       style={{ width: "100%" }}
-                      src={require("./img/" + i + ".png")}
-                      alt={k}
+                      src={img3}
+                      alt={name}
 
                   />
                   <InputWrapper
@@ -72,6 +76,8 @@ const CreateRout = ({
                       setDrop={setDrop}
                       loc={loc}
                       selectedItems={selectedItems}
+                      item={item}
+                      locId={locId}
                   />
                 </CreateRoutBlock>
             );
@@ -84,27 +90,30 @@ const CreateRout = ({
         <SelectedRoutes length={act >= 3}>
           <div className="selected-routes-wrap">
             <div className="selected-routes">
-              {act.map((k, i) =>
-                  k ? (
+              {act.map((k, i) => {
+                if (!k) return null;
+                  const item = allAttractions.find(b => b.id === i);
+                  const { img: { img3 } } = item;
+                  return (
                       <div key={i} className="selected-routes-row">
                         <img
                             onClick={addAct.bind(this, i, null)}
                             className="selected-cross"
-                            src={require("./img/cross.png")}
+                            src={supportImgs.cross}
                             alt={k}
                         />
                         <img
                             className="selected-img"
-                            src={require("./img/" + i + ".png")}
+                            src={img3}
                             alt={k}
                         />
                         <div className="selected-routes-right">
                           <div>{loc.name[i]}</div>
-                          <span>Atractii({getLength(act[i])})</span>
+                          <span>{loc.buttons[0]}({getLength(act[i])})</span>
                         </div>
                       </div>
-                  ) : null
-              )}
+                  );
+              })}
             </div>
             <div className="route-to-top" onClick={() => scrollTo(header)}>
               {loc.buttons[3]}
@@ -140,6 +149,10 @@ const CreateRouta = styled.div`
       font-size: 25px;
       line-height: 37px;
     }
+  }
+
+  label {
+    cursor: pointer;
   }
 
   .create-rout-desc {
@@ -189,6 +202,7 @@ const CreateRoutBlock = styled.div`
   width: calc(95% / 3);
   margin-bottom: 10rem;
   position: relative;
+  background: #000;
   @media screen and (max-width: 1200px) {
     width: 100%;
   }
@@ -217,14 +231,18 @@ const SelectedRoutes = styled.div`
     display: flex;
     justify-content: space-around;
     margin: 30px 0;
+    flex-wrap: wrap;
     @media (min-width: 320px) and (max-width: 768px) {
        display: flex;
        flex-direction: column;
     }
     .selected-routes {
       display: flex;
-      width: 80%;
-      overflow-x: scroll;
+      width: 1000px;
+      flex-wrap: wrap;
+      @media screen and (max-width: 900px) {
+        width: 100%;
+      }
        @media (min-width: 320px) and (max-width: 768px) {
         display: flex;
         flex-direction: column;
@@ -253,17 +271,46 @@ const SelectedRoutes = styled.div`
         align-items: center;
         position: relative;
         padding: 20px;
-        min-width: 250px;
-        @media (min-width: 320px) and (max-width: 480px) {
+        min-width: 300px;
+        margin-right: 30px;
+        margin-bottom: 30px;
+        box-sizing: border-box;
+        background: #0E0E0E;
+        &::after {
+          content: '';
+          width: 30px;
+          position: absolute;
+          right: -30px;
+          display: flex;
+          top: 50%;
+          border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+          height: 1px;
+        }
+        &:last-child::after {
+          display: none;
+        }
+        @media (min-width: 320px) and (max-width: 700px) {
          min-width: 220px;
-         padding: 20px 10px;
+         margin-right: 0;
+
+        &::after {
+          top: auto;
+          bottom: -30px;
+          width: 1px;
+          height: 30px;
+          right: 50%;
+          border-left: 1px solid rgba(255,255,255,0.5);
+        }
+        &:last-child::after {
+          display: flex;
+        }
         }
       }
     }
     .selected-cross {
       position: absolute;
-      right: -10px;
-      top: 0px;
+      right: 7.5px;
+      top: 7.5px;
       width: 15px;
       height: 15px;
       cursor: pointer;
@@ -297,12 +344,14 @@ const SelectedRoutes = styled.div`
       color: #f0a000;
       cursor: pointer;
       @media screen and (max-width: 1200px) {
-        width: 99%;
+        width: 300px;
         box-sizing: border-box;
-        padding: 0 8%;
+        padding: 0;
+        margin: 0;
       }
       @media (min-width: 320px) and (max-width: 768px) {
         margin: 0;
+        width: 100%;
       }
     }
   }

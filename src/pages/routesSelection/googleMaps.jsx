@@ -4,7 +4,7 @@ import {
     withGoogleMap,
     GoogleMap,
     withScriptjs,
-    Marker,
+    // Marker,
     DirectionsRenderer
 } from "react-google-maps";
 
@@ -56,10 +56,10 @@ const Map = withScriptjs(
             defaultCenter={props.defaultCenter}
             defaultZoom={props.defaultZoom}
         >
-            {props.markers.map((marker, index) => {
+            {/*props.markers.map((marker, index) => {
                 const position = { lat: marker.latitude, lng: marker.longitude };
                 return <Marker key={index} position={position} />;
-            })}
+            })*/}
             <MapDirectionsRenderer
                 places={props.markers}
                 travelMode={google.maps.TravelMode.DRIVING}

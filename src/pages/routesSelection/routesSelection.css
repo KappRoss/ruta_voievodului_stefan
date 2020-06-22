@@ -36,12 +36,21 @@
 }
 
 .routes-wrap {
-	margin: 100px 0;
+	margin: 100px auto 50px;
+	width: calc(100% - 30px);
+	max-width: 1287px;
 }
 
 .routes-row {
 	display: flex;
-	justify-content: space-around;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.routes-item {
+	background: #0E0E0E;
+	height: 220px;
+	margin-bottom: 50px;
 }
 
 .routes-entity {
@@ -54,12 +63,15 @@
 .routes-entity-top {
 	display: flex;
 	align-items: center;
+	max-height: 80px;
+	overflow: hidden;
 }
 
 .routes-entity-name {
 	font-size: 18px;
 	line-height: 27px;
 	color: #FFFFFF;
+	max-height: 80px;
 }
 
 .routes-entity-desc {
@@ -88,8 +100,11 @@
 .routes-path {
 	display: flex;
 	justify-content: space-between;
-	margin-top: 90px;
-	opacity: 0;
+	align-items: center;
+	max-width: 194px;
+	min-width: 100px;
+	z-index: +1;
+	margin: 0 -7.5px; 
 }
 
 .routes-path-round {
@@ -103,8 +118,71 @@
 	flex-grow: 1;
 	border-top: 1px solid rgba(255, 255, 255, 0.3);
 	text-align: center;
-	font-size: 14px;
-	line-height: 21px;
 	color: #FFFFFF;
-	margin-top: 7.5px;
 }
+
+.routes-path-3,
+.routes-path-6,
+.routes-path-9,
+.routes-path-12,
+.routes-path-15,
+.routes-path-18,
+.routes-path-21,
+.routes-path-24,
+.routes-path-27,
+.routes-path-30,
+.routes-path-33,
+.routes-path-35 {
+	display: none;
+}
+
+@media screen and (max-width: 1100px) {
+	.routes-wrap {
+		max-width: 800px;
+	}
+	.routes-path-3,
+	.routes-path-9,
+	.routes-path-12,
+	.routes-path-15,
+	.routes-path-18,
+	.routes-path-21,
+	.routes-path-24,
+	.routes-path-27,
+	.routes-path-30,
+	.routes-path-33,
+	.routes-path-35 {
+		display: flex;
+	}
+	.routes-path-2,
+	.routes-path-4,
+	.routes-path-6,
+	.routes-path-8,
+	.routes-path-10,
+	.routes-path-12,
+	.routes-path-14,
+	.routes-path-16,
+	.routes-path-18,
+	.routes-path-20,
+	.routes-path-22,
+	.routes-path-24,
+	.routes-path-26,
+	.routes-path-28,
+	.routes-path-30,
+	.routes-path-32,
+	.routes-path-34,
+	.routes-path-36 {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 700px) {
+	.routes-item,
+	.routes-entity {
+		width: 100%;
+	}
+	.routes-path {
+		display: none;
+	}
+}
+
+

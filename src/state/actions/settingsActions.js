@@ -1,7 +1,7 @@
 import * as types from './actionTypes';
 import { cloneDeep } from "lodash";
 import { authAPI } from "../../api/api";
-import {stopSubmit} from "redux-form";
+// import {stopSubmit} from "redux-form";
 import {reset} from 'redux-form';
 import attractions from "../../lib/attractions";
 
